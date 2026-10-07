@@ -55,3 +55,30 @@ test("follows survive a reload", () => {
   createFollowStore({ storage }).add("NCT9", null);
   assert.ok(createFollowStore({ storage }).has("NCT9"));
 });
+
+test("defaults updated just before the saved copy start out as labelled examples", () => {
+  const snapshot = {
+    NCT03529110: model({ id: "NCT03529110", dates: { lastUpdate: "2026-10-07" } }),
+    NCT05929066: model({ id: "NCT05929066", dates: { lastUpdate: "2026-08-21" } }),
+    NCT03887455: model({ id: "NCT03887455", dates: { lastUpdate: "2026-10-06" } }),
+  };
+  const f = createFollowStore({ snapshot, snapshotDate: "2026-10-07", storage: memoryStorage() });
+  assert.equal(f.changedCount(), 2);
+  assert.ok(f.get("NCT03529110").example);
+  assert.ok(!f.get("NCT05929066").example);
+  // Only the update date is flagged; nothing else about the record differs.
+  assert.deepEqual(f.changes("NCT03887455").map((c) => c.kind), ["update"]);
+  assert.equal(f.get("NCT03887455").seen.status, f.get("NCT03887455").latest.status);
+  f.markSeen("NCT03529110");
+  assert.ok(!f.get("NCT03529110").example);
+  assert.equal(f.changedCount(), 1);
+});
+
+test("follows from the first version carry over, defaults are re-seeded", () => {
+  const storage = memoryStorage();
+  storage.set("ts.follow.v1", { NCT7: { added: 5, seen: null, latest: null, checkedAt: 0 }, NCT03529110: { added: 5, seen: null, latest: null } });
+  const f = createFollowStore({ storage, snapshot: {}, snapshotDate: "2026-10-07" });
+  assert.deepEqual(f.ids().sort(), ["NCT03529110", "NCT7"]);
+  assert.equal(f.get("NCT7").seenAt, 5);
+  assert.ok(f.get("NCT03529110").seed);
+});

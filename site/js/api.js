@@ -114,10 +114,11 @@ export async function statuses(ids) {
   return Object.fromEntries((j.studies || []).map((s) => { const m = normalizeStudy(s); return [m.id, m]; }));
 }
 
-// Full-text search across the registry, plus how many of the matches are recruiting.
-export async function search(q, { recruiting = false, newest = false, pageToken = "", size = 10 } = {}) {
+// Search across the registry, plus how many of the matches are recruiting.
+// field "cond" searches conditions (precise); "term" searches all text (broad).
+export async function search(q, { field = "term", recruiting = false, newest = false, pageToken = "", size = 10 } = {}) {
   const isId = /^NCT\d{8}$/i.test(q);
-  const base = isId ? { "filter.ids": q.toUpperCase() } : { "query.term": q };
+  const base = isId ? { "filter.ids": q.toUpperCase() } : { [field === "cond" ? "query.cond" : "query.term"]: q };
   const [list, open] = await Promise.all([
     get("/studies", {
       ...base,
@@ -128,9 +129,9 @@ export async function search(q, { recruiting = false, newest = false, pageToken 
       pageToken,
       fields: FEED_FIELDS,
     }),
-    isId || pageToken ? Promise.resolve(null) : count("", { ...base, "filter.overallStatus": "RECRUITING" }),
+    isId || pageToken || recruiting ? Promise.resolve(null) : count("", { ...base, "filter.overallStatus": "RECRUITING" }),
   ]);
-  return { rows: (list.studies || []).map((s) => feedRow(normalizeStudy(s))), total: list.totalCount ?? null, recruiting: open, next: list.nextPageToken || "" };
+  return { rows: (list.studies || []).map((s) => feedRow(normalizeStudy(s), { match: isId ? "" : q })), total: list.totalCount ?? null, recruiting: open, next: list.nextPageToken || "", field };
 }
 
 // One full record, with group sizes when results are posted.

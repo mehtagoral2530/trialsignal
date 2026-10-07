@@ -20,10 +20,12 @@ export const D = {
   libAt: 0,
   records: {}, // id → full live record
   recordAt: {},
+  recordStamp: {}, // id → registry dataTimestamp the record was fetched under
+  savedKeys: new Set(), // feed keys whose rows came from the saved copy
   saved: false, // true while showing the saved copy
 };
 
-export const follow = createFollowStore({ snapshot: SNAPSHOT });
+export const follow = createFollowStore({ snapshot: SNAPSHOT, snapshotDate: SNAPSHOT_DATE });
 
 const subs = new Set();
 export const onData = (fn) => subs.add(fn);
@@ -38,13 +40,28 @@ export function useSaved() {
   D.areaCounts = {};
   D.days = { ...PULSE.days };
   D.feeds = {};
+  D.savedKeys = new Set();
   for (const m of ["updated", "new", "results"]) {
     D.feeds[`home:${m}`] = PULSE.feeds[m].slice(0, 4);
     D.feeds[`updates:${m}:all`] = PULSE.feeds[m].slice(0, 8);
+    D.savedKeys.add(`home:${m}`).add(`updates:${m}:all`);
   }
   D.next = {};
   D.lib = { ...SNAPSHOT };
+  D.libAt = 0;
   emit("saved");
+}
+
+// Before live data replaces the saved copy (first load, or the connection is back),
+// or after a registry refresh: drop cached live data so nothing old shows as live.
+// keep: feed keys to hold on to, so rows that really arrived can be marked NEW.
+export function clearLive({ keep = [] } = {}) {
+  for (const k of Object.keys(D.feeds)) {
+    if (!keep.includes(k) || D.savedKeys.has(k)) { delete D.feeds[k]; delete D.next[k]; }
+  }
+  D.savedKeys = new Set();
+  D.days = {};
+  D.areaCounts = {};
 }
 
 // ── live loaders ─────────────────────────────────────────────────────
@@ -78,10 +95,13 @@ export const feedKey = (scope, metric, area = "all") => (scope === "home" ? `hom
 // Returns the ids that were not in the previous version of this feed (new arrivals).
 export async function loadFeed(scope, metric, area = "all", { append = false } = {}) {
   const key = feedKey(scope, metric, area);
-  const prev = D.feeds[key];
+  // Rows from the saved copy are never compared with live rows: that would mark rows
+  // the reader has already seen as NEW.
+  const prev = D.savedKeys.has(key) ? null : D.feeds[key];
   const r = await api.feed(metric, { area: area === "all" ? "" : area, size: scope === "home" ? 4 : 8, pageToken: append ? D.next[key] : "" });
   D.feeds[key] = append && prev ? [...prev, ...r.rows] : r.rows;
   D.next[key] = r.next;
+  D.savedKeys.delete(key);
   const fresh = !append && prev ? r.rows.filter((x) => !prev.some((p) => p.id === x.id)).map((x) => x.id) : [];
   emit("feed");
   return fresh;
@@ -106,18 +126,31 @@ export async function refreshAll(metric = "updated") {
 }
 
 // ── single trials ────────────────────────────────────────────────────
+// stale: fetched before the registry's latest refresh, so it should be fetched again.
 export function record(id) {
-  if (D.records[id]) return { model: D.records[id], live: true, at: D.recordAt[id] };
-  if (SNAPSHOT[id]) return { model: SNAPSHOT[id], live: false, at: 0 };
-  return { model: null, live: false, at: 0 };
+  if (D.records[id]) return { model: D.records[id], live: true, at: D.recordAt[id], stale: D.recordStamp[id] !== L.stamp };
+  if (SNAPSHOT[id]) return { model: SNAPSHOT[id], live: false, at: 0, stale: false };
+  return { model: null, live: false, at: 0, stale: false };
 }
 
 export async function loadRecord(id) {
+  const stamp = L.stamp;
   const m = await api.study(id);
   D.records[id] = m;
   D.recordAt[id] = Date.now();
+  D.recordStamp[id] = stamp;
   emit("record");
   return m;
+}
+
+// A trial known only from a feed row (newest registry activity), for a reduced page
+// when the full record can't be fetched.
+export function feedRowFor(id) {
+  for (const rows of [...Object.values(D.feeds), ...Object.values(PULSE.feeds)]) {
+    const r = (rows || []).find((x) => x.id === id);
+    if (r) return r;
+  }
+  return null;
 }
 
 // Status for a library or followed trial: live if fetched, else from the saved copy.

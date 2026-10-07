@@ -1,13 +1,18 @@
 // Followed trials: kept in this browser, re-checked against the registry, and
 // flagged when something meaningful changes.
 
-import { store, fmtDate, num } from "./util.js";
+import { store, fmtDate, num, addDays, dayDiff } from "./util.js";
 import { statusLabel } from "./normalize.js";
 
-const KEY = "ts.follow.v1";
+const KEY = "ts.follow.v2";
+const OLD_KEY = "ts.follow.v1";
 
 // First-time visitors start out following three trials so the list shows how tracking works.
 export const DEFAULT_FOLLOW = ["NCT03529110", "NCT05929066", "NCT03887455"];
+// A default trial whose record really changed in the two weeks before the saved copy is
+// shown as an example of a flagged change, labelled as an example. No change is invented:
+// the flag is the real update date, and nothing else about the record is altered.
+export const EXAMPLE_WINDOW_DAYS = 14;
 
 // The fields we compare between checks.
 export function trackFields(m) {
@@ -43,14 +48,24 @@ export function diff(seen, latest) {
   return out;
 }
 
-// entries: { [nctId]: { added, seen, latest, checkedAt, error } }
-export function createFollowStore({ snapshot = {}, storage = store } = {}) {
+// entries: { [nctId]: { added, seenAt, seen, latest, checkedAt, error, seed, example } }
+export function createFollowStore({ snapshot = {}, snapshotDate = "", storage = store } = {}) {
+  const seedEntry = (id) => {
+    const s = snapshot[id];
+    const latest = s ? trackFields(s) : null;
+    const example = !!(latest && snapshotDate && latest.lastUpdate && dayDiff(snapshotDate, latest.lastUpdate) < EXAMPLE_WINDOW_DAYS);
+    const seen = latest ? { ...latest, ...(example ? { lastUpdate: addDays(snapshotDate, -EXAMPLE_WINDOW_DAYS) } : {}) } : null;
+    return { added: Date.now(), seenAt: 0, seen, latest, checkedAt: 0, seed: true, example };
+  };
   let entries = storage.get(KEY, null);
   if (!entries) {
+    const old = storage.get(OLD_KEY, null);
     entries = {};
-    for (const id of DEFAULT_FOLLOW) {
-      const s = snapshot[id];
-      entries[id] = { added: Date.now(), seen: s ? trackFields(s) : null, latest: s ? trackFields(s) : null, checkedAt: 0 };
+    if (old) {
+      // Keep everything the reader chose; re-seed only the defaults they still follow.
+      for (const [id, e] of Object.entries(old)) entries[id] = DEFAULT_FOLLOW.includes(id) ? seedEntry(id) : { ...e, seenAt: e.seenAt || e.added || 0 };
+    } else {
+      for (const id of DEFAULT_FOLLOW) entries[id] = seedEntry(id);
     }
   }
   const save = () => storage.set(KEY, entries);
@@ -62,7 +77,7 @@ export function createFollowStore({ snapshot = {}, storage = store } = {}) {
     has: (id) => !!entries[id],
     add(id, model) {
       const f = model ? trackFields(model) : null;
-      entries[id] = { added: Date.now(), seen: f, latest: f, checkedAt: model ? Date.now() : 0 };
+      entries[id] = { added: Date.now(), seenAt: Date.now(), seen: f, latest: f, checkedAt: model ? Date.now() : 0 };
       save();
     },
     remove(id) {
@@ -74,7 +89,7 @@ export function createFollowStore({ snapshot = {}, storage = store } = {}) {
       const e = entries[id];
       if (!e) return;
       const f = trackFields(model);
-      if (!e.seen) e.seen = f;
+      if (!e.seen) { e.seen = f; e.seenAt = at; }
       e.latest = f;
       e.checkedAt = at;
       e.error = "";
@@ -86,7 +101,12 @@ export function createFollowStore({ snapshot = {}, storage = store } = {}) {
     },
     markSeen(id) {
       const e = entries[id];
-      if (e && e.latest) e.seen = { ...e.latest };
+      if (e && e.latest) {
+        e.seen = { ...e.latest };
+        e.seenAt = Date.now();
+        e.seed = false;
+        e.example = false;
+      }
       save();
     },
     changes: (id) => diff(entries[id] && entries[id].seen, entries[id] && entries[id].latest),

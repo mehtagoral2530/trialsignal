@@ -1,9 +1,9 @@
 // Entry point: routing, the live chrome (header pill, panel badges, tickers), theme and start-up.
 
-import { $, $$, esc, fmtDate, shortDate, store } from "./util.js";
+import { $, $$, esc, fmtDate, shortDate, store, parseNCT } from "./util.js";
 import { SITE } from "./config.js";
 import { L, onLive, start as startLive, check, tick, countTo } from "./live.js";
-import { D, onData, useSaved, refreshAll, loadTotal, SNAPSHOT_DATE, swallow } from "./data.js";
+import { D, onData, useSaved, refreshAll, loadTotal, loadCounts, loadStatuses, clearLive, feedKey, SNAPSHOT_DATE, swallow } from "./data.js";
 import { initTips } from "./ui.js";
 import { initNotes } from "./notes.js";
 import { LIBRARY, LIBRARY_REVIEWED, lib } from "../data/library.js";
@@ -24,7 +24,18 @@ let hideTip = () => {};
 // ── routing: bare hash tokens (#trials, #NCT04184622) work on any static host ──
 function route() {
   let h = decodeURIComponent(location.hash.slice(1)) || "start";
-  if (h === "story") {
+  // The skip link targets #main: keep the page and move focus to the content.
+  if (h === "main") {
+    if (view) {
+      history.replaceState(null, "", `#${trialId || view}`);
+      $("#main").focus();
+      return;
+    }
+    history.replaceState(null, "", "#start");
+    h = "start";
+  }
+  const story = h === "story";
+  if (story) {
     history.replaceState(null, "", "#about");
     h = "about";
     const s = $("#story");
@@ -35,20 +46,24 @@ function route() {
   let id = null;
   if (/^NCT\d{8}$/i.test(h)) { v = "trial"; id = h.toUpperCase(); }
   const same = v === view && id === trialId;
+  const first = !view;
   view = v;
   trialId = id;
   $$(".view").forEach((s) => s.classList.toggle("on", s.dataset.view === v));
   const navKey = v === "trial" ? "trials" : v;
   $$("[data-nav]").forEach((a) => (a.dataset.nav === navKey ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));
   hideTip();
-  if (!same && h !== "about") window.scrollTo(0, 0);
+  if (!same && !story) window.scrollTo(0, 0);
   if (v === "start") start.renderStart();
   if (v === "trials") trials.renderTrials(pending);
   if (v === "updates") updates.renderUpdates();
   if (v === "trial") trial.renderTrial(id);
   pending = {};
-  document.title = v === "trial" ? `${(lib(id) && lib(id).short) || id} · ${SITE.name}` : v === "start" ? SITE.name : `${v[0].toUpperCase()}${v.slice(1)} · ${SITE.name}`;
+  // Trial pages set their own title from the trial's name.
+  if (v !== "trial") document.title = v === "start" ? SITE.name : `${v[0].toUpperCase()}${v.slice(1)} · ${SITE.name}`;
   tick();
+  // After moving to another page, focus its heading so keyboard and screen-reader users start there.
+  if (!first && !same && !story) $(`[data-view="${v}"] h1`)?.focus({ preventScroll: true });
 }
 
 export function go(target, params = {}) {
@@ -63,65 +78,108 @@ const RING = '<button class="con-check" type="button" data-check-now aria-label=
 function paintChrome() {
   const on = L.online === true;
   const off = L.online === false;
+  const saved = shortDate(SNAPSHOT_DATE);
   document.body.dataset.online = String(L.online);
   const pill = $("#livePill");
   pill.dataset.state = on ? "live" : off ? "offline" : "loading";
-  $(".lp-word", pill).textContent = off ? (SITE.preview ? "Preview" : "Offline") : "Live";
-  $(".lp-long", pill).textContent = off ? "" : "checked ";
-  $('[data-ago="pill"]', pill).textContent = off ? `saved ${shortDate(SNAPSHOT_DATE)}` : "…";
+  $(".lp-word", pill).textContent = off ? (SITE.preview ? "Preview" : "Offline") : on ? "Live" : "Checking…";
+  $(".lp-long", pill).textContent = on ? "checked " : "";
+  $('[data-ago="pill"]', pill).textContent = off ? `saved ${saved}` : on ? "…" : "";
+  $(".lp-sr", pill).textContent = off && SITE.preview ? ". This preview shows the saved copy" : off ? ". Try ClinicalTrials.gov again now" : ". Check ClinicalTrials.gov now";
   pill.title = off ? (SITE.preview ? "Preview: showing the saved copy" : "Try ClinicalTrials.gov again now") : "Check ClinicalTrials.gov now";
-  $$(".console:not(.rec-con)").forEach((c) => (c.dataset.state = on ? "live" : off ? "offline" : "loading"));
-  $$(".console:not(.rec-con) [data-badge-word]").forEach((w) => (w.textContent = off ? "SAVED COPY" : "LIVE"));
-  const tickerLive = '<span>Refreshed <b class="tk" data-tick="refreshed">…</b></span><span>checked <b class="tk" data-ago="check">…</b></span>';
-  const tickerOff = SITE.preview
-    ? `<span>Preview · saved copy from ${shortDate(SNAPSHOT_DATE)}</span>`
-    : `<span>Saved copy from ${shortDate(SNAPSHOT_DATE)}</span><span>offline, retrying in <b class="tk" data-tick="retry">…</b></span>`;
+  $$('.console:not(.rec-con):not([data-console="follow"])').forEach((c) => (c.dataset.state = on ? "live" : off ? "offline" : "loading"));
+  $$('.console:not(.rec-con):not([data-console="follow"]) [data-badge-word]').forEach((w) => (w.textContent = off ? "SAVED COPY" : on ? "LIVE" : "CHECKING"));
+  const ticker = on
+    ? '<span>Refreshed <b class="tk" data-tick="refreshed">…</b></span><span>checked <b class="tk" data-ago="check">…</b></span>'
+    : !off ? "<span>Connecting to the registry…</span>"
+      : SITE.preview ? `<span>Preview · saved copy from ${saved}</span>`
+        : `<span>Saved ${saved} · retrying in <b class="tk" data-tick="retry">…</b></span>`;
   $$('[data-console="home"] .con-ticker, [data-console="updates"] .con-ticker').forEach((t) => {
-    t.innerHTML = (off ? tickerOff : tickerLive) + (t.closest('[data-console="home"]') ? RING : "");
+    // The ring counts down to the next check; the preview never checks, so it has none.
+    t.innerHTML = ticker + (t.closest('[data-console="home"]') && !SITE.preview && L.online !== null ? RING : "");
   });
-  $('[data-console="follow"] .con-ticker').innerHTML = off ? `<span>Saved copy from ${shortDate(SNAPSHOT_DATE)}</span>` : '<span>checked <b class="tk" data-ago="check">…</b></span>';
+  paintFollowConsole();
   $$("[data-cadence]").forEach((el) => (el.innerHTML = off
     ? (SITE.preview
       ? `This preview can’t reach ClinicalTrials.gov, so it shows the copy saved on ${fmtDate(SNAPSHOT_DATE)}. The published site checks the registry every 60 seconds.`
       : `TrialSignal can’t reach ClinicalTrials.gov right now, so this panel shows the saved copy from ${fmtDate(SNAPSHOT_DATE)}. It tries again every 60 seconds.`)
-    : 'ClinicalTrials.gov publishes once a day, Monday to Friday; the next refresh is expected <span data-tick="next">…</span>. TrialSignal checks it every 60 seconds while this page is open.'));
+    : on ? 'ClinicalTrials.gov publishes once a day, Monday to Friday; the next refresh is expected <span data-tick="next">…</span>. TrialSignal checks it every 60 seconds while this page is open.'
+      : "ClinicalTrials.gov publishes once a day, Monday to Friday. TrialSignal checks it every 60 seconds while this page is open."));
+  $$("[data-live-eyebrow]").forEach((el) => (el.innerHTML = off ? `Counts from the saved copy, ${saved}` : '<span class="ldot"></span> Live counts'));
+  $$("[data-stage-soft]").forEach((el) => (el.textContent = off ? `Here is where they were on ${saved}.` : "Here is where they are right now."));
+  $$("[data-foot-src]").forEach((el) => (el.textContent = off ? `saved copy, ${fmtDate(SNAPSHOT_DATE)}` : "checked live"));
   start.paintHero();
   trials.renderSearchLive();
+  trials.renderFollowing();
   updates.repaintUpdatesAreas();
+  updates.paintLede();
+  updates.paintNewsNote();
   tick();
 }
 
+// Following is live once the statuses of the followed trials have been fetched.
+function paintFollowConsole() {
+  const c = $('[data-console="follow"]');
+  const off = L.online === false;
+  const live = L.online === true && D.libAt > 0;
+  c.dataset.state = off ? "offline" : live ? "live" : "loading";
+  $("[data-badge-word]", c).textContent = off ? "SAVED COPY" : live ? "LIVE" : "CHECKING";
+  $(".con-ticker", c).innerHTML = off ? `<span>Saved copy from ${shortDate(SNAPSHOT_DATE)}</span>` : live ? '<span>checked <b class="tk" data-ago="check">…</b></span>' : "<span>checking…</span>";
+}
+
 // ── reacting to the registry ─────────────────────────────────────────
+let refreshing = false;
 onLive(async (type, detail) => {
-  if (type === "online") paintChrome();
+  if (type === "online") { paintChrome(); trials.refreshSearch(); }
   if (type === "offline") {
     useSaved();
+    updates.resetArea();
     paintChrome();
     start.paintConsole({ grow: false, stream: false });
     start.renderPicks();
     trials.renderLibrary();
     trials.renderFollowing();
+    trials.refreshSearch();
     if (view === "updates") updates.renderUpdates();
-    if (view === "trial") trial.renderTrial(trialId);
+    if (view === "trial") trial.renderTrial(trialId, { quiet: true });
   }
   if (type === "refresh") {
+    refreshing = true;
+    // Nothing saved or from an older refresh may show as live. On the first load (or when
+    // the connection is back) everything is fetched again; after a daily refresh only the
+    // feeds on screen are kept, so rows that really arrived can be marked NEW.
+    if (detail.first) clearLive();
+    else if (detail.changed) clearLive({ keep: [feedKey("home", start.homeMetric()), updates.currentKey()] });
+    if (view === "trial") (detail.first ? trial.renderTrial : trial.refreshTrial)(trialId);
     start.paintHero();
-    await refreshAll(start.homeMetric());
-    await start.refreshHome();
+    if (detail.first) { renderBars("home", start.homeMetric()); renderFeedSkeleton("home"); }
+    const all = refreshAll(start.homeMetric());
+    const jobs = [start.refreshHome(all)];
+    if (view === "trials") jobs.push(loadTotal().catch(swallow));
+    if (view === "updates") jobs.push(updates.refreshUpdates());
+    await Promise.allSettled(jobs);
     start.paintHero();
-    if (view === "trials") loadTotal().catch(swallow);
-    if (view === "updates") updates.refreshUpdates();
-    if (view === "trial" && !detail.first) trial.refreshTrial(trialId);
-    else if (view === "trial") trial.renderTrial(trialId);
+    refreshing = false;
+  }
+  if (type === "check" && L.online === true && !refreshing) {
+    // Retry whatever failed to load on an earlier check.
+    if (D.counts.today == null) loadCounts().catch(swallow);
+    if (!D.libAt) loadStatuses().catch(swallow);
+    start.retryHome();
+    if (view === "updates") updates.retryUpdates();
+    if (view === "trial") trial.retryTrial();
   }
 });
 
 onData((what) => {
+  if (what === "counts") { start.paintCounts(); updates.paintTabCounts(); }
   if (what === "lib") {
     start.renderPicks();
     start.renderLibStrip();
     trials.renderLibrary();
     trials.renderFollowing();
+    paintFollowConsole();
+    tick();
   }
   if (what === "total") $$('[data-count="total"]').forEach((el) => countTo(el, D.counts.total));
 });
@@ -132,10 +190,13 @@ function initTheme() {
   const root = document.documentElement;
   const saved = store.get("ts.theme", null);
   if (saved) root.dataset.theme = saved;
-  $("#themeBtn").onclick = () => {
-    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-    root.dataset.theme = dark ? "light" : "dark";
+  const isDark = () => (root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches);
+  const btn = $("#themeBtn");
+  btn.setAttribute("aria-pressed", isDark());
+  btn.onclick = () => {
+    root.dataset.theme = isDark() ? "light" : "dark";
     store.set("ts.theme", root.dataset.theme);
+    btn.setAttribute("aria-pressed", isDark());
   };
 }
 
@@ -173,7 +234,8 @@ $("#searchForm1").addEventListener("submit", (e) => {
   e.preventDefault();
   const v = $("#q1").value.trim();
   if (!v) { $("#q1").focus(); return; }
-  if (/^NCT\d{8}$/i.test(v)) go(v.toUpperCase());
+  const id = parseNCT(v);
+  if (id) go(id);
   else go("trials", { q: v });
 });
 document.addEventListener("click", (e) => {
@@ -185,11 +247,14 @@ document.addEventListener("animationend", (e) => {
   if (li && (e.animationName === "rowin" || e.animationName === "rownew")) li.classList.remove("in", "is-new");
   const bar = e.target.closest?.(".bar");
   if (bar && e.animationName === "grow") bar.classList.remove("grow");
+  // The scan line and logo trace play once per check, never again on a page switch.
+  if (e.animationName === "sweep") e.target.classList.remove("sweep");
+  if (e.animationName === "trace") e.target.closest?.("#brandMark")?.classList.remove("beat");
 });
 
 renderFeedSkeleton("home");
 renderBars("home", start.homeMetric());
-trials.renderFollowing();
+paintChrome();
 window.addEventListener("hashchange", route);
 route();
 startLive();

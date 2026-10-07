@@ -161,7 +161,8 @@ export function splitCriteria(text) {
   return out;
 }
 
-const dateOf = (s) => (s && s.date) || "";
+// Registry dates are YYYY, YYYY-MM or YYYY-MM-DD; anything else is dropped.
+const dateOf = (s) => (s && /^\d{4}(-\d{2}){0,2}$/.test(s.date || "") ? s.date : "");
 const clip = (s, n) => (s && s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s || "");
 
 export function normalizeStudy(raw) {
@@ -179,7 +180,7 @@ export function normalizeStudy(raw) {
   const outcomes = (list) => (list || []).map((o) => ({ measure: unescapeMd(o.measure), timeFrame: unescapeMd(o.timeFrame) }));
 
   return {
-    id: id.nctId || "",
+    id: /^NCT\d{8}$/.test(id.nctId || "") ? id.nctId : "",
     acronym: id.acronym || "",
     title: id.briefTitle || "",
     officialTitle: id.officialTitle || "",
@@ -247,7 +248,12 @@ export function baselineGroups(raw) {
 }
 
 // The few fields a feed row needs; used for live feeds and the saved copy alike.
-export function feedRow(m) {
+// match: a search query. The row is headed by the first listed condition that contains
+// one of its words, so a search for obesity isn't headed "Type 2 diabetes".
+export function feedRow(m, { match = "" } = {}) {
+  const conds = m.conditions || [];
+  const words = String(match).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2);
+  const hit = words.length ? conds.find((c) => words.some((w) => c.toLowerCase().includes(w))) : null;
   return {
     id: m.id,
     acronym: m.acronym,
@@ -255,7 +261,7 @@ export function feedRow(m) {
     status: m.status,
     phase: /not applicable/i.test(m.phase) ? "" : m.phase,
     sponsor: m.sponsor,
-    condition: (m.conditions || [])[0] || "",
+    condition: hit || conds[0] || "",
     dates: { lastUpdate: m.dates.lastUpdate, firstPosted: m.dates.firstPosted, resultsPosted: m.dates.resultsPosted },
   };
 }

@@ -16,7 +16,7 @@ export function fmtDate(d) {
   const q = d.match(/^(\d{4})-Q(\d)$/);
   if (q) return `Q${q[2]} ${q[1]}`;
   const m = d.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
-  if (!m) return d;
+  if (!m) return esc(d);
   return (m[3] ? `${+m[3]} ` : "") + `${MON[+m[2] - 1]} ${m[1]}`;
 }
 
@@ -45,6 +45,20 @@ export function ago(ms, now = Date.now()) {
 export const num = (n) => (n == null || n === "" ? "" : Number(n).toLocaleString("en-US"));
 export const plural = (n, one, many = `${one}s`) => `${num(n)} ${n === 1 ? one : many}`;
 
+// Today's date in the reader's own time zone, YYYY-MM-DD.
+export function localDay(d = new Date()) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+// Cut text at a word boundary and add an ellipsis.
+export function clip(s, n) {
+  s = String(s || "").replace(/\s+/g, " ").trim();
+  if (s.length <= n) return s;
+  const cut = s.slice(0, n + 1);
+  const at = cut.lastIndexOf(" ");
+  return `${(at > n * 0.6 ? cut.slice(0, at) : s.slice(0, n)).replace(/[\s,.;:–—-]+$/, "")}…`;
+}
+
 // localStorage can be missing or throw (private windows, blocked storage).
 export const store = {
   get(key, fallback = null) {
@@ -64,14 +78,19 @@ export const store = {
   },
 };
 
+// The toast stays in the page (role="status"); the text is set on the next frame so
+// screen readers announce it, and it fades rather than being removed.
 let toastTimer;
 export function toast(msg) {
   const t = $("#toast");
   if (!t) return;
-  t.textContent = msg;
-  t.hidden = false;
+  t.textContent = "";
+  requestAnimationFrame(() => {
+    t.textContent = msg;
+    t.classList.add("show");
+  });
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => (t.hidden = true), 2600);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
 }
 
 // ── calendar helpers (YYYY-MM-DD strings, no time zones) ─────────────
@@ -87,7 +106,7 @@ export const weekday = (ymd, long = false) =>
 // "7 Oct" (no year).
 export function shortDate(d) {
   const m = String(d || "").match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
-  if (!m) return d || "";
+  if (!m) return esc(d || "");
   return m[3] ? `${+m[3]} ${MON[+m[2] - 1]}` : `${MON[+m[2] - 1]} ${m[1]}`;
 }
 // "14 months ago", "yesterday", relative to a reference day.

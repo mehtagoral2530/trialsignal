@@ -49,7 +49,7 @@ export function easternToMs(ts) {
   }
 }
 export const easternDay = (ms) => new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(ms));
-export const easternTime = (ms) => new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }).format(new Date(ms)).replace(/\s?AM/, " am").replace(/\s?PM/, " pm");
+export const easternTime = (ms) => new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }).format(new Date(ms)).replace(/\s?AM/, "\u00a0am").replace(/\s?PM/, "\u00a0pm");
 export const easternWeekday = (ms) => new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short" }).format(new Date(ms));
 
 // Next weekday at 9:00 ET after `now`.
@@ -113,8 +113,10 @@ export async function check(reason = "timer", { force = false } = {}) {
       L.refreshedAt = easternToMs(L.stamp);
       L.day = L.stamp.slice(0, 10);
       emit("refresh", { first: first || wasOffline, changed, reason });
-      if (!first && changed) announce("ClinicalTrials.gov just published its daily refresh. New numbers and changes are shown.");
-    } else {
+      if (wasOffline) announce("ClinicalTrials.gov is reachable again. Showing live registry data.");
+      else if (!first && changed) announce("ClinicalTrials.gov just published its daily refresh. New numbers and changes are shown.");
+    } else if (reason === "manual") {
+      // Only a check the reader asked for is announced; the 60-second timer stays quiet.
       announce(`Checked ClinicalTrials.gov. Nothing new since the ${easternTime(L.refreshedAt)} ET refresh.`);
     }
     emit("check", { reason });
@@ -132,6 +134,7 @@ function goOffline() {
   L.online = false;
   L.day = "";
   emit("offline");
+  if (!SITE.preview) announce("Can’t reach ClinicalTrials.gov. Showing the saved copy until the connection is back.");
 }
 
 // ── the one-second ticker ────────────────────────────────────────────
@@ -143,20 +146,36 @@ function goOffline() {
 //   data-since="<ms>"      → "12s ago" since that moment
 const C_PILL = 59.7;
 const C_RING = 50.27;
+let lastFrac = 0;
 export function tick() {
   const now = Date.now();
-  const frac = Math.min(1, Math.max(0, 1 - (L.nextCheckAt - now) / CHECK_EVERY));
+  // A due check starts before anything is painted, so labels never flash "1m ago".
+  if (now >= L.nextCheckAt && document.visibilityState === "visible" && !SITE.preview && !L.checking) check("timer");
+  // While a check is due or running, "checked" stops at 59s rather than rolling over.
+  const since = (ms) => agoShort(L.online === true ? Math.min(ms, 59_000) : ms);
   const set = (el, t) => { if (el.textContent !== t) el.textContent = t; };
-  $$('[data-ago="check"]').forEach((el) => set(el, L.checkedAt ? agoShort(now - L.checkedAt) : "…"));
-  if (L.online !== false) $$('[data-ago="pill"]').forEach((el) => set(el, L.checkedAt ? agoShort(now - L.checkedAt) : "…"));
-  $$("[data-since]").forEach((el) => set(el, agoShort(now - Math.max(+el.dataset.since, L.checkedAt))));
+  $$('[data-ago="check"]').forEach((el) => set(el, L.checkedAt ? since(now - L.checkedAt) : "…"));
+  if (L.online === true) $$('[data-ago="pill"]').forEach((el) => set(el, L.checkedAt ? since(now - L.checkedAt) : "…"));
+  $$("[data-since]").forEach((el) => set(el, since(now - Math.max(+el.dataset.since, L.checkedAt))));
   $$('[data-tick="refreshed"]').forEach((el) => set(el, L.refreshedAt ? (now - L.refreshedAt < 60_000 ? "just now" : `${hm(now - L.refreshedAt)} ago`) : "…"));
   $$('[data-tick="retry"]').forEach((el) => set(el, `${Math.max(0, Math.ceil((L.nextCheckAt - now) / 1000))}s`));
   const nr = nextRefresh(now);
-  if (nr) $$('[data-tick="next"]').forEach((el) => set(el, `${easternWeekday(nr)} 9:00 ET, in ${hm(nr - now)}`));
-  $$(".lp-ring .val").forEach((r) => (r.style.strokeDashoffset = String(C_PILL * (1 - frac))));
-  $$(".con-check .ring .val").forEach((r) => (r.style.strokeDashoffset = String(C_RING * (1 - frac))));
-  if (now >= L.nextCheckAt && document.visibilityState === "visible" && !SITE.preview) check("timer");
+  if (nr) $$('[data-tick="next"]').forEach((el) => set(el, `${easternWeekday(nr)} 9:00\u00a0ET, in ${hm(nr - now)}`));
+  // The preview never checks, so its rings stay still.
+  if (SITE.preview) return;
+  const frac = Math.min(1, Math.max(0, 1 - (L.nextCheckAt - now) / CHECK_EVERY));
+  const rings = [...$$(".lp-ring .val").map((r) => [r, C_PILL]), ...$$(".con-check .ring .val").map((r) => [r, C_RING])];
+  // After a check the rings jump back to empty instead of winding backwards.
+  const reset = frac < lastFrac - 0.2;
+  lastFrac = frac;
+  rings.forEach(([r, c]) => {
+    const v = String(c * (1 - frac));
+    if (!reset) { r.style.strokeDashoffset = v; return; }
+    r.style.transition = "none";
+    r.style.strokeDashoffset = v;
+    void r.getBoundingClientRect();
+    r.style.transition = "";
+  });
 }
 
 export function start() {
@@ -174,7 +193,8 @@ export function start() {
 // ── motion that marks a real check ───────────────────────────────────
 export function sweep() {
   if (reduceMotion()) return;
-  $$(".console").forEach((c) => { c.classList.remove("sweep"); void c.offsetWidth; c.classList.add("sweep"); });
+  // Only panels on screen sweep; hidden ones would otherwise replay it when shown.
+  $$(".console").filter((c) => c.getClientRects().length).forEach((c) => { c.classList.remove("sweep"); void c.offsetWidth; c.classList.add("sweep"); });
   const bm = document.getElementById("brandMark");
   if (bm) { bm.classList.remove("beat"); void bm.getBoundingClientRect(); bm.classList.add("beat"); }
 }

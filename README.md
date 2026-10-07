@@ -12,15 +12,15 @@ Clinical trials, live and in plain words. TrialSignal watches ClinicalTrials.gov
 |---|---|
 | **Feels live because it is** | The Start page leads with a real number (“1,120 trials updated today”), a 14-day activity chart and a stream of the newest registry changes. A dark panel always means live registry data. Clocks tick every second, and a scan line sweeps the panel each time the site checks the registry. |
 | **Read any trial in five steps** | The question, who it’s for, what’s tested, how it’s measured, what’s been found. Each trial page adds a plain question, glossed status and phase, jargon explainers, eligibility chips, a 100-dot picture of the real group sizes, and result bars. |
-| **Track trials** | Follow any trial. The Following panel flags changes to status, main results date, enrollment, posted results or the record itself, with a link to the registry’s change history. |
-| **Search the whole registry** | Live search across more than 600,000 studies, with “Recruiting only” and “Newest updates first”. Any trial opens in the same five-step reader. |
+| **Track trials** | Follow any trial. The Following panel flags changes to status, main results date, enrollment, posted results or the record itself, with a link to the registry’s change history. First-time visitors start with three trials; any whose record really changed in the two weeks before the saved copy is flagged as a labelled example. |
+| **Search the whole registry** | Live search across more than 600,000 studies. Conditions are searched first (so “Obesity” finds obesity studies), falling back to all text for drug names. Paste a registry link or NCT number to jump straight to the trial. “Recruiting only” and “Newest updates first” narrow the list. |
 | **See what changed** | A live registry feed filtered by area, hand-picked headlines labelled by how firm the evidence is, and a side-by-side comparison of any two library trials. |
 | **Answers you can check** | The question box answers from the trial’s own record and names the section it came from. No AI, nothing invented. |
 | **Notes** | Kept in the browser, with copy and Markdown download. |
 
 | Trial page | Following |
 |---|---|
-| ![Trial page](docs/screenshots/trial.png) | ![Following panel with a change flagged](docs/screenshots/tracking.png) |
+| ![Trial page](docs/screenshots/trial.png) | ![Following panel on a first visit, with two real updates flagged as examples](docs/screenshots/tracking.png) |
 | **Updates** | **Dark mode** |
 | ![Updates](docs/screenshots/updates.png) | ![Dark mode](docs/screenshots/dark.png) |
 
@@ -58,7 +58,8 @@ Browser ──GET──▶ ClinicalTrials.gov API v2     /version every 60 s; co
 ```
 
 - **No server, no build, no dependencies.** Plain HTML, CSS and JavaScript modules. The API accepts direct browser requests; requests stay simple GETs with no custom headers because the API rejects CORS preflight.
-- **Offline is calm, not broken.** If the registry can’t be reached, every panel switches to the saved copy with “SAVED COPY” badges and absolute dates. A weekly GitHub Action refreshes it.
+- **Offline is calm, not broken.** If the registry can’t be reached, every panel switches to the saved copy with “SAVED COPY” badges and absolute dates, and retries every 60 seconds. When the connection is back, cached data is dropped and everything is fetched again, so nothing saved is ever shown as live. A weekly GitHub Action refreshes the saved copy.
+- **Accessible by default.** Keyboard focus moves to each page’s heading, the skip link works on every page, glossary hints open on tap, hover or focus, and the registry checks are announced to screen readers only when they matter.
 
 ## Run it locally
 

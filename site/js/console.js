@@ -29,8 +29,9 @@ export function renderBars(scope, metric, { grow = false } = {}) {
   if (cap) cap.textContent = METRIC_TEXT[metric].cap;
   if (!vals) {
     // Loading: even, faint placeholders (no fake shape).
-    el.innerHTML = Array.from({ length: 14 }, () => '<div class="bar loading"><i style="--h:30%"></i></div>').join("");
-    $(`[data-barx="${scope}"]`).innerHTML = "";
+    el.innerHTML = Array.from({ length: 14 }, () => '<div class="bar loading" aria-hidden="true"><i style="--h:30%"></i></div>').join("");
+    // An empty axis row keeps the panel the same height while it loads.
+    $(`[data-barx="${scope}"]`).innerHTML = "<span>&nbsp;</span>";
     return;
   }
   const days = Object.keys(vals).sort();
@@ -43,7 +44,7 @@ export function renderBars(scope, metric, { grow = false } = {}) {
     const zero = v === 0;
     const lab = `${weekday(d)} ${shortDate(d)}`;
     const tip = zero ? `${lab} · <b>no refresh</b>` : `<b>${num(v)}</b> ${METRIC_TEXT[metric].tip} · ${lab}`;
-    return `<div class="bar${zero ? " wkend" : ""}${d === last ? " today" : ""}${anim ? " grow" : ""}" role="listitem" tabindex="0" style="--d:${i * 35}ms" aria-label="${lab}: ${zero ? "no refresh" : `${num(v)} ${METRIC_TEXT[metric].tip}`}"><i style="--h:${zero ? 0 : Math.max(4, (v / max) * 100)}%"></i><span class="tip">${tip}</span></div>`;
+    return `<div class="bar${zero ? " wkend" : ""}${d === last ? " today" : ""}${anim ? " grow" : ""}" role="listitem" tabindex="${d === last ? 0 : -1}" style="--d:${i * 35}ms" aria-label="${lab}: ${zero ? "no refresh" : `${num(v)} ${METRIC_TEXT[metric].tip}`}"><i style="--h:${zero ? 0 : Math.max(4, (v / max) * 100)}%"></i><span class="tip">${tip}</span></div>`;
   }).join("");
   const xs = [];
   for (let i = 0; i < days.length; i++) {
@@ -55,8 +56,32 @@ export function renderBars(scope, metric, { grow = false } = {}) {
   $(`[data-barx="${scope}"]`).innerHTML = xs.join("");
 }
 
+// The chart is one tab stop; the arrow keys move between days.
+export function bindBarKeys(scope) {
+  const el = $(`[data-bars="${scope}"]`);
+  if (!el) return;
+  el.addEventListener("keydown", (e) => {
+    const bars = [...el.querySelectorAll(".bar[tabindex]")];
+    const i = bars.indexOf(document.activeElement);
+    if (i < 0) return;
+    const j = e.key === "ArrowLeft" ? i - 1 : e.key === "ArrowRight" ? i + 1 : e.key === "Home" ? 0 : e.key === "End" ? bars.length - 1 : -2;
+    if (j === -2) return;
+    e.preventDefault();
+    const to = bars[Math.max(0, Math.min(bars.length - 1, j))];
+    bars.forEach((b) => (b.tabIndex = b === to ? 0 : -1));
+    to.focus();
+  });
+}
+
 // ── feed rows ────────────────────────────────────────────────────────
-const newSince = { home: 0, updates: 0 };
+// How many rows arrived since the page opened, per panel and tab.
+const newSince = {};
+
+// Hide the "N new since you opened" pill (when the reader switches tab or area).
+export function hideNewPill(scope) {
+  const pill = $(`[data-feed="${scope}"]`)?.closest(".console")?.querySelector("[data-newpill]");
+  if (pill) pill.hidden = true;
+}
 
 export function renderFeedSkeleton(scope) {
   const ul = $(`[data-feed="${scope}"]`);
@@ -65,15 +90,18 @@ export function renderFeedSkeleton(scope) {
 }
 
 export function feedRowHTML(r, { isNew = false, cls = "", delay = 0 } = {}) {
-  return `<li class="${cls}" style="--d:${delay}ms"><a class="frow" href="#${r.id}">
+  return `<li class="${cls}" style="--d:${delay}ms"><a class="frow" href="#${esc(r.id)}">
     <span class="cond">${isNew ? '<span class="tag-new">New</span> ' : ""}${esc(r.condition || "Condition not listed")}${r.phase ? `<span class="ph">${esc(r.phase)}</span>` : ""}</span>
     ${stHTML(r.status)}
     <span class="title">${r.acronym ? `${esc(r.acronym)} · ` : ""}${esc(r.title)}</span>
-    <span class="id">${r.id}</span></a></li>`;
+    <span class="id">${esc(r.id)}</span></a></li>`;
 }
 
+// Shown when a list couldn't load. The next check tries again.
+export const errorRow = (tag = "li") => `<${tag} class="err-row">Couldn’t load this list. TrialSignal will try again on the next check.</${tag}>`;
+
 // stream: rows rise in one after another; fresh: ids that just arrived after a refresh.
-export function renderFeed(scope, metric, rows, { stream = false, fresh = [], from = 0, saved = false } = {}) {
+export function renderFeed(scope, metric, rows, { stream = false, fresh = [], from = 0, saved = false, area = "all" } = {}) {
   const ul = $(`[data-feed="${scope}"]`);
   if (!ul) return;
   const t = $(`[data-feed-title="${scope}"]`);
@@ -89,10 +117,12 @@ export function renderFeed(scope, metric, rows, { stream = false, fresh = [], fr
     const cls = isNew ? "is-new" : stream && motion && i >= from ? "in" : "";
     return feedRowHTML(r, { isNew: fresh.includes(r.id), cls, delay: Math.max(0, i - from) * 90 });
   }).join("");
-  if (fresh.length) {
-    newSince[scope] += fresh.length;
-    const pill = ul.closest(".console")?.querySelector("[data-newpill]");
-    if (pill) { pill.hidden = false; pill.innerHTML = `<span class="ldot"></span>${newSince[scope]} new since you opened`; }
+  const k = `${scope}:${metric}:${area}`;
+  if (fresh.length) newSince[k] = (newSince[k] || 0) + fresh.length;
+  const pill = ul.closest(".console")?.querySelector("[data-newpill]");
+  if (pill) {
+    pill.hidden = !newSince[k];
+    if (newSince[k]) pill.innerHTML = `<span class="ldot"></span>${newSince[k]} new since you opened`;
   }
 }
 

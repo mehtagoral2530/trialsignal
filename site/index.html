@@ -47,7 +47,7 @@
         <path class="trace" d="M5 17h5l2.6-6 4.2 11 2.6-5H23" fill="none" stroke="#5FE3D0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="26" cy="17" r="2.4" fill="#FF6E8F"/>
       </svg>
-      TrialSignal
+      <span class="brand-word">TrialSignal</span>
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#start" data-nav="start">Start</a>
@@ -61,14 +61,15 @@
           <svg viewBox="0 0 22 22"><circle class="trk" cx="11" cy="11" r="9.5"/><circle class="val" cx="11" cy="11" r="9.5" style="stroke-dashoffset:59.7"/></svg>
           <span class="ldot"></span>
         </span>
-        <span class="lp-word">Live</span>
-        <span class="ago"><span class="lp-long">checked </span><span data-ago="pill">…</span></span>
+        <span class="lp-word">Checking…</span>
+        <span class="ago"><span class="lp-long"></span><span data-ago="pill"></span></span>
+        <span class="sr lp-sr">. Check ClinicalTrials.gov now</span>
       </button>
       <button class="icon-btn" id="notesBtn" type="button" aria-label="Your notes">
         <svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg>
         <span class="icon-count" id="notesCount"></span>
       </button>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch light or dark theme">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Dark theme" aria-pressed="false">
         <svg class="ico theme-light" aria-hidden="true"><use href="#i-moon"/></svg>
         <svg class="ico theme-dark" aria-hidden="true"><use href="#i-sun"/></svg>
       </button>
@@ -77,14 +78,14 @@
 </header>
 <p class="sr" aria-live="polite" data-announce></p>
 
-<main id="main">
+<main id="main" tabindex="-1">
 <!-- ═════════════ START ═════════════ -->
 <section class="view" data-view="start" aria-labelledby="start-h">
   <div class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="live-line"><span class="ldot"></span><span data-hero-src>Live</span><span class="sep">·</span><span data-hero-date>Connecting to ClinicalTrials.gov…</span></p>
-        <h1 class="display" id="start-h">
+        <p class="live-line"><span class="ldot"></span><span data-hero-src>Checking</span><span class="sep">·</span><span data-hero-date>connecting to ClinicalTrials.gov…</span></p>
+        <h1 class="display" id="start-h" tabindex="-1">
           <span class="h1a"><span class="hn num" data-count="today"><span class="skel"></span></span> trials updated <span data-hero-when>today</span>.</span>
           <span class="h1b">Let’s read one together.</span>
         </h1>
@@ -93,7 +94,7 @@
           <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
           <label class="sr" for="q1">Search trials</label>
           <input id="q1" name="q" type="search" placeholder="Condition, drug or trial number">
-          <button class="btn btn-primary" type="submit"><span class="lbl">Search</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <button class="btn btn-primary" type="submit" aria-label="Search"><span class="lbl">Search</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </form>
         <div class="path">
           <div class="path-head"><span class="eyebrow ink">Start here</span><span class="small">3 steps · about 5 minutes</span></div>
@@ -109,14 +110,14 @@
       <div class="console-wrap">
         <div class="console" data-console="home" data-state="loading" aria-labelledby="con-h">
           <div class="con-head">
-            <span class="con-badge"><span class="ldot"></span><span data-badge-word>LIVE</span></span>
+            <span class="con-badge"><span class="ldot"></span><span data-badge-word>CHECKING</span></span>
             <h2 class="con-title" id="con-h">ClinicalTrials.gov</h2>
-            <div class="con-ticker"><span>Refreshed <b class="tk" data-tick="refreshed">…</b></span><span>checked <b class="tk" data-ago="check">…</b></span></div>
+            <div class="con-ticker"><span>Connecting to the registry…</span></div>
           </div>
-          <div class="stat-tabs" role="tablist" aria-label="What to show" data-tabs="home">
-            <button class="stat-tab" role="tab" aria-selected="true" data-metric="updated"><span class="num" data-count="today"><span class="skel"></span></span><span class="lbl">trials updated <span data-when-short>today</span></span></button>
-            <button class="stat-tab" role="tab" aria-selected="false" data-metric="new"><span class="num" data-count="new7"><span class="skel"></span></span><span class="lbl">new trials in 7 days</span></button>
-            <button class="stat-tab" role="tab" aria-selected="false" data-metric="results"><span class="num" data-count="results7"><span class="skel"></span></span><span class="lbl">new results in 7 days</span></button>
+          <div class="stat-tabs" role="group" aria-label="What to show" data-tabs="home">
+            <button class="stat-tab" type="button" aria-pressed="true" data-metric="updated"><span class="num" data-count="today"><span class="skel"></span></span><span class="lbl">trials updated <span data-when-short>today</span></span></button>
+            <button class="stat-tab" type="button" aria-pressed="false" data-metric="new"><span class="num" data-count="new7"><span class="skel"></span></span><span class="lbl">new trials in 7 days</span></button>
+            <button class="stat-tab" type="button" aria-pressed="false" data-metric="results"><span class="num" data-count="results7"><span class="skel"></span></span><span class="lbl">new results in 7 days</span></button>
           </div>
           <div class="bars-wrap">
             <div class="bars" data-bars="home" role="list" aria-label="Per day, last 14 days"></div>
@@ -151,13 +152,13 @@
     <section class="section" aria-labelledby="stage-h">
       <div class="sec-head">
         <div>
-          <p class="eyebrow"><span class="ldot"></span> Live counts</p>
-          <h2 class="h2" id="stage-h">Every trial moves through the same stages. <span class="soft">Here is where they are right now.</span></h2>
+          <p class="eyebrow" data-live-eyebrow><span class="ldot"></span> Live counts</p>
+          <h2 class="h2" id="stage-h">Every trial moves through the same stages. <span class="soft" data-stage-soft>Here is where they are right now.</span></h2>
         </div>
       </div>
       <ol class="stages">
         <li class="stage"><span class="nm">1 · Registered</span><span class="big num" data-count="new7"><span class="skel"></span></span><p class="what">new trials posted in the last 7 days</p><p class="why">A team publishes its plan before the first person joins: the question, who can take part, and what will count as success.</p></li>
-        <li class="stage"><span class="nm">2 · Recruiting</span><span class="big num" data-count="recruiting"><span class="skel"></span></span><p class="what">treatment trials looking for volunteers now</p><p class="why">People join, get the treatment or a comparison, and are followed for weeks or years.</p></li>
+        <li class="stage"><span class="nm">2 · Recruiting</span><span class="big num" data-count="recruiting"><span class="skel"></span></span><p class="what">trials looking for volunteers now</p><p class="why">People join, get the treatment or a comparison, and are followed for weeks or years.</p></li>
         <li class="stage"><span class="nm">3 · Results</span><span class="big num" data-count="results7"><span class="skel"></span></span><p class="what">trials shared results in the last 7 days</p><p class="why">Teams post what they found on the registry, often before or alongside a journal paper.</p></li>
         <li class="stage"><span class="nm">4 · Decision</span><span class="dec" data-latest-decision></span><p class="why">Regulators such as the FDA decide whether the treatment can be used.</p><p class="src">Picked and checked by hand</p></li>
       </ol>
@@ -182,7 +183,7 @@
   <div class="wrap">
     <div class="page-head">
       <p class="eyebrow">Trials</p>
-      <h1 class="display" id="trials-h">Find a trial, follow it, or learn from one.</h1>
+      <h1 class="display" id="trials-h" tabindex="-1">Find a trial, follow it, or learn from one.</h1>
     </div>
     <div class="trials-grid">
       <div class="t-search">
@@ -190,7 +191,7 @@
           <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
           <label class="sr" for="q2">Search all trials</label>
           <input id="q2" name="q" type="search" placeholder="Condition, drug or NCT number">
-          <button class="btn btn-primary" type="submit"><span class="lbl">Search</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <button class="btn btn-primary" type="submit" aria-label="Search"><span class="lbl">Search</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </form>
         <p class="search-live" data-search-live><span class="ldot"></span><span>Searching <b class="num" data-count="total"><span class="skel"></span></b> studies on ClinicalTrials.gov</span></p>
         <div class="chips" data-suggest>
@@ -200,7 +201,7 @@
           <button class="chip" type="button" data-q="Heart failure">Heart failure</button>
           <button class="chip" type="button" data-q="RSV vaccine">RSV vaccine</button>
         </div>
-        <div class="results" data-results hidden aria-live="polite"></div>
+        <div class="results" data-results hidden></div>
       </div>
       <div class="t-lib">
         <div class="lib-head">
@@ -213,9 +214,9 @@
       <aside class="follow-col" aria-labelledby="fol-h">
         <div class="console" data-console="follow" data-state="loading">
           <div class="con-head">
-            <span class="con-badge"><span class="ldot"></span><span data-badge-word>LIVE</span></span>
+            <span class="con-badge"><span class="ldot"></span><span data-badge-word>CHECKING</span></span>
             <h2 class="con-title" id="fol-h">Following <span class="con-count" data-follow-count></span></h2>
-            <div class="con-ticker"><span>checked <b class="tk" data-ago="check">…</b></span></div>
+            <div class="con-ticker"><span>checking…</span></div>
           </div>
           <div data-following></div>
           <div class="con-foot">
@@ -238,20 +239,20 @@
   <div class="wrap">
     <div class="page-head">
       <p class="eyebrow">Updates</p>
-      <h1 class="display" id="up-h">What changed in clinical trials</h1>
+      <h1 class="display" id="up-h" tabindex="-1">What changed in clinical trials</h1>
       <p class="lede mt14" data-up-lede>The registry feed is live from ClinicalTrials.gov. Headlines are picked and checked by hand.</p>
     </div>
     <div class="up-grid">
       <div class="console" data-console="updates" data-state="loading" aria-labelledby="upc-h">
         <div class="con-head">
-          <span class="con-badge"><span class="ldot"></span><span data-badge-word>LIVE</span></span>
+          <span class="con-badge"><span class="ldot"></span><span data-badge-word>CHECKING</span></span>
           <h2 class="con-title" id="upc-h">Registry feed</h2>
-          <div class="con-ticker"><span>Refreshed <b class="tk" data-tick="refreshed">…</b></span><span>checked <b class="tk" data-ago="check">…</b></span></div>
+          <div class="con-ticker"><span>Connecting to the registry…</span></div>
         </div>
-        <div class="stat-tabs" role="tablist" aria-label="What to show" data-tabs="updates">
-          <button class="stat-tab" role="tab" aria-selected="true" data-metric="updated"><span class="num" data-count="today"><span class="skel"></span></span><span class="lbl">trials updated <span data-when-short>today</span></span></button>
-          <button class="stat-tab" role="tab" aria-selected="false" data-metric="new"><span class="num" data-count="new7"><span class="skel"></span></span><span class="lbl">new trials in 7 days</span></button>
-          <button class="stat-tab" role="tab" aria-selected="false" data-metric="results"><span class="num" data-count="results7"><span class="skel"></span></span><span class="lbl">new results in 7 days</span></button>
+        <div class="stat-tabs" role="group" aria-label="What to show" data-tabs="updates">
+          <button class="stat-tab" type="button" aria-pressed="true" data-metric="updated"><span class="num" data-count="today"><span class="skel"></span></span><span class="lbl">trials updated <span data-when-short>today</span></span></button>
+          <button class="stat-tab" type="button" aria-pressed="false" data-metric="new"><span class="num" data-count="new7"><span class="skel"></span></span><span class="lbl">new trials in 7 days</span></button>
+          <button class="stat-tab" type="button" aria-pressed="false" data-metric="results"><span class="num" data-count="results7"><span class="skel"></span></span><span class="lbl">new results in 7 days</span></button>
         </div>
         <div class="con-filters" role="group" aria-label="Area" data-con-areas></div>
         <div class="feed-head"><h3 data-feed-title="updates">Latest changes</h3><span class="new-pill" data-newpill hidden></span></div>
@@ -259,9 +260,9 @@
         <div class="more-row"><button class="cbtn" type="button" data-more>Show 8 more</button></div>
       </div>
       <aside aria-labelledby="hl-h">
-        <p class="eyebrow mb12" id="hl-h">Headline</p>
+        <h2 class="eyebrow mb12" id="hl-h">Headline</h2>
         <article class="news-feature" data-news-feature></article>
-        <div class="nlist" data-news-list></div>
+        <div class="news-list" data-news-list></div>
         <p class="small mt12" data-news-note></p>
       </aside>
     </div>
@@ -279,7 +280,7 @@
   <div class="wrap">
     <div class="page-head">
       <p class="eyebrow">About</p>
-      <h1 class="display" id="ab-h">A plain-words guide to clinical trials, watched live.</h1>
+      <h1 class="display" id="ab-h" tabindex="-1">A plain-words guide to clinical trials, watched live.</h1>
     </div>
     <div class="about">
       <p class="lede">Clinical research is public, but it is scattered across the registry record, the journal paper, the company’s announcement and the regulator’s decision. TrialSignal puts the pieces in order so a first-time reader can follow one study from plan to evidence, and keep watching it.</p>
@@ -295,19 +296,19 @@
 
       <h2>What is live, and how often</h2>
       <p>Registry facts come straight from the ClinicalTrials.gov public API while you use the site. There is no TrialSignal server and no account. The registry itself publishes once a day, Monday to Friday, at about 9:00 US Eastern time. TrialSignal checks for that refresh every 60 seconds while a page is open, and again when you come back to the tab.</p>
-      <p class="next-line"><span class="ldot"></span>Next expected refresh: <b data-tick="next">…</b>.</p>
+      <p class="next-line"><span class="sdot" aria-hidden="true"></span><span>Next expected refresh: <b data-tick="next">…</b>.</span></p>
       <p>Following a trial saves it in your browser. Each check compares its status, main results date, enrollment, posted results and last update with the version you last saw, and flags anything that changed. If ClinicalTrials.gov can’t be reached, the site shows a copy saved on <span data-fill="snapshot"></span>.</p>
 
       <h2>What TrialSignal does, and doesn’t do</h2>
       <div class="cols2 scope">
-        <div><h4><svg class="ico ico-sm" aria-hidden="true"><use href="#i-check"/></svg>Does</h4><ul>
+        <div><h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-check"/></svg>Does</h3><ul>
           <li>Explains public trial records in plain language, one step at a time.</li>
           <li>Searches ClinicalTrials.gov live and tracks the trials you follow.</li>
           <li>Links each finding to its paper or announcement and labels how firm it is.</li>
           <li>Collects selected results, approvals, filings and discontinued programs.</li>
           <li>Lines up two trials side by side, with gaps marked.</li>
         </ul></div>
-        <div><h4><svg class="ico ico-sm" aria-hidden="true"><use href="#i-x"/></svg>Doesn’t</h4><ul>
+        <div><h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-x"/></svg>Doesn’t</h3><ul>
           <li>Decide whether a treatment is right for anyone.</li>
           <li>Confirm whether a person is eligible for a trial. Only the study team can.</li>
           <li>Show that one treatment is better than another.</li>
@@ -357,10 +358,22 @@
   </div>
 </section>
 </main>
+<script>
+/* Show the right page before the scripts load, so the first paint isn't blank. */
+(function () {
+  try {
+    var h = decodeURIComponent(location.hash.slice(1)) || "start";
+    if (h === "story") h = "about";
+    var v = /^NCT\d{8}$/i.test(h) || h === "trial" ? "trial" : ["start", "trials", "updates", "about"].indexOf(h) > -1 ? h : "start";
+    var s = document.querySelector('.view[data-view="' + v + '"]');
+    if (s) s.classList.add("on");
+  } catch (e) {}
+})();
+</script>
 
 <footer class="site">
   <div class="wrap foot-in">
-    <p>TrialSignal explains public information for learning. It is not medical advice.<br>Registry data: ClinicalTrials.gov API v2, checked live. <span data-author></span></p>
+    <p>TrialSignal explains public information for learning. It is not medical advice.<br>Registry data: ClinicalTrials.gov API v2, <span data-foot-src>checked live</span>. <span data-author></span></p>
     <a href="#about">About and sources</a>
   </div>
 </footer>
