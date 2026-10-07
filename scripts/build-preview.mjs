@@ -19,6 +19,7 @@ const between = (a, b) => {
 
 const head = between("<!-- ts:head-start -->", "<!-- ts:head-end -->")
   .replace(/<link rel="icon"[^>]*>\n?/, "")
+  .replace("<title>TrialSignal</title>", "<title>TrialSignal Preview</title>")
   .replace('<link rel="stylesheet" href="assets/styles.css">', `<style>\n${css}</style>`);
 const body = between("<!-- ts:body-start -->", "<!-- ts:body-end -->");
 
