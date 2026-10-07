@@ -10,6 +10,7 @@ const BASE = "https://clinicaltrials.gov/api/v2";
 const LIST_FIELDS = [
   "NCTId", "Acronym", "BriefTitle", "OverallStatus", "Phase", "StudyType", "LeadSponsorName",
   "Condition", "EnrollmentCount", "StartDate", "PrimaryCompletionDate", "LastUpdatePostDate", "HasResults",
+  "StudyFirstPostDate", "ResultsFirstPostDate",
 ].join(",");
 
 // "live" once a request succeeds, "offline" after a network failure.
@@ -116,4 +117,40 @@ export async function recruitingCount() {
     { ttl: 600_000 },
   );
   return data.totalCount ?? null;
+}
+
+// ── live pulse ───────────────────────────────────────────────────────
+// When the registry last refreshed its data (it publishes once a day, Monday to Friday).
+export async function registryStatus(opts) {
+  const data = await get("/version", {}, { ttl: 60_000, ...opts });
+  return { dataTimestamp: data.dataTimestamp || "", apiVersion: data.apiVersion || "" };
+}
+
+// Number of studies matching an Essie expression, e.g. AREA[OverallStatus]RECRUITING.
+export async function countWhere(expr, opts) {
+  const data = await get("/studies", { "filter.advanced": expr, countTotal: "true", pageSize: 1, fields: "NCTId" }, { ttl: 60_000, ...opts });
+  return data.totalCount ?? null;
+}
+
+const FEEDS = {
+  updated: { date: "LastUpdatePostDate", sort: "LastUpdatePostDate:desc" },
+  new: { date: "StudyFirstPostDate", sort: "StudyFirstPostDate:desc" },
+  results: { date: "ResultsFirstPostDate", sort: "ResultsFirstPostDate:desc" },
+};
+
+// Newest registry activity of one kind, optionally narrowed to a condition and phases.
+export async function feed({ kind = "updated", since, cond = "", phases = [], interventional = true, size = 8 }, opts) {
+  const f = FEEDS[kind];
+  const parts = [`AREA[${f.date}]RANGE[${since},MAX]`];
+  if (interventional) parts.push("AREA[StudyType]INTERVENTIONAL");
+  if (phases.length) parts.push(`(${phases.map((p) => `AREA[Phase]${p}`).join(" OR ")})`);
+  const data = await get("/studies", {
+    "query.cond": cond,
+    "filter.advanced": parts.join(" AND "),
+    sort: f.sort,
+    countTotal: "true",
+    pageSize: size,
+    fields: LIST_FIELDS,
+  }, { ttl: 30_000, ...opts });
+  return { studies: (data.studies || []).map(normalizeStudy), total: data.totalCount ?? null };
 }
