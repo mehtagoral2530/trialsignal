@@ -26,6 +26,40 @@ const titleCase = (s) =>
 
 export const statusLabel = (code) => (code ? STATUS[code] || titleCase(code) : "");
 
+// Official registry terms stay; a plain gloss is shown after them.
+const STATUS_GLOSS = {
+  RECRUITING: "looking for volunteers",
+  NOT_YET_RECRUITING: "opening soon",
+  ENROLLING_BY_INVITATION: "invited people only",
+  ACTIVE_NOT_RECRUITING: "running, no longer enrolling",
+  COMPLETED: "finished",
+  TERMINATED: "stopped early",
+  WITHDRAWN: "stopped before anyone joined",
+  SUSPENDED: "paused",
+  UNKNOWN: "not updated recently",
+};
+export const statusGloss = (code) => STATUS_GLOSS[code] || "";
+
+// Dot colour class for a status.
+export function statusClass(code) {
+  if (["RECRUITING", "ENROLLING_BY_INVITATION", "AVAILABLE"].includes(code)) return "st-recruit";
+  if (code === "NOT_YET_RECRUITING") return "st-notyet";
+  if (code === "ACTIVE_NOT_RECRUITING") return "st-active";
+  if (["TERMINATED", "WITHDRAWN", "SUSPENDED"].includes(code)) return "st-stop";
+  return "st-done";
+}
+
+const PHASE_GLOSS = {
+  "Early phase 1": "first test in people",
+  "Phase 1": "first test in people",
+  "Phase 1/2": "early test",
+  "Phase 2": "does it work, at what dose",
+  "Phase 2/3": "mid-to-large test",
+  "Phase 3": "large final test",
+  "Phase 4": "after approval",
+};
+export const phaseGloss = (label) => PHASE_GLOSS[label] || "";
+
 // Tone drives the pill colour: open now, under way, stopped early, or neutral.
 export function statusTone(code) {
   if (["RECRUITING", "ENROLLING_BY_INVITATION", "AVAILABLE"].includes(code)) return "ok";
@@ -193,6 +227,36 @@ export function normalizeStudy(raw) {
     sites: locs.length,
     countries,
     hasResults: !!(raw && raw.hasResults),
+    groups: baselineGroups(raw),
+  };
+}
+
+// Group sizes from posted results (baseline characteristics), without the "Total" column.
+export function baselineGroups(raw) {
+  const bc = raw && raw.resultsSection && raw.resultsSection.baselineCharacteristicsModule;
+  if (!bc || !bc.groups || !bc.denoms || !bc.denoms.length) return null;
+  const denom = bc.denoms.find((d) => /participant/i.test(d.units || "")) || bc.denoms[0];
+  const groups = bc.groups
+    .filter((g) => !/^total$/i.test((g.title || "").trim()))
+    .map((g) => {
+      const c = (denom.counts || []).find((x) => x.groupId === g.id);
+      return [g.title || "Group", c ? Number(c.value) || 0 : 0];
+    })
+    .filter(([, n]) => n > 0);
+  return groups.length > 1 ? groups : null;
+}
+
+// The few fields a feed row needs; used for live feeds and the saved copy alike.
+export function feedRow(m) {
+  return {
+    id: m.id,
+    acronym: m.acronym,
+    title: m.title,
+    status: m.status,
+    phase: /not applicable/i.test(m.phase) ? "" : m.phase,
+    sponsor: m.sponsor,
+    condition: (m.conditions || [])[0] || "",
+    dates: { lastUpdate: m.dates.lastUpdate, firstPosted: m.dates.firstPosted, resultsPosted: m.dates.resultsPosted },
   };
 }
 

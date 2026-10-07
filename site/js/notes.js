@@ -62,9 +62,9 @@ function render() {
   const n = notes.find((x) => x.id === open);
   if (!n) {
     B.innerHTML = `<div class="row">
-        <button class="btn sm" type="button" id="nNew">New note</button>
-        <button class="btn quiet sm" type="button" id="nCopy">Copy all</button>
-        ${SITE.preview ? "" : `<button class="btn quiet sm" type="button" id="nDown">Download .md</button>`}
+        <button class="btn btn-primary btn-sm" type="button" id="nNew">New note</button>
+        <button class="btn btn-sm" type="button" id="nCopy">Copy all</button>
+        ${SITE.preview ? "" : `<button class="btn btn-sm" type="button" id="nDown">Download .md</button>`}
       </div>
       <p class="xs faint">Saved in this browser only.</p>
       <div class="nlist">${notes.length
@@ -101,13 +101,13 @@ function render() {
   B.innerHTML = `<button class="linkbtn small" type="button" id="nBack">← All notes</button>
     <label class="sr" for="nTitle">Note title</label><input type="text" id="nTitle" value="${esc(n.title)}" placeholder="Title">
     <label class="sr" for="nBody">Note text</label><textarea id="nBody" placeholder="Write your observations…">${esc(n.body)}</textarea>
-    <div class="row between"><span class="xs faint">Saved automatically</span><span class="row" id="nDelWrap"><button class="btn quiet sm" type="button" id="nDel">Delete</button></span></div>`;
+    <div class="row between"><span class="xs faint">Saved automatically</span><span class="row" id="nDelWrap"><button class="btn btn-sm" type="button" id="nDel">Delete</button></span></div>`;
   const update = () => { n.title = $("#nTitle").value; n.body = $("#nBody").value; n.updated = today(); save(); };
   $("#nTitle").oninput = update;
   $("#nBody").oninput = update;
   $("#nBack").onclick = () => { open = null; render(); };
   $("#nDel").onclick = () => {
-    $("#nDelWrap").innerHTML = `<span class="small">Delete this note?</span><button class="btn sm danger" type="button" id="nYes">Delete</button><button class="btn quiet sm" type="button" id="nNo">Keep</button>`;
+    $("#nDelWrap").innerHTML = `<span class="small">Delete this note?</span><button class="btn btn-sm btn-danger" type="button" id="nYes">Delete</button><button class="btn btn-sm" type="button" id="nNo">Keep</button>`;
     $("#nYes").onclick = () => { notes = notes.filter((x) => x.id !== n.id); save(); open = null; render(); };
     $("#nNo").onclick = render;
   };

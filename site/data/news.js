@@ -28,6 +28,7 @@ export const NEWS = [
   {
     date: "2026-09-04", type: "Approval", company: "AstraZeneca", area: "cancer", trial: null,
     title: "FDA approves camizestrant (Etcamah) for ESR1-mutated, ER-positive, HER2-negative metastatic breast cancer",
+    short: "FDA approves camizestrant for a kind of advanced breast cancer",
     summary: "Used with a CDK4/6 inhibitor. In SERENA-6 (NCT04964934), median progression-free survival was 16.0 months vs 9.2 months when staying on an aromatase inhibitor.",
     evidence: "Regulatory decision based on phase 3 data.",
     links: [["AJMC roundup", "https://www.ajmc.com/view/5-notable-fda-approvals-from-the-first-half-of-september"], ["Registry record", "https://clinicaltrials.gov/study/NCT04964934"]],

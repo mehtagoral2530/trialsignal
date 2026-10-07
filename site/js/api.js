@@ -3,26 +3,29 @@
 // no custom headers) because the API rejects CORS preflight requests.
 
 import { SITE } from "./config.js";
-import { normalizeStudy } from "./normalize.js";
+import { normalizeStudy, feedRow } from "./normalize.js";
+import { addDays, store } from "./util.js";
 
 const BASE = "https://clinicaltrials.gov/api/v2";
 
-const LIST_FIELDS = [
-  "NCTId", "Acronym", "BriefTitle", "OverallStatus", "Phase", "StudyType", "LeadSponsorName",
-  "Condition", "EnrollmentCount", "StartDate", "PrimaryCompletionDate", "LastUpdatePostDate", "HasResults",
-  "StudyFirstPostDate", "ResultsFirstPostDate",
-].join(",");
+export const FEED_FIELDS = "NCTId,Acronym,BriefTitle,OverallStatus,Phase,LeadSponsorName,Condition,LastUpdatePostDate,StudyFirstPostDate,ResultsFirstPostDate";
+// Everything the library rows and change tracking need, in one request.
+const STATUS_FIELDS = "NCTId,Acronym,BriefTitle,OverallStatus,Phase,EnrollmentCount,PrimaryCompletionDate,LastUpdatePostDate,ResultsFirstPostDate,HasResults,Condition,LeadSponsorName";
 
-// "live" once a request succeeds, "offline" after a network failure.
-export const live = { state: SITE.preview ? "offline" : "checking", lastOk: 0 };
-const listeners = new Set();
-export const onLiveChange = (fn) => listeners.add(fn);
-function setState(state) {
-  if (state === "live") live.lastOk = Date.now();
-  if (live.state === state) return;
-  live.state = state;
-  listeners.forEach((fn) => fn(live));
-}
+export const METRICS = {
+  updated: { field: "LastUpdatePostDate", count: "today" },
+  new: { field: "StudyFirstPostDate", count: "new7" },
+  results: { field: "ResultsFirstPostDate", count: "results7" },
+};
+
+// Registry searches for the five library areas.
+export const AREA_COND = {
+  metabolic: "obesity OR diabetes",
+  heart: "heart OR kidney OR cardiovascular",
+  brain: "alzheimer OR parkinson OR sclerosis OR migraine OR dementia OR stroke",
+  cancer: "cancer OR tumor OR lymphoma OR leukemia OR carcinoma",
+  infection: "infection OR vaccine OR virus OR HIV",
+};
 
 export class ApiError extends Error {
   constructor(message, { status = 0, offline = false } = {}) {
@@ -34,123 +37,106 @@ export class ApiError extends Error {
 
 const cache = new Map();
 
-async function get(path, params = {}, { ttl = 120_000, fresh = false, timeout = 15_000 } = {}) {
+export async function get(path, params = {}, { ttl = 0, timeout = 10_000 } = {}) {
   if (SITE.preview) throw new ApiError("Live data is off in this preview.", { offline: true });
   const url = new URL(BASE + path);
   for (const [k, v] of Object.entries(params)) if (v !== undefined && v !== null && v !== "") url.searchParams.set(k, v);
   const key = url.toString();
   const hit = cache.get(key);
-  if (!fresh && hit && Date.now() - hit.at < ttl) return hit.data;
+  if (ttl && hit && Date.now() - hit.at < ttl) return hit.data;
 
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), timeout);
   try {
     const res = await fetch(key, { signal: ctrl.signal });
     if (res.status === 404) throw new ApiError("ClinicalTrials.gov has no study with that number.", { status: 404 });
-    if (!res.ok) throw new ApiError(`ClinicalTrials.gov answered with an error (${res.status}). Try again in a minute.`, { status: res.status });
+    if (!res.ok) throw new ApiError(`ClinicalTrials.gov answered with an error (${res.status}).`, { status: res.status });
     const data = await res.json();
-    cache.set(key, { at: Date.now(), data });
-    setState("live");
+    if (ttl) cache.set(key, { at: Date.now(), data });
     return data;
   } catch (e) {
-    if (e instanceof ApiError) {
-      if (e.status !== 404) setState("live"); // the service answered, so the connection works
-      throw e;
-    }
-    setState("offline");
-    throw new ApiError("Couldn’t reach ClinicalTrials.gov. Check your connection and try again.", { offline: true });
+    if (e instanceof ApiError) throw e;
+    throw new ApiError("Couldn’t reach ClinicalTrials.gov.", { offline: true });
   } finally {
     clearTimeout(timer);
   }
 }
 
-export async function getStudy(id, opts) {
-  const raw = await get(`/studies/${id}`, { fields: "protocolSection,hasResults" }, opts);
-  return normalizeStudy(raw);
+// When the registry last published its data (US Eastern time, no offset).
+export const version = () => get("/version");
+
+export const count = (expr, extra = {}) =>
+  get("/studies", { countTotal: "true", pageSize: 1, fields: "NCTId", ...(expr ? { "filter.advanced": expr } : {}), ...extra }).then((j) => j.totalCount ?? null);
+
+// The headline counts, measured against the registry's own refresh day.
+export async function counts(day, { cond = "" } = {}) {
+  const week = addDays(day, -6);
+  const extra = cond ? { "query.cond": cond } : {};
+  const [today, new7, results7] = await Promise.all([
+    count(`AREA[LastUpdatePostDate]RANGE[${day},MAX]`, extra),
+    count(`AREA[StudyFirstPostDate]RANGE[${week},MAX]`, extra),
+    count(`AREA[ResultsFirstPostDate]RANGE[${week},MAX]`, extra),
+  ]);
+  return { today, new7, results7 };
+}
+export const recruitingCount = () => count("AREA[OverallStatus]RECRUITING AND AREA[StudyType]INTERVENTIONAL");
+export const totalCount = () => count("");
+
+// One count per day for the last 14 days, cached per registry refresh.
+export async function days(metric, day, stamp) {
+  const key = `ts.days.${metric}`;
+  const hit = store.get(key, null);
+  if (hit && hit.stamp === stamp) return hit.vals;
+  const field = METRICS[metric].field;
+  const list = Array.from({ length: 14 }, (_, i) => addDays(day, i - 13));
+  const vals = {};
+  await Promise.all(list.map(async (d) => { vals[d] = await count(`AREA[${field}]RANGE[${d},${d}]`); }));
+  store.set(key, { stamp, vals });
+  return vals;
 }
 
-// Several studies in one request, used to re-check followed trials.
-export async function getStudies(ids, opts) {
-  if (!ids.length) return {};
-  const data = await get("/studies", { "filter.ids": ids.join(","), fields: LIST_FIELDS, pageSize: Math.min(ids.length, 1000) }, opts);
-  const out = {};
-  for (const raw of data.studies || []) {
-    const m = normalizeStudy(raw);
-    out[m.id] = m;
-  }
-  return out;
-}
-
-export async function searchStudies({ q, status = "", sort = "", pageToken = "", pageSize = 20 }) {
-  const data = await get("/studies", {
-    "query.term": q,
-    "filter.overallStatus": status,
-    sort: sort === "recent" ? "LastUpdatePostDate:desc" : "",
-    countTotal: pageToken ? "" : "true",
+// The newest registry activity of one kind.
+export async function feed(metric, { area = "", size = 8, pageToken = "" } = {}) {
+  const j = await get("/studies", {
+    sort: `${METRICS[metric].field}:desc`,
+    "query.cond": area ? AREA_COND[area] : "",
+    pageSize: size,
     pageToken,
-    pageSize,
-    fields: LIST_FIELDS,
+    fields: FEED_FIELDS,
   });
-  return { studies: (data.studies || []).map(normalizeStudy), total: data.totalCount ?? null, next: data.nextPageToken || "" };
+  return { rows: (j.studies || []).map((s) => feedRow(normalizeStudy(s))), next: j.nextPageToken || "" };
 }
 
-const isoDaysAgo = (days) => new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
+// Status, dates and enrollment for many trials in one request.
+export async function statuses(ids) {
+  if (!ids.length) return {};
+  const j = await get("/studies", { "filter.ids": ids.join(","), pageSize: Math.min(ids.length, 1000), fields: STATUS_FIELDS });
+  return Object.fromEntries((j.studies || []).map((s) => { const m = normalizeStudy(s); return [m.id, m]; }));
+}
 
-// Phase 2 and 3 trials for a condition whose registry record changed recently.
-export async function recentChanges({ cond, days = 30, size = 8 }) {
-  const data = await get("/studies", {
-    "query.cond": cond,
-    "filter.advanced": `AREA[LastUpdatePostDate]RANGE[${isoDaysAgo(days)},MAX] AND (AREA[Phase]PHASE2 OR AREA[Phase]PHASE3)`,
-    sort: "LastUpdatePostDate:desc",
-    countTotal: "true",
-    pageSize: size,
-    fields: LIST_FIELDS,
+// Full-text search across the registry, plus how many of the matches are recruiting.
+export async function search(q, { recruiting = false, newest = false, pageToken = "", size = 10 } = {}) {
+  const isId = /^NCT\d{8}$/i.test(q);
+  const base = isId ? { "filter.ids": q.toUpperCase() } : { "query.term": q };
+  const [list, open] = await Promise.all([
+    get("/studies", {
+      ...base,
+      "filter.overallStatus": recruiting ? "RECRUITING" : "",
+      sort: newest ? "LastUpdatePostDate:desc" : "",
+      countTotal: pageToken ? "" : "true",
+      pageSize: size,
+      pageToken,
+      fields: FEED_FIELDS,
+    }),
+    isId || pageToken ? Promise.resolve(null) : count("", { ...base, "filter.overallStatus": "RECRUITING" }),
+  ]);
+  return { rows: (list.studies || []).map((s) => feedRow(normalizeStudy(s))), total: list.totalCount ?? null, recruiting: open, next: list.nextPageToken || "" };
+}
+
+// One full record, with group sizes when results are posted.
+export async function study(id) {
+  const raw = await get(`/studies/${id}`, {
+    fields: "protocolSection,hasResults,resultsSection.baselineCharacteristicsModule.groups,resultsSection.baselineCharacteristicsModule.denoms",
   });
-  return { studies: (data.studies || []).map(normalizeStudy), total: data.totalCount ?? null };
-}
-
-// Number of interventional trials recruiting right now.
-export async function recruitingCount() {
-  const data = await get(
-    "/studies",
-    { "filter.overallStatus": "RECRUITING", "filter.advanced": "AREA[StudyType]INTERVENTIONAL", countTotal: "true", pageSize: 1, fields: "NCTId" },
-    { ttl: 600_000 },
-  );
-  return data.totalCount ?? null;
-}
-
-// ── live pulse ───────────────────────────────────────────────────────
-// When the registry last refreshed its data (it publishes once a day, Monday to Friday).
-export async function registryStatus(opts) {
-  const data = await get("/version", {}, { ttl: 60_000, ...opts });
-  return { dataTimestamp: data.dataTimestamp || "", apiVersion: data.apiVersion || "" };
-}
-
-// Number of studies matching an Essie expression, e.g. AREA[OverallStatus]RECRUITING.
-export async function countWhere(expr, opts) {
-  const data = await get("/studies", { "filter.advanced": expr, countTotal: "true", pageSize: 1, fields: "NCTId" }, { ttl: 60_000, ...opts });
-  return data.totalCount ?? null;
-}
-
-const FEEDS = {
-  updated: { date: "LastUpdatePostDate", sort: "LastUpdatePostDate:desc" },
-  new: { date: "StudyFirstPostDate", sort: "StudyFirstPostDate:desc" },
-  results: { date: "ResultsFirstPostDate", sort: "ResultsFirstPostDate:desc" },
-};
-
-// Newest registry activity of one kind, optionally narrowed to a condition and phases.
-export async function feed({ kind = "updated", since, cond = "", phases = [], interventional = true, size = 8 }, opts) {
-  const f = FEEDS[kind];
-  const parts = [`AREA[${f.date}]RANGE[${since},MAX]`];
-  if (interventional) parts.push("AREA[StudyType]INTERVENTIONAL");
-  if (phases.length) parts.push(`(${phases.map((p) => `AREA[Phase]${p}`).join(" OR ")})`);
-  const data = await get("/studies", {
-    "query.cond": cond,
-    "filter.advanced": parts.join(" AND "),
-    sort: f.sort,
-    countTotal: "true",
-    pageSize: size,
-    fields: LIST_FIELDS,
-  }, { ttl: 30_000, ...opts });
-  return { studies: (data.studies || []).map(normalizeStudy), total: data.totalCount ?? null };
+  return normalizeStudy(raw);
 }

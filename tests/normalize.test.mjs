@@ -94,3 +94,29 @@ test("normalizeStudy tolerates the slim search-result shape", () => {
   assert.equal(m.enrollment, null);
   assert.equal(m.sites, 0);
 });
+
+import { baselineGroups, feedRow, statusClass, statusGloss, phaseGloss } from "../site/js/normalize.js";
+
+test("group sizes come from posted baseline counts, without the Total column", () => {
+  const raw = { resultsSection: { baselineCharacteristicsModule: {
+    groups: [{ id: "BG000", title: "Placebo" }, { id: "BG001", title: "Drug" }, { id: "BG002", title: "Total" }],
+    denoms: [{ units: "Participants", counts: [{ groupId: "BG000", value: "643" }, { groupId: "BG001", value: "630" }, { groupId: "BG002", value: "1273" }] }],
+  } } };
+  assert.deepEqual(baselineGroups(raw), [["Placebo", 643], ["Drug", 630]]);
+  assert.equal(baselineGroups({}), null);
+});
+
+test("feed rows keep only what a row shows", () => {
+  const m = normalizeStudy({ protocolSection: { identificationModule: { nctId: "NCT00000003", briefTitle: "T" }, conditionsModule: { conditions: ["Lipedema", "Obesity"] }, designModule: { phases: ["NA"] } } });
+  const r = feedRow(m);
+  assert.equal(r.condition, "Lipedema");
+  assert.equal(r.phase, "");
+  assert.deepEqual(Object.keys(r).sort(), ["acronym", "condition", "dates", "id", "phase", "sponsor", "status", "title"]);
+});
+
+test("official statuses keep their names and get a plain gloss", () => {
+  assert.equal(statusGloss("ACTIVE_NOT_RECRUITING"), "running, no longer enrolling");
+  assert.equal(statusClass("RECRUITING"), "st-recruit");
+  assert.equal(statusClass("TERMINATED"), "st-stop");
+  assert.equal(phaseGloss("Phase 3"), "large final test");
+});

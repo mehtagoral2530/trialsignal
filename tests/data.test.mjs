@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { LIBRARY, AREAS, PRESETS, PICKS, lib } from "../site/data/library.js";
 import { NEWS, NEWS_TYPES } from "../site/data/news.js";
-import { SNAPSHOT } from "../site/data/snapshot.js";
+import { SNAPSHOT, PULSE } from "../site/data/snapshot.js";
 import { TERMS, AUTO_TERMS } from "../site/data/glossary.js";
 
 test("library entries are complete and unique", () => {
@@ -46,4 +46,27 @@ test("presets, picks and headlines point at library trials", () => {
 
 test("auto-linked glossary terms all have definitions", () => {
   for (const t of AUTO_TERMS) assert.ok(TERMS[t.toLowerCase()], t);
+});
+
+test("every library trial has its plain-language extras", () => {
+  for (const t of LIBRARY) {
+    assert.ok(t.hook && t.hook.length <= 90, `${t.id} hook`);
+    assert.ok(t.measurePlain, `${t.id} measurePlain`);
+    for (const chip of [...t.yes, ...t.no]) assert.doesNotMatch(chip, /<(?!\/?b>)/, `${t.id} chip markup`);
+    if (t.series) {
+      assert.ok(["loss", "pct"].includes(t.seriesFmt), `${t.id} seriesFmt`);
+      assert.ok(t.seriesCap, `${t.id} seriesCap`);
+      assert.equal(t.series[0][2], 0, `${t.id} comparison first`);
+    }
+  }
+  assert.equal(lib("NCT04184622").five.length, 5);
+});
+
+test("the saved pulse has counts, 14 days per metric and three feeds", () => {
+  for (const k of ["today", "new7", "results7", "recruiting", "total"]) assert.equal(typeof PULSE.counts[k], "number", k);
+  for (const m of ["updated", "new", "results"]) {
+    assert.equal(Object.keys(PULSE.days[m]).length, 14, m);
+    assert.ok(PULSE.feeds[m].length > 0, m);
+  }
+  assert.match(PULSE.dataTimestamp, /^\d{4}-\d{2}-\d{2}T/);
 });

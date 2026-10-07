@@ -1,53 +1,93 @@
-// Saves the current registry record for every library trial to site/data/snapshot.js.
-// The site uses this copy when ClinicalTrials.gov can't be reached, and as the
-// starting point for change tracking. Run: npm run snapshot
+// Saves a copy of everything TrialSignal shows live, to site/data/snapshot.js:
+// - the registry record of every library trial (with group sizes when results are posted)
+// - the activity pulse: refresh time, counts, 14 days of per-day counts and the three feeds.
+// The site uses this copy when ClinicalTrials.gov can't be reached, and as the starting
+// point for change tracking. Run: npm run snapshot
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { LIBRARY } from "../site/data/library.js";
-import { normalizeStudy, trimForSnapshot } from "../site/js/normalize.js";
+import { normalizeStudy, trimForSnapshot, feedRow, baselineGroups } from "../site/js/normalize.js";
 
 const OUT = fileURLToPath(new URL("../site/data/snapshot.js", import.meta.url));
+const API = "https://clinicaltrials.gov/api/v2";
 const ids = LIBRARY.map((t) => t.id);
 
-const url = new URL("https://clinicaltrials.gov/api/v2/studies");
-url.searchParams.set("filter.ids", ids.join(","));
-url.searchParams.set("fields", "protocolSection,hasResults");
-url.searchParams.set("pageSize", String(ids.length));
-
-const res = await fetch(url);
-if (!res.ok) {
-  console.error(`ClinicalTrials.gov returned ${res.status}`);
-  process.exit(1);
+async function get(path, params = {}) {
+  const url = new URL(API + path);
+  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
+  for (let attempt = 1; ; attempt++) {
+    const res = await fetch(url);
+    if (res.ok) return res.json();
+    if (attempt >= 3) throw new Error(`ClinicalTrials.gov returned ${res.status} for ${url}`);
+    await new Promise((r) => setTimeout(r, 1000 * attempt));
+  }
 }
-const data = await res.json();
+const count = (expr) => get("/studies", { countTotal: "true", pageSize: "1", fields: "NCTId", ...(expr ? { "filter.advanced": expr } : {}) }).then((j) => j.totalCount);
+const addDays = (ymd, n) => {
+  const d = new Date(`${ymd}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+};
+
+// 1. Library records.
+const data = await get("/studies", { "filter.ids": ids.join(","), fields: "protocolSection,hasResults", pageSize: String(ids.length) });
 const byId = {};
 for (const raw of data.studies || []) {
   const m = trimForSnapshot(normalizeStudy(raw));
   byId[m.id] = m;
 }
-
 const missing = ids.filter((id) => !byId[id]);
 if (missing.length) {
   console.error(`Missing from the registry response: ${missing.join(", ")}`);
   process.exit(1);
 }
+for (const id of ids.filter((x) => byId[x].hasResults)) {
+  const r = await get(`/studies/${id}`, { fields: "resultsSection.baselineCharacteristicsModule.groups,resultsSection.baselineCharacteristicsModule.denoms" });
+  byId[id].groups = baselineGroups(r);
+}
+const records = Object.fromEntries(ids.map((id) => [id, byId[id]]));
 
-// Keep library order so diffs stay readable.
-const ordered = Object.fromEntries(ids.map((id) => [id, byId[id]]));
-const json = JSON.stringify(ordered, null, 1);
+// 2. The pulse, using the registry's own date (never the local clock).
+const { dataTimestamp } = await get("/version");
+const day = dataTimestamp.slice(0, 10);
+const week = addDays(day, -6); // "7 days" = the refresh day and the six before it
+const counts = {
+  today: await count(`AREA[LastUpdatePostDate]RANGE[${day},MAX]`),
+  new7: await count(`AREA[StudyFirstPostDate]RANGE[${week},MAX]`),
+  results7: await count(`AREA[ResultsFirstPostDate]RANGE[${week},MAX]`),
+  recruiting: await count("AREA[OverallStatus]RECRUITING AND AREA[StudyType]INTERVENTIONAL"),
+  total: await count(""),
+};
+const FIELD = { updated: "LastUpdatePostDate", new: "StudyFirstPostDate", results: "ResultsFirstPostDate" };
+const days = {};
+for (const [metric, field] of Object.entries(FIELD)) {
+  days[metric] = {};
+  for (let i = -13; i <= 0; i++) {
+    const d = addDays(day, i);
+    days[metric][d] = await count(`AREA[${field}]RANGE[${d},${d}]`);
+  }
+}
+const FEED_FIELDS = "NCTId,Acronym,BriefTitle,OverallStatus,Phase,LeadSponsorName,Condition,LastUpdatePostDate,StudyFirstPostDate,ResultsFirstPostDate";
+const feeds = {};
+for (const [metric, field] of Object.entries(FIELD)) {
+  const j = await get("/studies", { sort: `${field}:desc`, pageSize: "10", fields: FEED_FIELDS });
+  feeds[metric] = (j.studies || []).map((s) => feedRow(normalizeStudy(s)));
+}
+const pulse = { dataTimestamp, day, counts, days, feeds };
 
-// Leave the file (and its date) alone when the registry hasn't changed.
+const recordsJson = JSON.stringify(records, null, 1);
 const previous = await readFile(OUT, "utf8").catch(() => "");
-if (previous.includes(`export const SNAPSHOT = ${json};`)) {
+const pulseJson = JSON.stringify(pulse);
+if (previous.includes(`export const SNAPSHOT = ${recordsJson};`) && previous.includes(`export const PULSE = ${pulseJson};`)) {
   console.log("Registry unchanged; snapshot left as is.");
   process.exit(0);
 }
-const today = new Date().toISOString().slice(0, 10);
 const body =
   `// Generated by scripts/build-snapshot.mjs from ClinicalTrials.gov. Do not edit by hand.\n` +
-  `export const SNAPSHOT_DATE = ${JSON.stringify(today)};\n` +
-  `export const SNAPSHOT = ${json};\n`;
+  `export const SNAPSHOT_DATE = ${JSON.stringify(day)};\n` +
+  `export const PULSE = ${pulseJson};\n` +
+  `export const SNAPSHOT = ${recordsJson};\n`;
 
 await writeFile(OUT, body);
-console.log(`Saved ${ids.length} trials to site/data/snapshot.js (${(body.length / 1024).toFixed(0)} KB)`);
+console.log(`Saved ${ids.length} trials and the registry pulse for ${day} to site/data/snapshot.js (${(body.length / 1024).toFixed(0)} KB)`);

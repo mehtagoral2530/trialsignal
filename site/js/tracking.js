@@ -6,8 +6,8 @@ import { statusLabel } from "./normalize.js";
 
 const KEY = "ts.follow.v1";
 
-// First-time visitors start out following two trials so the list shows how tracking works.
-export const DEFAULT_FOLLOW = ["NCT05929066", "NCT03887455"];
+// First-time visitors start out following three trials so the list shows how tracking works.
+export const DEFAULT_FOLLOW = ["NCT03529110", "NCT05929066", "NCT03887455"];
 
 // The fields we compare between checks.
 export function trackFields(m) {

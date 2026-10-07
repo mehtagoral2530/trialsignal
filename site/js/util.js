@@ -73,3 +73,31 @@ export function toast(msg) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => (t.hidden = true), 2600);
 }
+
+// ── calendar helpers (YYYY-MM-DD strings, no time zones) ─────────────
+const fromYmd = (s) => new Date(`${s}T00:00:00Z`);
+export function addDays(ymd, n) {
+  const d = fromYmd(ymd);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+export const dayDiff = (a, b) => Math.round((fromYmd(a) - fromYmd(b)) / 864e5);
+export const weekday = (ymd, long = false) =>
+  (long ? ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"])[fromYmd(ymd).getUTCDay()];
+// "7 Oct" (no year).
+export function shortDate(d) {
+  const m = String(d || "").match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
+  if (!m) return d || "";
+  return m[3] ? `${+m[3]} ${MON[+m[2] - 1]}` : `${MON[+m[2] - 1]} ${m[1]}`;
+}
+// "14 months ago", "yesterday", relative to a reference day.
+export function sinceDay(ymd, ref) {
+  if (!ymd || !ref) return "";
+  const d = dayDiff(ref, ymd);
+  if (d < 1) return "today";
+  if (d < 2) return "yesterday";
+  if (d < 45) return `${d} days ago`;
+  const m = Math.round(d / 30.4);
+  return m < 24 ? `${m} months ago` : `${Math.round(m / 12)} years ago`;
+}
+export const ico = (id, cls = "ico") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${id}"/></svg>`;
