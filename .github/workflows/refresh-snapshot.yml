@@ -1,0 +1,38 @@
+# Weekly refresh of the saved registry copy (site/data/snapshot.js) that the
+# site falls back to when ClinicalTrials.gov can't be reached.
+name: Refresh registry snapshot
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run snapshot
+      - run: npm test
+      - name: Commit if the registry changed
+        run: |
+          if git diff --quiet -- site/data/snapshot.js; then
+            echo "No registry changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/snapshot.js
+          git commit -m "Refresh registry snapshot"
+          git push
+          # Pushes made with the workflow token don't start other workflows, so redeploy explicitly.
+          gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+        env:
+          GH_TOKEN: ${{ github.token }}

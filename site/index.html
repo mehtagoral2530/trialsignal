@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- ts:head-start -->
+<title>TrialSignal</title>
+<meta name="description" content="Understand any clinical trial one plain step at a time, and follow trials live from ClinicalTrials.gov.">
+<meta property="og:title" content="TrialSignal">
+<meta property="og:description" content="A plain-language guide to public clinical trials, with live ClinicalTrials.gov tracking.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script>try { var t = JSON.parse(localStorage.getItem("ts.theme")); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<!-- ts:head-end -->
+</head>
+<body>
+<!-- ts:body-start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast">
+  <div class="mast-in">
+    <a class="brand" href="#start" aria-label="TrialSignal home">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="var(--ink)"/><path d="M6 15h4l2.2-6 3.6 11 2.2-5H22" fill="none" stroke="var(--sun)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <b>TrialSignal</b>
+    </a>
+    <nav class="nav" aria-label="Pages">
+      <a href="#start">Start</a>
+      <a href="#trials">Trials <span class="badge" id="navBadge" hidden></span></a>
+      <a href="#updates">Updates</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="tools">
+      <a class="live" id="liveBadge" href="#trials" data-state="checking"><i aria-hidden="true"></i><span id="liveText">Connecting</span></a>
+      <button class="iconbtn" id="notesBtn" type="button">Notes <span class="count num" id="notesCount"></span></button>
+      <button class="iconbtn round" id="themeBtn" type="button" aria-label="Switch theme"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 3a7 7 0 0 1 0 14z" fill="currentColor"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- START -->
+<section class="view" data-view="start">
+  <div class="hero">
+    <p class="eyebrow">For anyone learning to read clinical trials</p>
+    <h1>Understand any clinical trial, <em>one plain step</em> at a time.</h1>
+    <p class="lede">Enter a trial number or a topic. TrialSignal walks you through what a study asks, who it is for, what is tested and what has been found, with every original source one click away.</p>
+    <form class="bigform" id="startForm" autocomplete="off" role="search">
+      <label class="sr" for="startInput">Trial number, condition or medicine</label>
+      <input type="text" id="startInput" placeholder="NCT04184622 or breast cancer">
+      <button class="btn" type="submit">Start reading</button>
+    </form>
+    <p class="small faint" id="startHelp">A trial number starts with NCT and has 8 digits. You can also paste a ClinicalTrials.gov link.</p>
+    <p class="pulse" id="liveCount" hidden></p>
+  </div>
+
+  <div class="block">
+    <h2>Or begin with one of these</h2>
+    <div class="picks" id="picks"></div>
+  </div>
+
+  <div class="block">
+    <div class="head">
+      <h2>How a trial becomes evidence</h2>
+      <p class="muted">Every trial passes through the same four stages. TrialSignal shows which stage each finding comes from, so you always know how firm it is.</p>
+    </div>
+    <ol class="journey">
+      <li><b>Registered</b><span>The plan is posted publicly: the question, who can join and what will be measured.</span></li>
+      <li><b>Running</b><span>People join and receive the treatment or a comparison while data is collected.</span></li>
+      <li><b>Results</b><span>First a short company announcement, later a full peer-reviewed paper.</span></li>
+      <li><b>Decision</b><span>Regulators such as the FDA review all the data and decide on approval.</span></li>
+    </ol>
+  </div>
+
+  <div class="next">
+    <a href="#trials"><b>Track trials live <span aria-hidden="true">→</span></b><span>Search ClinicalTrials.gov and follow studies.</span></a>
+    <a href="#updates"><b>See what changed <span aria-hidden="true">→</span></b><span>Results, approvals and setbacks.</span></a>
+    <a href="#about"><b>Why this project exists <span aria-hidden="true">→</span></b><span>Purpose, scope and sources.</span></a>
+  </div>
+</section>
+
+<!-- TRIALS -->
+<section class="view" data-view="trials" hidden>
+  <div class="block intro">
+  <div class="head">
+    <h1>Trials</h1>
+    <p class="lede">Search ClinicalTrials.gov, follow the studies you care about, and open any one to read it step by step.</p>
+  </div>
+  <div class="block tight">
+    <form class="searchbar" id="searchForm" autocomplete="off" role="search">
+      <label class="sr" for="searchInput">Search trials</label>
+      <input type="search" id="searchInput" placeholder="A condition, medicine or trial number">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="filters">
+      <label for="statusSel">Status</label><select id="statusSel"></select>
+      <label for="sortSel">Order</label><select id="sortSel"><option value="">Best match</option><option value="recent">Recently updated</option></select>
+    </div>
+    <div class="chips" id="topics"></div>
+  </div>
+  </div>
+  <div id="liveBanner"></div>
+  <div class="block" id="followBlock">
+    <div class="sec-h"><h2>Following</h2><span class="row"><span class="small faint" id="followMeta"></span><button class="btn quiet sm" type="button" id="checkNow" hidden>Check now</button></span></div>
+    <div id="followList"></div>
+  </div>
+  <div class="block" id="resultsBlock">
+    <div class="sec-h"><h2 id="resTitle">The TrialSignal library</h2><span class="small faint" id="resMeta"></span></div>
+    <div class="chips" id="areaChips" role="group" aria-label="Filter by area"></div>
+    <div id="resList"></div>
+  </div>
+</section>
+
+<!-- TRIAL -->
+<section class="view" data-view="trial" hidden>
+  <div id="trialOut"></div>
+</section>
+
+<!-- UPDATES -->
+<section class="view" data-view="updates" hidden>
+  <div class="block intro">
+    <div class="head">
+      <h1>Updates</h1>
+      <p class="lede">What changed in the treatment areas TrialSignal covers, how firm the evidence is, and what to read next.</p>
+    </div>
+    <div class="chips" id="modeChips" role="group" aria-label="View">
+      <button class="chip" type="button" data-mode="feed" aria-pressed="true">What changed</button>
+      <button class="chip" type="button" data-mode="side" aria-pressed="false">Side by side</button>
+    </div>
+  </div>
+  <div id="uFeed" class="stack-lg">
+    <div class="block">
+      <div class="sec-h"><h2>Live from the registry</h2><span class="small faint" id="regMeta"></span></div>
+      <p class="muted">Phase 2 and 3 trials whose ClinicalTrials.gov record changed in the last 30 days.</p>
+      <div class="chips" id="regAreas" role="group" aria-label="Area"></div>
+      <div id="regOut"></div>
+    </div>
+    <div class="block">
+      <div class="sec-h"><h2>Headlines</h2><span class="small faint" id="newsMeta"></span></div>
+      <div class="chips" id="newsTypes" role="group" aria-label="Type of update"></div>
+      <div class="feed" id="newsList"></div>
+      <p class="xs faint">A hand-picked selection for learning, not a complete news service.</p>
+    </div>
+  </div>
+  <div id="uSide" class="block" hidden>
+    <div class="chips" id="presets" role="group" aria-label="Comparison"></div>
+    <p class="note-line">Placing trials side by side does not make them directly comparable. Their participants, length and ways of measuring differ. Nothing here shows that one treatment is better than another.</p>
+    <div id="chartOut"></div>
+    <div class="tbl"><table id="cmpTable"></table></div>
+    <p class="xs faint" id="sideNote"></p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="view" data-view="about" hidden>
+  <div class="head">
+    <p class="eyebrow">About the project</p>
+    <h1>Why TrialSignal exists</h1>
+    <p class="lede">Clinical research is public, but it is scattered. TrialSignal puts the pieces in order so a first-time reader can follow one study from plan to evidence.</p>
+  </div>
+
+  <div class="prose">
+    <h2>The problem</h2>
+    <p>Information about a single trial usually lives in four places: the registry record, the scientific paper, the company’s announcement and the regulator’s decision. Each was written for a different reader, and none of them explains how they fit together.</p>
+    <p>Finding a trial is only the beginning. A reader still has to work out:</p>
+    <ul>
+      <li>Which condition and which people the study is about.</li>
+      <li>What treatment is being tested, and against what.</li>
+      <li>How the study is designed and what it measures.</li>
+      <li>Whether reported results are an early announcement or a full published analysis.</li>
+      <li>What has changed in the field, and how one development relates to another.</li>
+    </ul>
+    <p>TrialSignal organizes information around these questions and keeps the original sources one click away.</p>
+  </div>
+
+  <div class="prose">
+    <h2>Who it is for</h2>
+    <ul>
+      <li><b>Students and newcomers</b> learning how trial records, papers and industry news connect.</li>
+      <li><b>Research coordinators and associates</b> getting familiar with a public study and its terms.</li>
+      <li><b>Clinicians and investigators</b> who want a quick orientation before reading the full record.</li>
+      <li><b>Biotech, pharma and healthcare teams</b> doing early landscape research.</li>
+      <li><b>Healthcare product and project professionals</b> studying how research information is used.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Scope</h2>
+    <div class="scope">
+      <div class="card">
+        <h3>What TrialSignal does</h3>
+        <ul>
+          <li>Explains public trial records in plain language, one step at a time.</li>
+          <li>Searches ClinicalTrials.gov live and tracks the trials you follow.</li>
+          <li>Links each finding to its paper or announcement and labels how firm it is.</li>
+          <li>Collects selected results, approvals, filings and discontinued programs.</li>
+          <li>Lines up related trials side by side, with gaps marked.</li>
+          <li>Answers questions from a trial’s record and keeps your notes in your browser.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What it does not do</h3>
+        <ul>
+          <li>Decide whether a treatment is right for anyone.</li>
+          <li>Confirm whether a person is eligible for a trial. Only the study team can.</li>
+          <li>Show that one treatment is better than another.</li>
+          <li>Replace clinical judgment or the full source documents.</li>
+          <li>Match patients to trials, assess site feasibility or monitor protocol deviations. These were part of the wider concept and are not features of this site.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note-line">TrialSignal is an operational efficiency tool. All data must be verified against the official IRB-approved protocol and investigator brochure before clinical application.</p>
+  </div>
+
+  <div class="block">
+    <div class="head">
+      <h2>Where the information comes from</h2>
+      <p class="muted">Each kind of source answers a different question. TrialSignal shows which one a statement comes from.</p>
+    </div>
+    <div class="ladder">
+      <div><b>Registry record</b><span>ClinicalTrials.gov. What the study planned, who it includes, what it measures and its current status.</span></div>
+      <div><b>Company announcement</b><span>A press release with early headline results, not yet independently reviewed.</span></div>
+      <div><b>Peer-reviewed paper</b><span>Journals such as NEJM and JAMA, linked by DOI. Full methods and analysis.</span></div>
+      <div><b>Regulatory decision</b><span>FDA announcements: an agency’s review of all the data.</span></div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <h2>How live tracking works</h2>
+    <p>Search, trial details and status come straight from the ClinicalTrials.gov public API while you use the site. There is no TrialSignal server and no account.</p>
+    <p>When you follow a trial, it is saved in your browser. TrialSignal re-checks followed trials when you open the site and every <span data-fill="refresh"></span> minutes while it is open. It flags a trial as changed when its status, main results date, enrollment or results posting changes, or when the record is updated.</p>
+    <p>If ClinicalTrials.gov can’t be reached, TrialSignal uses a copy of the <span data-fill="count"></span> library records saved on <span data-fill="snapshot"></span>. The plain-language summaries were last reviewed on <span data-fill="reviewed"></span>, and the headlines on <span data-fill="news"></span>.</p>
+    <p><b>Limitations.</b> Public records can be incomplete, out of date, or not detailed enough for a specific decision. Plain-language summaries leave things out. Always return to the source.</p>
+  </div>
+
+  <details class="block glossary">
+    <summary>Key terms used on this site</summary>
+    <dl class="gl" id="glList"></dl>
+  </details>
+
+  <div class="prose">
+    <h2>Acknowledgements</h2>
+    <p>Public clinical research exists because of research participants, investigators, study teams, registry organizations, regulators, journals, sponsors and patient communities. TrialSignal is built on their work.</p>
+    <p class="muted">TrialSignal is an independent portfolio project showing how healthcare knowledge, public-data research, product thinking and interface design can work together.</p>
+    <p><a class="btn quiet" href="#story">Read how it was built <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- BUILD STORY -->
+<section class="view" data-view="story" hidden>
+  <div class="head">
+    <a class="back" href="#about">← About</a>
+    <p class="eyebrow">Case study</p>
+    <h1>How TrialSignal was built</h1>
+    <p class="lede">The problem, the decisions that shaped the site, what was left out on purpose, and what comes next.</p>
+  </div>
+
+  <dl class="glance">
+    <div><dt>Role</dt><dd>Product, research, content and design</dd></div>
+    <div><dt>Built with</dt><dd>HTML, CSS and plain JavaScript, no framework</dd></div>
+    <div><dt>Data</dt><dd>ClinicalTrials.gov API v2, journal DOIs checked with Crossref</dd></div>
+    <div><dt>Hosting</dt><dd>GitHub Pages, as a static site with no server</dd></div>
+  </dl>
+
+  <div class="prose">
+    <h2>The problem</h2>
+    <p>Anyone trying to understand a clinical trial has to piece it together from a registry record, a journal paper, a press release and a regulatory decision. Each source is written for experts, and the registry record alone can run to thousands of words. New research staff and students often don’t know which source to trust for which question.</p>
+  </div>
+
+  <div class="block">
+    <h2>Three versions</h2>
+    <ol class="timeline">
+      <li><b>Version 1: a nine-page dashboard</b><span>Every feature had its own page: dashboard, trial reader, publications, news, comparison, questions, sources, glossary and notes. It showed everything at once and felt built to impress rather than to teach. A first-time reader didn’t know where to start.</span></li>
+      <li><b>Version 2: four pages, five steps</b><span>Cut to Start, Trials, Updates and About. Each trial became five plain questions. The glossary turned into hover hints and notes moved into a side drawer. A calmer navy and marigold palette replaced the busy layout.</span></li>
+      <li><b>Version 3: public and live for everyone</b><span>Rebuilt as a self-hosted static site that reads ClinicalTrials.gov directly, so anyone with the link gets live search and tracking. The library grew from 10 to 29 trials across five areas, and registry facts now come from the registry itself instead of hand-copied notes.</span></li>
+    </ol>
+  </div>
+
+  <div class="prose">
+    <h2>Key decisions</h2>
+    <h3>Read a trial as five questions</h3>
+    <p>What does it ask, who is it for, what is tested, how is it measured, what was found. Every trial page follows the same order, so the second trial is easier to read than the first.</p>
+    <h3>Label how firm every finding is</h3>
+    <p>A company announcement and a peer-reviewed paper look equally confident in a headline. Each result carries a label for its source, and a four-stage tracker shows where the trial is between registration and a regulatory decision.</p>
+    <h3>Keep registry facts and summaries apart</h3>
+    <p>In version 2, status and dates were copied by hand. Rebuilding against the live registry showed that two of them had drifted: TRAILBLAZER-ALZ 2 was listed as completed but is still active, and CLARITY AD’s results date had moved. Now plain-language summaries are written by hand, and everything the registry owns comes from the registry.</p>
+    <h3>Answers you can check</h3>
+    <p>The question box answers from the trial’s own record and names the section each answer came from. It is less flexible than a chatbot, but every answer can be traced and nothing is invented.</p>
+    <h3>No server, no accounts</h3>
+    <p>The ClinicalTrials.gov API allows direct requests from the browser, so the site is a set of static files. Followed trials live in the reader’s browser. A saved copy of the library keeps the site useful offline, and a weekly automated job refreshes it.</p>
+  </div>
+
+  <div class="prose">
+    <h2>Left out on purpose</h2>
+    <ul>
+      <li><b>Patient matching and eligibility decisions.</b> Getting these wrong could mislead patients, and only a study team can decide who is eligible.</li>
+      <li><b>Rankings between treatments.</b> Trials differ in participants, length and measures. Side-by-side views carry a clear warning instead of a winner.</li>
+      <li><b>Site feasibility and protocol-deviation monitoring.</b> These need private, sponsor-level data that a public tool shouldn’t hold.</li>
+      <li><b>AI-written summaries of live records.</b> The plain-language summaries are written and checked by hand, so they can be trusted for learning.</li>
+    </ul>
+  </div>
+
+  <div class="prose">
+    <h2>What I’d build next</h2>
+    <ul>
+      <li>Email alerts when a followed trial changes, which needs a small server and consent to store an address.</li>
+      <li>A readable view of posted registry results, including adverse event tables.</li>
+      <li>Usability sessions with research coordinators and students to test the five-step reader.</li>
+      <li>A screen-reader audit of the trial page and comparison table.</li>
+    </ul>
+  </div>
+  <p class="small" data-author></p>
+</section>
+
+<footer class="foot">
+  <p>TrialSignal summarizes public information for learning and research orientation. It is not medical advice.</p>
+  <p>Verify all data against the official IRB-approved protocol and investigator brochure before clinical application.</p>
+  <p class="foot-links"><span data-author></span> · <a href="#story">How it was built</a></p>
+</footer>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Notes" role="dialog" aria-modal="true">
+  <div class="drawer-h"><h2>Notes</h2><button class="iconbtn" id="drawerClose" type="button">Close</button></div>
+  <div id="drawerBody" class="ned"></div>
+</aside>
+<div class="tip" id="tip" hidden role="tooltip"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<!-- ts:body-end -->
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

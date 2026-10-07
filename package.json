@@ -1,0 +1,17 @@
+{
+  "name": "trialsignal",
+  "version": "3.0.0",
+  "description": "A plain-language guide to public clinical trials, with live ClinicalTrials.gov tracking.",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "snapshot": "node scripts/build-snapshot.mjs",
+    "preview": "node scripts/build-preview.mjs"
+  }
+}
