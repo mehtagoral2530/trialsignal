@@ -38,7 +38,7 @@ test("answers name their source", () => {
   assert.match(blind.text, /^Yes\. It was quadruple-blind|^Yes\. It was double-blind/);
   const notJoin = answer("Who could not join?", ctx);
   assert.ok(notJoin.items.length >= 3);
-  assert.match(answer("How long did it run?", ctx).text, /started on 4 Dec 2019/i);
+  assert.match(answer("How long did it run?", ctx).text, /started on 4\sDec\s2019/i);
 });
 
 test("company-only results are flagged as preliminary", () => {

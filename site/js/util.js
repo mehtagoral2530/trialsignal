@@ -14,10 +14,11 @@ export function fmtDate(d) {
   if (!d) return "";
   d = String(d);
   const q = d.match(/^(\d{4})-Q(\d)$/);
-  if (q) return `Q${q[2]} ${q[1]}`;
+  if (q) return `Q${q[2]}\u00a0${q[1]}`;
   const m = d.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
   if (!m) return esc(d);
-  return (m[3] ? `${+m[3]} ` : "") + `${MON[+m[2] - 1]} ${m[1]}`;
+  // Non-breaking spaces, so a date never wraps across two lines.
+  return (m[3] ? `${+m[3]}\u00a0` : "") + `${MON[+m[2] - 1]}\u00a0${m[1]}`;
 }
 
 // Pulls the first NCT number out of free text or a ClinicalTrials.gov link.
@@ -107,7 +108,7 @@ export const weekday = (ymd, long = false) =>
 export function shortDate(d) {
   const m = String(d || "").match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
   if (!m) return esc(d || "");
-  return m[3] ? `${+m[3]} ${MON[+m[2] - 1]}` : `${MON[+m[2] - 1]} ${m[1]}`;
+  return m[3] ? `${+m[3]}\u00a0${MON[+m[2] - 1]}` : `${MON[+m[2] - 1]}\u00a0${m[1]}`;
 }
 // "14 months ago", "yesterday", relative to a reference day.
 export function sinceDay(ymd, ref) {

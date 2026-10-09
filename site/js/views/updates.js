@@ -3,7 +3,7 @@
 import { $, $$, esc, num, fmtDate, shortDate, ico } from "../util.js";
 import { SITE } from "../config.js";
 import { L, paintCount, countTo } from "../live.js";
-import { D, statusOf, loadFeed, loadAreaCounts, feedKey, SNAPSHOT, SNAPSHOT_DATE, swallow } from "../data.js";
+import { D, statusOf, loadFeed, loadAreaCounts, feedKey, isCurrent, isStale, SNAPSHOT, SNAPSHOT_DATE, swallow } from "../data.js";
 import { stHTML, renderFeed, renderFeedSkeleton, hideNewPill, errorRow, METRIC_TEXT } from "../console.js";
 import { LIBRARY, AREAS, lib } from "../../data/library.js";
 import { NEWS, NEWS_REVIEWED } from "../../data/news.js";
@@ -66,8 +66,16 @@ export function bindUpdates() {
 export function renderUpdates() {
   paintLede();
   paintTabCounts();
+  loadAreaIfMissing();
   showFeed(false);
   renderCompare();
+}
+
+// A chosen area's counts are cleared by a registry refresh; fetch them again.
+function loadAreaIfMissing() {
+  const a = area;
+  if (a === "all" || D.areaCounts[a] || L.online !== true) return;
+  loadAreaCounts(a).then(() => { if (area === a) paintTabCounts(); }).catch(swallow);
 }
 
 export const currentKey = () => feedKey("updates", metric, area);
@@ -87,7 +95,8 @@ export async function refreshUpdates() {
   let fresh = [];
   let ok = true;
   await loadFeed("updates", m, a).then((f) => (fresh = f), () => (ok = false));
-  if (feedKey("updates", metric, area) !== key) return;
+  // Moved to another tab or area, or gone offline (the saved copy is already painted).
+  if (feedKey("updates", metric, area) !== key || L.online !== true) return;
   if (ok || D.feeds[key]) renderFeed("updates", m, D.feeds[key], { fresh, area: a });
   else $('[data-feed="updates"]').innerHTML = errorRow();
   paintMore();
@@ -113,22 +122,27 @@ export function paintTabCounts() {
   });
 }
 
+// A feed from an older registry refresh stays on screen while the current one loads.
 function showFeed(stream) {
   const key = feedKey("updates", metric, area);
   const [m, a] = [metric, area];
   const rows = D.feeds[key];
   renderFeed("updates", m, rows || null, { stream, saved: D.saved, area: a });
-  if (!rows && L.online === true) {
+  if ((!rows || (!D.saved && !isCurrent(D.feedStamp[key]))) && L.online === true) {
     loadFeed("updates", m, a)
-      .then(() => { if (feedKey("updates", metric, area) === key) { renderFeed("updates", m, D.feeds[key], { stream: true, area: a }); paintMore(); } })
-      .catch(() => { if (feedKey("updates", metric, area) === key) $('[data-feed="updates"]').innerHTML = errorRow(); });
+      .then((fresh) => { if (feedKey("updates", metric, area) === key) { renderFeed("updates", m, D.feeds[key], { stream: !rows, fresh: rows ? fresh : [], area: a }); paintMore(); } })
+      .catch((e) => { if (feedKey("updates", metric, area) === key && L.online === true && !isStale(e) && !D.feeds[key]) $('[data-feed="updates"]').innerHTML = errorRow(); });
   }
   paintMore();
 }
 
-// Called on each check: reload the feed if it failed to load.
+// Called on each check: reload what failed to load or is from an older refresh.
 export function retryUpdates() {
-  if (L.online === true && !D.feeds[feedKey("updates", metric, area)]) { renderFeedSkeleton("updates"); showFeed(true); }
+  if (L.online !== true) return;
+  loadAreaIfMissing();
+  const key = feedKey("updates", metric, area);
+  if (!D.feeds[key]) { renderFeedSkeleton("updates"); showFeed(true); }
+  else if (!isCurrent(D.feedStamp[key])) showFeed(false);
 }
 
 function paintMore() {
@@ -156,7 +170,7 @@ function renderNews() {
 
 // Under the headlines on Start and Updates: how they were picked, and where the numbers come from.
 export function paintNewsNote() {
-  const src = L.online === false ? `Registry numbers are from the saved copy, ${fmtDate(SNAPSHOT_DATE)}.` : "Registry numbers on this site are live.";
+  const src = L.online === false ? `Registry numbers are from the saved copy, ${fmtDate(SNAPSHOT_DATE)}.` : L.online === true ? "Registry numbers on this site are live." : "Registry numbers load from ClinicalTrials.gov.";
   $$("[data-news-note]").forEach((el) => (el.textContent = `Picked and checked by hand, last reviewed ${fmtDate(NEWS_REVIEWED)}. ${src}`));
 }
 
@@ -185,7 +199,9 @@ export function renderCompare() {
   const A = col(cmpA);
   const B = col(cmpB);
   const rows = [["Status", A.st, B.st], ["The question", A.q, B.q], ["Who it’s for", A.who, B.who], ["What’s tested", A.tx, B.tx], ["How it’s measured", A.m, B.m], ["What’s been found", A.f, B.f], ["People", A.n, B.n]];
-  $(".cmp-rows", box).innerHTML = rows.map(([k, x, y]) => `<div class="cmp-row"><div>${k}</div><div>${x}</div><div>${y}</div></div>`).join("");
+  // Each value names its trial (for screen readers, and on screen once the columns stack).
+  const who = (id) => `<span class="cmp-who">${esc(lib(id).short)}</span>`;
+  $(".cmp-rows", box).innerHTML = rows.map(([k, x, y]) => `<div class="cmp-row"><div>${k}</div><div>${who(cmpA)}${x}</div><div>${who(cmpB)}${y}</div></div>`).join("");
 }
 
 export { METRIC_TEXT, paintCount, shortDate };

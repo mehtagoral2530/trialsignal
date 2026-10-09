@@ -75,9 +75,10 @@ export function createFollowStore({ snapshot = {}, snapshotDate = "", storage = 
     ids: () => Object.keys(entries),
     get: (id) => entries[id],
     has: (id) => !!entries[id],
-    add(id, model) {
+    // from: the saved-copy date, when the reader followed it from the saved copy.
+    add(id, model, { from = "" } = {}) {
       const f = model ? trackFields(model) : null;
-      entries[id] = { added: Date.now(), seenAt: Date.now(), seen: f, latest: f, checkedAt: model ? Date.now() : 0 };
+      entries[id] = { added: Date.now(), seenAt: Date.now(), seen: f, latest: f, checkedAt: model ? Date.now() : 0, ...(from && f ? { from } : {}) };
       save();
     },
     remove(id) {
@@ -106,6 +107,7 @@ export function createFollowStore({ snapshot = {}, snapshotDate = "", storage = 
         e.seenAt = Date.now();
         e.seed = false;
         e.example = false;
+        delete e.from;
       }
       save();
     },

@@ -10,9 +10,9 @@ test("finds a trial number in text or links", () => {
 });
 
 test("dates read naturally", () => {
-  assert.equal(fmtDate("2019-12-04"), "4 Dec 2019");
-  assert.equal(fmtDate("2026-04"), "Apr 2026");
-  assert.equal(fmtDate("2025-Q4"), "Q4 2025");
+  assert.equal(fmtDate("2019-12-04"), "4\u00a0Dec\u00a02019"); // non-breaking, so dates never wrap
+  assert.equal(fmtDate("2026-04"), "Apr\u00a02026");
+  assert.equal(fmtDate("2025-Q4"), "Q4\u00a02025");
   assert.equal(fmtDate(""), "");
 });
 

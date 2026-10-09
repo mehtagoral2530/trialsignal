@@ -993,3 +993,44 @@ h2.rec-k { font-weight: 420; letter-spacing: 0; }
 .rec-con.loading-rec .rec-big { opacity: .55; }
 .measure .plain + ol { margin-top: 12px; }
 .measure ol.only { border-top: 0; padding-top: 0; margin-top: 0; }
+
+/* ───────────────────────────── Second review ───────────────────────────── */
+/* Placeholders as tall as what replaces them, so the panel doesn't grow while it loads. */
+.feed-skel { min-height: 68px; }
+[data-libstrip].is-loading { min-height: 72px; }
+/* The pill keeps one width as its clock ticks (tabular digits, room for "checked just now"). */
+.live-pill .ago { min-width: 8.3em; font-variant-numeric: tabular-nums; }
+.live-pill[data-state="loading"] .ago, .live-pill[data-state="offline"] .ago { min-width: 0; }
+@media (min-width: 761px) and (max-width: 900px) { .live-pill .ago { min-width: 4.2em; } }
+@media (max-width: 760px) {
+  .live-pill .ago { min-width: 4.2em; }
+  [data-suggest], [data-areas], .con-filters { scroll-padding-inline: var(--gutter); }
+  .feed-skel { min-height: 66px; }
+  [data-libstrip].is-loading { min-height: 95px; }
+}
+.tk, .rec-sub, .con-ticker { font-variant-numeric: tabular-nums; }
+/* Small phones: the ticker wraps rather than hiding its values. */
+@media (max-width: 374px) {
+  [data-console] .con-ticker { flex-wrap: wrap; column-gap: 12px; row-gap: 2px; }
+  [data-console] .con-ticker > span { overflow: visible; }
+  [data-console] .con-ticker > span + span::before { content: none; }
+}
+/* Phones: bar tooltips are centred over the chart, so none is cut off by the panel. */
+@media (max-width: 420px) {
+  .bars .bar { position: static; }
+  .bars .bar .tip { left: 50%; right: auto; transform: translateX(-50%); }
+}
+@media (max-width: 359px) { .bar-x .we { margin: 0 -2px; } }
+/* The phone trial strip reserves its two lines while the record loads. */
+@media (max-width: 480px) { .t-strip { min-height: 60px; } }
+/* Status dots stay on the first line when the text wraps. */
+.search-live, .next-line { align-items: flex-start; }
+.search-live .ldot { margin-top: 7px; }
+.next-line .sdot { margin-top: 8.5px; }
+.about h2 { line-height: 1.15; }
+/* Compare: each value names its trial for screen readers, and on screen once stacked. */
+.cmp-who { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 360px) {
+  .cmp-who { position: static; width: auto; height: auto; overflow: visible; clip: auto; display: block; margin-bottom: 2px; font-size: 12px; font-weight: 650; color: var(--muted); }
+}
+

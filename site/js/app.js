@@ -1,9 +1,9 @@
 // Entry point: routing, the live chrome (header pill, panel badges, tickers), theme and start-up.
 
-import { $, $$, esc, fmtDate, shortDate, store, parseNCT } from "./util.js";
+import { $, $$, esc, fmtDate, shortDate, store, parseNCT, toast } from "./util.js";
 import { SITE } from "./config.js";
 import { L, onLive, start as startLive, check, tick, countTo } from "./live.js";
-import { D, onData, useSaved, refreshAll, loadTotal, loadCounts, loadStatuses, clearLive, feedKey, SNAPSHOT_DATE, swallow } from "./data.js";
+import { D, onData, useSaved, refreshAll, loadTotal, loadCounts, loadStatuses, clearLive, feedKey, isCurrent, SNAPSHOT_DATE, swallow } from "./data.js";
 import { initTips } from "./ui.js";
 import { initNotes } from "./notes.js";
 import { LIBRARY, LIBRARY_REVIEWED, lib } from "../data/library.js";
@@ -13,7 +13,7 @@ import * as start from "./views/start.js";
 import * as trials from "./views/trials.js";
 import * as trial from "./views/trial.js";
 import * as updates from "./views/updates.js";
-import { renderFeedSkeleton, renderBars } from "./console.js";
+import { renderFeedSkeleton, renderBars, hideNewPill } from "./console.js";
 
 const VIEWS = ["start", "trials", "updates", "about"];
 let view = "";
@@ -41,7 +41,8 @@ function route() {
     const s = $("#story");
     if (s) { s.open = true; setTimeout(() => s.scrollIntoView(), 50); }
   }
-  if (h === "trial") h = "NCT04184622";
+  // #trial is a short link to the example trial; the address shows its real number.
+  if (h === "trial") { history.replaceState(null, "", "#NCT04184622"); h = "NCT04184622"; }
   let v = VIEWS.includes(h) ? h : "start";
   let id = null;
   if (/^NCT\d{8}$/i.test(h)) { v = "trial"; id = h.toUpperCase(); }
@@ -105,9 +106,10 @@ function paintChrome() {
       : `TrialSignal can’t reach ClinicalTrials.gov right now, so this panel shows the saved copy from ${fmtDate(SNAPSHOT_DATE)}. It tries again every 60 seconds.`)
     : on ? 'ClinicalTrials.gov publishes once a day, Monday to Friday; the next refresh is expected <span data-tick="next">…</span>. TrialSignal checks it every 60 seconds while this page is open.'
       : "ClinicalTrials.gov publishes once a day, Monday to Friday. TrialSignal checks it every 60 seconds while this page is open."));
-  $$("[data-live-eyebrow]").forEach((el) => (el.innerHTML = off ? `Counts from the saved copy, ${saved}` : '<span class="ldot"></span> Live counts'));
-  $$("[data-stage-soft]").forEach((el) => (el.textContent = off ? `Here is where they were on ${saved}.` : "Here is where they are right now."));
-  $$("[data-foot-src]").forEach((el) => (el.textContent = off ? `saved copy, ${fmtDate(SNAPSHOT_DATE)}` : "checked live"));
+  // Until the first check answers, nothing claims to be live.
+  $$("[data-live-eyebrow]").forEach((el) => (el.innerHTML = off ? `Counts from the saved copy, ${saved}` : on ? '<span class="ldot"></span> Live counts' : "Registry counts"));
+  $$("[data-stage-soft]").forEach((el) => (el.textContent = off ? `Here is where they were on ${saved}.` : on ? "Here is where they are right now." : "Checking the registry…"));
+  $$("[data-foot-src]").forEach((el) => (el.textContent = off ? `saved copy, ${fmtDate(SNAPSHOT_DATE)}` : on ? "checked live" : "checking…"));
   start.paintHero();
   trials.renderSearchLive();
   trials.renderFollowing();
@@ -121,7 +123,7 @@ function paintChrome() {
 function paintFollowConsole() {
   const c = $('[data-console="follow"]');
   const off = L.online === false;
-  const live = L.online === true && D.libAt > 0;
+  const live = L.online === true && isCurrent(D.libStamp);
   c.dataset.state = off ? "offline" : live ? "live" : "loading";
   $("[data-badge-word]", c).textContent = off ? "SAVED COPY" : live ? "LIVE" : "CHECKING";
   $(".con-ticker", c).innerHTML = off ? `<span>Saved copy from ${shortDate(SNAPSHOT_DATE)}</span>` : live ? '<span>checked <b class="tk" data-ago="check">…</b></span>' : "<span>checking…</span>";
@@ -134,6 +136,8 @@ onLive(async (type, detail) => {
   if (type === "offline") {
     useSaved();
     updates.resetArea();
+    hideNewPill("home");
+    hideNewPill("updates");
     paintChrome();
     start.paintConsole({ grow: false, stream: false });
     start.renderPicks();
@@ -148,11 +152,17 @@ onLive(async (type, detail) => {
     // Nothing saved or from an older refresh may show as live. On the first load (or when
     // the connection is back) everything is fetched again; after a daily refresh only the
     // feeds on screen are kept, so rows that really arrived can be marked NEW.
-    if (detail.first) clearLive();
-    else if (detail.changed) clearLive({ keep: [feedKey("home", start.homeMetric()), updates.currentKey()] });
-    if (view === "trial") (detail.first ? trial.renderTrial : trial.refreshTrial)(trialId);
+    // The Updates feed is kept only when it is on screen; otherwise it reloads when opened.
+    if (detail.first) clearLive({ first: true });
+    else if (detail.changed) clearLive({ keep: [feedKey("home", start.homeMetric()), ...(view === "updates" ? [updates.currentKey()] : [])] });
+    if (view === "trial") trial.refreshTrial(trialId);
     start.paintHero();
-    if (detail.first) { renderBars("home", start.homeMetric()); renderFeedSkeleton("home"); }
+    if (detail.first) {
+      // Saved numbers make way for placeholders until the live ones arrive.
+      $$("[data-count]").forEach((el) => { delete el.dataset.v; el.style.minWidth = ""; el.innerHTML = '<span class="skel"></span>'; });
+      renderBars("home", start.homeMetric());
+      renderFeedSkeleton("home");
+    }
     const all = refreshAll(start.homeMetric());
     const jobs = [start.refreshHome(all)];
     if (view === "trials") jobs.push(loadTotal().catch(swallow));
@@ -163,8 +173,9 @@ onLive(async (type, detail) => {
   }
   if (type === "check" && L.online === true && !refreshing) {
     // Retry whatever failed to load on an earlier check.
-    if (D.counts.today == null) loadCounts().catch(swallow);
-    if (!D.libAt) loadStatuses().catch(swallow);
+    if (!isCurrent(D.countsStamp)) loadCounts().catch(swallow);
+    if (!isCurrent(D.libStamp)) loadStatuses().catch(swallow);
+    if (view === "trials" && !isCurrent(D.totalStamp)) loadTotal().catch(swallow);
     start.retryHome();
     if (view === "updates") updates.retryUpdates();
     if (view === "trial") trial.retryTrial();
@@ -229,6 +240,15 @@ start.bindStart();
 trials.bindTrials(go);
 updates.bindUpdates();
 
+// The skip link moves focus without adding a history entry.
+$(".skip").addEventListener("click", (e) => { e.preventDefault(); $("#main").focus(); });
+
+// In sideways-scrolling rows (phones), bring the focused chip or card fully into view.
+document.addEventListener("focusin", (e) => {
+  const row = e.target.closest?.(".picks, [data-suggest], [data-areas], .con-filters");
+  if (row && row.scrollWidth > row.clientWidth) e.target.scrollIntoView({ block: "nearest", inline: row.matches(".picks") ? "start" : "nearest" });
+});
+
 // The Start search sends trial numbers to the trial page and anything else to Trials.
 $("#searchForm1").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -239,7 +259,10 @@ $("#searchForm1").addEventListener("submit", (e) => {
   else go("trials", { q: v });
 });
 document.addEventListener("click", (e) => {
-  if (e.target.closest("[data-check-now], #livePill")) check("manual");
+  if (!e.target.closest("[data-check-now], #livePill")) return;
+  // The preview never contacts the registry, so the pill explains that instead.
+  if (SITE.preview) toast(`This preview shows the saved copy from ${shortDate(SNAPSHOT_DATE)} and doesn’t contact ClinicalTrials.gov.`);
+  else check("manual");
 });
 // Once rows and bars have landed, drop their animation classes so they are plain content.
 document.addEventListener("animationend", (e) => {

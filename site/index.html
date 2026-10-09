@@ -130,7 +130,7 @@
             <a class="link" href="#updates">All changes <svg class="ico ico-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
           <ul class="feed" data-feed="home" aria-live="off"></ul>
-          <div class="con-foot" data-libstrip><span class="lbl">From the library</span><span><span class="skel" style="min-width:18ch"></span></span></div>
+          <div class="con-foot is-loading" data-libstrip><span class="lbl">From the library</span><span><span class="skel" style="min-width:18ch"></span></span></div>
         </div>
         <p class="note" data-cadence>ClinicalTrials.gov publishes once a day, Monday to Friday. TrialSignal checks it every 60 seconds while this page is open.</p>
       </div>
@@ -152,8 +152,8 @@
     <section class="section" aria-labelledby="stage-h">
       <div class="sec-head">
         <div>
-          <p class="eyebrow" data-live-eyebrow><span class="ldot"></span> Live counts</p>
-          <h2 class="h2" id="stage-h">Every trial moves through the same stages. <span class="soft" data-stage-soft>Here is where they are right now.</span></h2>
+          <p class="eyebrow" data-live-eyebrow>Registry counts</p>
+          <h2 class="h2" id="stage-h">Every trial moves through the same stages. <span class="soft" data-stage-soft>Checking the registry…</span></h2>
         </div>
       </div>
       <ol class="stages">
@@ -206,7 +206,7 @@
       <div class="t-lib">
         <div class="lib-head">
           <h2>The library<sup data-fill="count"></sup></h2>
-          <p class="small" data-lib-note>Explained in plain words by TrialSignal. Status is live.</p>
+          <p class="small" data-lib-note>Explained in plain words by TrialSignal. Checking status…</p>
         </div>
         <div class="chips" data-areas role="group" aria-label="Filter by area"></div>
         <div class="lib-rows" data-lib></div>
@@ -240,7 +240,7 @@
     <div class="page-head">
       <p class="eyebrow">Updates</p>
       <h1 class="display" id="up-h" tabindex="-1">What changed in clinical trials</h1>
-      <p class="lede mt14" data-up-lede>The registry feed is live from ClinicalTrials.gov. Headlines are picked and checked by hand.</p>
+      <p class="lede mt14" data-up-lede>Connecting to the ClinicalTrials.gov feed. Headlines are picked and checked by hand.</p>
     </div>
     <div class="up-grid">
       <div class="console" data-console="updates" data-state="loading" aria-labelledby="upc-h">
@@ -257,7 +257,7 @@
         <div class="con-filters" role="group" aria-label="Area" data-con-areas></div>
         <div class="feed-head"><h3 data-feed-title="updates">Latest changes</h3><span class="new-pill" data-newpill hidden></span></div>
         <ul class="feed" data-feed="updates" aria-live="off"></ul>
-        <div class="more-row"><button class="cbtn" type="button" data-more>Show 8 more</button></div>
+        <div class="more-row"><button class="cbtn" type="button" data-more hidden>Show 8 more</button></div>
       </div>
       <aside aria-labelledby="hl-h">
         <h2 class="eyebrow mb12" id="hl-h">Headline</h2>
@@ -373,7 +373,7 @@
 
 <footer class="site">
   <div class="wrap foot-in">
-    <p>TrialSignal explains public information for learning. It is not medical advice.<br>Registry data: ClinicalTrials.gov API v2, <span data-foot-src>checked live</span>. <span data-author></span></p>
+    <p>TrialSignal explains public information for learning. It is not medical advice.<br>Registry data: ClinicalTrials.gov API v2, <span data-foot-src>checking…</span>. <span data-author></span></p>
     <a href="#about">About and sources</a>
   </div>
 </footer>
@@ -391,7 +391,7 @@
   <div id="drawerBody" class="ned"></div>
 </aside>
 <div class="gtip" id="gtip" hidden role="tooltip"></div>
-<div class="toast" id="toast" role="status" hidden></div>
+<div class="toast" id="toast" role="status"></div>
 <!-- ts:body-end -->
 <script type="module" src="js/app.js"></script>
 </body>

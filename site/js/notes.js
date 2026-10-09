@@ -1,6 +1,6 @@
 // Notes drawer. Notes stay in this browser; they can be copied or downloaded as Markdown.
 
-import { $, $$, esc, store, toast, localDay, clip } from "./util.js";
+import { $, $$, esc, store, toast, localDay, clip, fmtDate } from "./util.js";
 import { SITE } from "./config.js";
 
 const KEY = "ts.notes.v1";
@@ -89,7 +89,7 @@ function render() {
       </div>
       <p class="xs faint">Saved in this browser only.</p>
       <div class="notes-list">${notes.length
-        ? notes.map((x) => `<button class="nitem" type="button" data-nid="${esc(x.id)}"><b>${esc(x.title || "Untitled")}</b><span>${esc(x.updated)} · ${esc(clip(x.body, 70))}</span></button>`).join("")
+        ? notes.map((x) => `<button class="nitem" type="button" data-nid="${esc(x.id)}"><b>${esc(x.title || "Untitled")}</b><span>${fmtDate(x.updated)} · ${esc(clip(String(x.body || "").replace(/^\s*[-*]\s+/gm, ""), 70))}</span></button>`).join("")
         : '<div class="empty">No notes yet. Use “Save a note” on any trial.</div>'}</div>`;
     $("#nNew").onclick = () => {
       const x = { id: `n${Date.now()}`, title: "", body: "", updated: localDay() };

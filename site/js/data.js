@@ -23,7 +23,16 @@ export const D = {
   recordStamp: {}, // id → registry dataTimestamp the record was fetched under
   savedKeys: new Set(), // feed keys whose rows came from the saved copy
   saved: false, // true while showing the saved copy
+  // The registry dataTimestamp each kind of data was last fetched under. Anything whose
+  // stamp isn't the current one is out of date (or failed) and is fetched again.
+  countsStamp: "",
+  libStamp: "",
+  totalStamp: "",
+  feedStamp: {}, // feed key → stamp
 };
+
+// Fetched under the registry's current refresh?
+export const isCurrent = (stamp) => !!stamp && stamp === L.stamp;
 
 export const follow = createFollowStore({ snapshot: SNAPSHOT, snapshotDate: SNAPSHOT_DATE });
 
@@ -49,44 +58,71 @@ export function useSaved() {
   D.next = {};
   D.lib = { ...SNAPSHOT };
   D.libAt = 0;
+  D.countsStamp = D.libStamp = D.totalStamp = "";
+  D.feedStamp = {};
   emit("saved");
 }
 
 // Before live data replaces the saved copy (first load, or the connection is back),
 // or after a registry refresh: drop cached live data so nothing old shows as live.
 // keep: feed keys to hold on to, so rows that really arrived can be marked NEW.
-export function clearLive({ keep = [] } = {}) {
+// first: the counts go too, so saved numbers never sit under a LIVE badge.
+export function clearLive({ keep = [], first = false } = {}) {
   for (const k of Object.keys(D.feeds)) {
-    if (!keep.includes(k) || D.savedKeys.has(k)) { delete D.feeds[k]; delete D.next[k]; }
+    if (!keep.includes(k) || D.savedKeys.has(k)) { delete D.feeds[k]; delete D.next[k]; delete D.feedStamp[k]; }
   }
   D.savedKeys = new Set();
   D.days = {};
   D.areaCounts = {};
+  if (first) {
+    D.counts = {};
+    D.countsStamp = D.totalStamp = "";
+  }
 }
 
 // ── live loaders ─────────────────────────────────────────────────────
+// A response that lands after the site went offline, or after another registry refresh,
+// is dropped: it would put live rows under SAVED COPY, or old numbers under a new refresh.
+class Stale extends Error {}
+export const isStale = (e) => e instanceof Stale;
+function still(stamp) {
+  if (L.online !== true || L.stamp !== stamp) throw new Stale("Superseded");
+}
+
 export async function loadCounts() {
+  const stamp = L.stamp;
   const [c, recruiting] = await Promise.all([api.counts(L.day), api.recruitingCount()]);
+  still(stamp);
   Object.assign(D.counts, c, { recruiting });
+  D.countsStamp = stamp;
   D.saved = false;
   emit("counts");
 }
 
 export async function loadTotal() {
-  if (D.totalStamp === L.stamp && D.counts.total != null) return;
-  D.counts.total = await api.totalCount();
-  D.totalStamp = L.stamp;
+  if (isCurrent(D.totalStamp) && D.counts.total != null) return;
+  const stamp = L.stamp;
+  const total = await api.totalCount();
+  still(stamp);
+  D.counts.total = total;
+  D.totalStamp = stamp;
   emit("total");
 }
 
 export async function loadAreaCounts(area) {
   if (area === "all") return;
-  D.areaCounts[area] = await api.counts(L.day, { cond: api.AREA_COND[area] });
+  const stamp = L.stamp;
+  const c = await api.counts(L.day, { cond: api.AREA_COND[area] });
+  still(stamp);
+  D.areaCounts[area] = c;
   emit("areaCounts");
 }
 
 export async function loadDays(metric) {
-  D.days[metric] = await api.days(metric, L.day, L.stamp);
+  const stamp = L.stamp;
+  const vals = await api.days(metric, L.day, stamp);
+  still(stamp);
+  D.days[metric] = vals;
   emit("days");
 }
 
@@ -97,10 +133,13 @@ export async function loadFeed(scope, metric, area = "all", { append = false } =
   const key = feedKey(scope, metric, area);
   // Rows from the saved copy are never compared with live rows: that would mark rows
   // the reader has already seen as NEW.
-  const prev = D.savedKeys.has(key) ? null : D.feeds[key];
+  const stamp = L.stamp;
   const r = await api.feed(metric, { area: area === "all" ? "" : area, size: scope === "home" ? 4 : 8, pageToken: append ? D.next[key] : "" });
+  still(stamp);
+  const prev = D.savedKeys.has(key) ? null : D.feeds[key];
   D.feeds[key] = append && prev ? [...prev, ...r.rows] : r.rows;
   D.next[key] = r.next;
+  if (!append) D.feedStamp[key] = stamp;
   D.savedKeys.delete(key);
   const fresh = !append && prev ? r.rows.filter((x) => !prev.some((p) => p.id === x.id)).map((x) => x.id) : [];
   emit("feed");
@@ -109,9 +148,12 @@ export async function loadFeed(scope, metric, area = "all", { append = false } =
 
 export async function loadStatuses() {
   const ids = [...new Set([...LIBRARY.map((t) => t.id), ...follow.ids()])];
+  const stamp = L.stamp;
   const map = await api.statuses(ids);
+  still(stamp);
   D.lib = map;
   D.libAt = Date.now();
+  D.libStamp = stamp;
   for (const id of follow.ids()) {
     if (map[id]) follow.update(id, map[id], D.libAt);
     else follow.fail(id, "ClinicalTrials.gov didn’t return this trial.");
@@ -139,6 +181,8 @@ export async function loadRecord(id) {
   D.records[id] = m;
   D.recordAt[id] = Date.now();
   D.recordStamp[id] = stamp;
+  // A record fetch reached the registry too, so every "checked" label agrees.
+  L.checkedAt = Math.max(L.checkedAt, D.recordAt[id]);
   emit("record");
   return m;
 }

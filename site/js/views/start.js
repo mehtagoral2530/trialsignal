@@ -4,7 +4,7 @@
 import { $, $$, esc, num, shortDate, fmtDate, ico } from "../util.js";
 import { SITE } from "../config.js";
 import { L, whenWord, easternWeekday, easternTime, countTo } from "../live.js";
-import { D, statusOf, loadDays, loadFeed, feedKey, SNAPSHOT_DATE, swallow } from "../data.js";
+import { D, statusOf, loadDays, loadFeed, feedKey, isCurrent, isStale, SNAPSHOT_DATE, swallow } from "../data.js";
 import { stHTML, skel, renderBars, renderFeed, hideNewPill, errorRow, bindBarKeys } from "../console.js";
 import { lib, PICKS, LIBRARY } from "../../data/library.js";
 import { NEWS, NEWS_TYPES } from "../../data/news.js";
@@ -28,29 +28,30 @@ export function bindStart() {
 
 // Bars and feed for the selected tab; anything missing is loaded. A response that
 // arrives after the reader has moved to another tab is not painted.
-function showMetric() {
+// retry: rows already on screen stay while a newer copy loads.
+function showMetric({ retry = false } = {}) {
   const m = metric;
   const key = feedKey("home", m);
-  if (D.days[m]) renderBars("home", m, { grow: true });
+  if (D.days[m]) { if (!retry) renderBars("home", m, { grow: true }); }
   else {
     renderBars("home", m);
     if (L.online === true) loadDays(m).then(() => { if (metric === m) renderBars("home", m, { grow: true }); }).catch(swallow);
   }
-  if (D.feeds[key]) renderFeed("home", m, D.feeds[key], { stream: true });
-  else {
-    renderFeed("home", m, null);
-    if (L.online === true) {
-      loadFeed("home", m)
-        .then(() => { if (metric === m) renderFeed("home", m, D.feeds[key], { stream: true }); })
-        .catch(() => { if (metric === m) $('[data-feed="home"]').innerHTML = errorRow(); });
-    }
+  const have = D.feeds[key];
+  if (have && !retry) renderFeed("home", m, have, { stream: true });
+  if (!have) renderFeed("home", m, null);
+  if ((!have || !isCurrent(D.feedStamp[key])) && L.online === true) {
+    loadFeed("home", m)
+      .then((fresh) => { if (metric === m) renderFeed("home", m, D.feeds[key], { stream: !have, fresh: have ? fresh : [] }); })
+      .catch((e) => { if (metric === m && L.online === true && !isStale(e) && !D.feeds[key]) $('[data-feed="home"]').innerHTML = errorRow(); });
   }
 }
 
-// Called on each check: reload whatever failed to load.
+// Called on each check: reload whatever failed to load or is from an older refresh.
 export function retryHome() {
   if (L.online !== true || D.saved) return;
-  if (!D.days[metric] || !D.feeds[feedKey("home", metric)]) showMetric();
+  const key = feedKey("home", metric);
+  if (!D.days[metric] || !D.feeds[key] || !isCurrent(D.feedStamp[key])) showMetric({ retry: true });
 }
 
 export function renderStart() {
@@ -98,7 +99,8 @@ export function paintConsole({ grow = true, stream = true, fresh = [] } = {}) {
 export async function refreshHome(pending) {
   const m = metric;
   const [fresh] = await Promise.all([loadFeed("home", m).catch(() => null), pending]);
-  if (metric !== m) return;
+  // Gone offline meanwhile: the saved copy is already painted.
+  if (metric !== m || L.online !== true) return;
   paintConsole({ fresh: fresh || [] });
   if (!fresh && !D.feeds[feedKey("home", m)]) $('[data-feed="home"]').innerHTML = errorRow();
 }
@@ -109,8 +111,9 @@ export const homeMetric = () => metric;
 export function renderLibStrip() {
   const el = $("[data-libstrip]");
   if (!el) return;
-  const ref = D.saved ? SNAPSHOT_DATE : D.libAt ? L.day : "";
+  const ref = D.saved ? SNAPSHOT_DATE : isCurrent(D.libStamp) ? L.day : "";
   if (!ref) return;
+  el.classList.remove("is-loading");
   const ids = Object.keys(D.lib).filter((id) => lib(id));
   const hits = ids.filter((id) => D.lib[id].dates && D.lib[id].dates.lastUpdate === ref).map(lib);
   if (hits.length) {

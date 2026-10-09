@@ -27,10 +27,19 @@ function fetchRecord(id) {
   delete failed[id];
   loadRecord(id)
     .then(() => { loading[id] = false; if (isOpen(id)) renderTrial(id, { quiet: true }); })
-    .catch((e) => { loading[id] = false; failed[id] = e.status === 404 ? 404 : "error"; if (isOpen(id)) renderTrial(id, { quiet: true }); });
+    // 404 (no such study) and 400 (a number the registry rejects) are final; anything else is retried.
+    .catch((e) => { loading[id] = false; failed[id] = e.status === 404 || e.status === 400 ? 404 : "error"; if (isOpen(id)) renderTrial(id, { quiet: true }); });
 }
 
 export function renderTrial(id, { quiet = false } = {}) {
+  // Repainting replaces the page; keyboard focus returns to the same heading or field.
+  const a = document.activeElement;
+  const keepId = a && a.id && $("[data-trial-root]").contains(a) ? a.id : "";
+  draw(id, quiet);
+  if (keepId) document.getElementById(keepId)?.focus({ preventScroll: true });
+}
+
+function draw(id, quiet) {
   const changedTrial = current !== id;
   current = id;
   const root = $("[data-trial-root]");
@@ -41,7 +50,8 @@ export function renderTrial(id, { quiet = false } = {}) {
   if (!r.model) {
     if (failed[id] === 404) { root.innerHTML = missing(id, "ClinicalTrials.gov has no study with that number. Check the digits and try again."); setTitle(id); return; }
     if (loading[id] || L.online === null) { root.innerHTML = skeleton(id); setTitle(id); return; }
-    const row = feedRowFor(id);
+    // Offline, a trial seen in the feed gets a short page from its saved summary line.
+    const row = L.online === false ? feedRowFor(id) : null;
     if (row) { root.innerHTML = rowPage(id, row); setTitle(row.acronym || id); return; }
     root.innerHTML = missing(id, L.online === false
       ? (SITE.preview ? "This preview can’t reach ClinicalTrials.gov, and there’s no saved copy of this trial." : "TrialSignal can’t reach ClinicalTrials.gov right now, and there’s no saved copy of this trial. It will load as soon as the connection is back.")
@@ -53,8 +63,11 @@ export function renderTrial(id, { quiet = false } = {}) {
   // fetched: fetched earlier, registry unreachable now; saved: the saved copy.
   const state = r.live ? (L.online === false ? "fetched" : "live") : L.online !== false && (loading[id] || L.online === null) ? "loading" : "saved";
   const keepAsk = quiet && !changedTrial ? $("[data-answer]", root)?.innerHTML : "";
+  // A question being typed survives the repaint too.
+  const typed = quiet && !changedTrial ? $("#askq", root)?.value || "" : "";
   paint(id, r.model, state, r.at);
   if (keepAsk) $("[data-answer]", root).innerHTML = keepAsk;
+  if (typed && $("#askq", root)) $("#askq", root).value = typed;
 }
 
 // Called after a registry refresh while a trial page is open.
@@ -384,7 +397,8 @@ function bind(id, M, T, state, name, srcWords) {
   $("[data-follow]", root).onclick = (ev) => {
     const b = ev.currentTarget;
     if (follow.has(id)) follow.remove(id);
-    else follow.add(id, state === "live" || state === "fetched" ? M : D.lib[id] || null);
+    else if (state === "live" || state === "fetched") follow.add(id, M);
+    else follow.add(id, D.lib[id] || null, { from: L.online === false && !D.libStamp ? SNAPSHOT_DATE : "" });
     const on = follow.has(id);
     b.setAttribute("aria-pressed", on);
     $("span", b).textContent = on ? "Following" : "Follow this trial";

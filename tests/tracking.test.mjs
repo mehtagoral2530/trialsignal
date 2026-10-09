@@ -13,7 +13,7 @@ test("meaningful changes are described in plain words", () => {
   const d = diff(base, { ...base, status: "ACTIVE_NOT_RECRUITING", hasResults: true, primaryCompletion: "2027-06", enrollment: 120, lastUpdate: "2026-02-01" });
   assert.deepEqual(d.map((x) => x.kind), ["status", "results", "date", "enrollment"]);
   assert.match(d[0].text, /Recruiting → Active, not recruiting/);
-  assert.match(d[2].text, /Jan 2027 → Jun 2027/);
+  assert.match(d[2].text, /Jan\s2027 → Jun\s2027/);
 });
 
 test("a bare record update is flagged only when nothing else changed", () => {
@@ -81,4 +81,19 @@ test("follows from the first version carry over, defaults are re-seeded", () => 
   assert.deepEqual(f.ids().sort(), ["NCT03529110", "NCT7"]);
   assert.equal(f.get("NCT7").seenAt, 5);
   assert.ok(f.get("NCT03529110").seed);
+});
+
+test("a trial followed from the saved copy remembers it until marked seen", () => {
+  const storage = memoryStorage();
+  storage.set("ts.follow.v1", {});
+  const f = createFollowStore({ storage });
+  f.add("NCT2", model({ dates: { lastUpdate: "2026-10-01" } }), { from: "2026-10-07" });
+  assert.equal(f.get("NCT2").from, "2026-10-07");
+  f.update("NCT2", model({ dates: { lastUpdate: "2026-10-09" } }));
+  assert.equal(f.changes("NCT2")[0].kind, "update");
+  f.markSeen("NCT2");
+  assert.equal(f.get("NCT2").from, undefined);
+  // Without a baseline there is nothing to remember.
+  f.add("NCT3", null, { from: "2026-10-07" });
+  assert.equal(f.get("NCT3").from, undefined);
 });

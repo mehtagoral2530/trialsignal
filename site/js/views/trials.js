@@ -3,7 +3,7 @@
 import { $, $$, esc, num, shortDate, fmtDate, dayDiff, ico, toast, parseNCT, localDay } from "../util.js";
 import { SITE } from "../config.js";
 import { L, paintCount, check, announce, easternDay } from "../live.js";
-import { D, follow, statusOf, loadStatuses, loadTotal, SNAPSHOT_DATE, swallow } from "../data.js";
+import { D, follow, statusOf, loadStatuses, loadTotal, isCurrent, SNAPSHOT_DATE, swallow } from "../data.js";
 import { stHTML, skel } from "../console.js";
 import * as api from "../api.js";
 import { statusLabel } from "../normalize.js";
@@ -83,7 +83,9 @@ export function renderTrials(params = {}) {
 export function renderSearchLive() {
   const el = $("[data-search-live]");
   if (L.online === false) {
-    el.innerHTML = `<span class="ldot off"></span><span>Search needs a connection to ClinicalTrials.gov. Until it’s back, search covers the ${LIBRARY.length} library trials.</span>`;
+    el.innerHTML = SITE.preview
+      ? `<span class="ldot off"></span><span>This preview searches the ${LIBRARY.length} library trials only. The published site searches all of ClinicalTrials.gov.</span>`
+      : `<span class="ldot off"></span><span>Search needs a connection to ClinicalTrials.gov. Until it’s back, search covers the ${LIBRARY.length} library trials.</span>`;
   } else if (!el.querySelector('[data-count="total"]')) {
     el.innerHTML = `<span class="ldot"></span><span>Searching <b class="num" data-count="total">${skel()}</b> studies on ClinicalTrials.gov</span>`;
     if (D.counts.total != null) paintCount("total", D.counts.total);
@@ -104,7 +106,7 @@ async function runSearch(text, { force = false, focus = "" } = {}) {
   // A pasted registry link or a trial number searches for that trial.
   const id = parseNCT(value);
   if (id) value = id;
-  if (!value) { q = ""; res = null; seq++; box.hidden = true; return; }
+  if (!value) { q = ""; res = null; seq++; box.hidden = true; box.removeAttribute("aria-busy"); return; }
   if (value === q && !force && res && !!res.offline === (L.online === false)) return;
   q = value;
   box.hidden = false;
@@ -113,13 +115,19 @@ async function runSearch(text, { force = false, focus = "" } = {}) {
     const words = q.toLowerCase().split(/\s+/).filter(Boolean);
     const hits = LIBRARY.filter((t) => { const hay = `${t.short} ${t.condition} ${t.company} ${t.intervention} ${t.id}`.toLowerCase(); return words.every((w) => hay.includes(w)); });
     res = { offline: true };
-    box.innerHTML = `<div class="results-head"><span><b>${hits.length}</b> library ${hits.length === 1 ? "trial matches" : "trials match"} “${esc(q)}”. Full registry search returns when ClinicalTrials.gov is reachable.</span></div>` +
+    box.removeAttribute("aria-busy");
+    box.innerHTML = `<div class="results-head"><span><b>${hits.length}</b> library ${hits.length === 1 ? "trial matches" : "trials match"} “${esc(q)}”.${SITE.preview ? "" : " Full registry search returns when ClinicalTrials.gov is reachable."}</span></div>` +
       (hits.length ? hits.map((t) => `<a class="rrow" href="#${t.id}"><span class="cond">${esc(t.short)}</span>${stHTML(statusOf(t.id)?.status)}<span class="title">${esc(t.condition)}</span><span class="id">${t.id}</span></a>`).join("") : '<p class="rrow">No library trials match. Try a condition, such as obesity.</p>');
     announce(`${hits.length} library ${hits.length === 1 ? "trial matches" : "trials match"} ${q}.`);
     return;
   }
   box.setAttribute("aria-busy", "true");
-  box.innerHTML = `<div class="results-head">${skel("width:40%")}</div>${Array.from({ length: 3 }, () => `<div class="rrow">${skel("width:50%")}${skel("width:80%")}</div>`).join("")}`;
+  const rowsSkel = Array.from({ length: 3 }, () => `<div class="rrow">${skel("width:50%")}${skel("width:80%")}</div>`).join("");
+  // A toggle re-runs the same search: keep the header and toggles (and keyboard focus),
+  // and replace only the rows.
+  const keepHead = focus && $(".results-opts", box);
+  if (keepHead) { box.querySelectorAll(".rrow, .results-more, .err-row:not(.results-head)").forEach((e) => e.remove()); box.insertAdjacentHTML("beforeend", rowsSkel); }
+  else box.innerHTML = `<div class="results-head">${skel("width:40%")}</div>${rowsSkel}`;
   try {
     // Conditions first: "Obesity" should find obesity studies, not every study that
     // mentions the word. If that finds little (a drug name, say), search all text.
@@ -131,14 +139,18 @@ async function runSearch(text, { force = false, focus = "" } = {}) {
       if ((t.total ?? t.rows.length) > (r.total ?? r.rows.length)) r = t;
     }
     res = r;
+    // Restore focus to the toggle only if the reader hasn't moved on meanwhile.
+    const refocus = focus && (document.activeElement === document.body || box.contains(document.activeElement));
     paintResults();
-    if (focus) $(focus)?.focus();
+    if (refocus) $(focus)?.focus();
     const n = r.total ?? r.rows.length;
     announce(n ? `${num(n)} ${n === 1 ? "study matches" : "studies match"} ${q}${r.recruiting != null ? `, ${num(r.recruiting)} recruiting now` : ""}.` : `No studies match ${q}.`);
   } catch {
     if (my !== seq) return;
     res = null;
-    box.innerHTML = '<div class="results-head err-row">Search couldn’t reach ClinicalTrials.gov. Try again in a moment.</div>';
+    const err = '<p class="rrow err-row">Search couldn’t reach ClinicalTrials.gov. Try again in a moment.</p>';
+    if (keepHead && box.contains($(".results-opts", box))) { box.querySelectorAll(".rrow").forEach((e) => e.remove()); box.insertAdjacentHTML("beforeend", err); }
+    else box.innerHTML = `<div class="results-head err-row">Search couldn’t reach ClinicalTrials.gov. Try again in a moment.</div>`;
   } finally {
     if (my === seq) box.removeAttribute("aria-busy");
   }
@@ -197,7 +209,7 @@ function dayWord(ymd) {
 
 export function renderLibrary() {
   const el = $("[data-lib]");
-  const live = L.online !== false && D.libAt > 0;
+  const live = L.online === true && isCurrent(D.libStamp);
   $("[data-lib-note]").textContent = L.online === false
     ? `Explained in plain words by TrialSignal. Status from the saved copy, ${fmtDate(SNAPSHOT_DATE)}.`
     : live ? "Explained in plain words by TrialSignal. Status checked live." : "Explained in plain words by TrialSignal. Checking status…";
@@ -225,18 +237,23 @@ function paintFollowFoot() {
 
 function changeHTML(id, e, ch) {
   const lu = e.latest.lastUpdate;
-  const looked = e.seenAt ? lookedOn(e.seenAt) : "";
+  // What the reader last saw: the saved copy they followed it from, or the day they looked.
+  // "After you last looked" is said only when the update really came later.
+  const seenDay = e.seenAt ? localDay(new Date(e.seenAt)) : "";
+  const since = e.from ? ` You followed it from the saved copy of ${shortDate(e.from)}.` : seenDay ? ` You last looked on ${shortDate(seenDay)}.` : "";
   const st = ch.find((c) => c.kind === "status");
   const others = ch.filter((c) => c !== st && c.kind !== "update").map((c) => c.text);
   let what;
   if (e.example) {
     what = `The sponsor updated this record on ${fmtDate(lu)}.<span class="fi-ex">An example flag for this starter list. The update is real.</span>`;
   } else if (st) {
-    what = `Status <s>${esc(statusLabel(e.seen.status))}</s><span class="arrow">→</span>${esc(statusLabel(e.latest.status))}${others.length ? ` · ${esc(others.join(" · "))}` : ""}, posted ${fmtDate(lu)}.${looked ? ` You last looked on ${looked}.` : ""}`;
+    what = `Status <s>${esc(statusLabel(e.seen.status))}</s><span class="arrow">→</span>${esc(statusLabel(e.latest.status))}${others.length ? ` · ${esc(others.join(" · "))}` : ""}, posted ${fmtDate(lu)}.${since}`;
   } else if (others.length) {
-    what = `${esc(others.join(" · "))}, posted ${fmtDate(lu)}.${looked ? ` You last looked on ${looked}.` : ""}`;
+    what = `${esc(others.join(" · "))}, posted ${fmtDate(lu)}.${since}`;
+  } else if (!e.from && seenDay && lu >= seenDay) {
+    what = `The sponsor updated this record on ${fmtDate(lu)}, after you last looked on ${shortDate(seenDay)}.`;
   } else {
-    what = `The sponsor updated this record on ${fmtDate(lu)}${looked ? `, after you last looked on ${looked}` : ""}.`;
+    what = `The sponsor updated this record on ${fmtDate(lu)}.${since}`;
   }
   return `<div class="fi-change"><span class="tag-new">Changed</span> <span class="what">${what}</span>
     <div class="fi-actions"><a class="link" href="https://clinicaltrials.gov/study/${id}?tab=history" target="_blank" rel="noopener">See exactly what changed ${ico("ext", "ico ico-sm")}</a><button class="cbtn" type="button" data-seen="${id}">Mark as seen</button></div></div>`;

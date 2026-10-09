@@ -121,7 +121,7 @@ export function renderFeed(scope, metric, rows, { stream = false, fresh = [], fr
   if (fresh.length) newSince[k] = (newSince[k] || 0) + fresh.length;
   const pill = ul.closest(".console")?.querySelector("[data-newpill]");
   if (pill) {
-    pill.hidden = !newSince[k];
+    pill.hidden = saved || !newSince[k];
     if (newSince[k]) pill.innerHTML = `<span class="ldot"></span>${newSince[k]} new since you opened`;
   }
 }
