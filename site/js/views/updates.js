@@ -3,8 +3,8 @@
 import { $, $$, esc, num, fmtDate, shortDate, ico } from "../util.js";
 import { SITE } from "../config.js";
 import { L, paintCount, countTo } from "../live.js";
-import { D, statusOf, loadFeed, loadAreaCounts, feedKey, SNAPSHOT, SNAPSHOT_DATE, swallow } from "../data.js";
-import { stHTML, renderFeed, renderFeedSkeleton, hideNewPill, errorRow, METRIC_TEXT } from "../console.js";
+import { D, statusOf, loadFeed, loadAreaCounts, feedKey, feedStale, SNAPSHOT, SNAPSHOT_DATE, swallow } from "../data.js";
+import { stHTML, renderFeed, hideNewPill, errorRow, METRIC_TEXT } from "../console.js";
 import { LIBRARY, AREAS, lib } from "../../data/library.js";
 import { NEWS, NEWS_REVIEWED } from "../../data/news.js";
 import { newsDate, ntype } from "./start.js";
@@ -68,7 +68,12 @@ export function renderUpdates() {
   paintTabCounts();
   showFeed(false);
   renderCompare();
+  // The registry may have refreshed while the reader was on another page.
+  if (stale()) refreshUpdates();
 }
+
+// Live, but the feed or the selected area's counts are missing or from an older refresh.
+const stale = () => L.online === true && (feedStale(feedKey("updates", metric, area)) || (area !== "all" && !D.areaCounts[area]));
 
 export const currentKey = () => feedKey("updates", metric, area);
 
@@ -79,11 +84,18 @@ export function resetArea() {
 }
 
 // After a registry refresh, or when this page opens live.
+let refreshingKey = "";
 export async function refreshUpdates() {
   const key = feedKey("updates", metric, area);
   const [m, a] = [metric, area];
+  if (refreshingKey === key) return;
+  refreshingKey = key;
+  try { await refreshFeed(key, m, a); } finally { if (refreshingKey === key) refreshingKey = ""; }
+}
+
+async function refreshFeed(key, m, a) {
   if (a !== "all") await loadAreaCounts(a).catch(swallow);
-  paintTabCounts();
+  if (area === a) paintTabCounts();
   let fresh = [];
   let ok = true;
   await loadFeed("updates", m, a).then((f) => (fresh = f), () => (ok = false));
@@ -118,7 +130,7 @@ function showFeed(stream) {
   const [m, a] = [metric, area];
   const rows = D.feeds[key];
   renderFeed("updates", m, rows || null, { stream, saved: D.saved, area: a });
-  if (!rows && L.online === true) {
+  if (!rows && L.online === true && refreshingKey !== key) {
     loadFeed("updates", m, a)
       .then(() => { if (feedKey("updates", metric, area) === key) { renderFeed("updates", m, D.feeds[key], { stream: true, area: a }); paintMore(); } })
       .catch(() => { if (feedKey("updates", metric, area) === key) $('[data-feed="updates"]').innerHTML = errorRow(); });
@@ -126,9 +138,9 @@ function showFeed(stream) {
   paintMore();
 }
 
-// Called on each check: reload the feed if it failed to load.
+// Called on each check: reload the feed or counts if they failed to load or are out of date.
 export function retryUpdates() {
-  if (L.online === true && !D.feeds[feedKey("updates", metric, area)]) { renderFeedSkeleton("updates"); showFeed(true); }
+  if (stale()) refreshUpdates();
 }
 
 function paintMore() {

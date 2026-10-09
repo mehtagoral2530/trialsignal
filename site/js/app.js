@@ -3,7 +3,7 @@
 import { $, $$, esc, fmtDate, shortDate, store, parseNCT } from "./util.js";
 import { SITE } from "./config.js";
 import { L, onLive, start as startLive, check, tick, countTo } from "./live.js";
-import { D, onData, useSaved, refreshAll, loadTotal, loadCounts, loadStatuses, clearLive, feedKey, SNAPSHOT_DATE, swallow } from "./data.js";
+import { D, onData, useSaved, refreshAll, loadTotal, loadCounts, loadStatuses, clearLive, isStale, feedKey, SNAPSHOT_DATE, swallow } from "./data.js";
 import { initTips } from "./ui.js";
 import { initNotes } from "./notes.js";
 import { LIBRARY, LIBRARY_REVIEWED, lib } from "../data/library.js";
@@ -152,7 +152,7 @@ onLive(async (type, detail) => {
     else if (detail.changed) clearLive({ keep: [feedKey("home", start.homeMetric()), updates.currentKey()] });
     if (view === "trial") (detail.first ? trial.renderTrial : trial.refreshTrial)(trialId);
     start.paintHero();
-    if (detail.first) { renderBars("home", start.homeMetric()); renderFeedSkeleton("home"); }
+    if (detail.first) { renderBars("home", start.homeMetric()); renderFeedSkeleton("home"); start.paintCounts(); updates.paintTabCounts(); }
     const all = refreshAll(start.homeMetric());
     const jobs = [start.refreshHome(all)];
     if (view === "trials") jobs.push(loadTotal().catch(swallow));
@@ -162,9 +162,10 @@ onLive(async (type, detail) => {
     refreshing = false;
   }
   if (type === "check" && L.online === true && !refreshing) {
-    // Retry whatever failed to load on an earlier check.
-    if (D.counts.today == null) loadCounts().catch(swallow);
-    if (!D.libAt) loadStatuses().catch(swallow);
+    // Retry whatever failed to load, or is still from an earlier refresh.
+    if (isStale(D.countsStamp)) loadCounts().catch(swallow);
+    if (isStale(D.libStamp)) loadStatuses().catch(swallow);
+    if (view === "trials") loadTotal().catch(swallow);
     start.retryHome();
     if (view === "updates") updates.retryUpdates();
     if (view === "trial") trial.retryTrial();

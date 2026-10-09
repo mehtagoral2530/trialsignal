@@ -4,7 +4,7 @@
 import { $, $$, esc, num, shortDate, fmtDate, ico } from "../util.js";
 import { SITE } from "../config.js";
 import { L, whenWord, easternWeekday, easternTime, countTo } from "../live.js";
-import { D, statusOf, loadDays, loadFeed, feedKey, SNAPSHOT_DATE, swallow } from "../data.js";
+import { D, statusOf, loadDays, loadFeed, feedKey, feedStale, SNAPSHOT_DATE, swallow } from "../data.js";
 import { stHTML, skel, renderBars, renderFeed, hideNewPill, errorRow, bindBarKeys } from "../console.js";
 import { lib, PICKS, LIBRARY } from "../../data/library.js";
 import { NEWS, NEWS_TYPES } from "../../data/news.js";
@@ -47,10 +47,13 @@ function showMetric() {
   }
 }
 
-// Called on each check: reload whatever failed to load.
+// Called on each check: reload whatever failed to load, or is still from an earlier refresh.
 export function retryHome() {
   if (L.online !== true || D.saved) return;
-  if (!D.days[metric] || !D.feeds[feedKey("home", metric)]) showMetric();
+  const m = metric;
+  const key = feedKey("home", m);
+  if (!D.days[m] || !D.feeds[key]) { showMetric(); return; }
+  if (feedStale(key)) loadFeed("home", m).then((fresh) => { if (metric === m) renderFeed("home", m, D.feeds[key], { fresh }); }).catch(swallow);
 }
 
 export function renderStart() {
@@ -79,10 +82,13 @@ export function paintHero() {
 
 // Whole console from current data (first paint, saved copy, tab switch offline).
 // Every count on the page except the Updates tabs, which can be narrowed to one area.
+// A count not fetched yet shows a placeholder, never an older number.
 export function paintCounts() {
-  ["today", "new7", "results7", "recruiting"].forEach((k, i) => {
-    if (D.counts[k] == null) return;
-    $$(`[data-count="${k}"]`).filter((el) => !el.closest('[data-tabs="updates"]')).forEach((el) => countTo(el, D.counts[k], { delay: i * 90, animate: !D.saved }));
+  ["today", "new7", "results7", "recruiting", "total"].forEach((k, i) => {
+    $$(`[data-count="${k}"]`).filter((el) => !el.closest('[data-tabs="updates"]')).forEach((el) => {
+      if (D.counts[k] != null) countTo(el, D.counts[k], { delay: i * 90, animate: !D.saved });
+      else if (el.dataset.v != null || !el.querySelector(".skel")) { delete el.dataset.v; el.removeAttribute("aria-label"); el.innerHTML = skel(); }
+    });
   });
 }
 
