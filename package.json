@@ -1,0 +1,16 @@
+{
+  "name": "trialsignal",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Medical studies in plain English, with live updates from ClinicalTrials.gov.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/seed-index.mjs && node scripts/build-site.mjs",
+    "test": "node --test test/*.test.mjs",
+    "snapshot": "node scripts/snapshot.mjs",
+    "serve": "npx --yes serve site",
+    "worker:dev": "cd worker && npx --yes wrangler@3 dev",
+    "worker:deploy": "cd worker && npx --yes wrangler@3 deploy"
+  }
+}

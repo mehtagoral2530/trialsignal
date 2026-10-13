@@ -1,0 +1,107 @@
+# TrialSignal
+
+TrialSignal explains medical studies in plain English. It gets live updates from ClinicalTrials.gov.
+
+TrialSignal is a learning tool built on the public record. It does not decide who can join a study, which treatment suits someone, or which treatment is better.
+
+> All data must be verified against the official IRB-approved protocol and investigator brochure before clinical application.
+
+## Hosting: free, GitHub only
+
+The default setup needs nothing but this GitHub repo:
+
+- **GitHub Pages** serves the site.
+- **Your browser** reads ClinicalTrials.gov directly, so search and study pages are live.
+- **Saved studies** are re-checked when you open the site and every 15 minutes while it stays open.
+- **A GitHub Action** refreshes a saved copy every 3 hours. If ClinicalTrials.gov can't be reached, the site shows that copy instead.
+
+### Publish (one time, about 5 minutes)
+
+1. Unzip, then run:
+   ```bash
+   bash trialsignal/publish.sh
+   ```
+   This pushes the code as a new `main` branch. Your other branches are not touched. GitHub may ask you to sign in.
+
+   No terminal? Install [GitHub Desktop](https://desktop.github.com), create a `main` branch, copy these files in, then commit and push.
+2. On github.com, open **Settings → General → Default branch** and choose **main**.
+3. Open **Settings → Pages → Source** and choose **GitHub Actions**.
+4. Open **Actions → Deploy site to GitHub Pages → Run workflow**.
+
+The site will be at `https://<you>.github.io/<repo>/`. From then on, every push to `main` redeploys it, and the snapshot runs on its own.
+
+### Optional upgrade: always-on live API (still free)
+
+The upgrade adds a Cloudflare Worker and an Upstash Redis database. With them:
+
+- studies are watched even while nobody has the site open
+- there is a server-side change feed
+- results are cached in Redis for 24 hours
+- search becomes hybrid, with an AI reranker
+
+The design is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+1. Create a free database at [upstash.com](https://upstash.com) and copy its **REST URL** and **REST token**.
+2. Create a free Cloudflare account. Note your **Account ID**, then make an **API token** from the "Edit Cloudflare Workers" template.
+3. In GitHub, open **Settings → Secrets and variables → Actions** and add these secrets:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+   - `UPSTASH_REDIS_REST_URL`
+   - `UPSTASH_REDIS_REST_TOKEN`
+   - optional: `GH_DISPATCH_TOKEN`, a fine-grained token with Contents read/write on this repo
+
+   Then add these variables:
+   - `PAGES_ORIGIN` = `https://<you>.github.io`
+   - `TS_API_BASE` = `https://trialsignal-api.<subdomain>.workers.dev`
+4. Run **Actions → Deploy API worker**. It deploys, smoke-tests, and rolls back if the test fails. Then run **Deploy site to GitHub Pages** again. The site switches to the API on its own, and falls back to direct mode if the API is down.
+
+To skip Workers AI, delete the `[ai]` block in `worker/wrangler.toml`.
+
+## Run it locally
+
+You need Node 20+. Redis is optional but needed for the integration tests.
+
+```bash
+npm run build                        # builds site/ (snapshot mode)
+npx serve site                       # open http://localhost:3000
+
+# Tests: they use REDIS_URL, or start a local redis-server if one is installed
+npm test
+
+# Browser tests (need Playwright + Chromium)
+node test/e2e/pages-only.mjs         # GitHub-only setup
+node test/e2e/run.mjs                # with the Worker + Redis
+
+# Worker against your own Upstash database
+cd worker && printf 'UPSTASH_REDIS_REST_URL=...\nUPSTASH_REDIS_REST_TOKEN=...\n' > .dev.vars
+npx wrangler@3 dev                    # http://localhost:8787/v1/health
+TS_API_BASE=http://localhost:8787 node ../scripts/build-site.mjs
+```
+
+## Repository map
+
+```
+app/        front-end source (shell.html, core.js, views.js, live.js, …)
+shared/     code used by both the Worker and the scripts: hashing, BM25, RRF, curated IDs
+worker/     Cloudflare Worker API, including the Redis Lua scripts
+scripts/    build-site.mjs, snapshot.mjs, seed-index.mjs
+site/       build output plus data/ (committed by the snapshot job) and fonts
+test/       unit, real-Redis integration and end-to-end tests
+.github/    CI, Pages deploy, Worker deploy, snapshot, health
+docs/       ARCHITECTURE.md
+```
+
+## API
+
+| Endpoint | Notes |
+|---|---|
+| `GET /v1/health` | Reports `{ ok, version, redis, ai }` |
+| `GET /v1/search?q=` | Hybrid search (BM25 + registry + optional dense, fused with RRF), then reranked; cached 24h |
+| `GET /v1/studies/{NCT}` | Returns an ETag; responds 304 when unchanged |
+| `GET /v1/changes?since=epoch.seq` | Change feed with ETag/304. Returns `410` when the cursor's epoch no longer exists. |
+| `GET /v1/state?ids=` | Current tracked state for up to 50 studies |
+| `POST /v1/watch` | Body `{ids:[…]}`. Requires an `Idempotency-Key` header. |
+
+## Credits
+
+The data comes from [ClinicalTrials.gov](https://clinicaltrials.gov) (U.S. National Library of Medicine). The font is Figtree (SIL OFL). TrialSignal is an independent portfolio project and is not affiliated with NLM, the FDA or any study sponsor.

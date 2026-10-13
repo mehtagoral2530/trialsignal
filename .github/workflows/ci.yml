@@ -1,0 +1,40 @@
+# Runs on every push and pull request: unit + integration tests against a real Redis,
+# a site build, and a Worker bundle dry-run. Required check for merging to main.
+name: CI
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping" --health-interval 5s --health-timeout 3s --health-retries 10
+    env:
+      REDIS_URL: redis://localhost:6379
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generate search seed index
+        run: node scripts/seed-index.mjs
+      - name: Check the seed index is committed and current
+        run: git diff --exit-code shared/index-seed.js
+      - name: Unit + integration tests (Lua CAS, idempotency, caching, endpoints)
+        run: npm test
+      - name: Build static site
+        run: node scripts/build-site.mjs
+      - name: Worker bundle dry-run
+        working-directory: worker
+        run: npx --yes wrangler@3 deploy --dry-run --outdir dist

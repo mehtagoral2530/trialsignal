@@ -1,0 +1,245 @@
+{
+ "generatedAt": null,
+ "docs": [
+  {
+   "nct": "NCT04184622",
+   "title": "A Study of Tirzepatide (LY3298176) in Participants With Obesity or Overweight",
+   "acronym": "SURMOUNT-1",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Obesity or overweight (without type 2 diabetes)"
+   ],
+   "interventions": [
+    "Tirzepatide 5 mg, 10 mg or 15 mg, injected under the skin once a week"
+   ],
+   "summary": "Does once-weekly tirzepatide lead to more weight loss than placebo over 72 weeks in adults with obesity, or overweight with a weight-related condition, who do not have type 2 diabetes? Adults with a BMI of 30 or more, or 27 or more with a weight-related health problem, who have tried dieting without lasting success and do not have type 2 diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03548935",
+   "title": "Research Study Investigating How Well Semaglutide Works in People Suffering From Overweight or Obesity",
+   "acronym": "STEP 1",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Overweight or obesity (without diabetes)"
+   ],
+   "interventions": [
+    "Semaglutide 2.4 mg, injected once a week (dose increased over 16 weeks from 0.25 mg)"
+   ],
+   "summary": "Does once-weekly semaglutide 2.4 mg, added to lifestyle intervention, lead to more weight loss than placebo over 68 weeks in adults with overweight or obesity who do not have diabetes? Adults with a BMI of 30 or more, or 27 or more with a weight-related condition, who have tried dieting before and do not have diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT04881760",
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight",
+   "acronym": "Retatrutide Ph2",
+   "status": "COMPLETED",
+   "phase": "PHASE2",
+   "conditions": [
+    "Obesity or overweight (without diabetes)"
+   ],
+   "interventions": [
+    "Retatrutide 1, 4, 8 or 12 mg, injected once a week (several escalation schedules)"
+   ],
+   "summary": "How much weight do adults with obesity lose on different doses of retatrutide compared with placebo, and how safe is it, over 48 weeks? Adults with obesity, or overweight with a weight-related condition, without diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT05929066",
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight (TRIUMPH-1)",
+   "acronym": "TRIUMPH-1",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Obesity or overweight with a weight-related comorbidity (without diabetes)"
+   ],
+   "interventions": [
+    "Retatrutide 4 mg, 9 mg or 12 mg, injected once a week"
+   ],
+   "summary": "Does once-weekly retatrutide lead to more weight loss than placebo in adults with obesity or overweight with a weight-related condition, measured at 80 weeks? Adults with obesity, or overweight with at least one weight-related health problem, who do not have diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03574597",
+   "title": "Semaglutide Effects on Heart Disease and Stroke in Patients With Overweight or Obesity",
+   "acronym": "SELECT",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Established cardiovascular disease with overweight or obesity (without diabetes)"
+   ],
+   "interventions": [
+    "Semaglutide up to 2.4 mg, injected once a week"
+   ],
+   "summary": "In people with existing heart disease and overweight or obesity but no diabetes, does semaglutide 2.4 mg reduce heart attacks, strokes and cardiovascular deaths compared with placebo? Adults aged 45 or older with a BMI of 27 or more who have had a heart attack, stroke or symptomatic peripheral artery disease, and who do not have diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03887455",
+   "title": "A Study to Confirm Safety and Efficacy of Lecanemab in Participants With Early Alzheimer's Disease",
+   "acronym": "CLARITY AD",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "conditions": [
+    "Early Alzheimer’s disease (MCI or mild dementia)"
+   ],
+   "interventions": [
+    "Lecanemab 10 mg/kg by IV infusion every 2 weeks (subcutaneous options in the extension)"
+   ],
+   "summary": "Does lecanemab slow clinical decline over 18 months compared with placebo in people with early Alzheimer’s disease and confirmed amyloid? People aged 50 to 90 with mild cognitive impairment or mild dementia due to Alzheimer’s, with amyloid confirmed by PET or spinal fluid testing.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT04437511",
+   "title": "A Study of Donanemab (LY3002813) in Participants With Early Alzheimer's Disease (TRAILBLAZER-ALZ 2)",
+   "acronym": "TRAILBLAZER-ALZ 2",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Early symptomatic Alzheimer’s disease"
+   ],
+   "interventions": [
+    "Donanemab by IV infusion every 4 weeks, switched to placebo once amyloid was cleared"
+   ],
+   "summary": "Does donanemab slow clinical progression over 76 weeks compared with placebo in early symptomatic Alzheimer’s disease with amyloid and tau pathology? People aged 60 to 85 with early symptomatic Alzheimer’s disease and amyloid and tau confirmed by PET scans.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT02578680",
+   "title": "Study of Platinum + Pemetrexed Chemotherapy With or Without Pembrolizumab (MK-3475) in Participants With First Line Metastatic Nonsquamous Non-small Cell Lung Cancer (MK-3475-189/KEYNOTE-189)",
+   "acronym": "KEYNOTE-189",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Metastatic nonsquamous non-small-cell lung cancer"
+   ],
+   "interventions": [
+    "Pembrolizumab 200 mg IV every 3 weeks + pemetrexed + cisplatin or carboplatin"
+   ],
+   "summary": "Does adding pembrolizumab to standard pemetrexed-platinum chemotherapy improve survival in previously untreated metastatic nonsquamous NSCLC without EGFR or ALK alterations? Adults with untreated metastatic nonsquamous lung cancer whose tumours do not have EGFR or ALK changes, and who are well enough to carry out daily activities (ECOG 0–1).",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03734029",
+   "title": "Trastuzumab Deruxtecan (T-DXd; DS-8201) Versus Investigator's Choice for HER2-low Breast Cancer That Has Spread or Cannot be Surgically Removed (DESTINY-Breast04)",
+   "acronym": "DESTINY-Breast04",
+   "status": null,
+   "phase": "PHASE3",
+   "conditions": [
+    "HER2-low unresectable or metastatic breast cancer"
+   ],
+   "interventions": [
+    "Trastuzumab deruxtecan 5.4 mg/kg IV every 3 weeks"
+   ],
+   "summary": "Does trastuzumab deruxtecan improve progression-free survival compared with the physician’s choice of chemotherapy in HER2-low metastatic breast cancer previously treated with chemotherapy? Adults with metastatic breast cancer with low HER2 levels (IHC 1+ or IHC 2+/ISH-negative) who have already had one or two lines of chemotherapy for advanced disease.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03036124",
+   "title": "Study to Evaluate the Effect of Dapagliflozin on the Incidence of Worsening Heart Failure or Cardiovascular Death in Patients With Chronic Heart Failure",
+   "acronym": "DAPA-HF",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Chronic heart failure with reduced ejection fraction"
+   ],
+   "interventions": [
+    "Dapagliflozin 10 mg tablet once daily, plus standard care"
+   ],
+   "summary": "Does dapagliflozin, added to standard therapy, reduce worsening heart failure or cardiovascular death in people with heart failure with reduced ejection fraction, with or without diabetes? Adults with symptomatic heart failure (NYHA class II–IV) and an ejection fraction of 40% or less, with raised NT-proBNP, with or without type 2 diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03057977",
+   "title": "EMPagliflozin outcomE tRial in Patients With chrOnic heaRt Failure With Reduced Ejection Fraction (EMPEROR-Reduced)",
+   "acronym": "EMPEROR-Reduced",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Chronic heart failure with reduced ejection fraction"
+   ],
+   "interventions": [
+    "Empagliflozin 10 mg tablet once daily, plus usual care"
+   ],
+   "summary": "Does empagliflozin, added to usual treatment, reduce cardiovascular death or hospitalization for heart failure in people with heart failure and a reduced ejection fraction, with or without diabetes? Adults with symptomatic heart failure and an ejection fraction of 40% or less, with raised NT-proBNP levels, whether or not they have diabetes.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT01035255",
+   "title": "This Study Will Evaluate the Efficacy and Safety of LCZ696 Compared to Enalapril on Morbidity and Mortality of Patients With Chronic Heart Failure",
+   "acronym": "PARADIGM-HF",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Chronic heart failure with reduced ejection fraction"
+   ],
+   "interventions": [
+    "Sacubitril/valsartan (LCZ696) 200 mg twice daily"
+   ],
+   "summary": "Is sacubitril/valsartan better than enalapril, a standard heart-failure medicine, at preventing cardiovascular death or heart-failure hospitalization? Adults with symptomatic heart failure and an ejection fraction of 40% or less (later 35% or less) who were already on standard treatment.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03819153",
+   "title": "A Research Study to See How Semaglutide Works Compared to Placebo in People With Type 2 Diabetes and Chronic Kidney Disease (FLOW)",
+   "acronym": "FLOW",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "conditions": [
+    "Chronic kidney disease with type 2 diabetes"
+   ],
+   "interventions": [
+    "Semaglutide 1.0 mg, injected once a week"
+   ],
+   "summary": "Does semaglutide slow kidney disease and reduce kidney and heart deaths in people with type 2 diabetes and chronic kidney disease? Adults with type 2 diabetes and chronic kidney disease, shown by reduced kidney function and protein leaking into the urine.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03036488",
+   "title": "Study of Pembrolizumab (MK-3475) Plus Chemotherapy vs Placebo Plus Chemotherapy as Neoadjuvant Therapy and Pembrolizumab vs Placebo as Adjuvant Therapy in Participants With Triple Negative Breast Cancer (TNBC) (MK-3475-522/KEYNOTE-522)",
+   "acronym": "KEYNOTE-522",
+   "status": null,
+   "phase": "PHASE3",
+   "conditions": [
+    "Early-stage triple-negative breast cancer"
+   ],
+   "interventions": [
+    "Pembrolizumab with chemotherapy before surgery, then pembrolizumab alone after surgery"
+   ],
+   "summary": "Does adding pembrolizumab to chemotherapy before surgery, and continuing it after, help more people with early triple-negative breast cancer? Adults with newly diagnosed stage II or III triple-negative breast cancer who had not yet been treated.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT03529110",
+   "title": "DS-8201a Versus T-DM1 for Human Epidermal Growth Factor Receptor 2 (HER2)-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane (DESTINY-Breast03)",
+   "acronym": "DESTINY-Breast03",
+   "status": null,
+   "phase": "PHASE3",
+   "conditions": [
+    "HER2-positive metastatic breast cancer"
+   ],
+   "interventions": [
+    "Trastuzumab deruxtecan 5.4 mg/kg IV every 3 weeks"
+   ],
+   "summary": "Does trastuzumab deruxtecan keep HER2-positive metastatic breast cancer under control longer than trastuzumab emtansine (T-DM1), the previous standard? Adults with HER2-positive metastatic breast cancer that had grown despite earlier treatment with trastuzumab and a taxane.",
+   "lastUpdate": null
+  },
+  {
+   "nct": "NCT02511106",
+   "title": "AZD9291 Versus Placebo in Patients With Stage IB-IIIA Non-small Cell Lung Carcinoma, Following Complete Tumour Resection With or Without Adjuvant Chemotherapy (ADAURA)",
+   "acronym": "ADAURA",
+   "status": null,
+   "phase": "PHASE3",
+   "conditions": [
+    "Resected EGFR-mutated non-small-cell lung cancer"
+   ],
+   "interventions": [
+    "Osimertinib 80 mg tablet once daily for up to 3 years"
+   ],
+   "summary": "After surgery for early EGFR-mutated lung cancer, does osimertinib keep the cancer from coming back longer than placebo? Adults whose stage IB to IIIA non-small-cell lung cancer with a common EGFR mutation was completely removed by surgery.",
+   "lastUpdate": null
+  }
+ ]
+}

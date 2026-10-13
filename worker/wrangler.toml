@@ -1,0 +1,22 @@
+name = "trialsignal-api"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+workers_dev = true
+
+# Every 15 minutes: poll watched studies. Daily 03:07 UTC: housekeeping + snapshot freshness check.
+[triggers]
+crons = ["*/15 * * * *", "7 3 * * *"]
+
+# Optional: Workers AI powers the dense search leg and the cross-encoder reranker (free daily allowance).
+# Remove this block to run lexical-only search with the heuristic reranker.
+[ai]
+binding = "AI"
+
+[vars]
+# Set these in the dashboard or with `wrangler deploy --var` from CI.
+PAGES_ORIGIN = ""
+ALLOWED_ORIGIN = "*"
+GH_REPO = ""
+
+# Secrets (set with `wrangler secret put`, done automatically by .github/workflows/deploy-worker.yml):
+#   UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN, GH_DISPATCH_TOKEN (optional)

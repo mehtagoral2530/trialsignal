@@ -1,0 +1,52 @@
+# Daily: check the API and the snapshot pipeline. Opens (or updates) one issue on failure.
+# GitHub pauses scheduled workflows after 60 days without repo activity; this re-enables the snapshot job.
+name: Health
+on:
+  schedule:
+    - cron: "41 6 * * *"
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      TS_API_BASE: ${{ vars.TS_API_BASE }}
+    steps:
+      - name: Re-enable the snapshot workflow if GitHub paused it
+        run: gh workflow enable snapshot.yml || true
+      - name: API health
+        id: api
+        run: |
+          if [ -z "$TS_API_BASE" ]; then echo "result=skipped (no TS_API_BASE)" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if body=$(curl -fsS --max-time 10 "$TS_API_BASE/v1/health"); then
+            echo "$body"
+            echo "$body" | grep -q '"redis":true' && echo "result=ok" >> "$GITHUB_OUTPUT" || echo "result=degraded (redis unreachable)" >> "$GITHUB_OUTPUT"
+          else
+            echo "result=down" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Snapshot pipeline
+        id: snap
+        run: |
+          last=$(gh run list --workflow snapshot.yml --status success --limit 1 --json createdAt -q '.[0].createdAt' || true)
+          echo "last successful snapshot run: ${last:-never}"
+          if [ -z "$last" ]; then echo "result=no successful run yet" >> "$GITHUB_OUTPUT"; exit 0; fi
+          age=$(( ( $(date +%s) - $(date -d "$last" +%s) ) / 3600 ))
+          [ "$age" -le 12 ] && echo "result=ok" >> "$GITHUB_OUTPUT" || echo "result=stale (${age}h since last success)" >> "$GITHUB_OUTPUT"
+      - name: Report
+        run: |
+          api="${{ steps.api.outputs.result }}"; snap="${{ steps.snap.outputs.result }}"
+          echo "API: $api | Snapshot: $snap"
+          case "$api" in ok|skipped*) a=0;; *) a=1;; esac
+          case "$snap" in ok|no*) s=0;; *) s=1;; esac
+          [ $a -eq 0 ] && [ $s -eq 0 ] && exit 0
+          title="Health check: TrialSignal needs attention"
+          body="API: \`$api\`  \nSnapshot: \`$snap\`  \nRun: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          n=$(gh issue list --state open --search "$title in:title" --json number -q '.[0].number')
+          if [ -n "$n" ]; then gh issue comment "$n" --body "$body"; else gh issue create --title "$title" --body "$body"; fi
+          exit 1
