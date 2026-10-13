@@ -59,6 +59,7 @@ const saveWatch = () => store("ts_saved", WATCH);
 
 function liveErr(e){
   if(e && e.status && LIVE.mode==="http") return {st:"error", msg: e.status>=500 ? "ClinicalTrials.gov didn’t answer just now. Try again in a minute." : e.status===404 ? "ClinicalTrials.gov has no record with this number." : "ClinicalTrials.gov couldn’t handle that request ("+e.status+").", code:"http"};
+  if(e && (e.name==="TimeoutError" || e.name==="AbortError") && LIVE.mode==="http" && LIVE.base==="direct") return liveErr({status:504});   // a request we gave up on: same wording as a 5xx
   if(e instanceof TypeError && LIVE.mode==="http") return {st:"error", msg:"You seem to be offline, or ClinicalTrials.gov can’t be reached.", code:"network"};
   const c = e && e.code;
   const map = {
@@ -131,8 +132,14 @@ function ctUrlFor(path, params){
   const q = new URLSearchParams(params);
   return LIVE.base === "proxy" ? `/api/ct?path=${encodeURIComponent(path)}&${q}` : `${CT_DIRECT}${path}?${q}`;
 }
-async function ctFetch(path, params){
-  const r = await fetch(ctUrlFor(path, params), {headers:{accept:"application/json"}});
+/* AbortSignal.timeout() where the browser has it (Safari < 16, Chrome < 103 and Firefox < 100 do not), else a controller on a timer. */
+function timeoutSignal(ms){
+  if(typeof AbortSignal !== "undefined" && typeof AbortSignal.timeout === "function") return AbortSignal.timeout(ms);
+  if(typeof AbortController === "undefined") return undefined;
+  const c = new AbortController(); setTimeout(() => c.abort(), ms); return c.signal;
+}
+async function ctFetch(path, params, init){
+  const r = await fetch(ctUrlFor(path, params), {headers:{accept:"application/json"}, ...init});
   if(!r.ok){ const e = new Error("ClinicalTrials.gov returned "+r.status); e.status = r.status; e.code = r.status===404 ? "tool_error" : r.status>=500 ? "server_unavailable" : "tool_error"; throw e; }
   return r.json();
 }
@@ -162,10 +169,8 @@ async function probeHttp(){
   }
   for(const base of ["direct"]){
     LIVE.base = base;
-    try{
-      const r = await fetch(ctUrlFor("studies", {pageSize:1, format:"json", fields:"NCTId"}), {headers:{accept:"application/json"}});
-      if(r.ok && /json/.test(r.headers.get("content-type")||"")){ await r.json(); return true; }
-    }catch(e){}
+    /* GET /version is the cheap reachability probe; its dataTimestamp is what the registry poller (live.js) compares. */
+    try{ REG.ts = await fetchRegistryVersion(); return true; }catch(e){}
   }
   LIVE.base = null; return false;
 }
@@ -173,9 +178,14 @@ async function probeHttp(){
 async function callLive(kind, val, {fresh=false}={}){
   if(LIVE.mode === "http"){
     const key = "h:"+kind+":"+JSON.stringify(val);
-    if(!fresh && LIVE.cache[key] && Date.now()-LIVE.cache[key].at < 120000) return LIVE.cache[key];
+    /* layer 1: memory (2 min). layer 2 (direct mode only): localStorage for 24 h, valid while the registry's dataTimestamp is unchanged. */
+    const mem = LIVE.cache[key];
+    if(!fresh && mem && Date.now()-(mem.mem ?? mem.at) < 120000) return mem;
+    const ts = LIVE.base === "direct" ? REG.ts : null;
+    if(!fresh && ts){ const hit = cacheGet(key, ts); if(hit){ LIVE.cache[key] = {...hit, mem: Date.now()}; return hit; } }
     const payload = await httpCall(kind, val);
-    const out = {payload, at: Date.now()}; LIVE.cache[key] = out;
+    const out = {payload, at: Date.now()};
+    if(!ts || REG.ts === ts){ LIVE.cache[key] = out; if(ts) cachePut(key, ts, out); }   // an answer that raced a registry update is not kept
     if(LIVE.state!=="on") setLive("on");
     return out;
   }
@@ -303,7 +313,7 @@ async function boot(){
     LIVE.mode = "http";
     LIVE.downloads = {save: async ({filename, data}) => { const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([data],{type:"text/markdown"})); a.download=filename; document.body.appendChild(a); a.click(); a.remove(); return {status:"saved"}; }};
     if(await probeHttp()){ startLive(); }
-    else { setLive("none","Live updates are unavailable right now, so you’re seeing the saved copy."); loadSnapshotFallback(); }
+    else { setLive("none","Live updates are unavailable right now, so you’re seeing the saved copy."); loadSnapshotFallback(); regProbeLater(); }
     return;
   }
   LIVE.mode = "mcp";
@@ -328,7 +338,7 @@ async function startLive(){
     store("ts_live", 1);
     if(LIVE.state!=="on") setLive("on");
     if(curView==="trials") renderHome();
-    if(curView==="trial") renderTrial();
+    if(curView==="trial") renderTrialInPlace();
     if(curView==="new") renderRegLive();
   }catch(e){ const r=liveErr(e); setLive(r.st==="error"?"ready":r.st, r.msg); }
 }
@@ -350,5 +360,5 @@ async function refreshWatch(throwFirst){
   saveWatch();
   if(curView==="trials") renderFollow();
 }
-setInterval(() => { if(LIVE.state==="on" && !document.hidden) refreshWatch(false); }, 15*60*1000);
+setInterval(() => { if(LIVE.state==="on" && !document.hidden && !regDirect()) refreshWatch(false); }, 15*60*1000);   // direct mode: the registry poller in live.js covers this
 

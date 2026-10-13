@@ -8,12 +8,15 @@ TrialSignal is a learning tool built on the public record. It does not decide wh
 
 ## Hosting: free, GitHub only
 
-The default setup needs nothing but this GitHub repo:
+What is deployed needs nothing but this GitHub repo: zero accounts, zero secrets.
 
 - **GitHub Pages** serves the site.
-- **Your browser** reads ClinicalTrials.gov directly, so search and study pages are live.
-- **Saved studies** are re-checked when you open the site and every 15 minutes while it stays open.
-- **A GitHub Action** refreshes a saved copy every 3 hours. If ClinicalTrials.gov can't be reached, the site shows that copy instead.
+- **Your browser** reads ClinicalTrials.gov directly, so search and study pages are live. Live updates work like this:
+  - While a tab is visible, it asks `GET /api/v2/version` about every 5 minutes (and when you come back to the tab, at most once a minute). That is a tiny request, about 12 an hour per open tab.
+  - Your saved studies are refreshed only when the registry's `dataTimestamp` moves, which is about once per weekday. They go in one batched request per 100 ids.
+  - Answers are cached in localStorage for 24 hours, and only while the `dataTimestamp` is unchanged.
+  - Failed checks back off (exponential, full jitter, from 15 seconds up to 1 hour). After 3 failed checks in a row, the site shows the saved copy.
+- **A GitHub Action** refreshes a saved copy hourly. It reads `/version` first and stops there when the registry hasn't moved. If the registry moved but none of the tracked studies did, it commits only the new timestamp and deploys nothing. If your browser can't reach ClinicalTrials.gov, the site shows that copy instead.
 
 ### Publish (one time, about 5 minutes)
 
@@ -30,7 +33,9 @@ The default setup needs nothing but this GitHub repo:
 
 The site will be at `https://<you>.github.io/<repo>/`. From then on, every push to `main` redeploys it, and the snapshot runs on its own.
 
-### Optional upgrade: always-on live API (still free)
+### Optional, not deployed: always-on live API (still free)
+
+Nothing in `worker/` is deployed, and the site doesn't need it. The site uses the Worker only if the `TS_API_BASE` variable is set when the site is built. Without it, the site runs browser-direct, as described above, and no Worker, Redis or Workers AI is involved.
 
 The upgrade adds a Cloudflare Worker and an Upstash Redis database. With them:
 
@@ -83,7 +88,7 @@ TS_API_BASE=http://localhost:8787 node ../scripts/build-site.mjs
 ```
 app/        front-end source (shell.html, core.js, views.js, live.js, …)
 shared/     code used by both the Worker and the scripts: hashing, BM25, RRF, curated IDs
-worker/     Cloudflare Worker API, including the Redis Lua scripts
+worker/     optional, not deployed: Cloudflare Worker API, including the Redis Lua scripts
 scripts/    build-site.mjs, snapshot.mjs, seed-index.mjs
 site/       build output plus data/ (committed by the snapshot job) and fonts
 test/       unit, real-Redis integration and end-to-end tests
@@ -91,7 +96,7 @@ test/       unit, real-Redis integration and end-to-end tests
 docs/       ARCHITECTURE.md
 ```
 
-## API
+## API (optional Worker, not deployed)
 
 | Endpoint | Notes |
 |---|---|

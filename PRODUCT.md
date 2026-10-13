@@ -34,10 +34,10 @@ Success means a newcomer understands what a study is testing and how firm its fi
 
 ## Capabilities and Constraints
 - **Pages:** Start, Trials (live search, following, library), the trial reader, Updates (live registry changes, hand-picked headlines, side by side), and About (purpose, scope, sources, how it was built).
-- **Live data:** the ClinicalTrials.gov API v2 through a Cloudflare Worker with an Upstash Redis cache. The Worker polls every 15 minutes and the browser checks for changes about every 5 minutes. When running as a claude.ai artifact, the Clinical Trials connector is used instead.
-- **Fallback:** a snapshot rebuilt every 3 hours by GitHub Actions, then a curated library of 16 trials.
+- **Live data:** the visitor's browser reads the ClinicalTrials.gov API v2 directly. It checks the registry's `/version` about every 5 minutes and refreshes saved studies only when the registry's data timestamp moves. A Cloudflare Worker with an Upstash Redis cache is kept in `worker/` as an optional path that is not deployed. When running as a claude.ai artifact, the Clinical Trials connector is used instead.
+- **Fallback:** a snapshot rebuilt hourly by GitHub Actions (it fetches only when the registry has changed), then a curated library of 16 trials.
 - **Browser storage:** notes and followed trials are kept in localStorage.
-- **Stack:** static HTML, CSS and JavaScript with no framework, hosted on GitHub Pages, plus one Cloudflare Worker. See docs/ARCHITECTURE.md.
+- **Stack:** static HTML, CSS and JavaScript with no framework, hosted on GitHub Pages (the optional Cloudflare Worker is not deployed). See docs/ARCHITECTURE.md.
 - **Simplification is approved** (2026-10-10). The flow may be simplified and features cut or merged where they add clutter.
 
 ## Brand Commitments

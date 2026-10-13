@@ -1,18 +1,30 @@
-# Every 3 hours: fetch tracked studies from ClinicalTrials.gov and write site/data/*.json.
-# This is the fallback that keeps GitHub Pages useful if the Worker or Redis is down.
-# Idempotent: when no tracked field changed, nothing is committed and nothing deploys.
-# Also triggered by the Worker's daily cron (repository_dispatch) if the snapshot is stale.
+# Hourly: ask ClinicalTrials.gov whether its data changed, and only then fetch the tracked studies and
+# write site/data/*.json. This is the offline fallback that keeps GitHub Pages useful when the browser
+# cannot reach the registry directly (live updates are browser-direct; see app/live.js).
+#
+# Cheap when quiet: scripts/snapshot.mjs first reads GET /api/v2/version and compares its dataTimestamp
+# with the one stored in site/data/snapshot.json. The registry refreshes about once per weekday, so most
+# hourly runs make a single tiny request and stop. If /version is unreachable the full run goes ahead.
+# Idempotent: when no tracked field changed, no data is rewritten and nothing deploys. If the registry
+# refreshed but none of our studies moved, only its dataTimestamp is stamped into snapshot.json and committed
+# (a stamp-only commit, not deployed) so the next runs stop at the gate.
+# GitHub may delay or skip scheduled runs under load; for a fallback that is acceptable.
+# Also triggered by the optional Worker's daily cron (repository_dispatch, only if it is deployed) when the
+# snapshot is stale, and by hand (workflow_dispatch; tick "force" to skip the registry check).
 name: Snapshot
 on:
   schedule:
-    - cron: "23 */3 * * *"
+    - cron: "23 * * * *"
   repository_dispatch:
     types: [snapshot]
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Skip the registry-version check and fetch everything"
+        type: boolean
+        default: false
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 concurrency:
   group: snapshot
   cancel-in-progress: false
@@ -20,7 +32,10 @@ jobs:
   snapshot:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
     outputs:
+      # Set by scripts/snapshot.mjs on every path, including the gated "registry-unchanged" one.
       changed: ${{ steps.snap.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
@@ -29,20 +44,31 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Fetch and diff
+      - name: Check registry version, fetch and diff
         id: snap
+        env:
+          SNAPSHOT_FORCE: ${{ inputs.force }}
         run: node scripts/snapshot.mjs
+      # changed=true: new tracked data (commit, then deploy).
+      # stamped=true: registry refreshed but nothing we track moved; only dataTimestamp is recorded so the
+      # next runs can skip at the gate. Committed, but not deployed.
       - name: Commit data (only if it changed)
-        if: steps.snap.outputs.changed == 'true'
+        if: steps.snap.outputs.changed == 'true' || steps.snap.outputs.stamped == 'true'
         run: |
           git config user.name  "trialsignal-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/data
           git diff --cached --quiet && { echo "nothing staged"; exit 0; }
-          git commit -m "data: snapshot $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
-          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done
+          what="snapshot"; [ "${{ steps.snap.outputs.changed }}" = "true" ] || what="registry timestamp"
+          git commit -m "data: $what $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true   # leave a clean tree for the retry
+            sleep $((i * 5))
+          done
           exit 1
   # Commits made with GITHUB_TOKEN do not trigger other workflows, so deploy explicitly.
+  # deploy-pages.yml checks out main, so it builds the commit the job above just pushed.
   deploy:
     needs: snapshot
     if: needs.snapshot.outputs.changed == 'true'

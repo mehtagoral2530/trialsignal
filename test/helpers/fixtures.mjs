@@ -14,14 +14,21 @@ export function study({ id, title = "Untitled", acronym = null, status = "RECRUI
   };
 }
 
-/** A fake ClinicalTrials.gov: answers /studies (filter.ids, query.term) and /studies/{id} from a mutable map. */
-export function fakeRegistry(initial = []) {
+/**
+ * A fake ClinicalTrials.gov: answers /studies (filter.ids, query.term) and /studies/{id} from a mutable map.
+ * Pass { dataTimestamp } to also answer GET /version like the real registry ({apiVersion, dataTimestamp}); without it
+ * /version stays a 404, so existing callers see no change. Registry-side edits are made with set() / mutate(), and
+ * bump() moves dataTimestamp forward the way the registry's daily import does.
+ */
+export function fakeRegistry(initial = [], { dataTimestamp = null } = {}) {
   const db = new Map(initial.map((s) => [s.protocolSection.identificationModule.nctId, s]));
   const calls = [];
+  const reg = { db, calls, dataTimestamp };
   const fetchImpl = async (url) => {
     const u = new URL(url); calls.push(u);
     const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json" } });
     if (fetchImpl.fail) return json({ error: "down" }, fetchImpl.fail);
+    if (u.pathname.endsWith("/version") && reg.dataTimestamp) return json({ apiVersion: "2.0.5", dataTimestamp: reg.dataTimestamp });
     const m = u.pathname.match(/\/studies\/(NCT\d{8})$/);
     if (m) return db.has(m[1]) ? json(db.get(m[1])) : json({}, 404);
     if (u.pathname.endsWith("/studies")) {
@@ -33,5 +40,22 @@ export function fakeRegistry(initial = []) {
     }
     return json({}, 404);
   };
-  return { db, calls, fetchImpl, set: (s) => db.set(s.protocolSection.identificationModule.nctId, s) };
+  return Object.assign(reg, {
+    fetchImpl,
+    set: (s) => db.set(s.protocolSection.identificationModule.nctId, s),
+    /** Edit a study in place: mutate("NCT…", { status, lup, pcd, enroll }). */
+    mutate: (id, { status, lup, pcd, enroll } = {}) => {
+      const p = db.get(id).protocolSection;
+      if (status !== undefined) p.statusModule.overallStatus = status;
+      if (lup !== undefined) p.statusModule.lastUpdatePostDateStruct.date = lup;
+      if (pcd !== undefined) p.statusModule.primaryCompletionDateStruct.date = pcd;
+      if (enroll !== undefined) p.designModule.enrollmentInfo.count = enroll;
+      return db.get(id);
+    },
+    /** New registry import: dataTimestamp moves forward by `days` (default 1). Returns the new value. */
+    bump: (days = 1) => {
+      if (!reg.dataTimestamp) throw new Error("fakeRegistry: pass { dataTimestamp } to fakeRegistry() to use bump()");
+      return (reg.dataTimestamp = new Date(Date.parse(reg.dataTimestamp + "Z") + days * 864e5).toISOString().slice(0, 19));
+    },
+  });
 }
