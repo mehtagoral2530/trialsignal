@@ -1,14 +1,124 @@
 {
  "version": 1,
- "generatedAt": "2026-10-15T00:06:32.088Z",
- "dataTimestamp": "2026-10-14T09:00:05",
+ "generatedAt": "2026-10-15T13:32:50.163Z",
+ "dataTimestamp": "2026-10-15T09:00:05",
  "fdaUpdated": "2026-10-14",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "9a623f56daeb612e5fe871a4a7b07535",
+ "contentHash": "8920135ea742a67f0e0158002c8b720a",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04592809",
+   "kind": "results",
+   "date": "2026-10-15",
+   "level": 7,
+   "nct": "NCT04592809",
+   "drug": "Ketamine Hydrochloride",
+   "title": "Results posted for a study of Ketamine Hydrochloride for Suicide, Attempted",
+   "summary": "University of Texas Southwestern Medical Center ran this final-stage test (phase 3) with 50 people. The registry lists its end date as 31 Aug 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04592809"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42849709/"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04701983",
+   "kind": "results",
+   "date": "2026-10-15",
+   "level": 6,
+   "nct": "NCT04701983",
+   "drug": "Itepekimab SAR440340",
+   "title": "Results posted for a study of Itepekimab SAR440340 for Chronic Obstructive Pulmonary Disease",
+   "summary": "Sanofi ran this final-stage test (phase 3) with 1,127 people. The registry lists its end date as 27 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04701983) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04701983"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05255991",
+   "kind": "results",
+   "date": "2026-10-15",
+   "level": 7,
+   "nct": "NCT05255991",
+   "drug": "Inhaled Treprostinil",
+   "title": "Results posted for a study of Inhaled Treprostinil for Idiopathic Pulmonary Fibrosis",
+   "summary": "United Therapeutics ran this final-stage test (phase 3) with 597 people. The registry lists its end date as 30 Jun 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05255991"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42776606/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42776606"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05882357",
+   "kind": "results",
+   "date": "2026-10-15",
+   "level": 6,
+   "nct": "NCT05882357",
+   "drug": "ELX/TEZ/IVA",
+   "title": "Results posted for a study of ELX/TEZ/IVA for Cystic Fibrosis",
+   "summary": "Vertex Pharmaceuticals Incorporated ran this final-stage test (phase 3) with 67 people. The registry lists its end date as 4 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05882357) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05882357"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06173531",
+   "kind": "results",
+   "date": "2026-10-15",
+   "level": 7,
+   "nct": "NCT06173531",
+   "drug": "Carbetocin",
+   "title": "Results posted for a study of Carbetocin for Hyperphagia in Prader-Willi Syndrome",
+   "summary": "ACADIA Pharmaceuticals Inc. ran this final-stage test (phase 3) with 175 people. The registry lists its end date as 19 Aug 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06173531"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42486751/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42486751"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT05139316",
@@ -79,104 +189,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT04636957"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT07136766",
-   "kind": "results",
-   "date": "2026-10-13",
-   "level": 6,
-   "nct": "NCT07136766",
-   "drug": "Facial Toner",
-   "title": "Results posted for a study of Facial Toner for Hyperpigmentation",
-   "summary": "Good Molecules, LLC ran this final-stage test (phase 3) with 49 people. The registry lists its end date as 16 Feb 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT07136766) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07136766"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03194893",
-   "kind": "results",
-   "date": "2026-10-09",
-   "level": 6,
-   "nct": "NCT03194893",
-   "drug": "Alectinib",
-   "title": "Results posted for a study of Alectinib for Neoplasms",
-   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 50 people. The registry lists its end date as 18 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03194893) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03194893"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03456063",
-   "kind": "results",
-   "date": "2026-10-09",
-   "level": 6,
-   "nct": "NCT03456063",
-   "drug": "Atezolizumab",
-   "title": "Results posted for a study of Atezolizumab for Non-Small-Cell Lung",
-   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 453 people. The registry lists its end date as 31 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03456063) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03456063"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04751487",
-   "kind": "results",
-   "date": "2026-10-09",
-   "level": 6,
-   "nct": "NCT04751487",
-   "drug": "Itepekimab SAR440340",
-   "title": "Results posted for a study of Itepekimab SAR440340 for Chronic Obstructive Pulmonary Disease",
-   "summary": "Sanofi ran this final-stage test (phase 3) with 1,234 people. The registry lists its end date as 28 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04751487) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04751487"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT02916446",
-   "kind": "results",
-   "date": "2026-10-08",
-   "level": 7,
-   "nct": "NCT02916446",
-   "drug": "Viaskin Peanut 250 µg",
-   "title": "Results posted for a study of Viaskin Peanut 250 µg for Peanut Allergy",
-   "summary": "DBV Technologies ran this final-stage test (phase 3) with 393 people. The registry lists its end date as 7 Oct 2020. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT02916446"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/40023371/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/40023371"
     ]
    ]
   },
