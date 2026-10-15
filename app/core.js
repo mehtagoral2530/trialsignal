@@ -79,7 +79,7 @@ function liveErr(e){
   const [st, msg] = map[c] || ["error","Live lookup failed"+(e&&e.message?": "+e.message:"")+". Try again shortly."];
   return {st, msg, code:c};
 }
-function setLive(st, msg){ LIVE.state = st; LIVE.msg = msg||""; renderBadge(); if(curView==="trials") renderLiveNote(); }
+function setLive(st, msg){ LIVE.state = st; LIVE.msg = msg||""; renderBadge(); if(curView==="trials") renderLiveNote(); if(curView==="news" && typeof newsOnLiveState==="function"){ try{ newsOnLiveState(); }catch(e){} } }
 function renderBadge(){
   const b=$("#liveBadge"), on = LIVE.state==="on";
   b.classList.toggle("on", on);

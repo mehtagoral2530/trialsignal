@@ -19,12 +19,12 @@ const ICON = {
   bookmark:'<path d="M6 3h12v18l-6-4-6 4z"/>', chev:'<path d="M6 9l6 6 6-6"/>', stop:'<circle cx="12" cy="12" r="8.5"/><path d="M8.5 15.5l7-7"/>'
 };
 const svg = (k, cls="") => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[k]||""}</svg>`;
-const VICON = {4:"check", 3:"star", 2:"flag", 1:"clock", 0:"stop", 5:"clock"};
+const VICON = {4:"check", 3:"star", 2:"flag", 1:"clock", 0:"stop", 5:"clock", 6:"clock", 7:"clock"};
 function verdictBadge(lv){ const v = VERDICT[lv]; return `<span class="verdict v-${v.key}">${svg(VICON[lv])}${esc(v.label)}</span>`; }
 const isApproved = txt => /approv|indication/i.test(txt||"") && !/plans? to|to file|expected/i.test(txt||"");
 const resultLevel = t => t.evidence==="published" ? 3 : t.evidence==="topline" ? 2 : 1;
 const levelOf = t => isApproved(t.next) ? 4 : resultLevel(t);
-const newsLevel = n => n.type==="Approval" ? 4 : n.type==="Discontinued" || /\bfails?\b|stops?\b/i.test(n.title) ? 0 : n.type==="Submission" ? 5 : (/peer-reviewed trial|NEJM|JAMA/i.test(n.evidence) && !/no peer|not yet/i.test(n.evidence)) ? 3 : 2;
+const newsLevel = newsHandLevel;   // the rule lives in shared/news.js so the snapshot job and the page agree
 const firstSentence = s => { const m = String(s||"").match(/^.*?[.?!](\s|$)/); return (m ? m[0] : String(s||"")).trim(); };
 const topicName = id => (TOPICS.find(t=>t.id===id)||{}).label || "";
 function renderBadge(){}
@@ -222,12 +222,25 @@ function renderTrial(){
 }
 
 /* ================= News ================= */
-function renderNews(){
-  $("#newsList").innerHTML = NEWS.map(n => { const t = n.trial && lib(n.trial); const pl = NEWS_PLAIN[`${n.date}|${n.company}`] || [n.title, n.summary]; return `<article class="news-item">
-    <div class="top">${verdictBadge(newsLevel(n))}<span>${esc(fmtDate(n.date))}</span></div>
-    <h3>${esc(pl[0])}</h3><p class="muted">${esc(pl[1])}</p>
-    <p class="links">${t?`<a href="#${t.id}">Read our plain-English summary</a>`:""}${n.links.map(([l,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(plainLink(l))}</a>`).join("")}</p></article>`; }).join("");
+/* Drawing only. What is shown, and when it is fetched, is decided in news.js. */
+function newsCard(n){
+  const t = n.hand ? n.trial && lib(n.trial) : n.nct && lib(n.nct);
+  const links = (t ? `<a href="#${t.id}">Read our plain-English summary</a>` : "") + n.links.map(([l,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n.hand ? plainLink(l) : l)}</a>`).join("");
+  const when = n.hand ? `${fmtDate(n.date)} · Picked by hand` : `${n.datePrefix||""}${fmtDate(n.date)} · ${n.sourcesLabel}`;
+  const text = n.hand ? esc : newsBreakHtml;   // live text comes from a registry: very long unbroken runs (a URL) get break points so a phone never scrolls sideways
+  return `<article class="news-item">
+    <div class="top">${verdictBadge(n.level)}<span>${esc(when)}</span></div>
+    <h3>${text(n.title)}</h3><p class="muted">${text(n.summary)}</p>
+    <p class="links">${links}</p></article>`;
 }
+let newsLastHtml = null, newsLastIntro = null;
+function newsDraw(){
+  if(curView !== "news") return;
+  const v = newsView(), html = v.items.map(newsCard).join(""), live = $("#newsLive"), list = $("#newsList");
+  if(live && newsLastIntro !== v.intro){ live.innerHTML = v.intro; newsLastIntro = v.intro; }
+  if(newsLastHtml !== html){ list.innerHTML = html; newsLastHtml = html; }   // unchanged: leave the DOM alone, so a focused link stays focused
+}
+function renderNews(){ newsOnOpen(); newsDraw(); }
 
 /* ================= Saved ================= */
 let lastFocus = null;

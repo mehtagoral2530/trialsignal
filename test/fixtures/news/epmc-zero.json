@@ -1,0 +1,12 @@
+{
+ "version": "6.9",
+ "hitCount": 0,
+ "request": {
+  "queryString": "TITLE_ABS:\"NCT05627557\" AND SRC:MED",
+  "resultType": "lite",
+  "pageSize": 1
+ },
+ "resultList": {
+  "result": []
+ }
+}

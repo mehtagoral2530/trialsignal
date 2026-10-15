@@ -504,6 +504,18 @@ test("blocked or corrupt localStorage never breaks a lookup", async () => {
   assert.equal(plain((await t.g.callLive("details", nct(1))).payload).protocolSection.identificationModule.nctId, nct(1));
 });
 
+test("setLive: the news hook is guarded, so a throwing news draw can never break a search or a study lookup", () => {
+  const t = load({});
+  t.g.setCurView("news");
+  vm.runInContext('globalThis.__newsCalls = 0; function newsOnLiveState(){ globalThis.__newsCalls++; throw new Error("boom"); }', t.ctx);
+  assert.doesNotThrow(() => vm.runInContext('setLive("on", "")', t.ctx));
+  assert.equal(t.ctx.__newsCalls, 1, "the hook ran, and its failure stayed inside it");
+  assert.equal(t.g.LIVE.state, "on");
+  t.g.setCurView("trials");
+  vm.runInContext('setLive("on", "")', t.ctx);
+  assert.equal(t.ctx.__newsCalls, 1, "the hook runs only while #news is open");
+});
+
 /* ---------------- other modes are untouched ---------------- */
 
 test("MCP (claude.ai) mode: no poller, no localStorage cache, start-up still uses the snapshot, interval still refreshes", async () => {

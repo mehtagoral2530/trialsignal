@@ -122,9 +122,24 @@ export async function runSnapshot({ dataDir, fetchImpl = (...a) => fetch(...a), 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const dataDir = new URL("../site/data", import.meta.url).pathname;
   const force = /^(1|true)$/i.test(process.env.SNAPSHOT_FORCE || "");
-  runSnapshot({ dataDir, force }).then((r) => {
+  runSnapshot({ dataDir, force }).then(async (r) => {
     console.log(JSON.stringify(r));
+    // The "What's new" saved copy (site/data/news.json) has its own gate and can never fail or hold up this job: any problem is logged
+    // and skipped, and it stops after 4 minutes (its own deadline in news-snapshot.mjs, plus this outer limit as a second guard).
+    // Imported here, not at the top, so a missing or broken news step cannot stop the study snapshot from loading.
+    let news = { changed: false, stamped: false };
+    let outer;
+    try {
+      const dataTimestamp = readJson(`${dataDir}/snapshot.json`, {}).dataTimestamp ?? null;
+      // Not unref'd on purpose: if the stall holds no handle at all, only this timer keeps the process alive long enough to write the outputs below.
+      // NEWS_STEP_LIMIT_MS (milliseconds) exists for the tests; the real limit is 5 minutes.
+      const limit = new Promise((resolve) => { outer = setTimeout(() => resolve({ changed: false, stamped: false, reason: "timeout" }), Number(process.env.NEWS_STEP_LIMIT_MS) || 5 * 60 * 1000); });
+      news = await Promise.race([(await import("./news-snapshot.mjs")).runNewsStep({ dataDir, dataTimestamp, force }), limit]);
+      console.error("news: " + JSON.stringify(news));
+    } catch (e) { console.error(`news: skipped (${e && e.message})`); }
+    clearTimeout(outer);
     // Always set both outputs (also on the gated path): the workflow's commit and deploy steps key off them.
-    if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `changed=${r.changed}\nstamped=${Boolean(r.stamped)}\n`, { flag: "a" });
+    if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `changed=${Boolean(r.changed || news.changed)}\nstamped=${Boolean(r.stamped || news.stamped)}\n`, { flag: "a" });
+    process.exit(0);   // outputs are written: nothing left over from the news step (a stalled socket, a timer) may keep the job open
   }).catch((e) => { console.error(e.message); process.exit(1); });
 }

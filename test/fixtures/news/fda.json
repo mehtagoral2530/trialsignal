@@ -1,0 +1,792 @@
+{
+ "meta": {
+  "last_updated": "2026-10-13",
+  "results": {
+   "skip": 0,
+   "limit": 200,
+   "total": 15
+  }
+ },
+ "results": [
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260904",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity"
+    }
+   ],
+   "application_number": "NDA220359",
+   "sponsor_name": "ASTRAZENECA",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "ETCAMAH",
+     "active_ingredients": [
+      {
+       "name": "CAMIZESTRANT",
+       "strength": "75MG"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260925",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity"
+    }
+   ],
+   "application_number": "NDA220415",
+   "sponsor_name": "ABBVIE",
+   "products": [
+    {
+     "product_number": "004",
+     "reference_drug": "Yes",
+     "brand_name": "JUVMO",
+     "active_ingredients": [
+      {
+       "name": "TAVAPADON",
+       "strength": "15MG"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "002",
+     "reference_drug": "Yes",
+     "brand_name": "JUVMO",
+     "active_ingredients": [
+      {
+       "name": "TAVAPADON",
+       "strength": "5MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "005",
+     "reference_drug": "No",
+     "brand_name": "JUVMO",
+     "active_ingredients": [
+      {
+       "name": "TAVAPADON",
+       "strength": "15MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "003",
+     "reference_drug": "Yes",
+     "brand_name": "JUVMO",
+     "active_ingredients": [
+      {
+       "name": "TAVAPADON",
+       "strength": "10MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "JUVMO (COPACKAGED)",
+     "active_ingredients": [
+      {
+       "name": "TAVAPADON",
+       "strength": "0.25MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260826",
+     "review_priority": "PRIORITY",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    }
+   ],
+   "application_number": "NDA220910",
+   "sponsor_name": "REVOLUTION MEDICINES",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "RASONQUE",
+     "active_ingredients": [
+      {
+       "name": "DARAXONRASIB",
+       "strength": "100MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "002",
+     "reference_drug": "Yes",
+     "brand_name": "RASONQUE",
+     "active_ingredients": [
+      {
+       "name": "DARAXONRASIB",
+       "strength": "150MG"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260925",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 2",
+     "submission_class_code_description": "Type 2 - New Active Ingredient"
+    }
+   ],
+   "application_number": "NDA221109",
+   "sponsor_name": "AZURITY",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "LAMLIQUE",
+     "active_ingredients": [
+      {
+       "name": "LAMOTRIGINE HEMIFUMARATE",
+       "strength": "EQ 5MG BASE/ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "SUSPENSION",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "002",
+     "reference_drug": "Yes",
+     "brand_name": "LAMLIQUE",
+     "active_ingredients": [
+      {
+       "name": "LAMOTRIGINE HEMIFUMARATE",
+       "strength": "EQ 25MG BASE/ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "SUSPENSION",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260729",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 2",
+     "submission_class_code_description": "Type 2 - New Active Ingredient"
+    }
+   ],
+   "application_number": "NDA220381",
+   "sponsor_name": "FRESENIUS KABI USA",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "GLYCOPHOS",
+     "active_ingredients": [
+      {
+       "name": "SODIUM GLYCEROPHOSPHATE",
+       "strength": "4.32GM/20ML (216MG/ML)"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "SOLUTION",
+     "route": "INTRAVENOUS",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "002",
+     "reference_drug": "Yes",
+     "brand_name": "GLYCOPHOS",
+     "active_ingredients": [
+      {
+       "name": "SODIUM GLYCEROPHOSPHATE",
+       "strength": "21.6GM/100ML (216MG/ML)"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "SOLUTION",
+     "route": "INTRAVENOUS",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260923",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity"
+    }
+   ],
+   "application_number": "BLA761408",
+   "sponsor_name": "ELI LILLY AND CO",
+   "products": [
+    {
+     "product_number": "002",
+     "reference_drug": "No",
+     "brand_name": "ONSWIK",
+     "active_ingredients": [
+      {
+       "name": "INSULIN EFSITORA ALFA-GOBE",
+       "strength": "1000 UNITS/ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTABLE",
+     "route": "SUBCUTANEOUS",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "ONSWIK",
+     "active_ingredients": [
+      {
+       "name": "INSULIN EFSITORA ALFA-GOBE",
+       "strength": "500 UNITS/ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTABLE",
+     "route": "SUBCUTANEOUS",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260724",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 1/4",
+     "submission_class_code_description": "Type 1 - New Molecular Entity and Type 4 - New Combination"
+    }
+   ],
+   "application_number": "BLA761320",
+   "sponsor_name": "OUTLOOK THERAPEUTICS, INC.",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "LYTENAVA",
+     "active_ingredients": [
+      {
+       "name": "BEVACIZUMAB-VIKG",
+       "strength": "1.25MG (0.05ML of 25MG/ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "VIAL",
+     "route": "SINGLE-DOSE",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260925",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 5",
+     "submission_class_code_description": "Type 5 - New Formulation or New Manufacturer"
+    }
+   ],
+   "application_number": "BLA761481",
+   "sponsor_name": "TEVA PHARMACEUTICALS, INC.",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "DEGEVMA",
+     "active_ingredients": [
+      {
+       "name": "DENOSUMAB-ADET",
+       "strength": "120MG/1.7ML (70MG/ML)"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTABLE",
+     "route": "SUBCUTANEOUS",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260731",
+     "review_priority": "STANDARD",
+     "submission_class_code": "UNKNOWN",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    }
+   ],
+   "application_number": "BLA761376",
+   "sponsor_name": "DR REDDYS LABS SA",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "ZIMRIXBY",
+     "active_ingredients": [
+      {
+       "name": "RITUXIMAB-CDXX",
+       "strength": "100MG/10ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTION",
+     "route": null,
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "002",
+     "reference_drug": "No",
+     "brand_name": "ZIMRIXBY",
+     "active_ingredients": [
+      {
+       "name": "RITUXIMAB-CDXX",
+       "strength": "500MG/50ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTION",
+     "route": null,
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260903",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 5",
+     "submission_class_code_description": "Type 5 - New Formulation or New Manufacturer"
+    }
+   ],
+   "application_number": "NDA220613",
+   "sponsor_name": "HANDA ONCOL",
+   "products": [
+    {
+     "product_number": "003",
+     "reference_drug": "Yes",
+     "brand_name": "OMCAZIO",
+     "active_ingredients": [
+      {
+       "name": "CABOZANTINIB LAURYLSULFATE",
+       "strength": "EQ 34.5MG BASE"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "CAPSULE",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "OMCAZIO",
+     "active_ingredients": [
+      {
+       "name": "CABOZANTINIB LAURYLSULFATE",
+       "strength": "EQ 11.5MG BASE"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "CAPSULE",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "002",
+     "reference_drug": "Yes",
+     "brand_name": "OMCAZIO",
+     "active_ingredients": [
+      {
+       "name": "CABOZANTINIB LAURYLSULFATE",
+       "strength": "EQ 23MG BASE"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "CAPSULE",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260827",
+     "review_priority": "PRIORITY",
+     "submission_class_code": "TYPE 4",
+     "submission_class_code_description": "Type 4 - New Combination"
+    }
+   ],
+   "application_number": "NDA221104",
+   "sponsor_name": "GILEAD SCIENCES INC",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "BIXLENVO",
+     "active_ingredients": [
+      {
+       "name": "BICTEGRAVIR SODIUM",
+       "strength": "EQ 75MG BASE"
+      },
+      {
+       "name": "LENACAPAVIR SODIUM",
+       "strength": "EQ 50MG BASE"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260719",
+     "review_priority": "UNKNOWN",
+     "submission_class_code": "UNKNOWN"
+    }
+   ],
+   "application_number": "NDA221805",
+   "sponsor_name": "NOBLE GAS SOLUTIONS INC.",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "AIR",
+     "active_ingredients": [
+      {
+       "name": "AIR",
+       "strength": "N/A"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "GAS",
+     "route": "INHALATION",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "17",
+     "submission_status": "AP",
+     "submission_status_date": "20260921",
+     "review_priority": "STANDARD",
+     "submission_class_code": "LABELING",
+     "submission_class_code_description": "Labeling",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "8",
+     "submission_status": "AP",
+     "submission_status_date": "20251208",
+     "review_priority": "STANDARD",
+     "submission_class_code": "LABELING",
+     "submission_class_code_description": "Labeling",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20240326",
+     "review_priority": "PRIORITY",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "13",
+     "submission_status": "AP",
+     "submission_status_date": "20260812",
+     "review_priority": "STANDARD",
+     "submission_class_code": "LABELING",
+     "submission_class_code_description": "Labeling",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "16",
+     "submission_status": "AP",
+     "submission_status_date": "20260921",
+     "review_priority": "STANDARD",
+     "submission_class_code": "LABELING",
+     "submission_class_code_description": "Labeling",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "7",
+     "submission_status": "AP",
+     "submission_status_date": "20251024",
+     "review_priority": "PRIORITY",
+     "submission_class_code": "EFFICACY",
+     "submission_class_code_description": "Efficacy",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "12",
+     "submission_status": "AP",
+     "submission_status_date": "20260921",
+     "review_priority": "STANDARD",
+     "submission_class_code": "EFFICACY",
+     "submission_class_code_description": "Efficacy",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    },
+    {
+     "submission_type": "SUPPL",
+     "submission_number": "10",
+     "submission_status": "AP",
+     "submission_status_date": "20260325",
+     "review_priority": "STANDARD",
+     "submission_class_code": "LABELING",
+     "submission_class_code_description": "Labeling",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    }
+   ],
+   "application_number": "BLA761363",
+   "sponsor_name": "MERCK SHARP DOHME",
+   "products": [
+    {
+     "product_number": "002",
+     "reference_drug": "No",
+     "brand_name": "WINREVAIR",
+     "active_ingredients": [
+      {
+       "name": "SOTATERCEPT-CSRK",
+       "strength": "60MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTABLE",
+     "route": "INJECTION",
+     "marketing_status": "Prescription"
+    },
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "WINREVAIR",
+     "active_ingredients": [
+      {
+       "name": "SOTATERCEPT-CSRK",
+       "strength": "45MG"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTABLE",
+     "route": "INJECTION",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260819",
+     "review_priority": "PRIORITY",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity",
+     "submission_property_type": [
+      {
+       "code": "Orphan"
+      }
+     ]
+    }
+   ],
+   "application_number": "BLA761508",
+   "sponsor_name": "REGENERON PHARMACEUTICALS, INC",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "No",
+     "brand_name": "PASATRU",
+     "active_ingredients": [
+      {
+       "name": "GARETOSMAB-GRTS",
+       "strength": "300MG/5ML"
+      }
+     ],
+     "reference_standard": "No",
+     "dosage_form": "INJECTABLE",
+     "route": "INTRAVENOUS",
+     "marketing_status": "Prescription"
+    }
+   ]
+  },
+  {
+   "submissions": [
+    {
+     "submission_type": "ORIG",
+     "submission_number": "1",
+     "submission_status": "AP",
+     "submission_status_date": "20260904",
+     "review_priority": "STANDARD",
+     "submission_class_code": "TYPE 1",
+     "submission_class_code_description": "Type 1 - New Molecular Entity"
+    }
+   ],
+   "application_number": "ANDA091234",
+   "sponsor_name": "ASTRAZENECA",
+   "products": [
+    {
+     "product_number": "001",
+     "reference_drug": "Yes",
+     "brand_name": "CAMIZESTRANT",
+     "active_ingredients": [
+      {
+       "name": "CAMIZESTRANT",
+       "strength": "75MG"
+      }
+     ],
+     "reference_standard": "Yes",
+     "dosage_form": "TABLET",
+     "route": "ORAL",
+     "marketing_status": "Prescription"
+    }
+   ]
+  }
+ ]
+}

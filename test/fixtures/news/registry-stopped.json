@@ -1,0 +1,281 @@
+{
+ "studies": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07625306",
+     "briefTitle": "Lp(a) Lowering Study of Pelacarsen (TQJ230) in Patients in the US With Elevated Lp(a) and Recent ACS (STEMI/NSTEMI) - Lp(a)FRONTIERS PEARL"
+    },
+    "statusModule": {
+     "statusVerifiedDate": "2026-10",
+     "overallStatus": "WITHDRAWN",
+     "whyStopped": "Study terminated by sponsor following the outcome of the Lp(a)HORIZON study (NCT04023552), which did not meet its primary endpoint",
+     "primaryCompletionDateStruct": {
+      "date": "2029-01-22"
+     },
+     "completionDateStruct": {
+      "date": "2029-01-22",
+      "type": "ESTIMATED"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-14"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Novartis Pharmaceuticals"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Acute Coronary Syndrome (ACS)"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 0,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Pelacarsen"
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05636176",
+     "briefTitle": "A Research Study to Look at How Ziltivekimab Works Compared to Placebo in People With Heart Failure and Inflammation"
+    },
+    "statusModule": {
+     "statusVerifiedDate": "2026-09",
+     "overallStatus": "TERMINATED",
+     "whyStopped": "No longer looking for participants.",
+     "primaryCompletionDateStruct": {
+      "date": "2026-09-03"
+     },
+     "completionDateStruct": {
+      "date": "2026-09-03",
+      "type": "ACTUAL"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Novo Nordisk A/S"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Heart Failure"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 4874,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Ziltivekimab"
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03834493",
+     "briefTitle": "Study of Pembrolizumab (MK-3475) Plus Enzalutamide Versus Placebo Plus Enzalutamide in Participants With Metastatic Castration-resistant Prostate Cancer (mCRPC) (MK-3475-641/KEYNOTE-641)"
+    },
+    "statusModule": {
+     "statusVerifiedDate": "2026-08",
+     "overallStatus": "TERMINATED",
+     "whyStopped": "The study stopped due to futility",
+     "primaryCompletionDateStruct": {
+      "date": "2022-12-12"
+     },
+     "completionDateStruct": {
+      "date": "2026-06-08",
+      "type": "ACTUAL"
+     },
+     "resultsFirstPostDateStruct": {
+      "date": "2023-12-20"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-28"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Prostatic Neoplasms"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 1244,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "DRUG",
+       "name": "Enzalutamide"
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07265479",
+     "briefTitle": "A Study to Investigate Safety and Efficacy of Tapinarof Cream, 1% in Participants Ages 3 Months to < 24 Months With Atopic Dermatitis"
+    },
+    "statusModule": {
+     "statusVerifiedDate": "2026-08",
+     "overallStatus": "SUSPENDED",
+     "whyStopped": "As a precaution, study drug dosing is paused due to a PK finding in OG505-3104. No safety signal or change to the established safety or benefit-risk profile has been identified. The Sponsor is further investigating and assessing the data.",
+     "primaryCompletionDateStruct": {
+      "date": "2027-08"
+     },
+     "completionDateStruct": {
+      "date": "2027-08",
+      "type": "ESTIMATED"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-05"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Organon and Co"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Atopic Dermatitis"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 187,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Tapinarof cream, 1%"
+      },
+      {
+       "type": "DRUG",
+       "name": "Vehicle Cream"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07223502",
+     "briefTitle": "A Study Comparing the Clinical Benefit of Finerenone Versus a Fixed Dose Combination (FDC) of Extended-Release Torsemide and Spironolactone in Patients With Hypertension and Chronic Kidney Disease"
+    },
+    "statusModule": {
+     "statusVerifiedDate": "2026-09",
+     "overallStatus": "WITHDRAWN",
+     "whyStopped": "No recruitment",
+     "primaryCompletionDateStruct": {
+      "date": "2026-09-17"
+     },
+     "completionDateStruct": {
+      "date": "2026-09-17",
+      "type": "ACTUAL"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-22"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Sarfez Pharmaceuticals, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Hypertension (HTN)"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 0,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Combination Product: FDC of spironolactone and ER torsemide"
+      },
+      {
+       "type": "DRUG",
+       "name": "Combination Product: Stabilized doses of loop diuretic and finerenone"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

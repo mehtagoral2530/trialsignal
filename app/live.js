@@ -219,6 +219,7 @@ function regInvalidate(){
     for(const id of Object.keys(detailState)) if(id !== open) delete detailState[id];   // the study being read stays on screen
   }catch(e){}
   if(open) regRefetchOpen(open);
+  try{ if(typeof newsOnRegistryMoved === "function") newsOnRegistryMoved(); }catch(e){}   // news.js (later in the bundle): the live "What's new" list is stale now
 }
 /* The reader is on this study's page: ask for the new record quietly. The page keeps what it shows meanwhile (never the
    "Opening this study…" placeholder), and is redrawn only if something it shows moved. A failure leaves it as it is. */

@@ -1,0 +1,6 @@
+{
+ "error": "API rate limit exceeded",
+ "api-key": "203.0.113.7",
+ "count": "4",
+ "limit": "3"
+}

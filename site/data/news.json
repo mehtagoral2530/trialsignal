@@ -1,0 +1,447 @@
+{
+ "version": 1,
+ "generatedAt": "2026-10-14T17:15:26.966Z",
+ "dataTimestamp": "2026-10-13T09:00:06",
+ "fdaUpdated": "2026-10-13",
+ "windows": {
+  "registryDays": 30,
+  "fdaDays": 90
+ },
+ "contentHash": "9a623f56daeb612e5fe871a4a7b07535",
+ "items": [
+  {
+   "live": true,
+   "id": "results:NCT05139316",
+   "kind": "results",
+   "date": "2026-10-14",
+   "level": 6,
+   "nct": "NCT05139316",
+   "drug": "DTX401",
+   "title": "Results posted for a study of DTX401 for Glycogen Storage Disease Type IA",
+   "summary": "Ultragenyx Pharmaceutical Inc ran this final-stage test (phase 3) with 52 people. The registry lists its end date as 20 Feb 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05139316) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05139316"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05627557",
+   "kind": "results",
+   "date": "2026-10-14",
+   "level": 6,
+   "nct": "NCT05627557",
+   "drug": "Obinutuzumab",
+   "title": "Results posted for a study of Obinutuzumab for Childhood Idiopathic Nephrotic Syndrome",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 85 people. The registry lists its end date as 27 Aug 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05627557) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05627557"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT07625306",
+   "kind": "stopped",
+   "date": "2026-10-14",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT07625306",
+   "drug": "Pelacarsen",
+   "title": "A study of Pelacarsen for Acute Coronary Syndrome (ACS) was cancelled before it began",
+   "summary": "Novartis Pharmaceuticals planned this final-stage test (phase 3). The study team’s reason: “Study terminated by sponsor following the outcome of the Lp(a)HORIZON study (NCT04023552), which did not meet its primary endpoint”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT07625306"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04636957",
+   "kind": "results",
+   "date": "2026-10-13",
+   "level": 6,
+   "nct": "NCT04636957",
+   "drug": "Ciprofloxacin-Fluocinolone Acetonide",
+   "title": "Results posted for a study of Ciprofloxacin-Fluocinolone Acetonide for Acute Otitis Externa",
+   "summary": "Lee's Pharmaceutical Limited ran this final-stage test (phase 3) with 600 people. The registry lists its end date as 17 Oct 2021. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04636957) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04636957"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT07136766",
+   "kind": "results",
+   "date": "2026-10-13",
+   "level": 6,
+   "nct": "NCT07136766",
+   "drug": "Facial Toner",
+   "title": "Results posted for a study of Facial Toner for Hyperpigmentation",
+   "summary": "Good Molecules, LLC ran this final-stage test (phase 3) with 49 people. The registry lists its end date as 16 Feb 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT07136766) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT07136766"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT03194893",
+   "kind": "results",
+   "date": "2026-10-09",
+   "level": 6,
+   "nct": "NCT03194893",
+   "drug": "Alectinib",
+   "title": "Results posted for a study of Alectinib for Neoplasms",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 50 people. The registry lists its end date as 18 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03194893) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03194893"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT03456063",
+   "kind": "results",
+   "date": "2026-10-09",
+   "level": 6,
+   "nct": "NCT03456063",
+   "drug": "Atezolizumab",
+   "title": "Results posted for a study of Atezolizumab for Non-Small-Cell Lung",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 453 people. The registry lists its end date as 31 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03456063) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03456063"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04751487",
+   "kind": "results",
+   "date": "2026-10-09",
+   "level": 6,
+   "nct": "NCT04751487",
+   "drug": "Itepekimab SAR440340",
+   "title": "Results posted for a study of Itepekimab SAR440340 for Chronic Obstructive Pulmonary Disease",
+   "summary": "Sanofi ran this final-stage test (phase 3) with 1,234 people. The registry lists its end date as 28 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04751487) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04751487"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT02916446",
+   "kind": "results",
+   "date": "2026-10-08",
+   "level": 7,
+   "nct": "NCT02916446",
+   "drug": "Viaskin Peanut 250 µg",
+   "title": "Results posted for a study of Viaskin Peanut 250 µg for Peanut Allergy",
+   "summary": "DBV Technologies ran this final-stage test (phase 3) with 393 people. The registry lists its end date as 7 Oct 2020. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT02916446"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/40023371/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/40023371"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT07265479",
+   "kind": "stopped",
+   "date": "2026-10-05",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT07265479",
+   "drug": "Tapinarof cream",
+   "title": "A study of Tapinarof cream for Atopic Dermatitis is paused",
+   "summary": "Organon and Co leads this final-stage test (phase 3). The study team’s reason: “As a precaution, study drug dosing is paused due to a PK finding in OG505-3104. No safety signal or change to the established safety or benefit-risk profile has been identified. The Sponsor is further investigating and assessing the data”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT07265479"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06046820",
+   "kind": "stopped",
+   "date": "2026-10-01",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06046820",
+   "drug": "INZ-701",
+   "title": "A study of INZ-701 for Ectonucleotide Pyrophosphatase/Phosphodiesterase1 Deficiency was stopped early",
+   "summary": "Inozyme Pharma ran this final-stage test (phase 3) with 27 people. The study team’s reason: “The study was terminated by the sponsor prior to planned completion based on a review of the data across indications and overall program considerations. Study termination was not related to participant safety”. The registry lists its end date as 19 Aug 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06046820"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT05378763",
+   "kind": "stopped",
+   "date": "2026-09-30",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT05378763",
+   "drug": "Poziotinib",
+   "title": "A study of Poziotinib for NSCLC is paused",
+   "summary": "Spectrum Pharmaceuticals, Inc leads this final-stage test (phase 3). The study team’s reason: “The study has not enrolled any patients. The study design is under discussion and will likely be redesigned in consultation with the FDA”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05378763"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT07473973",
+   "kind": "stopped",
+   "date": "2026-09-29",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT07473973",
+   "drug": "INZ-701",
+   "title": "A study of INZ-701 for Ectonucleotide Pyrophosphatase/phosphodiesterase1 Deficiency was stopped early",
+   "summary": "Inozyme Pharma ran this final-stage test (phase 3) with 2 people. The study team’s reason: “Following review of the totality of program data, the sponsor decided to discontinue development of INZ701. The decision was not related to safety”. The registry lists its end date as 31 Aug 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT07473973"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:NDA220415",
+   "kind": "approval",
+   "date": "2026-09-25",
+   "level": 4,
+   "app": "NDA220415",
+   "brand": "Juvmo",
+   "generics": [
+    "tavapadon"
+   ],
+   "title": "FDA approved Juvmo (tavapadon)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220415"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1ae6df6e-6ca0-420f-bec9-effa7acdd085"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:NDA221198",
+   "kind": "approval",
+   "date": "2026-09-25",
+   "level": 4,
+   "app": "NDA221198",
+   "brand": "Atebrioz",
+   "generics": [
+    "zilurgisertib fumarate"
+   ],
+   "title": "FDA approved Atebrioz (zilurgisertib fumarate)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221198"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f542e4b0-072a-42c6-80c9-5977054971e0"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:BLA761408",
+   "kind": "approval",
+   "date": "2026-09-23",
+   "level": 4,
+   "app": "BLA761408",
+   "brand": "Onswik",
+   "generics": [
+    "insulin efsitora alfa-gobe"
+   ],
+   "title": "FDA approved Onswik (insulin efsitora alfa-gobe)",
+   "summary": "The FDA’s drug database lists it as approved. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761408"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6e02229e-262c-4e25-9240-9e9de4eb7c1d"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:BLA761463",
+   "kind": "approval",
+   "date": "2026-09-11",
+   "level": 4,
+   "app": "BLA761463",
+   "brand": "Isembyld",
+   "generics": [
+    "apitegromab-mstn"
+   ],
+   "title": "FDA approved Isembyld (apitegromab-mstn)",
+   "summary": "The FDA’s drug database lists it as approved. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761463"
+    ],
+    [
+     "RxNorm entry",
+     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2753176"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b1cd8ab8-8a10-48ed-9806-75a44f22b963"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:NDA218592",
+   "kind": "approval",
+   "date": "2026-09-11",
+   "level": 4,
+   "app": "NDA218592",
+   "brand": "Pixclara",
+   "generics": [
+    "floretyrosine f-18"
+   ],
+   "title": "FDA approved Pixclara (floretyrosine f-18)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218592"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=dc78b128-3768-4448-b019-61574db05714"
+    ]
+   ]
+  }
+ ],
+ "dailymed": {
+  "NDA220415": {
+   "setid": "1ae6df6e-6ca0-420f-bec9-effa7acdd085",
+   "title": "JUVMO (TAVAPADON) TABLET JUVMO (TAVAPADON) KIT [ABBVIE INC.]"
+  },
+  "NDA221198": {
+   "setid": "f542e4b0-072a-42c6-80c9-5977054971e0",
+   "title": "ATEBRIOZ (ZILURGISERTIB) TABLET, FILM COATED [MIRUM PHARMACEUTICALS INC.]"
+  },
+  "BLA761408": {
+   "setid": "6e02229e-262c-4e25-9240-9e9de4eb7c1d",
+   "title": "ONSWIK KWIKPEN (INSULIN EFSITORA ALFA-GOBE) INJECTION, SOLUTION [ELI LILLY AND COMPANY]"
+  },
+  "BLA761463": {
+   "setid": "b1cd8ab8-8a10-48ed-9806-75a44f22b963",
+   "title": "ISEMBYLD (APITEGROMAB-MSTN) INJECTION [SCHOLAR ROCK, INC.]"
+  },
+  "NDA218592": {
+   "setid": "dc78b128-3768-4448-b019-61574db05714",
+   "title": "PIXCLARA (FLORETYROSINE F18) SOLUTION [TELIX PHARMACEUTICALS (US) INC.]"
+  },
+  "NDA220359": {
+   "setid": "c54223d3-f3c7-4186-afa0-429d84805826",
+   "title": "ETCAMAH (CAMIZESTRANT) TABLET, FILM COATED [ASTRAZENECA PHARMACEUTICALS LP]"
+  },
+  "NDA220210": {
+   "setid": "af6ca330-46d3-4ed6-b2af-bd6db3133fd1",
+   "title": "ZANVASTRO (ZILGANERSEN) KIT [IONIS PHARMACEUTICALS INC.]"
+  },
+  "NDA220605": {
+   "setid": "101aff01-31ed-4841-a8b6-0a5a8503189b",
+   "title": "MIMRYLO (RUSFERTIDE) KIT [TAKEDA PHARMACEUTICALS AMERICA, INC.]"
+  },
+  "NDA220106": {
+   "setid": "5023a17b-e96a-67d4-e063-6394a90a14a7",
+   "title": "LISRAYA (BREPOCITINIB) TABLET, FILM COATED [PRIOVANT THERAPEUTICS, INC.]"
+  },
+  "NDA220910": {
+   "setid": "13a65923-d072-4dac-8620-8eabbf8c3641",
+   "title": "RASONQUE (DARAXONRASIB) TABLET, FILM COATED [REVOLUTION MEDICINES, INC.]"
+  },
+  "BLA761508": {
+   "setid": "0d5cec96-b02b-4f1d-bc66-51e62ce04e3c",
+   "title": "PASATRU (GARETOSMAB-GRTS) INJECTION, SOLUTION, CONCENTRATE [REGENERON PHARMACEUTICALS, INC.]"
+  },
+  "NDA221075": {
+   "setid": "3663d9cb-3f66-48ae-bf0a-6958bc0888de",
+   "title": "ZENBEXUS (IBERDOMIDE) CAPSULE [E.R. SQUIBB & SONS, L.L.C.]"
+  },
+  "BLA761320": {
+   "setid": "7f9a3014-b3d4-4943-a83a-92a77d8f947c",
+   "title": "LYTENAVA (BEVACIZUMAB-VIKG) INJECTION [OUTLOOK THERAPEUTICS, INC.]"
+  },
+  "NDA220185": {
+   "setid": "3760e421-b523-4d9b-e063-6394a90ab94b",
+   "title": "JIDEYTRO (ZIDESAMTINIB) TABLET, FILM COATED [NUVALENT, INC.]"
+  }
+ }
+}

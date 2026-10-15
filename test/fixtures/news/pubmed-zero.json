@@ -1,0 +1,27 @@
+{
+ "header": {
+  "type": "esearch",
+  "version": "0.3"
+ },
+ "esearchresult": {
+  "count": "0",
+  "retmax": "0",
+  "retstart": "0",
+  "idlist": [],
+  "translationset": [],
+  "querytranslation": "NCT05627557[Secondary Source ID] AND 2025/09/04:3000[dp]",
+  "errorlist": {
+   "phrasesnotfound": [
+    "NCT05627557[si]"
+   ],
+   "fieldsnotfound": []
+  },
+  "warninglist": {
+   "phrasesignored": [],
+   "quotedphrasesnotfound": [],
+   "outputmessages": [
+    "No items found."
+   ]
+  }
+ }
+}

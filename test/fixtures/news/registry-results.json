@@ -1,0 +1,248 @@
+{
+ "studies": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05627557",
+     "briefTitle": "A Study to Evaluate the Efficacy and Safety of Obinutuzumab Versus MMF in Participants With Childhood Onset Idiopathic Nephrotic Syndrome"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "primaryCompletionDateStruct": {
+      "date": "2025-09-04"
+     },
+     "completionDateStruct": {
+      "date": "2026-08-27",
+      "type": "ACTUAL"
+     },
+     "resultsFirstPostDateStruct": {
+      "date": "2026-10-14"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-14"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Hoffmann-La Roche"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Childhood Idiopathic Nephrotic Syndrome"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 85,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Obinutuzumab"
+      },
+      {
+       "type": "DRUG",
+       "name": "MMF"
+      },
+      {
+       "type": "DRUG",
+       "name": "Prednisone"
+      },
+      {
+       "type": "DRUG",
+       "name": "Methylprednisolone"
+      },
+      {
+       "type": "DRUG",
+       "name": "Acetaminophen/ Paracetamol"
+      },
+      {
+       "type": "DRUG",
+       "name": "Diphenhydramine Hydrochloride"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05139316",
+     "briefTitle": "A Study of Adeno-Associated Virus Serotype 8-Mediated Gene Transfer of Glucose-6-Phosphatase in Patients With Glycogen Storage Disease Type Ia (GSDIa)"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "primaryCompletionDateStruct": {
+      "date": "2024-02-20"
+     },
+     "completionDateStruct": {
+      "date": "2026-02-20",
+      "type": "ACTUAL"
+     },
+     "resultsFirstPostDateStruct": {
+      "date": "2026-10-14"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-14"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Ultragenyx Pharmaceutical Inc"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Glycogen Storage Disease Type IA"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 52,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "GENETIC",
+       "name": "DTX401"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      },
+      {
+       "type": "DRUG",
+       "name": "Oral prednisolone"
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo for oral prednisolone"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04751487",
+     "briefTitle": "Study to Assess the Efficacy, Safety, and Tolerability of SAR440340/REGN3500/Itepekimab in Chronic Obstructive Pulmonary Disease (COPD)"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "primaryCompletionDateStruct": {
+      "date": "2025-04-21"
+     },
+     "completionDateStruct": {
+      "date": "2025-08-28",
+      "type": "ACTUAL"
+     },
+     "resultsFirstPostDateStruct": {
+      "date": "2026-10-09"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-09"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Sanofi"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Chronic Obstructive Pulmonary Disease"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 1234,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Itepekimab SAR440340"
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07136766",
+     "briefTitle": "An 18-week Study to Evaluate a Test Product With a Marketed Prescription Product"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "primaryCompletionDateStruct": {
+      "date": "2026-02-16"
+     },
+     "completionDateStruct": {
+      "date": "2026-02-16",
+      "type": "ACTUAL"
+     },
+     "resultsFirstPostDateStruct": {
+      "date": "2026-10-13"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-13"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Good Molecules, LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Hyperpigmentation"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 49,
+      "type": "ACTUAL"
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Facial Toner"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo Toner"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

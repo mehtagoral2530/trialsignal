@@ -1,0 +1,56 @@
+{
+ "version": "6.9",
+ "hitCount": 19,
+ "request": {
+  "queryString": "TITLE_ABS:\"NCT04184622\" AND SRC:MED",
+  "resultType": "lite",
+  "cursorMark": "*",
+  "pageSize": 3,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "42348366",
+    "source": "MED",
+    "pmid": "42348366",
+    "pmcid": "PMC13448863",
+    "fullTextIdList": {
+     "fullTextId": [
+      "PMC13448863"
+     ]
+    },
+    "doi": "10.1111/dom.71009",
+    "title": "Tirzepatide Efficacy and Tolerability According to Early Weight Response: A Post Hoc Analysis of the SURMOUNT-1 and SURMOUNT-2 Trials.",
+    "authorString": "Kokkinos A, Thethi T, Lee CJ, Neff LM, Stefanski A, Cao D, Rodriguez A, Bartee A.",
+    "journalTitle": "Diabetes Obes Metab",
+    "issue": "9",
+    "journalVolume": "28",
+    "pubYear": "2026",
+    "journalIssn": "1462-8902; 1463-1326; ",
+    "pageInfo": "8367-8377",
+    "pubType": "clinical trial, phase iii; research-article; multicenter study; randomized controlled trial; journal article",
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "citedByCount": 2,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "hasLabsLinks": "N",
+    "hasTMAccessionNumbers": "Y",
+    "tmAccessionTypeList": {
+     "accessionType": [
+      "nct"
+     ]
+    },
+    "firstPublicationDate": "2026-06-25",
+    "firstIndexDate": "2026-06-26"
+   }
+  ]
+ }
+}

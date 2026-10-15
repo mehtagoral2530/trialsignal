@@ -80,7 +80,9 @@ const VERDICT = {
   4:{key:"proven", label:"Proven and approved", why:"Tested in a large study, checked by outside experts, and approved by the FDA."},
   3:{key:"works", label:"Shown to work", why:"Published in a medical journal after outside experts checked it. Not approved yet."},
   2:{key:"promising", label:"Promising, not checked yet", why:"Announced by the company. Outside experts have not reviewed the full results yet."},
-  1:{key:"early", label:"Results not in yet", why:"The study is planned or still running, so there are no results to report."}
+  1:{key:"early", label:"Results not in yet", why:"The study is planned or still running, so there are no results to report."},
+  6:{key:"early", label:"Results posted, no article found", why:"The study team posted its results on the official registry. Our search found no journal article about the study, but searches can miss articles."},
+  7:{key:"early", label:"Results posted", why:"The study team posted its results on the official registry."}
 };
 function plainStatus(s){
   const u = String(s||"").toUpperCase().replace(/[ ,]+/g,"_");

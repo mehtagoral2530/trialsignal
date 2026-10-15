@@ -1,0 +1,10 @@
+{
+ "drugGroup": {
+  "name": null,
+  "conceptGroup": [
+   {
+    "tty": "BPCK"
+   }
+  ]
+ }
+}

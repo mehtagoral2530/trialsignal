@@ -1,0 +1,18 @@
+{
+ "header": {
+  "type": "esearch",
+  "version": "0.3"
+ },
+ "esearchresult": {
+  "count": "19",
+  "retmax": "3",
+  "retstart": "0",
+  "idlist": [
+   "42831032",
+   "42348366",
+   "42233927"
+  ],
+  "translationset": [],
+  "querytranslation": "\"NCT04184622\"[Secondary Source ID]"
+ }
+}

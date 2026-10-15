@@ -22,6 +22,19 @@ A second design, a small live API (Cloudflare Worker + Upstash Redis + Workers A
    ci.yml            tests and site build
 ```
 
+Live news (the *What's new* page) adds four more browser hosts, all CORS-enabled, free and keyless:
+
+```
+ Browser, only while #news is open (app/news.js; the rules are in shared/news.js)
+   │  clinicaltrials.gov   results newly posted, studies stopped / paused / cancelled     (24 h cache tied to dataTimestamp)
+   │  api.fda.gov          Drugs@FDA: new approvals                                       (24 h cache)
+   │  rxnav.nlm.nih.gov    RxNorm: does the brand exist with that ingredient?             (24 h cache)
+   │  eutils.ncbi.nlm.nih.gov  PubMed, ≥450 ms apart       www.ebi.ac.uk  Europe PMC      (24 h cache each)
+   │  GET data/news.json (same origin): the saved copy, plus DailyMed confirmations
+   ▼
+ GitHub Actions (snapshot.yml, same job, own gate): + dailymed.nlm.nih.gov, which sends no CORS header
+```
+
 Cost per visitor: about 12 tiny `/version` requests an hour while a tab is visible, plus one batched request when the registry moves (about once per weekday).
 
 ## Optional, not deployed: Worker + Redis
@@ -123,6 +136,30 @@ Redis is not a relational database. This is what each property means here, and h
 4. **Back off.** Errors back off exponentially with full jitter, from 15 seconds up to 1 hour, and `Retry-After` is honoured when the browser can read it. After 3 failed checks in a row the page loads `data/snapshot.json` once. A study that failed for a transient reason (network, timeout, 5xx, 429) is retried on the next good check; one the registry didn't return waits until the registry moves.
 5. **Recover at load.** If the very first `/version` probe fails, the page shows the saved copy, then retries on the same backoff (and on focus, `online` and visible, subject to it) and starts live updates once the registry answers.
 
+### Deployed: live news (`shared/news.js`, `app/news.js`, `scripts/news-snapshot.mjs`)
+
+The *What's new* page mixes the hand-picked stories (`NEWS` in `app/data.js`, unchanged) with stories found automatically. All wording is fixed text built from validated fields, so no claim is invented, and every value is escaped once, at render. The rules live in one module, `shared/news.js` (pure functions, no imports). `scripts/build-site.mjs` inlines it into `app.js`, `scripts/news-snapshot.mjs` runs the same code in GitHub Actions, and the tests import it.
+
+**Where each story comes from**
+
+| Story | Primary source | Second source that must agree |
+|---|---|---|
+| Results posted (phase 3 and 2/3, last 30 days, up to 8) | ClinicalTrials.gov | PubMed `[si]` and Europe PMC `TITLE_ABS` are each searched for an article published after the study's primary completion date. A hit in either counts. Nothing found: level 6 "Results posted, no article found", worded as a statement about our search ("Our search of PubMed and Europe PMC for this study's number found no journal article. Searches can miss articles, so one may already exist"), because a paper that never names the NCT id in its title or abstract is invisible to both. An article found: level 7 "Results posted" with a link, worded "mentions this study ... may not report these results". Neither could be asked: level 7 with "We couldn't search for a journal article just now" |
+| Stopped, paused or cancelled (industry phase 3, last 30 days, up to 5) | ClinicalTrials.gov, the authoritative record: level 0, with the study team's own reason | None: it shows "Source: ClinicalTrials.gov". The date is when the registry record was last updated, because the registry has no "stopped on" date. Studies that ended more than 182 days ago, or whose results were posted long ago, are skipped. Unless the card carries an actual end date, it says the registry doesn't say when the study was stopped, paused or cancelled |
+| FDA approval (new drugs and biologics, last 90 days, up to 5) | openFDA Drugs@FDA, the study's own original approval | RxNorm has the exact `[Brand]` with the same ingredient, **or** DailyMed has a label for that application number whose title names the brand (the full generic name, if there is no distinct brand). Otherwise it is not shown, and appears once a second source catches up. Generics (ANDA), supplements, new formulations, combinations and biosimilars are excluded; the FDA's own class code decides |
+
+The journal search matches the study number only in an article's title, abstract or PubMed's registry-number field. Full-text matching was tested and rejected because it mostly finds reviews and other studies that cite the number, so 'no article found' can mean the paper never names its own registry number there.
+
+Hand-picked stories always win: a live story is dropped if a hand-picked one already covers it (same NCT id; the same brand or generic name in a hand-picked approval; the same drug in a hand-picked setback from the last 90 days). One list, newest first, hand-picked first on ties.
+
+**When it fetches.** Opening #news fetches at most once per 60 seconds. The registry poller (above) reports a new `dataTimestamp`: #news refetches at once if it is open, otherwise the list is marked stale and refetches the next time it is opened. Every request has a timeout (registry 20 s, openFDA 25 s, the rest 8 s). PubMed requests start at least 450 ms apart (3 a second is the keyless limit). The relative time ("Checked 3 min ago") is the only text that changes by itself: one 30-second timer, running only while #news is open and visible, and no `aria-live`. It sits on its own last line of the intro, so its changing width cannot move any text above it. The registry stories do not wait for openFDA, and the approvals do not wait for the journal searches: the two pipelines run side by side.
+
+**Caching.** Registry lists: the existing 24 h cache, valid only while `dataTimestamp` is unchanged. Approvals, RxNorm, PubMed and Europe PMC answers: 24 h in their own localStorage key `ts_news_v1` (at most 150 entries and about 200 000 characters, oldest evicted). "Nothing found" is cached too; failures never are, and neither is an empty openFDA list. Memory is the first cache: when storage refuses writes (private window, quota), the page keeps its answers for the rest of the page view, so reopening #news does not repeat the lookups.
+
+**Each source fails on its own.** A failing lookup source is tried once more (PubMed: after 2 s, because a rate-limited reply has no CORS header and reaches a browser as a plain network error), and after that it is left alone for the rest of that refresh. A list that cannot be fetched keeps what the page already drew from a live answer (while that is under a day old); otherwise it is taken from the saved copy for that list only, and the intro line says so. The intro line names only the sources that answered (only sources the page itself asks; DailyMed, which only the hourly job can ask, is credited on each approval it confirms). PubMed and Europe PMC are each other's backup. openFDA's own "no matches" reply (a 404 whose body says `NOT_FOUND`) is an empty list; any other 404 counts as a failure. Approvals count as failed if openFDA failed, or if RxNorm failed and the saved copy has no DailyMed confirmations. If nothing live answers, the saved copy is shown with "Live updates are paused ...". News requests never touch the global Live badge. Live news runs only in browser-direct mode; every other mode shows the saved copy.
+
+**The saved copy** `site/data/news.json` (`version, generatedAt, dataTimestamp, fdaUpdated, contentHash, items, dailymed`) is written by `scripts/news-snapshot.mjs` after the study snapshot, in the same hourly job. Its own gate is one openFDA request (`limit=1`, reads `meta.last_updated`): it rebuilds only if there is no file yet, the registry's `dataTimestamp` or openFDA's `last_updated` moved, the file is over 24 hours old, or `force`. It asks DailyMed about every candidate (700 ms apart) and saves the matches under `dailymed`: that is the second source the browser uses for approvals, because DailyMed cannot be called from a browser. Lookups retry on 429, 5xx and network errors (up to 3 times, honouring `retry-after`); a lookup that still fails drops only its own item, never writing an "unknown" label, and DailyMed is left alone for the rest of the run after two lookups in a row that still fail. If a registry list or openFDA fails, the previous file stays. Same content means a stamp-only commit (no deploy). The step stops after 4 minutes (every request is cut to the time left, retries and pauses past the deadline are skipped, and the previous file stays; `snapshot.mjs` adds an outer 5-minute limit and exits once its outputs are written), so it can never fail or hold up the job. The page checks every saved item again before showing it (shape, and every link must match a known pattern).
+
 ### Optional, not deployed: Worker change feed
 
 1. **Server.** Every 15 minutes the Worker fetches the curated studies plus every study a visitor saved in the last 30 days. It uses `filter.ids` batches of 100 with a small `fields` list, then applies them through the Lua compare-and-set. Each real change appends `{seq, nct, fields, prev, state, at}` to the feed.
@@ -168,6 +205,9 @@ In browser-direct mode each visitor sends about 12 tiny requests an hour, plus o
 | *Optional Worker:* Redis down | Search and study pages still work. `/v1/changes` returns 503, and the client backs off and uses the snapshot |
 | *Optional Worker:* down or over quota | The site switches to direct mode, then to "saved copy" mode using `data/snapshot.json` |
 | *Optional Worker:* Redis wiped | New epoch; clients get 410, then resync; no false change alerts |
+| One news source is unreachable (deployed) | The others carry on. A missing list comes from the saved copy and the intro line says so; a missing journal source leaves the other to decide; a missing approval source leaves only the confirmations that remain |
+| Every news source is unreachable, or live mode is off (deployed) | The hand-picked stories plus the saved copy, under "Live updates are paused, so you're seeing the saved copy from ..." |
+| The news step of the snapshot job fails or stalls (deployed) | Logged as `news: skipped (...)` or `reason: deadline` / `timeout`; the study snapshot and its exit code are unaffected, the step ends within 4 to 5 minutes, and the previous `news.json` stays |
 | Snapshot job fails | `health.yml` opens an issue (with the optional Worker, its daily cron also re-dispatches the job) |
 | GitHub pauses cron after 60 idle days | `health.yml` re-enables it (with the optional Worker, its `repository_dispatch` still triggers the job meanwhile) |
 
@@ -180,6 +220,8 @@ Deployed: zero accounts, zero secrets. Only GitHub Pages and GitHub Actions are 
 | GitHub Pages | Static files only. |
 | GitHub Actions | Free for public repos. The snapshot job runs hourly (24 times a day). Most runs read `/version`, see no change and stop within seconds; a run that fetches takes about 1 minute. |
 | ClinicalTrials.gov (per visitor) | About 12 tiny `/version` requests an hour while a tab is visible, plus one batched request per 100 saved studies when `dataTimestamp` moves (about once per weekday). |
+| openFDA, RxNorm, PubMed, Europe PMC (per visitor, only on #news) | About 1 openFDA request (240 a minute and 1 000 a day per IP), 2 registry requests (cached), up to 12 RxNorm, and up to 8 PubMed and 8 Europe PMC requests a day, all cached for 24 hours. PubMed is kept under 3 a second. |
+| openFDA, RxNorm, DailyMed, PubMed, Europe PMC (snapshot job) | At most a few dozen requests a day, paced, after the gate above. |
 | *Optional Worker path only:* Cloudflare Workers | 96 polls/day plus visitor traffic, against a 100k requests/day free allowance. Most of the time is spent waiting on network I/O; CPU per request is small but should be watched against the free-plan CPU limit. |
 | Upstash Redis (optional path only) | About 10 commands per poll, about 1k/day. Edge caching (`s-maxage=60` on `/v1/changes`) means visitors who share a cursor are mostly served from cache. |
 | Workers AI (optional path only) | Capped in code at 300 reranks per day. |
@@ -211,5 +253,6 @@ The deploy jobs use `concurrency` groups that never cancel a deploy in progress.
   - concurrent isolation
 - `test/snapshot.test.mjs`: the snapshot's `/version` gate, stamp-only runs, idempotency, and retry with backoff.
 - `test/live.test.mjs`: the browser-direct client (`app/core.js` + `app/live.js`) in a `node:vm` sandbox with a fake registry: batching, the 24 h cache, backoff and throttle, request timeouts, the open study page, boot-time recovery.
+- `test/news.test.mjs`: the live news rules and pipeline, with real (trimmed) openFDA and registry replies in `test/fixtures/news`: query strings, dates, the FDA filter, corroboration rules, journal-article states, every sentence and label, the intro's source list, side-by-side pipelines, merging and caps, hostile strings and long unbroken text, the saved copy and the snapshot step (gate, failures, retries, the 4-minute deadline and the outer limit, stamp-only runs), identifier collisions, and the build (inlining, CSP).
 - `test/e2e/pages-only.mjs`: Playwright run of the GitHub-only build (no Worker, no Redis) against a fake registry, with the clock driven by Playwright.
 - `test/e2e/run.mjs`: Playwright run of the built site against a local Worker, Redis and a fake registry: search → open a study → save → cron detects a change → the browser feed poll shows it.

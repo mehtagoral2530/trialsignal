@@ -16,7 +16,12 @@ What is deployed needs nothing but this GitHub repo: zero accounts, zero secrets
   - Your saved studies are refreshed only when the registry's `dataTimestamp` moves, which is about once per weekday. They go in one batched request per 100 ids.
   - Answers are cached in localStorage for 24 hours, and only while the `dataTimestamp` is unchanged.
   - Failed checks back off (exponential, full jitter, from 15 seconds up to 1 hour). After 3 failed checks in a row, the site shows the saved copy.
-- **A GitHub Action** refreshes a saved copy hourly. It reads `/version` first and stops there when the registry hasn't moved. If the registry moved but none of the tracked studies did, it commits only the new timestamp and deploys nothing. If your browser can't reach ClinicalTrials.gov, the site shows that copy instead.
+- **A GitHub Action** refreshes a saved copy hourly. It reads `/version` first and stops there when the registry hasn't moved. If the registry moved but none of the tracked studies did, it commits only the new timestamp and deploys nothing. If your browser can't reach ClinicalTrials.gov, the site shows that copy instead. The same job keeps the saved copy of the news page (`site/data/news.json`), with its own cheap check. That step stops after 4 minutes and can never fail or hold up the job.
+
+- **Live news.** The *What's new* page is built from public sources when you open it, with no key or account. Each story names the sources behind it.
+  - *Results posted* and *stopped, paused or cancelled* studies come from ClinicalTrials.gov, the primary record. For results, PubMed and Europe PMC are each searched for a journal article about the study. We say what we found, never that an article reports those results. A study with no article found is labelled "Results posted, no article found", and the card says only that our search found none and that searches can miss articles.
+  - *FDA approvals* come from openFDA (Drugs@FDA) and are shown only when a second source agrees: RxNorm, or a DailyMed label (the hourly Action asks DailyMed, because DailyMed can't be called from a browser). Anything only one source knows about is left out until a second one catches up.
+  - If a source is down, the others carry on, and the missing part comes from the saved copy (`site/data/news.json`). The hand-picked stories stay, labelled "Picked by hand". The line at the top names only the sources that really answered. All answers are cached for 24 hours. The design and rate limits are in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ### Publish (one time, about 5 minutes)
 
