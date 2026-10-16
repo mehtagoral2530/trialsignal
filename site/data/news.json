@@ -1,33 +1,99 @@
 {
  "version": 1,
- "generatedAt": "2026-10-15T13:32:50.163Z",
- "dataTimestamp": "2026-10-15T09:00:05",
+ "generatedAt": "2026-10-16T12:34:42.558Z",
+ "dataTimestamp": "2026-10-16T09:00:05",
  "fdaUpdated": "2026-10-14",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "8920135ea742a67f0e0158002c8b720a",
+ "contentHash": "7f0b2ce2179d7b54dd59b9c1d58933b5",
  "items": [
   {
    "live": true,
-   "id": "results:NCT04592809",
+   "id": "results:NCT03310125",
    "kind": "results",
-   "date": "2026-10-15",
+   "date": "2026-10-16",
    "level": 7,
-   "nct": "NCT04592809",
-   "drug": "Ketamine Hydrochloride",
-   "title": "Results posted for a study of Ketamine Hydrochloride for Suicide, Attempted",
-   "summary": "University of Texas Southwestern Medical Center ran this final-stage test (phase 3) with 50 people. The registry lists its end date as 31 Aug 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "nct": "NCT03310125",
+   "drug": "Active Colchicine",
+   "title": "Results posted for a study of Active Colchicine for Atrial Fibrillation",
+   "summary": "Population Health Research Institute ran this final-stage test (phase 3) with 3,209 people. The registry lists its end date as 23 Jun 2023. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
    "links": [
     [
      "Official study record",
-     "https://clinicaltrials.gov/study/NCT04592809"
+     "https://clinicaltrials.gov/study/NCT03310125"
     ],
     [
      "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42849709/"
+     "https://pubmed.ncbi.nlm.nih.gov/40698308/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/40698308"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05664217",
+   "kind": "results",
+   "date": "2026-10-16",
+   "level": 6,
+   "nct": "NCT05664217",
+   "drug": "NKTR-255 at 1.5 µg/kg",
+   "title": "Results posted for a study of NKTR-255 at 1.5 µg/kg for Non-Hodgkin Lymphoma",
+   "summary": "Nektar Therapeutics ran this combined mid-stage and final-stage test (phase 2/3) with 15 people. It was stopped early. The study team’s reason: “Sponsor decided to end the study”. The registry lists its end date as 16 Aug 2024. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05664217) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05664217"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06192108",
+   "kind": "results",
+   "date": "2026-10-16",
+   "level": 7,
+   "nct": "NCT06192108",
+   "drug": "Orforglipron",
+   "title": "Results posted for a study of Orforglipron for Type 2 Diabetes",
+   "summary": "Eli Lilly and Company ran this final-stage test (phase 3) with 962 people. The registry lists its end date as 26 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06192108"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42259339/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42259339"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06280716",
+   "kind": "results",
+   "date": "2026-10-16",
+   "level": 6,
+   "nct": "NCT06280716",
+   "drug": "Lebrikizumab",
+   "title": "Results posted for a study of Lebrikizumab for Atopic Dermatitis",
+   "summary": "Eli Lilly and Company ran this final-stage test (phase 3) with 301 people. The registry lists its end date as 16 Jul 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06280716) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06280716"
     ]
    ]
   },
@@ -121,42 +187,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT05139316",
-   "kind": "results",
-   "date": "2026-10-14",
-   "level": 6,
-   "nct": "NCT05139316",
-   "drug": "DTX401",
-   "title": "Results posted for a study of DTX401 for Glycogen Storage Disease Type IA",
-   "summary": "Ultragenyx Pharmaceutical Inc ran this final-stage test (phase 3) with 52 people. The registry lists its end date as 20 Feb 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05139316) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05139316"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05627557",
-   "kind": "results",
-   "date": "2026-10-14",
-   "level": 6,
-   "nct": "NCT05627557",
-   "drug": "Obinutuzumab",
-   "title": "Results posted for a study of Obinutuzumab for Childhood Idiopathic Nephrotic Syndrome",
-   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 85 people. The registry lists its end date as 27 Aug 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05627557) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05627557"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT07625306",
    "kind": "stopped",
    "date": "2026-10-14",
@@ -171,24 +201,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT07625306"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04636957",
-   "kind": "results",
-   "date": "2026-10-13",
-   "level": 6,
-   "nct": "NCT04636957",
-   "drug": "Ciprofloxacin-Fluocinolone Acetonide",
-   "title": "Results posted for a study of Ciprofloxacin-Fluocinolone Acetonide for Acute Otitis Externa",
-   "summary": "Lee's Pharmaceutical Limited ran this final-stage test (phase 3) with 600 people. The registry lists its end date as 17 Oct 2021. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04636957) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04636957"
     ]
    ]
   },
