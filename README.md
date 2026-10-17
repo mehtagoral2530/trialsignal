@@ -96,6 +96,7 @@ shared/     code used by both the Worker and the scripts: hashing, BM25, RRF, cu
 worker/     optional, not deployed: Cloudflare Worker API, including the Redis Lua scripts
 scripts/    build-site.mjs, snapshot.mjs, seed-index.mjs
 site/       build output plus data/ (committed by the snapshot job) and fonts
+site/portfolio/  Goral Bhatt's portfolio page, hand-written (served at /portfolio/)
 test/       unit, real-Redis integration and end-to-end tests
 .github/    CI, Pages deploy, Worker deploy, snapshot, health
 docs/       ARCHITECTURE.md
