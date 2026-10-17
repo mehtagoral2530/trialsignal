@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-10-16T21:24:06.661Z",
+ "generatedAt": "2026-10-17T22:27:26.580Z",
  "dataTimestamp": "2026-10-16T09:00:05",
  "fdaUpdated": "2026-10-16",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "7f0b2ce2179d7b54dd59b9c1d58933b5",
+ "contentHash": "bdd2524087d6346ea433b872d5c7ac93",
  "items": [
   {
    "live": true,
@@ -458,6 +458,10 @@
   "NDA221075": {
    "setid": "3663d9cb-3f66-48ae-bf0a-6958bc0888de",
    "title": "ZENBEXUS (IBERDOMIDE) CAPSULE [E.R. SQUIBB & SONS, L.L.C.]"
+  },
+  "NDA220381": {
+   "setid": "e887e473-f1a7-40f1-bd6e-c99e7db7420d",
+   "title": "GLYCOPHOS (SODIUM GLYCEROPHOSPHATE) INJECTION, SOLUTION [FRESENIUS KABI USA, LLC]"
   },
   "BLA761320": {
    "setid": "7f9a3014-b3d4-4943-a83a-92a77d8f947c",
