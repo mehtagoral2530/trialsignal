@@ -1,14 +1,32 @@
 {
  "version": 1,
- "generatedAt": "2026-10-19T00:15:28.532Z",
- "dataTimestamp": "2026-10-16T09:00:05",
+ "generatedAt": "2026-10-19T17:35:11.178Z",
+ "dataTimestamp": "2026-10-19T09:00:04",
  "fdaUpdated": "2026-10-16",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "bdd2524087d6346ea433b872d5c7ac93",
+ "contentHash": "e21ed7742ce128ca49f221771ee9c6d6",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT05210790",
+   "kind": "results",
+   "date": "2026-10-19",
+   "level": 6,
+   "nct": "NCT05210790",
+   "drug": "Rusfertide",
+   "title": "Results posted for a study of Rusfertide for Polycythemia Vera",
+   "summary": "Protagonist Therapeutics, Inc. ran this final-stage test (phase 3) with 293 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05210790) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05210790"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03310125",
@@ -138,24 +156,6 @@
     [
      "Journal article on Europe PMC",
      "https://europepmc.org/article/MED/42776606"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05882357",
-   "kind": "results",
-   "date": "2026-10-15",
-   "level": 6,
-   "nct": "NCT05882357",
-   "drug": "ELX/TEZ/IVA",
-   "title": "Results posted for a study of ELX/TEZ/IVA for Cystic Fibrosis",
-   "summary": "Vertex Pharmaceuticals Incorporated ran this final-stage test (phase 3) with 67 people. The registry lists its end date as 4 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05882357) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05882357"
     ]
    ]
   },
