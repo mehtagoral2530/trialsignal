@@ -1,14 +1,50 @@
 {
  "version": 1,
- "generatedAt": "2026-10-19T17:35:11.178Z",
- "dataTimestamp": "2026-10-19T09:00:04",
+ "generatedAt": "2026-10-20T13:40:32.238Z",
+ "dataTimestamp": "2026-10-20T09:00:04",
  "fdaUpdated": "2026-10-16",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "e21ed7742ce128ca49f221771ee9c6d6",
+ "contentHash": "e65a993984195f804d2fc8071f0ebe54",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04500678",
+   "kind": "results",
+   "date": "2026-10-20",
+   "level": 6,
+   "nct": "NCT04500678",
+   "drug": "Metformin",
+   "title": "Results posted for a study of Metformin for HIV/AIDS",
+   "summary": "University of Hawaii ran this combined mid-stage and final-stage test (phase 2/3) with 29 people. It was stopped early. The study team’s reason: “During the COVID pandemic, our IRB halted enrollment into the study among other changes. Post COVID it was decided that too long an interval between patient enrollment was problematic for the study and a discussion was made to terminate”. The registry lists its end date as 31 Dec 2022. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04500678) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04500678"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04630028",
+   "kind": "results",
+   "date": "2026-10-20",
+   "level": 6,
+   "nct": "NCT04630028",
+   "drug": "Ustekinumab Dose Based on BSA and Body Weight",
+   "title": "Results posted for a study of Ustekinumab Dose Based on BSA and Body Weight for Colitis, Ulcerative",
+   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 112 people. The registry lists its end date as 5 Jun 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04630028) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04630028"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT05210790",
@@ -130,58 +166,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT04701983"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05255991",
-   "kind": "results",
-   "date": "2026-10-15",
-   "level": 7,
-   "nct": "NCT05255991",
-   "drug": "Inhaled Treprostinil",
-   "title": "Results posted for a study of Inhaled Treprostinil for Idiopathic Pulmonary Fibrosis",
-   "summary": "United Therapeutics ran this final-stage test (phase 3) with 597 people. The registry lists its end date as 30 Jun 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05255991"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42776606/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42776606"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06173531",
-   "kind": "results",
-   "date": "2026-10-15",
-   "level": 7,
-   "nct": "NCT06173531",
-   "drug": "Carbetocin",
-   "title": "Results posted for a study of Carbetocin for Hyperphagia in Prader-Willi Syndrome",
-   "summary": "ACADIA Pharmaceuticals Inc. ran this final-stage test (phase 3) with 175 people. The registry lists its end date as 19 Aug 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06173531"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42486751/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42486751"
     ]
    ]
   },
