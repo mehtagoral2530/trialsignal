@@ -1,14 +1,58 @@
 {
  "version": 1,
- "generatedAt": "2026-10-20T22:25:08.158Z",
- "dataTimestamp": "2026-10-20T09:00:04",
+ "generatedAt": "2026-10-21T13:57:14.879Z",
+ "dataTimestamp": "2026-10-21T09:00:05",
  "fdaUpdated": "2026-10-20",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "e65a993984195f804d2fc8071f0ebe54",
+ "contentHash": "ca113c78e0492a837b7330e62a5a3a32",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04404283",
+   "kind": "results",
+   "date": "2026-10-21",
+   "level": 6,
+   "nct": "NCT04404283",
+   "drug": "Brentuximab vedotin",
+   "title": "Results posted for a study of Brentuximab vedotin for Diffuse Large B-cell Lymphoma",
+   "summary": "Seagen, a wholly owned subsidiary of Pfizer ran this final-stage test (phase 3) with 240 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04404283) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04404283"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05502341",
+   "kind": "results",
+   "date": "2026-10-21",
+   "level": 7,
+   "nct": "NCT05502341",
+   "drug": "Bictegravir",
+   "title": "Results posted for a study of Bictegravir for HIV-1-infection",
+   "summary": "Gilead Sciences ran this combined mid-stage and final-stage test (phase 2/3) with 689 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05502341"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41763229/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41763229"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04500678",
@@ -91,24 +135,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT05664217",
-   "kind": "results",
-   "date": "2026-10-16",
-   "level": 6,
-   "nct": "NCT05664217",
-   "drug": "NKTR-255 at 1.5 µg/kg",
-   "title": "Results posted for a study of NKTR-255 at 1.5 µg/kg for Non-Hodgkin Lymphoma",
-   "summary": "Nektar Therapeutics ran this combined mid-stage and final-stage test (phase 2/3) with 15 people. It was stopped early. The study team’s reason: “Sponsor decided to end the study”. The registry lists its end date as 16 Aug 2024. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05664217) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05664217"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "results:NCT06192108",
    "kind": "results",
    "date": "2026-10-16",
@@ -148,24 +174,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT06280716"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04701983",
-   "kind": "results",
-   "date": "2026-10-15",
-   "level": 6,
-   "nct": "NCT04701983",
-   "drug": "Itepekimab SAR440340",
-   "title": "Results posted for a study of Itepekimab SAR440340 for Chronic Obstructive Pulmonary Disease",
-   "summary": "Sanofi ran this final-stage test (phase 3) with 1,127 people. The registry lists its end date as 27 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04701983) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04701983"
     ]
    ]
   },
@@ -450,10 +458,6 @@
   "BLA761320": {
    "setid": "7f9a3014-b3d4-4943-a83a-92a77d8f947c",
    "title": "LYTENAVA (BEVACIZUMAB-VIKG) INJECTION [OUTLOOK THERAPEUTICS, INC.]"
-  },
-  "NDA220185": {
-   "setid": "3760e421-b523-4d9b-e063-6394a90ab94b",
-   "title": "JIDEYTRO (ZIDESAMTINIB) TABLET, FILM COATED [NUVALENT, INC.]"
   }
  }
 }
