@@ -1,14 +1,40 @@
 {
  "version": 1,
- "generatedAt": "2026-10-22T07:45:00.291Z",
- "dataTimestamp": "2026-10-21T09:00:05",
+ "generatedAt": "2026-10-22T13:55:30.837Z",
+ "dataTimestamp": "2026-10-22T09:00:04",
  "fdaUpdated": "2026-10-21",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "ca113c78e0492a837b7330e62a5a3a32",
+ "contentHash": "5c215b4ad087e29fe0f8647ad332e764",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03036488",
+   "kind": "results",
+   "date": "2026-10-22",
+   "level": 7,
+   "nct": "NCT03036488",
+   "drug": "Pembrolizumab",
+   "title": "Results posted for a study of Pembrolizumab for Triple Negative Breast Neoplasms",
+   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 1,174 people. The registry lists its end date as 14 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03036488"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41739398/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42743832"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04404283",
@@ -156,24 +182,6 @@
     [
      "Journal article on Europe PMC",
      "https://europepmc.org/article/MED/42259339"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06280716",
-   "kind": "results",
-   "date": "2026-10-16",
-   "level": 6,
-   "nct": "NCT06280716",
-   "drug": "Lebrikizumab",
-   "title": "Results posted for a study of Lebrikizumab for Atopic Dermatitis",
-   "summary": "Eli Lilly and Company ran this final-stage test (phase 3) with 301 people. The registry lists its end date as 16 Jul 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06280716) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06280716"
     ]
    ]
   },
