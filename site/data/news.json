@@ -1,14 +1,77 @@
 {
  "version": 1,
- "generatedAt": "2026-10-23T07:42:48.902Z",
- "dataTimestamp": "2026-10-22T09:00:04",
+ "generatedAt": "2026-10-23T13:36:18.504Z",
+ "dataTimestamp": "2026-10-23T09:00:04",
  "fdaUpdated": "2026-10-22",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "23b19b69e463376959df49c987cc2e0f",
+ "contentHash": "ae0d84a4e1d7a354e56693f64a6de272",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03653832",
+   "kind": "results",
+   "date": "2026-10-23",
+   "level": 7,
+   "nct": "NCT03653832",
+   "drug": "Dexmedetomidine",
+   "title": "Results posted for a study of Dexmedetomidine for Critical Illness",
+   "summary": "University of Edinburgh ran this final-stage test (phase 3) with 1,404 people. The registry lists its end date as 31 Jul 2024. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03653832"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41220595/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41220595"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05907499",
+   "kind": "results",
+   "date": "2026-10-23",
+   "level": 6,
+   "nct": "NCT05907499",
+   "drug": "Decitabine",
+   "title": "Results posted for a study of Decitabine for Poor Graft Function",
+   "summary": "The First Affiliated Hospital of Soochow University ran this final-stage test (phase 3) with 76 people. The registry lists its end date as 1 Jan 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05907499) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05907499"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT07318350",
+   "kind": "stopped",
+   "date": "2026-10-23",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT07318350",
+   "drug": "N0783",
+   "title": "A study of N0783 for Moderate Asthma was cancelled before it began",
+   "summary": "Eurofarma Laboratorios S.A. planned this final-stage test (phase 3). The study team’s reason: “Strategic change in development priorities”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT07318350"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03036488",
@@ -135,58 +198,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT03310125",
-   "kind": "results",
-   "date": "2026-10-16",
-   "level": 7,
-   "nct": "NCT03310125",
-   "drug": "Active Colchicine",
-   "title": "Results posted for a study of Active Colchicine for Atrial Fibrillation",
-   "summary": "Population Health Research Institute ran this final-stage test (phase 3) with 3,209 people. The registry lists its end date as 23 Jun 2023. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03310125"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/40698308/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/40698308"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06192108",
-   "kind": "results",
-   "date": "2026-10-16",
-   "level": 7,
-   "nct": "NCT06192108",
-   "drug": "Orforglipron",
-   "title": "Results posted for a study of Orforglipron for Type 2 Diabetes",
-   "summary": "Eli Lilly and Company ran this final-stage test (phase 3) with 962 people. The registry lists its end date as 26 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06192108"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42259339/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42259339"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT07625306",
    "kind": "stopped",
    "date": "2026-10-14",
@@ -258,25 +269,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT05378763"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT07473973",
-   "kind": "stopped",
-   "date": "2026-09-29",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT07473973",
-   "drug": "INZ-701",
-   "title": "A study of INZ-701 for Ectonucleotide Pyrophosphatase/phosphodiesterase1 Deficiency was stopped early",
-   "summary": "Inozyme Pharma ran this final-stage test (phase 3) with 2 people. The study team’s reason: “Following review of the totality of program data, the sponsor decided to discontinue development of INZ701. The decision was not related to safety”. The registry lists its end date as 31 Aug 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07473973"
     ]
    ]
   },
