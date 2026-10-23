@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-10-22T13:55:30.837Z",
+ "generatedAt": "2026-10-23T07:42:48.902Z",
  "dataTimestamp": "2026-10-22T09:00:04",
- "fdaUpdated": "2026-10-21",
+ "fdaUpdated": "2026-10-22",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "5c215b4ad087e29fe0f8647ad332e764",
+ "contentHash": "23b19b69e463376959df49c987cc2e0f",
  "items": [
   {
    "live": true,
@@ -462,10 +462,6 @@
   "NDA220381": {
    "setid": "e887e473-f1a7-40f1-bd6e-c99e7db7420d",
    "title": "GLYCOPHOS (SODIUM GLYCEROPHOSPHATE) INJECTION, SOLUTION [FRESENIUS KABI USA, LLC]"
-  },
-  "BLA761320": {
-   "setid": "7f9a3014-b3d4-4943-a83a-92a77d8f947c",
-   "title": "LYTENAVA (BEVACIZUMAB-VIKG) INJECTION [OUTLOOK THERAPEUTICS, INC.]"
   }
  }
 }
