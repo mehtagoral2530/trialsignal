@@ -1,14 +1,85 @@
 {
  "version": 1,
- "generatedAt": "2026-10-25T21:54:51.311Z",
- "dataTimestamp": "2026-10-23T09:00:04",
+ "generatedAt": "2026-10-26T14:24:32.165Z",
+ "dataTimestamp": "2026-10-26T09:00:04",
  "fdaUpdated": "2026-10-23",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "ae0d84a4e1d7a354e56693f64a6de272",
+ "contentHash": "b627bbdb49717caf9d7c2351b4ca74fb",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03954314",
+   "kind": "results",
+   "date": "2026-10-26",
+   "level": 7,
+   "nct": "NCT03954314",
+   "drug": "Tranexamic Acid",
+   "title": "Results posted for a study of Tranexamic Acid for Bleeding",
+   "summary": "Population Health Research Institute ran this final-stage test (phase 3) with 3,242 people. It was stopped early. The study team’s reason: “Upon the Data Safety Monitoring Board review of the interim analysis (75% of participants have finished their follow-up) on November 17, 2023, they made a recommendation to stop recruitment into the trial”. The registry lists its end date as 28 Nov 2023. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03954314"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/38587333/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/38587333"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05073835",
+   "kind": "results",
+   "date": "2026-10-26",
+   "level": 7,
+   "nct": "NCT05073835",
+   "drug": "Semaglutide 3 mg",
+   "title": "Results posted for a study of Semaglutide 3 mg for Obesity",
+   "summary": "University College, London ran this final-stage test (phase 3) with 70 people. The registry lists its end date as 9 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05073835"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42174253/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42174253"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06608472",
+   "kind": "stopped",
+   "date": "2026-10-26",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06608472",
+   "drug": "N0877",
+   "title": "A study of N0877 for Essential Arterial Hypertension was cancelled before it began",
+   "summary": "Eurofarma Laboratorios S.A. planned this final-stage test (phase 3). The study team’s reason: “Strategic change in development priorities”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06608472"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03653832",
@@ -144,24 +215,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT04500678",
-   "kind": "results",
-   "date": "2026-10-20",
-   "level": 6,
-   "nct": "NCT04500678",
-   "drug": "Metformin",
-   "title": "Results posted for a study of Metformin for HIV/AIDS",
-   "summary": "University of Hawaii ran this combined mid-stage and final-stage test (phase 2/3) with 29 people. It was stopped early. The study team’s reason: “During the COVID pandemic, our IRB halted enrollment into the study among other changes. Post COVID it was decided that too long an interval between patient enrollment was problematic for the study and a discussion was made to terminate”. The registry lists its end date as 31 Dec 2022. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04500678) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04500678"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "results:NCT04630028",
    "kind": "results",
    "date": "2026-10-20",
@@ -175,24 +228,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT04630028"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05210790",
-   "kind": "results",
-   "date": "2026-10-19",
-   "level": 6,
-   "nct": "NCT05210790",
-   "drug": "Rusfertide",
-   "title": "Results posted for a study of Rusfertide for Polycythemia Vera",
-   "summary": "Protagonist Therapeutics, Inc. ran this final-stage test (phase 3) with 293 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05210790) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05210790"
     ]
    ]
   },
@@ -250,25 +285,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT06046820"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT05378763",
-   "kind": "stopped",
-   "date": "2026-09-30",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT05378763",
-   "drug": "Poziotinib",
-   "title": "A study of Poziotinib for NSCLC is paused",
-   "summary": "Spectrum Pharmaceuticals, Inc leads this final-stage test (phase 3). The study team’s reason: “The study has not enrolled any patients. The study design is under discussion and will likely be redesigned in consultation with the FDA”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05378763"
     ]
    ]
   },
