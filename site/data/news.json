@@ -1,14 +1,76 @@
 {
  "version": 1,
- "generatedAt": "2026-10-27T00:35:42.777Z",
- "dataTimestamp": "2026-10-26T09:00:04",
+ "generatedAt": "2026-10-27T13:22:57.412Z",
+ "dataTimestamp": "2026-10-27T09:00:04",
  "fdaUpdated": "2026-10-26",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "b627bbdb49717caf9d7c2351b4ca74fb",
+ "contentHash": "429826f4f6ec3c9a0517bae9e31c8a35",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT00073242",
+   "kind": "results",
+   "date": "2026-10-27",
+   "level": 6,
+   "nct": "NCT00073242",
+   "drug": "Leptin",
+   "title": "Results posted for a study of Leptin for Obesity",
+   "summary": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) ran this final-stage test (phase 3) with 31 people. The registry lists its end date as Jul 2015. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT00073242) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT00073242"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05195775",
+   "kind": "results",
+   "date": "2026-10-27",
+   "level": 6,
+   "nct": "NCT05195775",
+   "drug": "Tadalafil",
+   "title": "Results posted for a study of Tadalafil for Duchenne Muscular Dystrophy",
+   "summary": "University of Florida ran this combined mid-stage and final-stage test (phase 2/3) with 12 people. The registry lists its end date as 8 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05195775) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05195775"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05901831",
+   "kind": "results",
+   "date": "2026-10-27",
+   "level": 7,
+   "nct": "NCT05901831",
+   "drug": "Finerenone",
+   "title": "Results posted for a study of Finerenone for Chronic Kidney Disease",
+   "summary": "Bayer ran this final-stage test (phase 3) with 242 people. The registry lists its end date as 15 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05901831"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41780000/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41780000"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03954314",
@@ -171,63 +233,26 @@
   },
   {
    "live": true,
-   "id": "results:NCT04404283",
-   "kind": "results",
-   "date": "2026-10-21",
-   "level": 6,
-   "nct": "NCT04404283",
-   "drug": "Brentuximab vedotin",
-   "title": "Results posted for a study of Brentuximab vedotin for Diffuse Large B-cell Lymphoma",
-   "summary": "Seagen, a wholly owned subsidiary of Pfizer ran this final-stage test (phase 3) with 240 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04404283) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04404283"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05502341",
-   "kind": "results",
-   "date": "2026-10-21",
-   "level": 7,
-   "nct": "NCT05502341",
-   "drug": "Bictegravir",
-   "title": "Results posted for a study of Bictegravir for HIV-1-infection",
-   "summary": "Gilead Sciences ran this combined mid-stage and final-stage test (phase 2/3) with 689 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05502341"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/41763229/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/41763229"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04630028",
-   "kind": "results",
+   "id": "approval:NDA221276",
+   "kind": "approval",
    "date": "2026-10-20",
-   "level": 6,
-   "nct": "NCT04630028",
-   "drug": "Ustekinumab Dose Based on BSA and Body Weight",
-   "title": "Results posted for a study of Ustekinumab Dose Based on BSA and Body Weight for Colitis, Ulcerative",
-   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 112 people. The registry lists its end date as 5 Jun 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04630028) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "level": 4,
+   "app": "NDA221276",
+   "brand": "Hibsago",
+   "generics": [
+    "bepirovirsen"
+   ],
+   "title": "FDA approved Hibsago (bepirovirsen)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
     [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04630028"
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221276"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=2cca7226-d8f9-4917-8d10-83e216acf393"
     ]
    ]
   },
@@ -285,6 +310,31 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT06046820"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:NDA220963",
+   "kind": "approval",
+   "date": "2026-09-28",
+   "level": 4,
+   "app": "NDA220963",
+   "brand": "Emcitate",
+   "generics": [
+    "tiratricol"
+   ],
+   "title": "FDA approved Emcitate (tiratricol)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220963"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=48d9faab-9c60-4abd-b4b9-97ffa778c944"
     ]
    ]
   },
@@ -362,63 +412,17 @@
      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6e02229e-262c-4e25-9240-9e9de4eb7c1d"
     ]
    ]
-  },
-  {
-   "live": true,
-   "id": "approval:BLA761463",
-   "kind": "approval",
-   "date": "2026-09-11",
-   "level": 4,
-   "app": "BLA761463",
-   "brand": "Isembyld",
-   "generics": [
-    "apitegromab-mstn"
-   ],
-   "title": "FDA approved Isembyld (apitegromab-mstn)",
-   "summary": "The FDA’s drug database lists it as approved. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
-   "links": [
-    [
-     "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761463"
-    ],
-    [
-     "RxNorm entry",
-     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2753176"
-    ],
-    [
-     "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b1cd8ab8-8a10-48ed-9806-75a44f22b963"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "approval:NDA218592",
-   "kind": "approval",
-   "date": "2026-09-11",
-   "level": 4,
-   "app": "NDA218592",
-   "brand": "Pixclara",
-   "generics": [
-    "floretyrosine f-18"
-   ],
-   "title": "FDA approved Pixclara (floretyrosine f-18)",
-   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
-   "links": [
-    [
-     "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218592"
-    ],
-    [
-     "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=dc78b128-3768-4448-b019-61574db05714"
-    ]
-   ]
   }
  ],
  "dailymed": {
+  "NDA221276": {
+   "setid": "2cca7226-d8f9-4917-8d10-83e216acf393",
+   "title": "HIBSAGO (BEPIROVIRSEN) INJECTION, SOLUTION [GLAXOSMITHKLINE LLC]"
+  },
+  "NDA220963": {
+   "setid": "48d9faab-9c60-4abd-b4b9-97ffa778c944",
+   "title": "EMCITATE (TIRATRICOL) TABLET, FOR SUSPENSION [RARE THYROID THERAPEUTICS INTERNATIONAL AB]"
+  },
   "NDA220415": {
    "setid": "1ae6df6e-6ca0-420f-bec9-effa7acdd085",
    "title": "JUVMO (TAVAPADON) TABLET JUVMO (TAVAPADON) KIT [ABBVIE INC.]"
