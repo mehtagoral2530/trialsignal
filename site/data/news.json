@@ -1,47 +1,168 @@
 {
  "version": 1,
- "generatedAt": "2026-10-27T13:22:57.412Z",
- "dataTimestamp": "2026-10-27T09:00:04",
+ "generatedAt": "2026-10-28T16:43:53.551Z",
+ "dataTimestamp": "2026-10-28T09:00:04",
  "fdaUpdated": "2026-10-26",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "429826f4f6ec3c9a0517bae9e31c8a35",
+ "contentHash": "d7bbb034f8dac3a5209c43ca3c041d3e",
  "items": [
   {
    "live": true,
-   "id": "results:NCT00073242",
+   "id": "results:NCT03284866",
    "kind": "results",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "level": 6,
-   "nct": "NCT00073242",
-   "drug": "Leptin",
-   "title": "Results posted for a study of Leptin for Obesity",
-   "summary": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) ran this final-stage test (phase 3) with 31 people. The registry lists its end date as Jul 2015. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT00073242) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "nct": "NCT03284866",
+   "drug": "Recombinant Human Papillomavirus Nonavalent Vaccine",
+   "title": "Results posted for a study of Recombinant Human Papillomavirus Nonavalent Vaccine for AIDS-Related Human Papillomavirus Infection",
+   "summary": "AIDS Malignancy Consortium ran this final-stage test (phase 3) with 535 people. The registry lists its end date as 5 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03284866) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
      "Official study record",
-     "https://clinicaltrials.gov/study/NCT00073242"
+     "https://clinicaltrials.gov/study/NCT03284866"
     ]
    ]
   },
   {
    "live": true,
-   "id": "results:NCT05195775",
+   "id": "results:NCT03832998",
    "kind": "results",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "level": 6,
-   "nct": "NCT05195775",
-   "drug": "Tadalafil",
-   "title": "Results posted for a study of Tadalafil for Duchenne Muscular Dystrophy",
-   "summary": "University of Florida ran this combined mid-stage and final-stage test (phase 2/3) with 12 people. The registry lists its end date as 8 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05195775) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "nct": "NCT03832998",
+   "drug": "Erenumab Dose 1",
+   "title": "Results posted for a study of Erenumab Dose 1 for Migraine",
+   "summary": "Amgen ran this final-stage test (phase 3) with 284 people. The registry lists its end date as 7 Jan 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03832998) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
      "Official study record",
-     "https://clinicaltrials.gov/study/NCT05195775"
+     "https://clinicaltrials.gov/study/NCT03832998"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT03859700",
+   "kind": "results",
+   "date": "2026-10-28",
+   "level": 6,
+   "nct": "NCT03859700",
+   "drug": "DBV712 250 mcg",
+   "title": "Results posted for a study of DBV712 250 mcg for Peanut Allergy",
+   "summary": "DBV Technologies ran this final-stage test (phase 3) with 304 people. The registry lists its end date as 13 May 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03859700) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03859700"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04466566",
+   "kind": "results",
+   "date": "2026-10-28",
+   "level": 6,
+   "nct": "NCT04466566",
+   "drug": "Exendin-9",
+   "title": "Results posted for a study of Exendin-9 for Healthy",
+   "summary": "Adrian Vella ran this final-stage test (phase 3) with 21 people. The registry lists its end date as 30 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04466566) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04466566"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04770545",
+   "kind": "results",
+   "date": "2026-10-28",
+   "level": 7,
+   "nct": "NCT04770545",
+   "drug": "PEGCETACOPLAN",
+   "title": "Results posted for a study of PEGCETACOPLAN for Geographic Atrophy Secondary to Age-related Macular Degeneration",
+   "summary": "Apellis Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 792 people. The registry lists its end date as 5 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04770545"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42164977"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05297448",
+   "kind": "results",
+   "date": "2026-10-28",
+   "level": 6,
+   "nct": "NCT05297448",
+   "drug": "Rifaximin SSD",
+   "title": "Results posted for a study of Rifaximin SSD for Hepatic Encephalopathy",
+   "summary": "Bausch Health Americas, Inc. ran this final-stage test (phase 3) with 517 people. The registry lists its end date as 24 Feb 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05297448) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05297448"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05595642",
+   "kind": "results",
+   "date": "2026-10-28",
+   "level": 7,
+   "nct": "NCT05595642",
+   "drug": "Astegolimab",
+   "title": "Results posted for a study of Astegolimab for Chronic Obstructive Pulmonary Disease (COPD)",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 1,380 people. The registry lists its end date as 19 Aug 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05595642"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42148875/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42148875"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT05378763",
+   "kind": "stopped",
+   "date": "2026-10-28",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT05378763",
+   "drug": "Poziotinib",
+   "title": "A study of Poziotinib for NSCLC is paused",
+   "summary": "Spectrum Pharmaceuticals, Inc leads this final-stage test (phase 3). The study team’s reason: “The study has not enrolled any patients. The study design is under discussion and will likely be redesigned in consultation with the FDA”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05378763"
     ]
    ]
   },
@@ -73,58 +194,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT03954314",
-   "kind": "results",
-   "date": "2026-10-26",
-   "level": 7,
-   "nct": "NCT03954314",
-   "drug": "Tranexamic Acid",
-   "title": "Results posted for a study of Tranexamic Acid for Bleeding",
-   "summary": "Population Health Research Institute ran this final-stage test (phase 3) with 3,242 people. It was stopped early. The study team’s reason: “Upon the Data Safety Monitoring Board review of the interim analysis (75% of participants have finished their follow-up) on November 17, 2023, they made a recommendation to stop recruitment into the trial”. The registry lists its end date as 28 Nov 2023. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03954314"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/38587333/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/38587333"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05073835",
-   "kind": "results",
-   "date": "2026-10-26",
-   "level": 7,
-   "nct": "NCT05073835",
-   "drug": "Semaglutide 3 mg",
-   "title": "Results posted for a study of Semaglutide 3 mg for Obesity",
-   "summary": "University College, London ran this final-stage test (phase 3) with 70 people. The registry lists its end date as 9 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05073835"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42174253/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42174253"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT06608472",
    "kind": "stopped",
    "date": "2026-10-26",
@@ -144,50 +213,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT03653832",
-   "kind": "results",
-   "date": "2026-10-23",
-   "level": 7,
-   "nct": "NCT03653832",
-   "drug": "Dexmedetomidine",
-   "title": "Results posted for a study of Dexmedetomidine for Critical Illness",
-   "summary": "University of Edinburgh ran this final-stage test (phase 3) with 1,404 people. The registry lists its end date as 31 Jul 2024. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03653832"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/41220595/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/41220595"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05907499",
-   "kind": "results",
-   "date": "2026-10-23",
-   "level": 6,
-   "nct": "NCT05907499",
-   "drug": "Decitabine",
-   "title": "Results posted for a study of Decitabine for Poor Graft Function",
-   "summary": "The First Affiliated Hospital of Soochow University ran this final-stage test (phase 3) with 76 people. The registry lists its end date as 1 Jan 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05907499) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05907499"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT07318350",
    "kind": "stopped",
    "date": "2026-10-23",
@@ -202,32 +227,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT07318350"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03036488",
-   "kind": "results",
-   "date": "2026-10-22",
-   "level": 7,
-   "nct": "NCT03036488",
-   "drug": "Pembrolizumab",
-   "title": "Results posted for a study of Pembrolizumab for Triple Negative Breast Neoplasms",
-   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 1,174 people. The registry lists its end date as 14 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03036488"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/41739398/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42743832"
     ]
    ]
   },
@@ -291,25 +290,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT07265479"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT06046820",
-   "kind": "stopped",
-   "date": "2026-10-01",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT06046820",
-   "drug": "INZ-701",
-   "title": "A study of INZ-701 for Ectonucleotide Pyrophosphatase/Phosphodiesterase1 Deficiency was stopped early",
-   "summary": "Inozyme Pharma ran this final-stage test (phase 3) with 27 people. The study team’s reason: “The study was terminated by the sponsor prior to planned completion based on a review of the data across indications and overall program considerations. Study termination was not related to participant safety”. The registry lists its end date as 19 Aug 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06046820"
     ]
    ]
   },
@@ -470,10 +450,6 @@
   "NDA221075": {
    "setid": "3663d9cb-3f66-48ae-bf0a-6958bc0888de",
    "title": "ZENBEXUS (IBERDOMIDE) CAPSULE [E.R. SQUIBB & SONS, L.L.C.]"
-  },
-  "NDA220381": {
-   "setid": "e887e473-f1a7-40f1-bd6e-c99e7db7420d",
-   "title": "GLYCOPHOS (SODIUM GLYCEROPHOSPHATE) INJECTION, SOLUTION [FRESENIUS KABI USA, LLC]"
   }
  }
 }
