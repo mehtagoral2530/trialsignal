@@ -1,14 +1,127 @@
 {
  "version": 1,
- "generatedAt": "2026-10-28T21:45:23.238Z",
- "dataTimestamp": "2026-10-28T09:00:04",
+ "generatedAt": "2026-10-29T16:16:06.753Z",
+ "dataTimestamp": "2026-10-29T09:00:05",
  "fdaUpdated": "2026-10-28",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "d7bbb034f8dac3a5209c43ca3c041d3e",
+ "contentHash": "9c27366e5bce13dda1003bbf90ef0a29",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT00662740",
+   "kind": "results",
+   "date": "2026-10-29",
+   "level": 6,
+   "nct": "NCT00662740",
+   "drug": "FDC tiotropium / salmeterol",
+   "title": "Results posted for a study of FDC tiotropium / salmeterol for Pulmonary Disease, Chronic Obstructive",
+   "summary": "Boehringer Ingelheim ran this final-stage test (phase 3) with 220 people. It was stopped early. The registry lists its end date as 21 Nov 2008. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT00662740) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT00662740"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT03367702",
+   "kind": "results",
+   "date": "2026-10-29",
+   "level": 7,
+   "nct": "NCT03367702",
+   "title": "Results posted for a study about Stage II Prostate Adenocarcinoma AJCC v7",
+   "summary": "NRG Oncology ran this final-stage test (phase 3) with 698 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03367702"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42593775/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42593775"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04817761",
+   "kind": "results",
+   "date": "2026-10-29",
+   "level": 7,
+   "nct": "NCT04817761",
+   "drug": "Calaspargase pegol",
+   "title": "Results posted for a study of Calaspargase pegol for Acute Lymphoblastic Leukemia",
+   "summary": "Institut de Recherches Internationales Servier ran this combined mid-stage and final-stage test (phase 2/3) with 42 people. It was stopped early. The study team’s reason: “Sponsor decision”. The registry lists its end date as 6 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04817761"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41074700/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41074700"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05980260",
+   "kind": "results",
+   "date": "2026-10-29",
+   "level": 7,
+   "nct": "NCT05980260",
+   "title": "Results posted for a study about Neonatal Opiate Withdrawal Syndrome",
+   "summary": "HELP for NOWS Consortium ran this final-stage test (phase 3) with 626 people. The registry lists its end date as 15 Jul 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05980260"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42033722/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42033722"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT05746559",
+   "kind": "stopped",
+   "date": "2026-10-29",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT05746559",
+   "drug": "Ravulizumab",
+   "title": "A study of Ravulizumab for Chronic Kidney Disease was stopped early",
+   "summary": "Alexion Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 555 people. The study team’s reason: “The ALXN1210-CSA-AKI-318 trial was discontinued on 29-Apr-2026 due to lack of efficacy in this overall study universe / patient population”. The registry lists its end date as 7 May 2026. The study team has also posted results on ClinicalTrials.gov.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05746559"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03284866",
@@ -24,60 +137,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT03284866"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03832998",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 6,
-   "nct": "NCT03832998",
-   "drug": "Erenumab Dose 1",
-   "title": "Results posted for a study of Erenumab Dose 1 for Migraine",
-   "summary": "Amgen ran this final-stage test (phase 3) with 284 people. The registry lists its end date as 7 Jan 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03832998) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03832998"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03859700",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 6,
-   "nct": "NCT03859700",
-   "drug": "DBV712 250 mcg",
-   "title": "Results posted for a study of DBV712 250 mcg for Peanut Allergy",
-   "summary": "DBV Technologies ran this final-stage test (phase 3) with 304 people. The registry lists its end date as 13 May 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03859700) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03859700"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04466566",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 6,
-   "nct": "NCT04466566",
-   "drug": "Exendin-9",
-   "title": "Results posted for a study of Exendin-9 for Healthy",
-   "summary": "Adrian Vella ran this final-stage test (phase 3) with 21 people. The registry lists its end date as 30 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04466566) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04466566"
     ]
    ]
   },
@@ -168,32 +227,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT05901831",
-   "kind": "results",
-   "date": "2026-10-27",
-   "level": 7,
-   "nct": "NCT05901831",
-   "drug": "Finerenone",
-   "title": "Results posted for a study of Finerenone for Chronic Kidney Disease",
-   "summary": "Bayer ran this final-stage test (phase 3) with 242 people. The registry lists its end date as 15 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05901831"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/41780000/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/41780000"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT06608472",
    "kind": "stopped",
    "date": "2026-10-26",
@@ -271,25 +304,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT07625306"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT07265479",
-   "kind": "stopped",
-   "date": "2026-10-05",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT07265479",
-   "drug": "Tapinarof cream",
-   "title": "A study of Tapinarof cream for Atopic Dermatitis is paused",
-   "summary": "Organon and Co leads this final-stage test (phase 3). The study team’s reason: “As a precaution, study drug dosing is paused due to a PK finding in OG505-3104. No safety signal or change to the established safety or benefit-risk profile has been identified. The Sponsor is further investigating and assessing the data”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07265479"
     ]
    ]
   },
