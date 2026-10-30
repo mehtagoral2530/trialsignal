@@ -1,14 +1,32 @@
 {
  "version": 1,
- "generatedAt": "2026-10-30T07:17:34.644Z",
- "dataTimestamp": "2026-10-29T09:00:05",
+ "generatedAt": "2026-10-30T14:21:06.139Z",
+ "dataTimestamp": "2026-10-30T09:00:04",
  "fdaUpdated": "2026-10-29",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "9c27366e5bce13dda1003bbf90ef0a29",
+ "contentHash": "2c6dcc48a34d53c47ee231ed81eb9d53",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04861259",
+   "kind": "results",
+   "date": "2026-10-30",
+   "level": 6,
+   "nct": "NCT04861259",
+   "drug": "Crovalimab",
+   "title": "Results posted for a study of Crovalimab for Atypical Hemolytic Uremic Syndrome",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 83 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04861259) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04861259"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT00662740",
@@ -159,24 +177,6 @@
     [
      "Journal article on Europe PMC",
      "https://europepmc.org/article/MED/42164977"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05297448",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 6,
-   "nct": "NCT05297448",
-   "drug": "Rifaximin SSD",
-   "title": "Results posted for a study of Rifaximin SSD for Hepatic Encephalopathy",
-   "summary": "Bausch Health Americas, Inc. ran this final-stage test (phase 3) with 517 people. The registry lists its end date as 24 Feb 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05297448) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05297448"
     ]
    ]
   },
