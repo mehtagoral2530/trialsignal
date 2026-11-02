@@ -1,14 +1,77 @@
 {
  "version": 1,
- "generatedAt": "2026-11-02T06:27:23.974Z",
- "dataTimestamp": "2026-10-30T09:00:04",
+ "generatedAt": "2026-11-02T17:15:10.720Z",
+ "dataTimestamp": "2026-11-02T10:00:05",
  "fdaUpdated": "2026-10-30",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "2c6dcc48a34d53c47ee231ed81eb9d53",
+ "contentHash": "1c102b0b18cc330ea08493f15eff01ee",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04502030",
+   "kind": "results",
+   "date": "2026-11-02",
+   "level": 6,
+   "nct": "NCT04502030",
+   "drug": "Panzyga",
+   "title": "Results posted for a study of Panzyga for Chronic Lymphocytic Leukemia",
+   "summary": "Octapharma ran this final-stage test (phase 3) with 247 people. The registry lists its end date as 19 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04502030) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04502030"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04916470",
+   "kind": "results",
+   "date": "2026-11-02",
+   "level": 7,
+   "nct": "NCT04916470",
+   "drug": "Semaglutide",
+   "title": "Results posted for a study of Semaglutide for Heart Failure With Preserved Ejection Fraction (HFpEF) and Diabetes Mellitus…",
+   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 617 people. The registry lists its end date as 11 Oct 2023. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04916470"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41045908/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41045908"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06501924",
+   "kind": "stopped",
+   "date": "2026-11-02",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06501924",
+   "drug": "Topical minoxidil 5%",
+   "title": "A study of Topical minoxidil 5% for Androgenetic Alopecia was cancelled before it began",
+   "summary": "Applied Biology, Inc. planned this final-stage test (phase 3). The study team’s reason: “Sponsor change of formulation”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06501924"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04861259",
@@ -142,46 +205,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT03284866",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 6,
-   "nct": "NCT03284866",
-   "drug": "Recombinant Human Papillomavirus Nonavalent Vaccine",
-   "title": "Results posted for a study of Recombinant Human Papillomavirus Nonavalent Vaccine for AIDS-Related Human Papillomavirus Infection",
-   "summary": "AIDS Malignancy Consortium ran this final-stage test (phase 3) with 535 people. The registry lists its end date as 5 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03284866) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03284866"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04770545",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 7,
-   "nct": "NCT04770545",
-   "drug": "PEGCETACOPLAN",
-   "title": "Results posted for a study of PEGCETACOPLAN for Geographic Atrophy Secondary to Age-related Macular Degeneration",
-   "summary": "Apellis Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 792 people. The registry lists its end date as 5 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04770545"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42164977"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "results:NCT05595642",
    "kind": "results",
    "date": "2026-10-28",
@@ -290,25 +313,6 @@
   },
   {
    "live": true,
-   "id": "stopped:NCT07625306",
-   "kind": "stopped",
-   "date": "2026-10-14",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT07625306",
-   "drug": "Pelacarsen",
-   "title": "A study of Pelacarsen for Acute Coronary Syndrome (ACS) was cancelled before it began",
-   "summary": "Novartis Pharmaceuticals planned this final-stage test (phase 3). The study team’s reason: “Study terminated by sponsor following the outcome of the Lp(a)HORIZON study (NCT04023552), which did not meet its primary endpoint”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07625306"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "approval:NDA220963",
    "kind": "approval",
    "date": "2026-09-28",
@@ -345,11 +349,15 @@
    ],
    "title": "FDA approved Juvmo (tavapadon)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
    "links": [
     [
      "FDA drug record",
      "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220415"
+    ],
+    [
+     "RxNorm entry",
+     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2754389"
     ],
     [
      "DailyMed label",
@@ -370,11 +378,15 @@
    ],
    "title": "FDA approved Atebrioz (zilurgisertib fumarate)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
    "links": [
     [
      "FDA drug record",
      "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221198"
+    ],
+    [
+     "RxNorm entry",
+     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2754658"
     ],
     [
      "DailyMed label",
@@ -395,11 +407,15 @@
    ],
    "title": "FDA approved Onswik (insulin efsitora alfa-gobe)",
    "summary": "The FDA’s drug database lists it as approved. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
    "links": [
     [
      "FDA drug record",
      "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761408"
+    ],
+    [
+     "RxNorm entry",
+     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2754156"
     ],
     [
      "DailyMed label",
