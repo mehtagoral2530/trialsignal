@@ -1,14 +1,145 @@
 {
  "version": 1,
- "generatedAt": "2026-11-02T17:15:10.720Z",
- "dataTimestamp": "2026-11-02T10:00:05",
+ "generatedAt": "2026-11-03T15:20:50.871Z",
+ "dataTimestamp": "2026-11-03T10:00:05",
  "fdaUpdated": "2026-10-30",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "1c102b0b18cc330ea08493f15eff01ee",
+ "contentHash": "33d29c30e3e80aaafc36f9f29e8e7c51",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03186898",
+   "kind": "results",
+   "date": "2026-11-03",
+   "level": 6,
+   "nct": "NCT03186898",
+   "title": "Results posted for a study about Recurrent Hepatocellular Carcinoma",
+   "summary": "NRG Oncology ran this final-stage test (phase 3) with 116 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03186898) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03186898"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04628494",
+   "kind": "results",
+   "date": "2026-11-03",
+   "level": 6,
+   "nct": "NCT04628494",
+   "drug": "Epcoritamab",
+   "title": "Results posted for a study of Epcoritamab for Diffuse Large B-cell Lymphoma",
+   "summary": "Genmab ran this final-stage test (phase 3) with 483 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04628494) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04628494"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05761574",
+   "kind": "results",
+   "date": "2026-11-03",
+   "level": 6,
+   "nct": "NCT05761574",
+   "drug": "Acetaminophen/Naproxen Sodium Fixed Combination",
+   "title": "Results posted for a study of Acetaminophen/Naproxen Sodium Fixed Combination for Pain",
+   "summary": "Johnson & Johnson Consumer Inc. (J&JCI) ran this final-stage test (phase 3) with 447 people. The registry lists its end date as 30 May 2024. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05761574) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05761574"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05811247",
+   "kind": "results",
+   "date": "2026-11-03",
+   "level": 7,
+   "nct": "NCT05811247",
+   "drug": "AD109",
+   "title": "Results posted for a study of AD109 for OSA",
+   "summary": "Apnimed ran this final-stage test (phase 3) with 660 people. The registry lists its end date as 7 May 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05811247"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41050845"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05868122",
+   "kind": "results",
+   "date": "2026-11-03",
+   "level": 6,
+   "nct": "NCT05868122",
+   "drug": "Acetaminophen/Naproxen Sodium Fixed Combination",
+   "title": "Results posted for a study of Acetaminophen/Naproxen Sodium Fixed Combination for Pain",
+   "summary": "Johnson & Johnson Consumer Inc. (J&JCI) ran this final-stage test (phase 3) with 143 people. The registry lists its end date as 30 May 2024. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05868122) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05868122"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06415344",
+   "kind": "stopped",
+   "date": "2026-11-03",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06415344",
+   "drug": "GTX-102",
+   "title": "A study of GTX-102 for Angelman Syndrome was stopped early",
+   "summary": "Ultragenyx Pharmaceutical Inc ran this final-stage test (phase 3) with 66 people. The study team’s reason: “Lack of efficacy”. The registry lists its end date as 30 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06415344"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06617429",
+   "kind": "stopped",
+   "date": "2026-11-03",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06617429",
+   "drug": "GTX-102",
+   "title": "A study of GTX-102 for Angelman Syndrome was stopped early",
+   "summary": "Ultragenyx Pharmaceutical Inc ran this final-stage test (phase 3) with 129 people. The study team’s reason: “Lack of efficacy”. The registry lists its end date as 30 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06617429"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04502030",
@@ -92,100 +223,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT00662740",
-   "kind": "results",
-   "date": "2026-10-29",
-   "level": 6,
-   "nct": "NCT00662740",
-   "drug": "FDC tiotropium / salmeterol",
-   "title": "Results posted for a study of FDC tiotropium / salmeterol for Pulmonary Disease, Chronic Obstructive",
-   "summary": "Boehringer Ingelheim ran this final-stage test (phase 3) with 220 people. It was stopped early. The registry lists its end date as 21 Nov 2008. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT00662740) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT00662740"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03367702",
-   "kind": "results",
-   "date": "2026-10-29",
-   "level": 7,
-   "nct": "NCT03367702",
-   "title": "Results posted for a study about Stage II Prostate Adenocarcinoma AJCC v7",
-   "summary": "NRG Oncology ran this final-stage test (phase 3) with 698 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03367702"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42593775/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42593775"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04817761",
-   "kind": "results",
-   "date": "2026-10-29",
-   "level": 7,
-   "nct": "NCT04817761",
-   "drug": "Calaspargase pegol",
-   "title": "Results posted for a study of Calaspargase pegol for Acute Lymphoblastic Leukemia",
-   "summary": "Institut de Recherches Internationales Servier ran this combined mid-stage and final-stage test (phase 2/3) with 42 people. It was stopped early. The study team’s reason: “Sponsor decision”. The registry lists its end date as 6 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04817761"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/41074700/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/41074700"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05980260",
-   "kind": "results",
-   "date": "2026-10-29",
-   "level": 7,
-   "nct": "NCT05980260",
-   "title": "Results posted for a study about Neonatal Opiate Withdrawal Syndrome",
-   "summary": "HELP for NOWS Consortium ran this final-stage test (phase 3) with 626 people. The registry lists its end date as 15 Jul 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05980260"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42033722/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42033722"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT05746559",
    "kind": "stopped",
    "date": "2026-10-29",
@@ -205,32 +242,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT05595642",
-   "kind": "results",
-   "date": "2026-10-28",
-   "level": 7,
-   "nct": "NCT05595642",
-   "drug": "Astegolimab",
-   "title": "Results posted for a study of Astegolimab for Chronic Obstructive Pulmonary Disease (COPD)",
-   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 1,380 people. The registry lists its end date as 19 Aug 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05595642"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42148875/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42148875"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT05378763",
    "kind": "stopped",
    "date": "2026-10-28",
@@ -245,44 +256,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT05378763"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT06608472",
-   "kind": "stopped",
-   "date": "2026-10-26",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT06608472",
-   "drug": "N0877",
-   "title": "A study of N0877 for Essential Arterial Hypertension was cancelled before it began",
-   "summary": "Eurofarma Laboratorios S.A. planned this final-stage test (phase 3). The study team’s reason: “Strategic change in development priorities”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06608472"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT07318350",
-   "kind": "stopped",
-   "date": "2026-10-23",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT07318350",
-   "drug": "N0783",
-   "title": "A study of N0783 for Moderate Asthma was cancelled before it began",
-   "summary": "Eurofarma Laboratorios S.A. planned this final-stage test (phase 3). The study team’s reason: “Strategic change in development priorities”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07318350"
     ]
    ]
   },
