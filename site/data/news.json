@@ -1,14 +1,85 @@
 {
  "version": 1,
- "generatedAt": "2026-11-04T23:46:37.326Z",
- "dataTimestamp": "2026-11-04T10:00:04",
+ "generatedAt": "2026-11-05T15:38:25.878Z",
+ "dataTimestamp": "2026-11-05T10:00:06",
  "fdaUpdated": "2026-11-04",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "897b3e007938fb6a3f38427f22f137dc",
+ "contentHash": "af9a65508b78a9cb30690a6177bf2eb5",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT05620836",
+   "kind": "results",
+   "date": "2026-11-05",
+   "level": 7,
+   "nct": "NCT05620836",
+   "drug": "Povorcitinib",
+   "title": "Results posted for a study of Povorcitinib for Hidradenitis Suppurativa (HS)",
+   "summary": "Incyte Corporation ran this final-stage test (phase 3) with 619 people. The registry lists its end date as 21 Nov 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05620836"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42493571/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42493571"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06333808",
+   "kind": "results",
+   "date": "2026-11-05",
+   "level": 7,
+   "nct": "NCT06333808",
+   "drug": "Bictegravir/Lenacapavir",
+   "title": "Results posted for a study of Bictegravir/Lenacapavir for HIV-1-infection",
+   "summary": "Gilead Sciences ran this final-stage test (phase 3) with 577 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06333808"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42105781/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42105781"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06963216",
+   "kind": "stopped",
+   "date": "2026-11-05",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06963216",
+   "drug": "Coagadex",
+   "title": "A study of Coagadex for Acquired Factor X Deficiency was cancelled before it began",
+   "summary": "Kedrion S.p.A. planned this final-stage test (phase 3). The study team’s reason: “Study was discontinued for non-safety reasons and the rapidly evolving treatment landscape for AL amyloidosis”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06963216"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04094298",
@@ -135,46 +206,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT06323356",
-   "kind": "results",
-   "date": "2026-11-04",
-   "level": 6,
-   "nct": "NCT06323356",
-   "drug": "TAK-279",
-   "title": "Results posted for a study of TAK-279 for Generalized Pustular Psoriasis",
-   "summary": "Takeda ran this final-stage test (phase 3) with 18 people. The registry lists its end date as 10 Jul 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06323356) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06323356"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05811247",
-   "kind": "results",
-   "date": "2026-11-03",
-   "level": 7,
-   "nct": "NCT05811247",
-   "drug": "AD109",
-   "title": "Results posted for a study of AD109 for OSA",
-   "summary": "Apnimed ran this final-stage test (phase 3) with 660 people. The registry lists its end date as 7 May 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05811247"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/41050845"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT06415344",
    "kind": "stopped",
    "date": "2026-11-03",
@@ -246,25 +277,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT05746559"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT05378763",
-   "kind": "stopped",
-   "date": "2026-10-28",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT05378763",
-   "drug": "Poziotinib",
-   "title": "A study of Poziotinib for NSCLC is paused",
-   "summary": "Spectrum Pharmaceuticals, Inc leads this final-stage test (phase 3). The study team’s reason: “The study has not enrolled any patients. The study design is under discussion and will likely be redesigned in consultation with the FDA”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05378763"
     ]
    ]
   },
