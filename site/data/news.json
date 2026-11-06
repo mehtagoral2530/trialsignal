@@ -1,14 +1,51 @@
 {
  "version": 1,
- "generatedAt": "2026-11-06T11:10:41.796Z",
- "dataTimestamp": "2026-11-05T10:00:06",
+ "generatedAt": "2026-11-06T18:07:11.169Z",
+ "dataTimestamp": "2026-11-06T10:00:05",
  "fdaUpdated": "2026-11-05",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "77c2e1120376451e5a73339386854a88",
+ "contentHash": "509e72840e8c5042f9896c09974290b3",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT06995430",
+   "kind": "results",
+   "date": "2026-11-06",
+   "level": 6,
+   "nct": "NCT06995430",
+   "drug": "rMenB+OMV NZ vaccine",
+   "title": "Results posted for a study of rMenB+OMV NZ vaccine for Meningitis",
+   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 312 people. The registry lists its end date as 15 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06995430) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06995430"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT05132075",
+   "kind": "stopped",
+   "date": "2026-11-06",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT05132075",
+   "drug": "JDQ443",
+   "title": "A study of JDQ443 for Non-Small Cell Lung Cancer was stopped early",
+   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 95 people. The study team’s reason: “Business reasons and not based on any safety concerns”. The registry lists its end date as 5 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05132075"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT05620836",
@@ -77,24 +114,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT06963216"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04094298",
-   "kind": "results",
-   "date": "2026-11-04",
-   "level": 6,
-   "nct": "NCT04094298",
-   "drug": "FX006 Injection",
-   "title": "Results posted for a study of FX006 Injection for Rotator Cuff Tears",
-   "summary": "Northwell Health ran this final-stage test (phase 3) with 40 people. It was stopped early. The study team’s reason: “The primary reasons for early study termination are administrative and funding issues and inability to obtain the investigational product; this lead to insufficient participant enrollment”. The registry lists its end date as 9 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04094298) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04094298"
     ]
    ]
   },
@@ -258,25 +277,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT06501924"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT05378763",
-   "kind": "stopped",
-   "date": "2026-10-28",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT05378763",
-   "drug": "Poziotinib",
-   "title": "A study of Poziotinib for NSCLC is paused",
-   "summary": "Spectrum Pharmaceuticals, Inc leads this final-stage test (phase 3). The study team’s reason: “The study has not enrolled any patients. The study design is under discussion and will likely be redesigned in consultation with the FDA”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05378763"
     ]
    ]
   },
