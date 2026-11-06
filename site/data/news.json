@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-05T15:38:25.878Z",
+ "generatedAt": "2026-11-06T11:10:41.796Z",
  "dataTimestamp": "2026-11-05T10:00:06",
- "fdaUpdated": "2026-11-04",
+ "fdaUpdated": "2026-11-05",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "af9a65508b78a9cb30690a6177bf2eb5",
+ "contentHash": "77c2e1120376451e5a73339386854a88",
  "items": [
   {
    "live": true,
@@ -263,20 +263,20 @@
   },
   {
    "live": true,
-   "id": "stopped:NCT05746559",
+   "id": "stopped:NCT05378763",
    "kind": "stopped",
-   "date": "2026-10-29",
+   "date": "2026-10-28",
    "datePrefix": "Registry record updated ",
    "level": 0,
-   "nct": "NCT05746559",
-   "drug": "Ravulizumab",
-   "title": "A study of Ravulizumab for Chronic Kidney Disease was stopped early",
-   "summary": "Alexion Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 555 people. The study team’s reason: “The ALXN1210-CSA-AKI-318 trial was discontinued on 29-Apr-2026 due to lack of efficacy in this overall study universe / patient population”. The registry lists its end date as 7 May 2026. The study team has also posted results on ClinicalTrials.gov.",
+   "nct": "NCT05378763",
+   "drug": "Poziotinib",
+   "title": "A study of Poziotinib for NSCLC is paused",
+   "summary": "Spectrum Pharmaceuticals, Inc leads this final-stage test (phase 3). The study team’s reason: “The study has not enrolled any patients. The study design is under discussion and will likely be redesigned in consultation with the FDA”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
      "Official study record",
-     "https://clinicaltrials.gov/study/NCT05746559"
+     "https://clinicaltrials.gov/study/NCT05378763"
     ]
    ]
   },
