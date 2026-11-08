@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-06T23:17:54.898Z",
+ "generatedAt": "2026-11-08T00:46:57.983Z",
  "dataTimestamp": "2026-11-06T10:00:05",
  "fdaUpdated": "2026-11-06",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "509e72840e8c5042f9896c09974290b3",
+ "contentHash": "df2fcc484d1493a5bffb599fecd958c0",
  "items": [
   {
    "live": true,
@@ -210,16 +210,20 @@
    "id": "results:NCT05842954",
    "kind": "results",
    "date": "2026-11-04",
-   "level": 6,
+   "level": 7,
    "nct": "NCT05842954",
    "drug": "KLU156",
    "title": "Results posted for a study of KLU156 for Uncomplicated Plasmodium Falciparum Malaria",
-   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 1,720 people. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05842954) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 1,720 people. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT05842954"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42994442/"
     ]
    ]
   },
