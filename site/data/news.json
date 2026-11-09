@@ -1,14 +1,54 @@
 {
  "version": 1,
- "generatedAt": "2026-11-09T06:54:02.504Z",
- "dataTimestamp": "2026-11-06T10:00:05",
+ "generatedAt": "2026-11-09T17:40:13.180Z",
+ "dataTimestamp": "2026-11-09T10:00:05",
  "fdaUpdated": "2026-11-06",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "df2fcc484d1493a5bffb599fecd958c0",
+ "contentHash": "74abac2e523239998341577c5f737f73",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03009981",
+   "kind": "results",
+   "date": "2026-11-09",
+   "level": 6,
+   "nct": "NCT03009981",
+   "drug": "Apalutamide",
+   "title": "Results posted for a study of Apalutamide for Prostate Cancer",
+   "summary": "Alliance Foundation Trials, LLC. ran this final-stage test (phase 3) with 503 people. The registry lists its end date as 25 Jun 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03009981) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03009981"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04294810",
+   "kind": "results",
+   "date": "2026-11-09",
+   "level": 7,
+   "nct": "NCT04294810",
+   "drug": "Atezolizumab",
+   "title": "Results posted for a study of Atezolizumab for Non-Small Cell Lung Cancer",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 620 people. The registry lists its end date as 30 Dec 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04294810"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42507965/"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT06995430",
@@ -119,50 +159,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT04543591",
-   "kind": "results",
-   "date": "2026-11-04",
-   "level": 6,
-   "nct": "NCT04543591",
-   "drug": "Ravulizumab",
-   "title": "Results posted for a study of Ravulizumab for Thrombotic Microangiopathy",
-   "summary": "Alexion Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 148 people. The registry lists its end date as 20 Mar 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04543591) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04543591"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04578834",
-   "kind": "results",
-   "date": "2026-11-04",
-   "level": 7,
-   "nct": "NCT04578834",
-   "drug": "LNP023",
-   "title": "Results posted for a study of LNP023 for IgA Nephropathy",
-   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 517 people. The registry lists its end date as 19 Sep 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04578834"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42909451/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42909451"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "results:NCT04720157",
    "kind": "results",
    "date": "2026-11-04",
@@ -214,8 +210,8 @@
    "nct": "NCT05842954",
    "drug": "KLU156",
    "title": "Results posted for a study of KLU156 for Uncomplicated Plasmodium Falciparum Malaria",
-   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 1,720 people. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 1,720 people. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
    "links": [
     [
      "Official study record",
@@ -224,6 +220,10 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42994442/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42994442"
     ]
    ]
   },
