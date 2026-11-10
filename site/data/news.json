@@ -1,8 +1,8 @@
 {
  "version": 1,
- "generatedAt": "2026-11-09T17:40:13.180Z",
+ "generatedAt": "2026-11-10T10:03:34.255Z",
  "dataTimestamp": "2026-11-09T10:00:05",
- "fdaUpdated": "2026-11-06",
+ "fdaUpdated": "2026-11-09",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
