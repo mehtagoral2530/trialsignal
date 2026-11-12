@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-11T06:47:19.615Z",
+ "generatedAt": "2026-11-12T12:57:21.665Z",
  "dataTimestamp": "2026-11-10T10:00:05",
  "fdaUpdated": "2026-11-10",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "eb0bc1aa974147f587af4204ae6ba38c",
+ "contentHash": "d2887006c3708bb9d4ba20fdb51d7429",
  "items": [
   {
    "live": true,
@@ -442,10 +442,6 @@
   "BLA761508": {
    "setid": "0d5cec96-b02b-4f1d-bc66-51e62ce04e3c",
    "title": "PASATRU (GARETOSMAB-GRTS) INJECTION, SOLUTION, CONCENTRATE [REGENERON PHARMACEUTICALS, INC.]"
-  },
-  "NDA221075": {
-   "setid": "3663d9cb-3f66-48ae-bf0a-6958bc0888de",
-   "title": "ZENBEXUS (IBERDOMIDE) CAPSULE [E.R. SQUIBB & SONS, L.L.C.]"
   }
  }
 }
