@@ -1,14 +1,76 @@
 {
  "version": 1,
- "generatedAt": "2026-11-12T12:57:21.665Z",
- "dataTimestamp": "2026-11-10T10:00:05",
+ "generatedAt": "2026-11-12T20:57:06.377Z",
+ "dataTimestamp": "2026-11-12T10:00:05",
  "fdaUpdated": "2026-11-10",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "d2887006c3708bb9d4ba20fdb51d7429",
+ "contentHash": "47d75ebe9c67d37b4f9307ab7ad89b81",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04963296",
+   "kind": "results",
+   "date": "2026-11-12",
+   "level": 7,
+   "nct": "NCT04963296",
+   "drug": "Obinutuzumab",
+   "title": "Results posted for a study of Obinutuzumab for Systemic Lupus Erythematosus",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 303 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04963296"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41789864/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/41789864"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05093634",
+   "kind": "results",
+   "date": "2026-11-12",
+   "level": 6,
+   "nct": "NCT05093634",
+   "drug": "Setmelanotide",
+   "title": "Results posted for a study of Setmelanotide for Obesity",
+   "summary": "Rhythm Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 296 people. The registry lists its end date as 30 Jun 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05093634) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05093634"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05689164",
+   "kind": "results",
+   "date": "2026-11-12",
+   "level": 6,
+   "nct": "NCT05689164",
+   "drug": "fordadistrogene movaparvovec",
+   "title": "Results posted for a study of fordadistrogene movaparvovec for Duchenne Muscular Dystrophy",
+   "summary": "Pfizer ran this final-stage test (phase 3) with 7 people. It was stopped early. The study team’s reason: “All participants who have received fordadistrogene movaparvovec in any Pfizer study will now be assessed for long-term safety in 1 combined study: C3391003”. The registry lists its end date as 24 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05689164) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05689164"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03341156",
@@ -139,64 +201,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT03009981",
-   "kind": "results",
-   "date": "2026-11-09",
-   "level": 6,
-   "nct": "NCT03009981",
-   "drug": "Apalutamide",
-   "title": "Results posted for a study of Apalutamide for Prostate Cancer",
-   "summary": "Alliance Foundation Trials, LLC. ran this final-stage test (phase 3) with 503 people. The registry lists its end date as 25 Jun 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03009981) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03009981"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04294810",
-   "kind": "results",
-   "date": "2026-11-09",
-   "level": 7,
-   "nct": "NCT04294810",
-   "drug": "Atezolizumab",
-   "title": "Results posted for a study of Atezolizumab for Non-Small Cell Lung Cancer",
-   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 620 people. The registry lists its end date as 30 Dec 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04294810"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42507965/"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06995430",
-   "kind": "results",
-   "date": "2026-11-06",
-   "level": 6,
-   "nct": "NCT06995430",
-   "drug": "rMenB+OMV NZ vaccine",
-   "title": "Results posted for a study of rMenB+OMV NZ vaccine for Meningitis",
-   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 312 people. The registry lists its end date as 15 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06995430) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06995430"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT05132075",
    "kind": "stopped",
    "date": "2026-11-06",
@@ -235,20 +239,20 @@
   },
   {
    "live": true,
-   "id": "stopped:NCT06415344",
+   "id": "stopped:NCT06617429",
    "kind": "stopped",
    "date": "2026-11-03",
    "datePrefix": "Registry record updated ",
    "level": 0,
-   "nct": "NCT06415344",
+   "nct": "NCT06617429",
    "drug": "GTX-102",
    "title": "A study of GTX-102 for Angelman Syndrome was stopped early",
-   "summary": "Ultragenyx Pharmaceutical Inc ran this final-stage test (phase 3) with 66 people. The study team’s reason: “Lack of efficacy”. The registry lists its end date as 30 Oct 2026.",
+   "summary": "Ultragenyx Pharmaceutical Inc ran this final-stage test (phase 3) with 129 people. The study team’s reason: “Lack of efficacy”. The registry lists its end date as 30 Oct 2026.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
      "Official study record",
-     "https://clinicaltrials.gov/study/NCT06415344"
+     "https://clinicaltrials.gov/study/NCT06617429"
     ]
    ]
   },
