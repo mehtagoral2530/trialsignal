@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-12T20:56:58.312Z",
+ "generatedAt": "2026-11-13T17:53:12.952Z",
  "docs": [
   {
    "nct": "NCT00065676",
@@ -19,6 +19,82 @@
    "summary": "Quercetin is a compound naturally found in various foods. It may have some role in the treatment of obesity and diabetes.\n\nThe purpose of this study is to investigate research volunteers with obesity or obesity with type 2 diabetes to determine whether quercetin affects the way glucose is absorbed by the body.\n\nThirty two participants aged 19 to 65 who are considered to be medically obese or obese with type 2 diabetes will be enrolled in this study. Before the onset of treatment, they will undergo a medical history, physical exam, blood work, and urinalysis. During the study, participants will",
    "lastUpdate": "2026-11-12",
    "enrollment": 24
+  },
+  {
+   "nct": "NCT00310180",
+   "title": "Hormone Therapy With or Without Combination Chemotherapy in Treating Women Who Have Undergone Surgery for Node-Negative Breast Cancer (The TAILORx Trial)",
+   "acronym": "TAILORx",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Breast Adenocarcinoma",
+    "Hormone Receptor Positive",
+    "Stage IA Breast Cancer AJCC v7",
+    "Stage IB Breast Cancer AJCC v7",
+    "Stage IIA Breast Cancer AJCC v6 and v7",
+    "Stage IIB Breast Cancer AJCC v6 and v7",
+    "Stage IIIB Breast Cancer AJCC v7"
+   ],
+   "interventions": [
+    "Anastrozole",
+    "Exemestane",
+    "Laboratory Biomarker Analysis",
+    "Letrozole",
+    "Quality-of-Life Assessment",
+    "Radiation Therapy",
+    "Tamoxifen Citrate"
+   ],
+   "summary": "This randomized phase III trial studies the best individual therapy for women who have node-negative, estrogen-receptor positive breast cancer by using a special test (Oncotype DX), and whether hormone therapy alone or hormone therapy together with combination chemotherapy is better for women who have an Oncotype DX recurrence score of 11-25. Estrogen can cause the growth of breast cancer cells. Hormone therapy may fight breast cancer by blocking the use of estrogen by the tumor cells or by lowering the amount of estrogen the body makes. Drugs used in chemotherapy work in different ways to sto",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 10273
+  },
+  {
+   "nct": "NCT00433511",
+   "title": "Doxorubicin Hydrochloride, Cyclophosphamide, and Paclitaxel With or Without Bevacizumab in Treating Patients With Lymph Node-Positive or High-Risk, Lymph Node-Negative Breast Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Breast Adenocarcinoma"
+   ],
+   "interventions": [
+    "Bevacizumab",
+    "Cyclophosphamide",
+    "Doxorubicin Hydrochloride",
+    "Laboratory Biomarker Analysis",
+    "Paclitaxel",
+    "Placebo Administration",
+    "Quality-of-Life Assessment"
+   ],
+   "summary": "This randomized phase III trial studies doxorubicin hydrochloride, cyclophosphamide, and paclitaxel to see how well they work with or without bevacizumab in treating patients with cancer that has spread to the lymph nodes (lymph node-positive) or cancer that has not spread to the lymph nodes but is at high risk for returning (high-risk, lymph node-negative breast cancer). Drugs used in chemotherapy, such as doxorubicin hydrochloride, cyclophosphamide, and paclitaxel, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by sto",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 4994
+  },
+  {
+   "nct": "NCT00569127",
+   "title": "Octreotide Acetate and Recombinant Interferon Alfa-2b or Bevacizumab in Treating Patients With Metastatic or Locally Advanced, High-Risk Neuroendocrine Tumor",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Colorectal Neuroendocrine Tumor G1",
+    "Gastric Neuroendocrine Tumor G1",
+    "Neuroendocrine Neoplasm",
+    "Neuroendocrine Tumor",
+    "Neuroendocrine Tumor G2"
+   ],
+   "interventions": [
+    "Bevacizumab",
+    "Laboratory Biomarker Analysis",
+    "Octreotide Acetate",
+    "Recombinant Interferon Alfa-2b"
+   ],
+   "summary": "This randomized phase III trial studies octreotide acetate and recombinant interferon alfa-2b to see how well it works compared to octreotide acetate and bevacizumab in treating patients with high-risk neuroendocrine tumors that have spread to other places in the body (metastatic) or spread from where it started to nearby tissue or lymph nodes (locally advanced). Octreotide acetate and recombinant interferon alfa-2b may interfere with the growth of tumor cells and slow the growth of cancer. Monoclonal antibodies, such as bevacizumab, may interfere with the ability of tumor cells to grow and sp",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 427
   },
   {
    "nct": "NCT00739362",
@@ -60,6 +136,29 @@
    "enrollment": 422
   },
   {
+   "nct": "NCT00843882",
+   "title": "Lenalidomide With or Without Epoetin Alfa in Treating Patients With Myelodysplastic Syndrome and Anemia",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Anemia",
+    "Chronic Myelomonocytic Leukemia",
+    "De Novo Myelodysplastic Syndrome",
+    "Myelodysplastic Syndrome"
+   ],
+   "interventions": [
+    "Bone Marrow Biopsy",
+    "Epoetin Alfa",
+    "Laboratory Biomarker Analysis",
+    "Lenalidomide"
+   ],
+   "summary": "This randomized phase III trial studies lenalidomide to see how well it works with or without epoetin alfa in treating patients with myelodysplastic syndrome and anemia. Lenalidomide may stop the growth of myelodysplastic syndrome by blocking blood flow to the cells. Colony stimulating factors, such as epoetin alfa, may increase the number of immune cells found in bone marrow or peripheral blood. It is not yet known whether lenalidomide is more effective with or without epoetin alfa in treating patients with myelodysplastic syndrome and anemia.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 247
+  },
+  {
    "nct": "NCT01020838",
    "title": "Phase III Study of Florbetaben (BAY94-9172) PET Imaging for Detection/Exclusion of Cerebral β-amyloid Compared to Histopathology",
    "acronym": null,
@@ -95,25 +194,47 @@
    "enrollment": 8442
   },
   {
-   "nct": "NCT01167712",
-   "title": "Paclitaxel and Carboplatin With or Without Bevacizumab in Treating Patients With Stage II, Stage III, or Stage IV Ovarian Epithelial Cancer, Primary Peritoneal Cancer, or Fallopian Tube Cancer",
+   "nct": "NCT01064648",
+   "title": "Pemetrexed Disodium and Cisplatin With or Without Cediranib Maleate in Treating Patients With Malignant Pleural Mesothelioma",
    "acronym": null,
-   "status": "COMPLETED",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Epithelioid Mesothelioma",
+    "Pleural Malignant Mesothelioma",
+    "Recurrent Malignant Mesothelioma",
+    "Sarcomatoid Mesothelioma"
+   ],
+   "interventions": [
+    "Cediranib Maleate",
+    "Cisplatin",
+    "Laboratory Biomarker Analysis",
+    "Pemetrexed Disodium",
+    "Placebo Administration"
+   ],
+   "summary": "This randomized phase I/II trial is studying the side effects and best dose of cediranib maleate when given together with pemetrexed disodium and cisplatin and to see how well it works in treating patients with malignant pleural mesothelioma. Drugs used in chemotherapy, pemetrexed disodium and cisplatin, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. Cediranib maleate may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth and by blocking blood flow to t",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 117
+  },
+  {
+   "nct": "NCT01081262",
+   "title": "Carboplatin and Paclitaxel or Oxaliplatin and Capecitabine With or Without Bevacizumab as First-Line Therapy in Treating Patients With Newly Diagnosed Stage II-IV or Recurrent Stage I Epithelial Ovarian or Fallopian Tube Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE3",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Fallopian Tube Endometrioid Adenocarcinoma",
-    "Fallopian Tube Mucinous Adenocarcinoma",
-    "Fallopian Tube Transitional Cell Carcinoma",
-    "Ovarian Brenner Tumor",
-    "Ovarian Clear Cell Adenocarcinofibroma",
-    "Ovarian Endometrioid Adenocarcinoma",
-    "Ovarian Mucinous Adenocarcinoma",
-    "Ovarian Seromucinous Carcinoma",
-    "Ovarian Serous Adenocarcinoma",
-    "Ovarian Transitional Cell Carcinoma",
-    "Ovarian Undifferentiated Carcinoma",
-    "Primary Peritoneal Serous Adenocarcinoma",
+    "Borderline Ovarian Mucinous Tumor",
+    "Ovarian Mucinous Cystadenocarcinoma",
+    "Recurrent Fallopian Tube Carcinoma",
+    "Recurrent Ovarian Carcinoma",
+    "Stage IA Fallopian Tube Cancer AJCC v6 and v7",
+    "Stage IA Ovarian Cancer AJCC v6 and v7",
+    "Stage IB Fallopian Tube Cancer AJCC v6 and v7",
+    "Stage IB Ovarian Cancer AJCC v6 and v7",
+    "Stage IC Fallopian Tube Cancer AJCC v6 and v7",
+    "Stage IC Ovarian Cancer AJCC v6 and v7",
     "Stage IIA Fallopian Tube Cancer AJCC v6 and v7",
     "Stage IIA Ovarian Cancer AJCC V6 and v7",
     "Stage IIB Fallopian Tube Cancer AJCC v6 and v7",
@@ -122,171 +243,456 @@
     "Stage IIC Ovarian Cancer AJCC v6 and v7",
     "Stage IIIA Fallopian Tube Cancer AJCC v7",
     "Stage IIIA Ovarian Cancer AJCC v6 and v7",
-    "Stage IIIA Primary Peritoneal Cancer AJCC v7",
     "Stage IIIB Fallopian Tube Cancer AJCC v7",
     "Stage IIIB Ovarian Cancer AJCC v6 and v7",
-    "Stage IIIB Primary Peritoneal Cancer AJCC v7",
     "Stage IIIC Fallopian Tube Cancer AJCC v7",
     "Stage IIIC Ovarian Cancer AJCC v6 and v7",
-    "Stage IIIC Primary Peritoneal Cancer AJCC v7",
     "Stage IV Fallopian Tube Cancer AJCC v6 and v7",
-    "Stage IV Ovarian Cancer AJCC v6 and v7",
-    "Stage IV Primary Peritoneal Cancer AJCC v7"
+    "Stage IV Ovarian Cancer AJCC v6 and v7"
    ],
    "interventions": [
     "Bevacizumab",
+    "Capecitabine",
     "Carboplatin",
-    "Computed Tomography",
-    "Paclitaxel",
-    "Therapeutic Conventional Surgery"
-   ],
-   "summary": "This phase III clinical trial studies two different dose schedules of paclitaxel to see how well they work in combination with carboplatin with or without bevacizumab in treating patients with stage II, III or IV ovarian epithelial cancer, primary peritoneal cancer, or fallopian tube cancer. Drugs used in chemotherapy, such as paclitaxel and carboplatin, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. Bevacizumab is a type of drug called a monoclonal antibody and blocks tumor growth by st",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 692
-  },
-  {
-   "nct": "NCT01174108",
-   "title": "Allogeneic Hematopoietic Stem Cell Transplantation for Severe Aplastic Anemia and Other Bone Marrow Failure Syndromes Using G-CSF Mobilized CD34+ Selected Hematopoietic Precursor Cells Co-Infused With a Reduced Dose of Non-Mobilized Donor T-cells",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
-   "conditions": [
-    "Severe Aplastic Anemia",
-    "MDS (Myelodysplastic Syndrome)"
-   ],
-   "interventions": [
-    "Miltenyi CD34 Reagent System",
-    "Donor derived G-CSF mobilized PBC"
-   ],
-   "summary": "Background:\n\n* Stem cell transplants from related donors (allogenic stem cell transplants) can be used to treat individuals with certain kinds of severe blood diseases or cancers, such as severe anemia. Allogenic stem cell transplants encourage the growth of new bone marrow to replace that of the recipient. Because stem cell transplants can have serious complications, researchers are interested in developing new approaches to stem cell transplants that will reduce the likelihood of these complications.\n* By reducing the number of white blood cells included in the blood taken during the stem ce",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 120
-  },
-  {
-   "nct": "NCT01799538",
-   "title": "Nebulized or Inhaled Albuterol for Lymphangioleiomyomatosis",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE1, PHASE2",
-   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
-   "conditions": [
-    "Lymphangioleiomyomatosis"
-   ],
-   "interventions": [
-    "albuterol inhaler",
-    "albuterol nebulizer",
-    "PFT"
-   ],
-   "summary": "Background:\n\n\\- Lymphangioleiomyomatosis (LAM) is a rare type of lung disease that occurs almost exclusively in women. In LAM, muscle tissue grows in the lungs and starts to block the flow of air. It is a progressive disease, and in severe cases may require a lung transplant. One possible treatment to improve breathing in people with LAM is inhaled albuterol. Albuterol can be given in a metered dose inhaler (MDI) or with a nebulizer. Researchers want to compare these methods to see which method best improves lung function in women with LAM.\n\nObjectives:\n\n\\- To see whether a nebulizer or MDI ca",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 100
-  },
-  {
-   "nct": "NCT01896999",
-   "title": "Brentuximab Vedotin and Nivolumab With or Without Ipilimumab in Treating Patients With Relapsed or Refractory Hodgkin Lymphoma",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE1, PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Recurrent Classic Hodgkin Lymphoma",
-    "Refractory Classic Hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "Biopsy Procedure",
-    "Biospecimen Collection",
-    "Brentuximab Vedotin",
-    "Computed Tomography",
-    "Ipilimumab",
-    "Nivolumab",
-    "Positron Emission Tomography"
-   ],
-   "summary": "This phase I/II trial studies the side effects and best dose of ipilimumab and nivolumab when given together with brentuximab vedotin, and how well they work in treating patients with Hodgkin lymphoma that has returned after a period of improvement (recurrent) or has not responded to previous treatment (refractory). Immunotherapy with monoclonal antibodies, such as ipilimumab and nivolumab, may help the body's immune system attack the cancer, and may interfere with the ability of cancer cells to grow and spread. Brentuximab vedotin is a monoclonal antibody, brentuximab, linked to a toxic agent",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 146
-  },
-  {
-   "nct": "NCT02135042",
-   "title": "Individualized Treatment in Treating Patients With Stage II-IVB Nasopharyngeal Cancer Based on EBV DNA",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2, PHASE3",
-   "sponsor": "NRG Oncology",
-   "conditions": [
-    "EBV Infection",
-    "Stage II Nasopharyngeal Carcinoma AJCC v7",
-    "Stage III Nasopharyngeal Carcinoma AJCC v7",
-    "Stage IVA Nasopharyngeal Carcinoma AJCC v7",
-    "Stage IVB Nasopharyngeal Carcinoma AJCC v7"
-   ],
-   "interventions": [
-    "Bone Scan",
-    "Cisplatin",
-    "Clinical Observation",
-    "Computed Tomography",
-    "Fluorouracil",
-    "Gemcitabine Hydrochloride",
-    "Intensity-Modulated Radiation Therapy",
     "Laboratory Biomarker Analysis",
-    "Magnetic Resonance Imaging",
+    "Oxaliplatin",
     "Paclitaxel",
-    "Positron Emission Tomography",
     "Quality-of-Life Assessment"
    ],
-   "summary": "There are two study questions we are asking in this randomized phase II/III trial based on a blood biomarker, Epstein Barr virus (EBV) deoxyribonucleic acid (DNA) for locoregionally advanced non-metastatic nasopharyngeal cancer. All patients will first undergo standard concurrent chemotherapy and radiation therapy. When this standard treatment is completed, if there is no detectable EBV DNA in their plasma, then patients are randomized to either standard adjuvant cisplatin and fluorouracil chemotherapy or observation. If there is still detectable levels of plasma EBV DNA, patients will be rand",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 924
+   "summary": "This randomized phase III trial studies carboplatin given together with paclitaxel with or without bevacizumab to see how well it works compared with oxaliplatin given together with capecitabine with or without bevacizumab as first-line therapy in treating patients with newly diagnosed stage II-IV, or recurrent (has come back) stage I epithelial ovarian or fallopian tube cancer. Drugs used in chemotherapy, such as carboplatin, paclitaxel, oxaliplatin, and capecitabine, work in different ways to stop the growth of tumor cells, either by killing the cells or by stopping them from dividing. Monoc",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 50
   },
   {
-   "nct": "NCT02196181",
-   "title": "Testing Two Different Treatment Schedules of Dabrafenib and Trametinib for Skin Cancer Which Has Spread",
+   "nct": "NCT01272037",
+   "title": "Tamoxifen Citrate, Letrozole, Anastrozole, or Exemestane With or Without Chemotherapy in Treating Patients With Invasive RxPONDER Breast Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Breast Ductal Carcinoma In Situ",
+    "Invasive Breast Carcinoma",
+    "Multicentric Breast Carcinoma",
+    "Multifocal Breast Carcinoma",
+    "Synchronous Bilateral Breast Carcinoma"
+   ],
+   "interventions": [
+    "Anastrozole",
+    "Exemestane",
+    "Laboratory Biomarker Analysis",
+    "Letrozole",
+    "Quality-of-Life Assessment",
+    "Systemic Chemotherapy",
+    "Tamoxifen Citrate"
+   ],
+   "summary": "This randomized phase III clinical trial studies how well tamoxifen citrate, anastrozole, letrozole, or exemestane with or without chemotherapy work in treating patients with breast cancer that has spread from where it began in the breast to surrounding normal tissue (invasive). Estrogen can cause the growth of breast cancer cells. Hormone therapy, using tamoxifen citrate, may fight breast cancer by blocking the use of estrogen by the tumor cells. Aromatase inhibitors, such as anastrozole, letrozole, and exemestane, may fight breast cancer by lowering the amount of estrogen the body makes. Dru",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 5018
+  },
+  {
+   "nct": "NCT01386385",
+   "title": "Veliparib With or Without Radiation Therapy, Carboplatin, and Paclitaxel in Patients With Stage III Non-small Cell Lung Cancer That Cannot Be Removed by Surgery",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Lung Adenocarcinoma",
+    "Lung Adenocarcinoma, Mixed Subtype",
+    "Lung Large Cell Carcinoma",
+    "Lung Squamous Cell Carcinoma",
+    "Minimally Invasive Lung Adenocarcinoma",
+    "Stage III Lung Non-Small Cell Cancer AJCC v7",
+    "Stage IIIA Lung Non-Small Cell Cancer AJCC v7",
+    "Stage IIIB Lung Non-Small Cell Cancer AJCC v7"
+   ],
+   "interventions": [
+    "3-Dimensional Conformal Radiation Therapy",
+    "Carboplatin",
+    "Laboratory Biomarker Analysis",
+    "Paclitaxel",
+    "Placebo Administration",
+    "Veliparib"
+   ],
+   "summary": "This phase I/II partially randomized trial studies the side effects and best dose of veliparib when given together with radiation therapy, carboplatin, and paclitaxel and to see how well it works in treating patients with stage III non-small cell lung cancer that cannot be removed by surgery. Veliparib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Radiation therapy uses high energy x-rays to kill tumor cells and shrink tumors. Drugs used in chemotherapy, such as carboplatin and paclitaxel, work in different ways to stop the growth of tumor cells eit",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 53
+  },
+  {
+   "nct": "NCT01575548",
+   "title": "Pazopanib Hydrochloride in Treating Patients With Metastatic Kidney Cancer Who Have No Evidence of Disease After Surgery",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Clear Cell Renal Cell Carcinoma",
+    "Stage IV Renal Cell Cancer AJCC v7"
+   ],
+   "interventions": [
+    "Computed Tomography",
+    "Magnetic Resonance Imaging",
+    "Pazopanib Hydrochloride",
+    "Placebo Administration",
+    "Questionnaire Administration"
+   ],
+   "summary": "This randomized phase III trial studies how well pazopanib hydrochloride works compared to placebo in treating patients with kidney cancer that has spread to other parts of the body and have no evidence of disease after surgery. Pazopanib hydrochloride may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth and by blocking blood flow to the tumor.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 129
+  },
+  {
+   "nct": "NCT01603368",
+   "title": "Prophylactic Probiotics to Extremely Low Birth Weight Prematures",
+   "acronym": "PROPEL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Ostergotland County Council, Sweden",
+   "conditions": [
+    "Feeding; Difficult, Newborn",
+    "Growth Failure",
+    "Necrotizing Enterocolitis",
+    "Sepsis",
+    "Neuro Developmental Delay",
+    "Asthma (Diagnosis)",
+    "Lung Function",
+    "Fitness"
+   ],
+   "interventions": [
+    "Lactobacillus reuteri",
+    "Placebo"
+   ],
+   "summary": "Mortality and incidence of severe complications is still high among extremely premature infants. Common causes of severe complications in this population are poor nutrition, necrotizing enterocolitis, and severe infections. Feeding intolerance is also a common problem resulting in prolonged need for intravenous lines and poor nutrition.\n\nThe aim of the study is to evaluate whether supplementation with the probiotic bacterium Lactobacillus reuteri DSM 17938 daily to premature infants with extremely low birth weight increases feeding tolerance to breast milk and thereby improves nutrition, incre",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 134
+  },
+  {
+   "nct": "NCT01638546",
+   "title": "Temozolomide With or Without Veliparib in Treating Patients With Relapsed or Refractory Small Cell Lung Cancer",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Stage III Cutaneous Melanoma AJCC v7",
-    "Stage IV Cutaneous Melanoma AJCC v6 and v7",
-    "Unresectable Melanoma"
+    "Recurrent Lung Small Cell Carcinoma"
+   ],
+   "interventions": [
+    "Laboratory Biomarker Analysis",
+    "Placebo Administration",
+    "Temozolomide",
+    "Veliparib"
+   ],
+   "summary": "This randomized phase II trial studies how well temozolomide with or without veliparib works in treating patients with small cell lung cancer that has returned or does not respond to treatment. Temozolomide works by damaging molecules inside the cancer cells, such as deoxyribonucleic acid (DNA), that are needed for cancer survival and growth. Veliparib may stop the growth of tumor cells by blocking proteins that are needed for repairing the damaged DNA and it may also help temozolomide to kill more cancer cells. It is not yet know whether temozolomide is more effective with or without velipari",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 97
+  },
+  {
+   "nct": "NCT01708954",
+   "title": "Erlotinib Hydrochloride and Cabozantinib-s-Malate Alone or in Combination as Second or Third Line Therapy in Treating Patients With Stage IV Non-small Cell Lung Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Recurrent Lung Non-Small Cell Carcinoma",
+    "Stage IV Lung Non-Small Cell Cancer AJCC v7"
+   ],
+   "interventions": [
+    "Cabozantinib S-malate",
+    "Erlotinib Hydrochloride",
+    "Laboratory Biomarker Analysis"
+   ],
+   "summary": "This randomized phase II trial studies how well giving erlotinib hydrochloride and cabozantinib-s-malate alone or in combination works as second or third line therapy in treating patient with stage IV non-small cell lung cancer. Erlotinib hydrochloride and cabozantinib-s-malate may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. It is not yet known whether giving erlotinib hydrochloride together with cabozantinib-s-malate is more effective than erlotinib hydrochloride or cabozantinib-s-malate alone in treating non-small cell lung cancer.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 125
+  },
+  {
+   "nct": "NCT01789216",
+   "title": "Improving Pain Management and Long Term Outcomes Following High Energy Orthopedic Trauma (Pain Study)",
+   "acronym": "PAIN",
+   "status": "COMPLETED",
+   "phase": "PHASE3",
+   "sponsor": "Major Extremity Trauma Research Consortium",
+   "conditions": [
+    "Orthopaedic Fractures"
+   ],
+   "interventions": [
+    "NSAID",
+    "Gabapentinoids",
+    "placebo"
+   ],
+   "summary": "The purpose of this study is to definitively resolve questions regarding the use of multimodal pharmacologic pain management for orthopedic trauma patients in the context of a multicenter, randomized clinical trial.\n\nAlso, as a significant proportion of this population develops chronic post traumatic osteoarthritis (PTOA), a sub-objective of this study is to examine the etiology and incidence of chronic pain and PTOA in this population.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 450
+  },
+  {
+   "nct": "NCT01841736",
+   "title": "Pazopanib Hydrochloride in Treating Patients With Progressive Carcinoid Tumors",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Foregut Neuroendocrine Tumor",
+    "Hindgut Neuroendocrine Tumor",
+    "Metastatic Digestive System Neuroendocrine Tumor G1",
+    "Metastatic Neuroendocrine Tumor",
+    "Midgut Neuroendocrine Tumor G1",
+    "Neuroendocrine Tumor G2",
+    "Recurrent Digestive System Neuroendocrine Tumor G1",
+    "Regional Digestive System Neuroendocrine Tumor G1"
    ],
    "interventions": [
     "Biospecimen Collection",
     "Computed Tomography",
-    "Dabrafenib Mesylate",
     "Echocardiography Test",
+    "Laboratory Biomarker Analysis",
+    "Magnetic Resonance Imaging",
     "Multigated Acquisition Scan",
-    "Positron Emission Tomography",
-    "Trametinib Dimethyl Sulfoxide"
+    "Pazopanib Hydrochloride",
+    "Placebo Administration",
+    "Quality-of-Life Assessment",
+    "X-Ray Imaging"
    ],
-   "summary": "This phase II trial compares the effect of dabrafenib and trametinib given continuously to given with a break in treatment (intermittent) in treating patients with stage III-IV melanoma that cannot be removed by surgery and contains a B-Raf proto-oncogene, serine/threonine kinase (BRAF) mutation. Dabrafenib and trametinib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Giving dabrafenib and trametinib with intermittent dosing may be as effect as when given continuously in treating patients with stage III-IV melanoma with a BRAF mutation that cannot be",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 280
+   "summary": "This randomized phase II trial studies how well pazopanib hydrochloride works in treating patients with carcinoid tumors that are growing, spreading, or getting worse. Pazopanib hydrochloride may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 171
   },
   {
-   "nct": "NCT02339571",
-   "title": "A Phase II/III Trial of Nivolumab, Ipilimumab, and GM-CSF in Patients With Advanced Melanoma",
+   "nct": "NCT01886872",
+   "title": "Rituximab and Bendamustine Hydrochloride, Rituximab and Ibrutinib, or Ibrutinib Alone in Treating Older Patients With Previously Untreated Chronic Lymphocytic Leukemia",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Stage I Chronic Lymphocytic Leukemia",
+    "Stage II Chronic Lymphocytic Leukemia",
+    "Stage III Chronic Lymphocytic Leukemia",
+    "Stage IV Chronic Lymphocytic Leukemia"
+   ],
+   "interventions": [
+    "Bendamustine Hydrochloride",
+    "Biospecimen Collection",
+    "Bone Marrow Aspiration",
+    "Bone Marrow Biopsy",
+    "Computed Tomography",
+    "Ibrutinib",
+    "Laboratory Biomarker Analysis",
+    "Quality-of-Life Assessment",
+    "Rituximab"
+   ],
+   "summary": "This randomized phase III trial studies rituximab with bendamustine hydrochloride or ibrutinib to see how well they work compared to ibrutinib alone in treating older patients with previously untreated chronic lymphocytic leukemia. Rituximab is a monoclonal antibody that may interfere with the ability of cancer cells to grow and spread. A monoclonal antibody is a type of protein that can bind to certain targets in the body, such as molecules that cause the body to make an immune response (antigens). Chemotherapy drugs, such as bendamustine hydrochloride, work in different ways to stop the grow",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 547
+  },
+  {
+   "nct": "NCT02003222",
+   "title": "Combination Chemotherapy With or Without Blinatumomab in Treating Patients With Newly Diagnosed BCR-ABL-Negative B Lineage Acute Lymphoblastic Leukemia",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Acute Lymphoblastic Leukemia",
+    "B Acute Lymphoblastic Leukemia, Philadelphia Chromosome Negative"
+   ],
+   "interventions": [
+    "Allogeneic Hematopoietic Stem Cell Transplantation",
+    "Biospecimen Collection",
+    "Blinatumomab",
+    "Bone Marrow Aspiration",
+    "Bone Marrow Biopsy",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Daunorubicin",
+    "Daunorubicin Hydrochloride",
+    "Dexamethasone",
+    "Etoposide",
+    "Leucovorin Calcium",
+    "Lumbar Puncture",
+    "Mercaptopurine",
+    "Methotrexate",
+    "Pegaspargase",
+    "Prednisone",
+    "Rituximab",
+    "Vincristine",
+    "Vincristine Sulfate",
+    "X-Ray Imaging"
+   ],
+   "summary": "This randomized phase III trial studies combination chemotherapy with blinatumomab to see how well it works compared to induction chemotherapy alone in treating patients with newly diagnosed breakpoint cluster region (BCR)-c-abl oncogene 1, non-receptor tyrosine kinase (ABL)-negative B lineage acute lymphoblastic leukemia. Drugs used in chemotherapy work in different ways to stop the growth of cancer cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. Immunotherapy with monoclonal antibodies, such as blinatumomab, may help the body's immune s",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 488
+  },
+  {
+   "nct": "NCT02101853",
+   "title": "Blinatumomab in Treating Younger Patients With Relapsed B-cell Acute Lymphoblastic Leukemia",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Recurrent B Acute Lymphoblastic Leukemia"
+   ],
+   "interventions": [
+    "Allogeneic Hematopoietic Stem Cell Transplantation",
+    "Asparaginase",
+    "Blinatumomab",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Dexamethasone",
+    "Etoposide",
+    "Leucovorin Calcium",
+    "Mercaptopurine",
+    "Methotrexate",
+    "Mitoxantrone",
+    "Mitoxantrone Hydrochloride",
+    "Pegaspargase",
+    "Pharmacological Study",
+    "Radiation Therapy",
+    "Therapeutic Hydrocortisone",
+    "Thioguanine",
+    "Vincristine",
+    "Vincristine Sulfate"
+   ],
+   "summary": "This randomized phase III trial studies how well blinatumomab works compared with standard combination chemotherapy in treating patients with B-cell acute lymphoblastic leukemia that has returned after a period of improvement (relapsed). Immunotherapy with blinatumomab may allow the body's immune system to attack and destroy some types of leukemia cells. It is not yet known whether blinatumomab is more effective than standard combination chemotherapy in treating relapsed B-cell acute lymphoblastic leukemia.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 669
+  },
+  {
+   "nct": "NCT02112916",
+   "title": "Combination Chemotherapy With or Without Bortezomib in Treating Younger Patients With Newly Diagnosed T-Cell Acute Lymphoblastic Leukemia or Stage II-IV T-Cell Lymphoblastic Lymphoma",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Adult T Acute Lymphoblastic Leukemia",
+    "Ann Arbor Stage II Adult Lymphoblastic Lymphoma",
+    "Ann Arbor Stage II Childhood Lymphoblastic Lymphoma",
+    "Ann Arbor Stage III Adult Lymphoblastic Lymphoma",
+    "Ann Arbor Stage III Childhood Lymphoblastic Lymphoma",
+    "Ann Arbor Stage IV Adult Lymphoblastic Lymphoma",
+    "Ann Arbor Stage IV Childhood Lymphoblastic Lymphoma",
+    "Childhood T Acute Lymphoblastic Leukemia"
+   ],
+   "interventions": [
+    "Bortezomib",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Daunorubicin",
+    "Daunorubicin Hydrochloride",
+    "Dexamethasone",
+    "Doxorubicin",
+    "Doxorubicin Hydrochloride",
+    "Etoposide",
+    "Hydrocortisone Sodium Succinate",
+    "Ifosfamide",
+    "Leucovorin Calcium",
+    "Mercaptopurine",
+    "Methotrexate",
+    "Pegaspargase",
+    "Radiation Therapy",
+    "Thioguanine",
+    "Vincristine",
+    "Vincristine Sulfate"
+   ],
+   "summary": "This randomized phase III trial compares how well combination chemotherapy works when given with or without bortezomib in treating patients with newly diagnosed T-cell acute lymphoblastic leukemia or stage II-IV T-cell lymphoblastic lymphoma. Bortezomib may help reduce the number of leukemia or lymphoma cells by blocking some of the enzymes needed for cell growth. It may also help chemotherapy work better by making cancer cells more sensitive to the drugs. It is not yet known if giving standard chemotherapy with or without bortezomib is more effective in treating newly diagnosed T-cell acute l",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 847
+  },
+  {
+   "nct": "NCT02152982",
+   "title": "Temozolomide With or Without Veliparib in Treating Patients With Newly Diagnosed Glioblastoma Multiforme",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE2, PHASE3",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Stage III Cutaneous Melanoma AJCC v7",
-    "Stage IV Cutaneous Melanoma AJCC v6 and v7"
+    "Glioblastoma",
+    "Gliosarcoma"
+   ],
+   "interventions": [
+    "Laboratory Biomarker Analysis",
+    "Placebo Administration",
+    "Quality-of-Life Assessment",
+    "Temozolomide",
+    "Veliparib"
+   ],
+   "summary": "This randomized phase II/III trial studies how well temozolomide and veliparib work compared to temozolomide alone in treating patients with newly diagnosed glioblastoma multiforme. Drugs used in chemotherapy, such as temozolomide, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. Veliparib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. It is not yet known whether temozolomide is more effective with or without veliparib in treating glioblastoma mu",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 447
+  },
+  {
+   "nct": "NCT02178410",
+   "title": "VITAL Rhythm Study",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Brigham and Women's Hospital",
+   "conditions": [
+    "Cardiovascular Disease"
+   ],
+   "interventions": [
+    "Vitamin D3",
+    "Omega-3 fatty acids (fish oil)",
+    "Fish oil placebo",
+    "Vitamin D3 placebo"
+   ],
+   "summary": "The VITamin D and OmegA-3 TriaL (VITAL) is an ongoing randomized clinical trial of 25,871 U.S. men and women investigating whether taking daily dietary supplements of vitamin D3 (2000 IU) or omega-3 fatty acids (Omacor® fish oil, 1 gram) reduces the risk of developing cancer, heart disease, and stroke in individuals who do not have a prior history of these illnesses. The purpose of this ancillary study is to ascertain and adjudicate atrial fibrillation (AF) outcomes for the primary aim of testing whether omega-3 fatty acid and/or vitamin D supplementation influence atrial fibrillation risk in ",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 25119
+  },
+  {
+   "nct": "NCT02314169",
+   "title": "Nivolumab With or Without Ipilimumab in Treating Patients With Refractory Metastatic Anal Canal Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Anal Canal Squamous Cell Carcinoma",
+    "Metastatic Anal Canal Carcinoma",
+    "Stage IV Anal Cancer AJCC v8"
    ],
    "interventions": [
     "Biospecimen Collection",
     "Computed Tomography",
-    "Echocardiography Test",
     "Ipilimumab",
-    "Magnetic Resonance Elastography",
-    "Multigated Acquisition Scan",
-    "Nivolumab",
-    "Sargramostim"
+    "Magnetic Resonance Imaging",
+    "Nivolumab"
    ],
-   "summary": "This phase II/III trial studies the side effects of nivolumab and ipilimumab when given together with or without sargramostim and to see how well they work in treating patients with stage III-IV melanoma that cannot be removed by surgery (unresectable) and that may have spread from where it first started to nearby tissue, lymph nodes, or distant parts of the body (advanced). Immunotherapy with monoclonal antibodies, such as ipilimumab and nivolumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Colony-stimulating fact",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 600
+   "summary": "This phase II trial studies how well nivolumab with or without ipilimumab works in treating patients with anal canal cancer that has not responded to previous treatment (refractory) and that has spread from where it first started (primary site) to other places in the body (metastatic). Immunotherapy with monoclonal antibodies, such as nivolumab and ipilimumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 143
+  },
+  {
+   "nct": "NCT02443077",
+   "title": "Ibrutinib Before and After Stem Cell Transplant in Treating Patients With Relapsed or Refractory Diffuse Large B-cell Lymphoma",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Recurrent Diffuse Large B-Cell Lymphoma Activated B-Cell Type",
+    "Refractory Diffuse Large B-Cell Lymphoma Activated B-Cell Type"
+   ],
+   "interventions": [
+    "Autologous Bone Marrow Transplantation",
+    "Autologous Hematopoietic Stem Cell Transplantation",
+    "Carmustine",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Etoposide",
+    "Ibrutinib",
+    "Laboratory Biomarker Analysis",
+    "Melphalan",
+    "Pharmacogenomic Study",
+    "Placebo Administration"
+   ],
+   "summary": "This randomized phase III trial studies ibrutinib to see how well it works compared to placebo when given before and after stem cell transplant in treating patients with diffuse large B-cell lymphoma that has returned after a period of improvement (relapsed) or does not respond to treatment (refractory). Before transplant, stem cells are taken from patients and stored. Patients then receive high doses of chemotherapy to kill cancer cells and make room for healthy cells. After treatment, the stem cells are then returned to the patient to replace the blood-forming cells that were destroyed by th",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 94
   },
   {
    "nct": "NCT02511106",
@@ -332,79 +738,29 @@
    "enrollment": 616
   },
   {
-   "nct": "NCT02669251",
-   "title": "Alvelestat (MPH966), an Oral Neutrophil Elastase Inhibitor, in Bronchiolitis Obliterans Syndrome After Allogeneic Hematopoietic Stem Cell Transplantation",
+   "nct": "NCT02883062",
+   "title": "Carboplatin and Paclitaxel With or Without Atezolizumab Before Surgery in Treating Patients With Newly Diagnosed, Stage II-III Triple-Negative Breast Cancer",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE1, PHASE2",
+   "phase": "PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Chronic Graft vs Host Disease",
-    "Chronic Graft-Versus-Host Disease",
-    "Bronchiolitis Obliterans Syndrome"
+    "Invasive Breast Carcinoma",
+    "Stage II Breast Cancer AJCC v6 and v7",
+    "Stage III Breast Cancer AJCC v7",
+    "Triple-Negative Breast Carcinoma"
    ],
    "interventions": [
-    "MPH966"
+    "Atezolizumab",
+    "Biospecimen Collection",
+    "Carboplatin",
+    "Lumpectomy",
+    "Mastectomy",
+    "Paclitaxel"
    ],
-   "summary": "Background:\n\nBronchiolitis obliterans syndrome (BOS) is a complication people can experience after hematopoietic stem cell transplant. It usually affects people with chronic graft versus host disease (cGVHD). This occurs when donor stem cells attack the cells of the person who received them. BOS reduces airflow and oxygen levels in the body. It may be caused by neutrophil elastase in the body. Researchers believe the new drug alvelestat (MPH966) may help.\n\nObjectives:\n\nTo test the safety of alvelestat (MPH966) and see what dose best inhibits neutrophil elastase in people with BOS after a stem ",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 16
-  },
-  {
-   "nct": "NCT02911142",
-   "title": "Lenalidomide Combined With Modified DA-EPOCH and Rituximab (EPOCH-R2) in Primary Effusion Lymphoma or KSHV-associated Large Cell Lymphoma",
-   "acronym": null,
-   "status": "COMPLETED",
-   "phase": "PHASE1, PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Primary Effusion Lymphoma",
-    "B-Cell Neoplasm"
-   ],
-   "interventions": [
-    "Lenalidomide",
-    "Rituximab",
-    "Prednisone",
-    "Etoposide",
-    "Doxorubicin",
-    "Vincristine",
-    "Cyclophosphamide",
-    "CT of neck, chest, abdomen and pelvis",
-    "18FDG-PET scan",
-    "MRI Brain",
-    "Bone marrow biopsy",
-    "EKG",
-    "Echocardiogram",
-    "Ultrasound",
-    "Bronchoscopy",
-    "Endoscopy",
-    "CXR: PA/lat/decub"
-   ],
-   "summary": "Background:\n\nPrimary effusion lymphoma (PEL) is a rare disease with no standard treatment. Researchers want to see if a drug called lenalidomide along with common chemotherapy drugs may be effective in treating PEL.\n\nObjective:\n\nTo test a new treatment for PEL.\n\nEligibility:\n\nPeople ages 18 and older with PEL.\n\nDesign:\n\nParticipants will be screened with blood tests, imaging studies, a physical exam, and other tests.\n\nParticipants will have tests to evaluate their disease. These may include:\n\nBlood tests\n\nScans\n\nLumbar puncture. Fluid around the spinal cord will be removed with a needle.\n\nBone",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 17
-  },
-  {
-   "nct": "NCT02951052",
-   "title": "Study Evaluating the Efficacy, Safety, and Tolerability of Switching to Long-acting Cabotegravir Plus Long-acting Rilpivirine From Current Antiretroviral Regimen in Virologically Suppressed HIV-1-infected Adults",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "ViiV Healthcare",
-   "conditions": [
-    "Infection, Human Immunodeficiency Virus",
-    "HIV Infections"
-   ],
-   "interventions": [
-    "Cabotegravir (CAB) tablet",
-    "Rilpivirine (RPV) tablet",
-    "Cabotegravir - Injectable Suspension (CAB LA)",
-    "Rilpivirine - Injectable Suspension (RPV LA)",
-    "2 NRTIs plus an INI, NNRTI, or PI"
-   ],
-   "summary": "The Antiretroviral Therapy as Long Acting Suppression (ATLAS) study is being conducted to establish if human immunodeficiency virus type-1 (HIV-1) infected adult subjects with current viral suppression on a regimen with 2 nucleoside reverse transcriptase inhibitors (NRTIs) plus a third agent, remain suppressed upon switching to a two-drug intramuscular (IM) long-acting (LA) regimen of cabotegravir (CAB) and rilpivirine (RPV). This is a Phase 3, multi-phase, randomized, open label, active-controlled, multicenter, parallel-group, non-inferiority study in HIV-1, antiretroviral therapy (ART)-adult",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 618
+   "summary": "This phase II trial studies how well carboplatin and paclitaxel with or without atezolizumab before surgery works in treating patients with newly diagnosed, stage II-III triple negative breast cancer. Immunotherapy with monoclonal antibodies, such as atezolizumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Drugs used in chemotherapy, such as carboplatin and paclitaxel, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spre",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 67
   },
   {
    "nct": "NCT03036124",
@@ -467,40 +823,103 @@
    "enrollment": 3730
   },
   {
-   "nct": "NCT03141684",
-   "title": "Testing Atezolizumab Alone or Atezolizumab Plus Bevacizumab in People With Advanced Alveolar Soft Part Sarcoma",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Metastatic Alveolar Soft Part Sarcoma",
-    "Unresectable Alveolar Soft Part Sarcoma"
-   ],
-   "interventions": [
-    "Atezolizumab",
-    "Bevacizumab",
-    "Biospecimen Collection",
-    "Computed Tomography"
-   ],
-   "summary": "This phase II trial studies how well atezolizumab or atezolizumab plus bevacizumab works in treating patients with alveolar soft part sarcoma that has not been treated, has spread from where it started to other places in the body (advanced) and cannot be removed by surgery (unresectable). Atezolizumab works by unblocking the immune system, allowing the immune system cells to recognize and then attack tumor cells. Bevacizumab works by controlling the growth of new blood vessels. Giving atezolizumab alone or atezolizumab with bevacizumab may shrink the cancer.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 63
-  },
-  {
-   "nct": "NCT03213704",
-   "title": "Larotrectinib in Treating Patients With Relapsed or Refractory Advanced Solid Tumors, Non-Hodgkin Lymphoma, or Histiocytic Disorders With NTRK Fusions (A Pediatric MATCH Treatment Trial)",
+   "nct": "NCT03155620",
+   "title": "Targeted Therapy Directed by Genetic Testing in Treating Pediatric Patients With Relapsed or Refractory Advanced Solid Tumors, Non-Hodgkin Lymphomas, or Histiocytic Disorders (The Pediatric MATCH Screening Trial)",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
     "Advanced Malignant Solid Neoplasm",
+    "Ann Arbor Stage III Non-Hodgkin Lymphoma",
+    "Ann Arbor Stage IV Non-Hodgkin Lymphoma",
+    "Histiocytic Sarcoma",
+    "Juvenile Xanthogranuloma",
+    "Langerhans Cell Histiocytosis",
+    "Malignant Glioma",
+    "Recurrent Childhood Rhabdomyosarcoma",
     "Recurrent Ependymoma",
-    "Recurrent Ewing Sarcoma/Peripheral Primitive Neuroectodermal Tumor",
+    "Recurrent Ewing Sarcoma",
     "Recurrent Glioma",
     "Recurrent Hepatoblastoma",
-    "Recurrent Kidney Wilms Tumor",
+    "Recurrent Langerhans Cell Histiocytosis",
+    "Recurrent Malignant Germ Cell Tumor",
+    "Recurrent Malignant Solid Neoplasm",
+    "Recurrent Medulloblastoma",
+    "Recurrent Neuroblastoma",
+    "Recurrent Non-Hodgkin Lymphoma",
+    "Recurrent Osteosarcoma",
+    "Recurrent Peripheral Primitive Neuroectodermal Tumor",
+    "Recurrent Primary Central Nervous System Neoplasm",
+    "Recurrent Rhabdoid Tumor",
+    "Recurrent Soft Tissue Sarcoma",
+    "Refractory Ewing Sarcoma",
+    "Refractory Glioma",
+    "Refractory Hepatoblastoma",
+    "Refractory Langerhans Cell Histiocytosis",
+    "Refractory Malignant Germ Cell Tumor",
+    "Refractory Malignant Solid Neoplasm",
+    "Refractory Medulloblastoma",
+    "Refractory Neuroblastoma",
+    "Refractory Non-Hodgkin Lymphoma",
+    "Refractory Osteosarcoma",
+    "Refractory Peripheral Primitive Neuroectodermal Tumor",
+    "Refractory Primary Central Nervous System Neoplasm",
+    "Refractory Rhabdoid Tumor",
+    "Refractory Rhabdomyosarcoma",
+    "Rhabdoid Tumor",
+    "Stage III Osteosarcoma AJCC v7",
+    "Stage III Soft Tissue Sarcoma AJCC v7",
+    "Stage IV Osteosarcoma AJCC v7",
+    "Stage IV Soft Tissue Sarcoma AJCC v7",
+    "Stage IVA Osteosarcoma AJCC v7",
+    "Stage IVB Osteosarcoma AJCC v7",
+    "Wilms Tumor"
+   ],
+   "interventions": [
+    "Biopsy Procedure",
+    "Biospecimen Collection",
+    "Bone Marrow Aspiration and Biopsy",
+    "Bone Scan",
+    "Computed Tomography",
+    "Ensartinib",
+    "Erdafitinib",
+    "Ivosidenib",
+    "Laboratory Biomarker Analysis",
+    "Larotrectinib Sulfate",
+    "Magnetic Resonance Imaging",
+    "Mutation Carrier Screening",
+    "Olaparib",
+    "Palbociclib",
+    "Pharmacological Study",
+    "Positron Emission Tomography",
+    "Radionuclide Imaging",
+    "Samotolisib",
+    "Selpercatinib",
+    "Selumetinib Sulfate",
+    "Tazemetostat",
+    "Tipifarnib",
+    "Ulixertinib",
+    "Vemurafenib",
+    "X-Ray Imaging"
+   ],
+   "summary": "This phase II Pediatric MATCH screening and multi-sub-trial studies how well treatment that is directed by genetic testing works in pediatric patients with solid tumors, non-Hodgkin lymphomas, or histiocytic disorders that have progressed following at least one line of standard systemic therapy and/or for which no standard treatment exists that has been shown to prolong survival. Genetic tests look at the unique genetic material (genes) of patients' tumor cells. Patients with genetic changes or abnormalities (mutations) may benefit more from treatment which targets their tumor's particular gen",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 1377
+  },
+  {
+   "nct": "NCT03213652",
+   "title": "Ensartinib in Treating Patients With Relapsed or Refractory Advanced Solid Tumors, Non-Hodgkin Lymphoma, or Histiocytic Disorders With ALK or ROS1 Genomic Alterations (A Pediatric MATCH Treatment Trial)",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Advanced Malignant Solid Neoplasm",
+    "Malignant Solid Neoplasm",
+    "Recurrent Ependymoma",
+    "Recurrent Ewing Sarcoma/Peripheral Primitive Neuroectodermal Tumor",
+    "Recurrent Hepatoblastoma",
     "Recurrent Langerhans Cell Histiocytosis",
     "Recurrent Malignant Germ Cell Tumor",
     "Recurrent Malignant Glioma",
@@ -509,12 +928,12 @@
     "Recurrent Neuroblastoma",
     "Recurrent Non-Hodgkin Lymphoma",
     "Recurrent Osteosarcoma",
+    "Recurrent Primary Central Nervous System Neoplasm",
     "Recurrent Rhabdoid Tumor",
     "Recurrent Rhabdomyosarcoma",
     "Recurrent Soft Tissue Sarcoma",
     "Refractory Ependymoma",
     "Refractory Ewing Sarcoma/Peripheral Primitive Neuroectodermal Tumor",
-    "Refractory Glioma",
     "Refractory Hepatoblastoma",
     "Refractory Langerhans Cell Histiocytosis",
     "Refractory Malignant Germ Cell Tumor",
@@ -527,21 +946,48 @@
     "Refractory Primary Central Nervous System Neoplasm",
     "Refractory Rhabdoid Tumor",
     "Refractory Rhabdomyosarcoma",
-    "Refractory Soft Tissue Sarcoma"
+    "Refractory Soft Tissue Sarcoma",
+    "Wilms Tumor"
    ],
    "interventions": [
     "Biospecimen Collection",
     "Bone Marrow Aspiration and Biopsy",
     "Bone Scan",
     "Computed Tomography",
-    "Larotrectinib Sulfate",
+    "Ensartinib",
+    "Laboratory Biomarker Analysis",
     "Magnetic Resonance Imaging",
+    "Pharmacological Study",
+    "Positron Emission Tomography",
     "Radionuclide Imaging",
     "X-Ray Imaging"
    ],
-   "summary": "This phase II Pediatric MATCH trial studies how well larotrectinib works in treating patients with solid tumors, non-Hodgkin lymphoma, or histiocytic disorders with NTRK fusions that may have spread from where it first started to nearby tissue, lymph nodes, or distant parts of the body (advanced) and have come back (relapased) or does not respond to treatment (refractory). Larotrectinib may stop the growth of cancer cells by blocking some of the enzymes needed for cell growth.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 9
+   "summary": "This phase II Pediatric MATCH treatment trial studies how well ensartinib works in treating patients with solid tumors, non-Hodgkin lymphoma, or histiocytic disorders with ALK or ROS1 genomic alterations that have come back (recurrent) or does not respond to treatment (refractory) and may have spread from where it first started to nearby tissue, lymph nodes, or distant parts of the body (advanced). Ensartinib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 13
+  },
+  {
+   "nct": "NCT03348631",
+   "title": "Tazemetostat in Treating Patients With Recurrent Ovarian or Endometrial Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Recurrent Endometrial Endometrioid Adenocarcinoma",
+    "Recurrent Malignant Uterine Corpus Neoplasm",
+    "Recurrent Ovarian Carcinoma",
+    "Recurrent Ovarian Clear Cell Adenocarcinoma",
+    "Recurrent Ovarian Endometrioid Adenocarcinoma"
+   ],
+   "interventions": [
+    "Computed Tomography",
+    "Magnetic Resonance Imaging",
+    "Tazemetostat"
+   ],
+   "summary": "This phase II trial studies how well tazemetostat works in treating patients with ovarian or endometrial cancer that has come back (recurrent). Chemotherapy drugs, such as tazemetostat, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 62
   },
   {
    "nct": "NCT03407079",
@@ -561,29 +1007,6 @@
    "summary": "Background:\n\nArtificial sweeteners like sucralose are found in many foods and drinks. Sucralose might affect hormones and cause health changes.\n\nObjective:\n\nTo see if sucralose changes how medicines are absorbed and processed, how hormones are secreted, gut bacteria, and how fat cells are metabolized.\n\nEligibility:\n\nPeople ages 18-60 who:\n\n* Are black or Hispanic\n* Weigh more than 110 pounds\n* Have a body mass index of 25-40\n* Do not have a condition that requires drug treatment\n\nDesign:\n\nParticipants will be screened with:\n\n* Medical history\n* Physical exam\n* Blood, heart, and urine tests\n\nPa",
    "lastUpdate": "2026-11-12",
    "enrollment": 150
-  },
-  {
-   "nct": "NCT03418961",
-   "title": "S1501 Dual Observational and Randomized Cohort Study of Patients With Metastatic HER-2+ Breast Cancer at Risk of Cardiac Toxicity",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "SWOG Cancer Research Network",
-   "conditions": [
-    "Cardiotoxicity",
-    "HER2/Neu Positive",
-    "Metastatic Malignant Neoplasm in the Brain",
-    "Recurrent Breast Carcinoma",
-    "Stage IV Breast Cancer AJCC v6 and v7"
-   ],
-   "interventions": [
-    "Carvedilol",
-    "Laboratory Biomarker Analysis",
-    "Patient Observation"
-   ],
-   "summary": "This trial has two cohorts of patients with human epidermal growth factor receptor (HER)-2-positive breast cancer that has spread to other places in the body. All patients must be receiving trastuzumab-based treatment. Both cohorts are being observed for cardiac toxicity. The largest cohort (currently open to accrual) is observational, and contains patients who are taking a beta blocker, ACE inhibitor, or ARB as well as their trastuzumab-based treatment. The goal is to understand how common cardiac problems are in this group of patients at high risk. The smaller cohort (currently closed to acc",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 491
   },
   {
    "nct": "NCT03529110",
@@ -642,84 +1065,29 @@
    "enrollment": 17604
   },
   {
-   "nct": "NCT03604991",
-   "title": "Nivolumab and Ipilimumab in Treating Patients With Esophageal and Gastroesophageal Junction Adenocarcinoma Undergoing Surgery",
-   "acronym": null,
-   "status": "SUSPENDED",
-   "phase": "PHASE2, PHASE3",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Clinical Stage II Esophageal Adenocarcinoma AJCC v8",
-    "Clinical Stage II Gastroesophageal Junction Adenocarcinoma AJCC v8",
-    "Clinical Stage III Esophageal Adenocarcinoma AJCC v8",
-    "Clinical Stage III Gastroesophageal Junction Adenocarcinoma AJCC v8",
-    "Clinical Stage IVA Esophageal Adenocarcinoma AJCC v8",
-    "Clinical Stage IVA Gastroesophageal Junction Adenocarcinoma AJCC v8",
-    "Esophageal Adenocarcinoma",
-    "Gastroesophageal Junction Adenocarcinoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Carboplatin",
-    "Computed Tomography",
-    "Ipilimumab",
-    "Nivolumab",
-    "Paclitaxel",
-    "Positron Emission Tomography",
-    "Radiation Therapy"
-   ],
-   "summary": "This phase II/III trial studies the usefulness of treatment with nivolumab and ipilimumab in addition to standard of care chemotherapy and radiation therapy in patients with esophageal and gastroesophageal junction adenocarcinoma who are undergoing surgery. Immunotherapy with antibodies, such as nivolumab and ipilimumab, may remove the brake on the body's immune system and may interfere with the ability of tumor cells to grow and spread. Chemotherapy and radiation therapy may reduce the tumor size and the amount of normal tissue that needs to be removed during surgery. A combined treatment wit",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 278
-  },
-  {
-   "nct": "NCT03701282",
-   "title": "Assessing the Ability of Combination Treatment With Venetoclax to Permit Time Limited Therapy in Chronic Lymphocytic Leukemia",
+   "nct": "NCT03600701",
+   "title": "Atezolizumab and Cobimetinib in Treating Patients With Metastatic, Recurrent, or Refractory Non-small Cell Lung Cancer",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE3",
+   "phase": "PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Small Lymphocytic Lymphoma"
+    "Metastatic Lung Non-Small Cell Carcinoma",
+    "Recurrent Lung Non-Small Cell Carcinoma",
+    "Refractory Lung Non-Small Cell Carcinoma",
+    "Stage IV Lung Cancer AJCC v8"
    ],
    "interventions": [
+    "Atezolizumab",
+    "Biopsy Procedure",
     "Biospecimen Collection",
-    "Bone Marrow Biopsy",
+    "Cobimetinib",
     "Computed Tomography",
-    "Ibrutinib",
-    "Obinutuzumab",
-    "Quality-of-Life Assessment",
-    "Venetoclax"
+    "Magnetic Resonance Imaging"
    ],
-   "summary": "This phase III trial studies how well ibrutinib and obinutuzumab with or without venetoclax work in treating patients with chronic lymphocytic leukemia. Ibrutinib may stop the growth of cancer cells by blocking some of the enzymes needed for cell growth. Obinutuzumab is a monoclonal antibody. It binds to a protein called CD20, which is found on B cells (a type of white blood cell) and some types of cancer cells. This may help the immune system kill cancer cells. Venetoclax is in a class of medications called B-cell lymphoma-2 (BCL-2) inhibitors. It may stop the growth of cancer cells by blocki",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 720
-  },
-  {
-   "nct": "NCT03712605",
-   "title": "Testing Pembrolizumab Versus Observation in Patients With Merkel Cell Carcinoma After Surgery, STAMP Trial",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Pathologic Stage I Cutaneous Merkel Cell Carcinoma AJCC v8",
-    "Pathologic Stage II Cutaneous Merkel Cell Carcinoma AJCC v8",
-    "Pathologic Stage III Cutaneous Merkel Cell Carcinoma AJCC v8"
-   ],
-   "interventions": [
-    "Best Practice",
-    "Biospecimen Collection",
-    "Computed Tomography",
-    "Magnetic Resonance Imaging",
-    "Pembrolizumab",
-    "Positron Emission Tomography",
-    "Radiation Therapy"
-   ],
-   "summary": "This phase III trial studies how well pembrolizumab works compared to standard of care observation in treating patients with stage I-III Merkel cell cancer that has been completely removed by surgery (resected). Immunotherapy with monoclonal antibodies, such as pembrolizumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 280
+   "summary": "This phase II trial studies how well atezolizumab and cobimetinib work in treating patients with non-small cell lung cancer that has spread from where it first started (primary site) to other places in the body (metastatic), has come back (recurrent), or does not respond to treatment (refractory). Immunotherapy with monoclonal antibodies, such as atezolizumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Cobimetinib is used in patients whose cancer has a mutated (changed) form of a gene called BRAF. It is in a class ",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 53
   },
   {
    "nct": "NCT03734029",
@@ -744,52 +1112,32 @@
    "enrollment": 557
   },
   {
-   "nct": "NCT03742102",
-   "title": "A Study of Novel Anti-cancer Agents in Patients With Metastatic Triple Negative Breast Cancer",
-   "acronym": "BEGONIA",
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE1, PHASE2",
-   "sponsor": "AstraZeneca",
-   "conditions": [
-    "Triple Negative Breast Neoplasms"
-   ],
-   "interventions": [
-    "Durvalumab",
-    "Capivasertib",
-    "Oleclumab",
-    "Paclitaxel",
-    "Trastuzumab deruxtecan",
-    "Datopotamab deruxtecan"
-   ],
-   "summary": "This study is designed to determine the efficacy and safety of durvalumab in combination with novel oncology therapies with or without paclitaxel and durvalumab + paclitaxel for first-line metastatic triple negative breast cancer",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 243
-  },
-  {
-   "nct": "NCT03811015",
-   "title": "Testing Immunotherapy Versus Observation in Patients With HPV Throat Cancer",
+   "nct": "NCT03811002",
+   "title": "Testing the Addition of a New Immunotherapy Drug, Atezolizumab (MPDL3280A), to the Usual Chemoradiation (CRT) Therapy Treatment for Limited Stage Small Cell Lung Cancer (LS-SCLC)",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE3",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Clinical Stage II HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8",
-    "Clinical Stage III HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8"
+    "Limited Stage Lung Small Cell Carcinoma",
+    "Stage I Lung Cancer AJCC v8",
+    "Stage II Lung Cancer AJCC v8",
+    "Stage III Lung Cancer AJCC v8"
    ],
    "interventions": [
+    "3-Dimensional Conformal Radiation Therapy",
+    "Atezolizumab",
     "Biospecimen Collection",
+    "Carboplatin",
     "Cisplatin",
-    "Computed Tomography",
-    "Echocardiography Test",
-    "Fludeoxyglucose F-18",
+    "Etoposide",
     "Intensity-Modulated Radiation Therapy",
-    "Nivolumab",
-    "Patient Observation",
-    "Positron Emission Tomography"
+    "Quality-of-Life Assessment",
+    "Questionnaire Administration"
    ],
-   "summary": "This phase III trials studies whether maintenance immunotherapy (nivolumab) following definitive treatment with radiation and chemotherapy (cisplatin) result in significant improvement in overall survival (time being alive) and progression-free survival (time being alive without cancer) for patients with intermediate risk human papillomavirus (HPV) positive oropharynx cancer (throat cancer) that has spread to nearby tissue or lymph nodes. Drugs used in chemotherapy such as cisplatin work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from div",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 636
+   "summary": "This phase III trial studies how well chemotherapy and radiation therapy (chemoradiation) with or without atezolizumab works in treating patients with limited stage small cell lung cancer. Drugs used in chemotherapy, such as etoposide, cisplatin, and carboplatin, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. Radiation therapy uses high energy x-rays to kill tumor cells and shrink tumors. Immunotherapy with monoclonal antibodies, such as atezolizumab, may help the body's immune system at",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 544
   },
   {
    "nct": "NCT03819153",
@@ -810,73 +1158,49 @@
    "enrollment": 3533
   },
   {
-   "nct": "NCT03866382",
-   "title": "Testing the Effectiveness of Two Immunotherapy Drugs (Nivolumab and Ipilimumab) With One Anti-cancer Targeted Drug (Cabozantinib) for Rare Genitourinary Tumors",
+   "nct": "NCT03831932",
+   "title": "Telaglenastat Hydrochloride and Osimertinib in Treating Patients With EGFR-Mutated Stage IV Non-small Cell Lung Cancer",
    "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE2",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE1, PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Bladder Adenocarcinoma",
-    "Bladder Clear Cell Adenocarcinoma",
-    "Bladder Mixed Adenocarcinoma",
-    "Bladder Neuroendocrine Carcinoma",
-    "Bladder Small Cell Neuroendocrine Carcinoma",
-    "Bladder Squamous Cell Carcinoma",
-    "Chromophobe Renal Cell Carcinoma",
-    "Collecting Duct Carcinoma",
-    "Invasive Bladder Giant Cell Urothelial Carcinoma",
-    "Invasive Bladder Lymphoepithelioma-Like Carcinoma",
-    "Invasive Bladder Nested Urothelial Carcinoma",
-    "Invasive Bladder Plasmacytoid Urothelial Carcinoma",
-    "Invasive Bladder Sarcomatoid Urothelial Carcinoma",
-    "Invasive Bladder Urothelial Carcinoma",
-    "Kidney Medullary Carcinoma",
-    "Large Cell Neuroendocrine Carcinoma",
-    "Malignant Testicular Leydig Cell Tumor",
-    "Malignant Testicular Sertoli Cell Tumor",
-    "Metastatic Bladder Carcinoma",
-    "Metastatic Bladder Clear Cell (Glycogen-Rich) Urothelial Carcinoma",
-    "Metastatic Bladder Giant Cell Urothelial Carcinoma",
-    "Metastatic Bladder Large Cell Neuroendocrine Carcinoma",
-    "Metastatic Bladder Lipid-Rich Urothelial Carcinoma",
-    "Metastatic Bladder Micropapillary Urothelial Carcinoma",
-    "Metastatic Bladder Plasmacytoid Urothelial Carcinoma",
-    "Metastatic Bladder Sarcomatoid Urothelial Carcinoma",
-    "Metastatic Bladder Small Cell Neuroendocrine Carcinoma",
-    "Metastatic Bladder Squamous Cell Carcinoma",
-    "Metastatic Chromophobe Renal Cell Carcinoma",
-    "Metastatic Kidney Medullary Carcinoma",
-    "Metastatic Malignant Genitourinary System Neoplasm",
-    "Metastatic Papillary Renal Cell Carcinoma",
-    "Metastatic Penile Carcinoma",
-    "Metastatic Prostate Small Cell Neuroendocrine Carcinoma",
-    "Metastatic Sarcomatoid Renal Cell Carcinoma",
-    "Metastatic Urethral Carcinoma",
-    "Papillary Renal Cell Carcinoma",
-    "Sarcomatoid Renal Cell Carcinoma",
-    "Stage IV Bladder Cancer AJCC v8",
-    "Stage IV Penile Cancer AJCC v8",
-    "Stage IV Renal Cell Cancer AJCC v8",
-    "Stage IV Urethral Cancer AJCC v8",
-    "Stage IVB Prostate Cancer AJCC v8",
-    "Urachal Adenocarcinoma",
-    "Urethral Clear Cell Adenocarcinoma"
+    "Advanced Lung Non-Small Cell Carcinoma",
+    "Metastatic Lung Non-Small Cell Carcinoma",
+    "Stage IV Lung Cancer AJCC v8"
    ],
    "interventions": [
     "Biospecimen Collection",
-    "Bone Scan",
-    "Cabozantinib S-malate",
     "Computed Tomography",
-    "Echocardiography Test",
-    "Ipilimumab",
-    "Magnetic Resonance Imaging",
-    "Nivolumab",
-    "Positron Emission Tomography"
+    "Magnetic Resonance Elastography",
+    "Osimertinib",
+    "Positron Emission Tomography",
+    "Telaglenastat Hydrochloride",
+    "X-Ray Imaging"
    ],
-   "summary": "This phase II trial studies how well cabozantinib works in combination with nivolumab and ipilimumab in treating patients with rare genitourinary (GU) tumors that has spread from where it first started (primary site) to other places in the body. Cabozantinib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Immunotherapy with monoclonal antibodies, such as nivolumab and ipilimumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Giving cabozantinib, nivolumab, and ipilimumab may ",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 314
+   "summary": "This phase Ib trial studies the side effects and best dose of telaglenastat hydrochloride when given together with osimertinib in treating patients with stage IV non-small cell lung cancer and a mutation in the EGFR gene. Telaglenastat hydrochloride and osimertinib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 22
+  },
+  {
+   "nct": "NCT03869892",
+   "title": "Phase III Study in First-line Treatment of Patients With Metastatic Colorectal Cancer Who Are Not Candidate for Intensive Therapy.",
+   "acronym": "SOLSTICE",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Institut de Recherches Internationales Servier",
+   "conditions": [
+    "Metastatic Colorectal Cancer"
+   ],
+   "interventions": [
+    "Trifluridine/tipiracil hydrochloride (S95005)",
+    "Capecitabine",
+    "Bevacizumab experimental",
+    "Bevacizumab control"
+   ],
+   "summary": "The main purpose of this study is to demonstrate the superiority of S 95005 in combination with bevacizumab over capecitabine in combination with bevacizumab.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 856
   },
   {
    "nct": "NCT03887455",
@@ -898,69 +1222,39 @@
    "enrollment": 1906
   },
   {
-   "nct": "NCT04090398",
-   "title": "Testing the Addition of Radium Therapy (Radium-223 Dichloride) to the Usual Chemotherapy Treatment (Paclitaxel) for Advanced Breast Cancer That Has Spread to the Bones",
+   "nct": "NCT03952585",
+   "title": "De-intensified Radiation Therapy With Chemotherapy (Cisplatin) or Immunotherapy (Nivolumab) in Treating Patients With Early-Stage, HPV-Positive, Non-Smoking Associated Oropharyngeal Cancer",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
+   "phase": "PHASE2, PHASE3",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Anatomic Stage IV Breast Cancer AJCC v8",
-    "Metastatic HER2-Negative Breast Carcinoma",
-    "Metastatic Malignant Neoplasm in the Bone"
+    "Basaloid Squamous Cell Carcinoma",
+    "Clinical Stage I HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8",
+    "Clinical Stage II HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8",
+    "Oropharyngeal Squamous Cell Carcinoma",
+    "Papillary Squamous Cell Carcinoma",
+    "Pathologic Stage I HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8",
+    "Pathologic Stage II HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8",
+    "Squamous Cell Carcinoma"
    ],
    "interventions": [
+    "Biopsy Procedure",
     "Biospecimen Collection",
-    "Bone Scan",
+    "Cisplatin",
     "Computed Tomography",
-    "Electronic Health Record Review",
+    "Fludeoxyglucose F-18",
+    "Image Guided Radiation Therapy",
+    "Intensity-Modulated Radiation Therapy",
     "Magnetic Resonance Imaging",
-    "Paclitaxel",
-    "Radium Ra 223 Dichloride",
-    "Single Photon Emission Computed Tomography"
+    "Nivolumab",
+    "Positron Emission Tomography",
+    "Quality-of-Life Assessment",
+    "Questionnaire Administration"
    ],
-   "summary": "This phase II trial studies how well radium-223 dichloride and paclitaxel work in treating patients with advanced breast cancer that has spread to the bones. Radium-223 dichloride is a radioactive drug that behaves in a similar way to calcium and collects in cancer that has spread to the bones (bone metastases). The radioactive particles in radium-223 dichloride act on bone metastases, killing the tumor cells and reducing the pain that they can cause. Drugs used in chemotherapy, such as paclitaxel, work in different ways to stop the growth of tumor cells, either by killing the cells, by stoppi",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 70
-  },
-  {
-   "nct": "NCT04123613",
-   "title": "Multiple Doses of DM199 in Patients With Chronic Kidney Disease (REDUX)",
-   "acronym": null,
-   "status": "COMPLETED",
-   "phase": "PHASE2",
-   "sponsor": "DiaMedica Therapeutics Inc",
-   "conditions": [
-    "Kidney Diseases"
-   ],
-   "interventions": [
-    "DM199"
-   ],
-   "summary": "An open-label, Phase II, multi-center study evaluating multiple doses of DM199 in participants with chronic kidney disease.",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 84
-  },
-  {
-   "nct": "NCT04145115",
-   "title": "A Study Testing the Effect of Immunotherapy (Ipilimumab and Nivolumab) in Patients With Recurrent Glioma With Elevated Mutational Burden",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Astrocytoma, IDH-Mutant, Grade 4",
-    "Diffuse Glioma",
-    "Glioblastoma, IDH-Wildtype",
-    "Secondary Glioblastoma"
-   ],
-   "interventions": [
-    "Ipilimumab",
-    "Magnetic Resonance Imaging",
-    "Nivolumab"
-   ],
-   "summary": "This phase II trial studies the effect of immunotherapy drugs (ipilimumab and nivolumab) in treating patients with glioma that has come back (recurrent) and carries a high number of mutations (mutational burden). Cancer is caused by changes (mutations) to genes that control the way cells function. Tumors with high number of mutations may respond well to immunotherapy. Immunotherapy with monoclonal antibodies such as ipilimumab and nivolumab may help the body's immune system attack the cancer and may interfere with the ability of tumor cells to grow and spread. Giving ipilimumab and nivolumab m",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 37
+   "summary": "This phase II/III trial studies how well a reduced dose of radiation therapy works with nivolumab compared to cisplatin in treating patients with human papillomavirus (HPV)-positive oropharyngeal cancer that is early in its growth and may not have spread to other parts of the body (early-stage), and is not associated with smoking. Radiation therapy uses high-energy x-rays to kill tumor cells and shrink tumors. Chemotherapy drugs, such as cisplatin, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spr",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 384
   },
   {
    "nct": "NCT04166409",
@@ -991,6 +1285,39 @@
    "enrollment": 170
   },
   {
+   "nct": "NCT04175912",
+   "title": "Testing the Combination of Pevonedistat With Chemotherapy for Bile Duct Cancer of the Liver",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Metastatic Cholangiocarcinoma",
+    "Metastatic Hepatocellular Carcinoma",
+    "Stage III Hepatocellular Carcinoma AJCC v8",
+    "Stage III Intrahepatic Cholangiocarcinoma AJCC v8",
+    "Stage IIIA Hepatocellular Carcinoma AJCC v8",
+    "Stage IIIA Intrahepatic Cholangiocarcinoma AJCC v8",
+    "Stage IIIB Hepatocellular Carcinoma AJCC v8",
+    "Stage IIIB Intrahepatic Cholangiocarcinoma AJCC v8",
+    "Stage IV Hepatocellular Carcinoma AJCC v8",
+    "Stage IV Intrahepatic Cholangiocarcinoma AJCC v8",
+    "Stage IVA Hepatocellular Carcinoma AJCC v8",
+    "Stage IVB Hepatocellular Carcinoma AJCC v8",
+    "Unresectable Cholangiocarcinoma",
+    "Unresectable Hepatocellular Carcinoma",
+    "Unresectable Intrahepatic Cholangiocarcinoma"
+   ],
+   "interventions": [
+    "Carboplatin",
+    "Paclitaxel",
+    "Pevonedistat"
+   ],
+   "summary": "This phase II trial studies how well pevonedistat alone or in combination with chemotherapy (paclitaxel and carboplatin) works in treating patients with bile duct cancer of the liver. Pevonedistat may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Chemotherapy drugs, such as paclitaxel and carboplatin, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. This study may help the study doctors find out how well pevonedistat shrinks bile duct cancer of the ",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 40
+  },
+  {
    "nct": "NCT04184622",
    "title": "A Study of Tirzepatide (LY3298176) in Participants With Obesity or Overweight",
    "acronym": "SURMOUNT-1",
@@ -1010,85 +1337,130 @@
    "enrollment": 2539
   },
   {
-   "nct": "NCT04269902",
-   "title": "Testing Early Treatment for Patients With High-Risk Chronic Lymphocytic Leukemia (CLL) or Small Lymphocytic Leukemia (SLL), EVOLVE CLL/SLL Study",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Small Lymphocytic Lymphoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Bone Marrow Aspiration",
-    "Bone Marrow Biopsy",
-    "Computed Tomography",
-    "Obinutuzumab",
-    "Questionnaire Administration",
-    "Venetoclax"
-   ],
-   "summary": "This phase III trial compares early treatment with venetoclax and obinutuzumab versus delayed treatment with venetoclax and obinutuzumab in patients with newly diagnosed high-risk chronic lymphocytic leukemia or small lymphocytic lymphoma. Venetoclax is in a class of medications called B-cell lymphoma-2 (BCL-2) inhibitors. It may stop the growth of cancer cells by blocking Bcl-2, a protein needed for cancer cell survival. Immunotherapy with monoclonal antibodies, such as obinutuzumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 247
-  },
-  {
-   "nct": "NCT04310007",
-   "title": "Testing the Addition of the Pill Chemotherapy, Cabozantinib, to the Standard Immune Therapy Nivolumab Compared to Standard Chemotherapy for Non-small Cell Lung Cancer",
+   "nct": "NCT04195555",
+   "title": "Ivosidenib in Treating Patients With Advanced Solid Tumors, Lymphoma, or Histiocytic Disorders With IDH1 Mutations (A Pediatric MATCH Treatment Trial)",
    "acronym": null,
    "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Metastatic Lung Non-Squamous Non-Small Cell Carcinoma",
-    "Recurrent Lung Non-Squamous Non-Small Cell Carcinoma",
+    "Recurrent Ependymoma",
+    "Recurrent Ewing Sarcoma",
+    "Recurrent Hepatoblastoma",
+    "Recurrent Langerhans Cell Histiocytosis",
+    "Recurrent Malignant Germ Cell Tumor",
+    "Recurrent Malignant Glioma",
+    "Recurrent Malignant Solid Neoplasm",
+    "Recurrent Medulloblastoma",
+    "Recurrent Neuroblastoma",
+    "Recurrent Non-Hodgkin Lymphoma",
+    "Recurrent Osteosarcoma",
+    "Recurrent Peripheral Primitive Neuroectodermal Tumor",
+    "Recurrent Rhabdoid Tumor",
+    "Recurrent Rhabdomyosarcoma",
+    "Recurrent Soft Tissue Sarcoma",
+    "Recurrent WHO Grade 2 Glioma",
+    "Refractory Ependymoma",
+    "Refractory Ewing Sarcoma",
+    "Refractory Hepatoblastoma",
+    "Refractory Langerhans Cell Histiocytosis",
+    "Refractory Malignant Germ Cell Tumor",
+    "Refractory Malignant Glioma",
+    "Refractory Malignant Solid Neoplasm",
+    "Refractory Medulloblastoma",
+    "Refractory Neuroblastoma",
+    "Refractory Non-Hodgkin Lymphoma",
+    "Refractory Osteosarcoma",
+    "Refractory Peripheral Primitive Neuroectodermal Tumor",
+    "Refractory Rhabdoid Tumor",
+    "Refractory Rhabdomyosarcoma",
+    "Refractory Soft Tissue Sarcoma",
+    "Refractory WHO Grade 2 Glioma",
+    "Wilms Tumor"
+   ],
+   "interventions": [
+    "Ivosidenib"
+   ],
+   "summary": "This phase II Pediatric MATCH trial studies how well ivosidenib works in treating patients with solid tumors, including central nervous system tumors, lymphomas and histiocytic disorders that have not responded to (refractory) or have come back after (recurrent) prior treatment that have IDH (isocitrate dehydrogenase) 1 genetic alterations (mutations). Ivosidenib may block the growth of cancer cells that have specific genetic changes in an important signaling pathway called the IDH pathway.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 3
+  },
+  {
+   "nct": "NCT04214262",
+   "title": "Testing the Addition of the Drug Atezolizumab to the Usual Radiation Treatment for Patients With Early Non-small Cell Lung Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Lung Non-Small Cell Carcinoma",
+    "Stage I Lung Cancer AJCC v8",
+    "Stage II Lung Cancer AJCC v8"
+   ],
+   "interventions": [
+    "Atezolizumab",
+    "Biospecimen Collection",
+    "Computed Tomography",
+    "Fludeoxyglucose F-18",
+    "Positron Emission Tomography",
+    "Quality-of-Life Assessment",
+    "Questionnaire Administration",
+    "Stereotactic Body Radiation Therapy"
+   ],
+   "summary": "This phase III trial studies how well atezolizumab added to the usual radiation therapy works in treating patients with stage I-IIA non-small cell lung cancer. Immunotherapy with monoclonal antibodies, such as atezolizumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Radiation therapy, such as stereotactic body radiation therapy, uses special equipment to position a patient and deliver radiation to tumors with high precision. This method can kill tumor cells with fewer doses over a shorter period and cause less dama",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 417
+  },
+  {
+   "nct": "NCT04216316",
+   "title": "Testing the Addition of an Anti-cancer Drug, Berzosertib (M6620, VX-970), to the Usual Treatments (Carboplatin and Gemcitabine) and to Pembrolizumab for Patients With Advanced Squamous Cell Non-small Cell Lung Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Lung Non-Small Cell Squamous Carcinoma",
     "Stage IV Lung Cancer AJCC v8"
+   ],
+   "interventions": [
+    "Berzosertib",
+    "Biospecimen Collection",
+    "Carboplatin",
+    "Computed Tomography",
+    "Gemcitabine Hydrochloride",
+    "Magnetic Resonance Imaging",
+    "Pembrolizumab"
+   ],
+   "summary": "This phase Ib/II trial studies the best dose of carboplatin when given together with berzosertib, gemcitabine and pembrolizumab and to see how well it works in treating patients with stage IV squamous cell non-small cell lung cancer that has spared to other placed in the body (advanced). Berzosertib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Chemotherapy drugs, such as carboplatin and gemcitabine, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreadi",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 12
+  },
+  {
+   "nct": "NCT04339738",
+   "title": "Testing the Addition of Nivolumab to Chemotherapy in Treatment of Soft Tissue Sarcoma",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Skin Angiosarcoma",
+    "Skin Radiation-Related Angiosarcoma",
+    "Visceral Angiosarcoma"
    ],
    "interventions": [
     "Biospecimen Collection",
     "Cabozantinib S-malate",
     "Computed Tomography",
-    "Docetaxel",
-    "Echocardiography Test",
-    "Gemcitabine Hydrochloride",
-    "Nab-paclitaxel",
+    "FDG-Positron Emission Tomography",
+    "Magnetic Resonance Imaging",
     "Nivolumab",
     "Paclitaxel",
-    "Ramucirumab"
+    "Quality-of-Life Assessment",
+    "Questionnaire Administration"
    ],
-   "summary": "This phase II trial compares cabozantinib alone and the combination of cabozantinib and nivolumab to standard chemotherapy in the treatment of patients with non-squamous non-small cell lung cancer (NSCLC). Cabozantinib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Immunotherapy with monoclonal antibodies, such as nivolumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Ramucirumab is a monoclonal antibody that may interfere with the ability of tumor cells to grow and spread",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 117
-  },
-  {
-   "nct": "NCT04339777",
-   "title": "Allogeneic Hematopoietic Stem Cell Transplant for Patients With Inborn Errors of Immunity",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Lymphoproliferative Disorders",
-    "Autoimmune Lymphoproliferative",
-    "Immune System Diseases",
-    "Common Variable Immunodeficiency",
-    "Primary T-cell Immunodeficiency Disorders"
-   ],
-   "interventions": [
-    "Busulfan test dose",
-    "Fludarabine",
-    "Busulfan",
-    "Alemtuzumab",
-    "Total body Irradiation",
-    "Allogeneic HSCT",
-    "Tacrolimus (Tacro)",
-    "Mycophenolate mofetil (MMF)",
-    "Cyclophosphamide (Cytoxan)"
-   ],
-   "summary": "Background:\n\nDuring a transplant, blood \"stem cells\" from one person are given to someone else. The cells grow into the different cells that make up the immune system. This can cure people with certain immunodeficiencies. But transplant has many risks and complications.\n\nObjective:\n\nTo see if stem cell transplant can be successfully performed in people with primary immunodeficiency disease and cure them.\n\nEligibility:\n\nPeople ages 4-69 for whom a primary immunodeficiency (PID) or Primary Immune Regulatory Disorder (PIRD), has caused significant health problems and either standard management ha",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 66
+   "summary": "This phase II trial studies how well paclitaxel with and without nivolumab works in treating patients with soft tissue sarcoma that have not received taxane drugs, and how well nivolumab and cabozantinib work in treating taxane pretreated patients with soft tissue sarcoma. Nivolumab works through the body's immune system to help the immune system act against tumor cells. Chemotherapy drugs, such as paclitaxel, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. Cabozantinib may stop the growt",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 90
   },
   {
    "nct": "NCT04437511",
@@ -1107,6 +1479,90 @@
    "lastUpdate": "2026-08-26",
    "sponsor": "Eli Lilly and Company",
    "enrollment": 1736
+  },
+  {
+   "nct": "NCT04439110",
+   "title": "Testing Ado-Trastuzumab Emtansine as a Potential Targeted Treatment in Cancers With HER2 Genetic Changes (MATCH-Subprotocol Q)",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Advanced Lymphoma",
+    "Advanced Malignant Solid Neoplasm",
+    "Hematopoietic and Lymphoid Cell Neoplasm",
+    "Refractory Lymphoma",
+    "Refractory Malignant Solid Neoplasm",
+    "Refractory Multiple Myeloma"
+   ],
+   "interventions": [
+    "Trastuzumab Emtansine"
+   ],
+   "summary": "This phase II MATCH treatment trial identifies the effects of ado-trastuzumab emtansine in patients whose cancer has a genetic change called HER2 amplification. Ado-trastuzumab emtansine is a monoclonal antibody, called trastuzumab, linked to a chemotherapy drug called DM1. Trastuzumab is a form of \"targeted therapy\", because it works by attaching itself to specific molecules (receptors) on the surface of cancer cells, known as HER2 receptors and delivers DM1 to kill them. Researchers hope to learn if the study drug will shrink this type of cancer or stop its growth.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 38
+  },
+  {
+   "nct": "NCT04439253",
+   "title": "Testing Crizotinib as a Potential Targeted Treatment in Cancers With ROS1 Genetic Changes (MATCH-Subprotocol G)",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Advanced Lymphoma",
+    "Advanced Malignant Solid Neoplasm",
+    "Hematopoietic and Lymphoid Cell Neoplasm",
+    "Refractory Lymphoma",
+    "Refractory Malignant Solid Neoplasm",
+    "Refractory Multiple Myeloma"
+   ],
+   "interventions": [
+    "Crizotinib"
+   ],
+   "summary": "This phase II MATCH treatment trial identifies the effects of crizotinib in patients whose cancer has a genetic change called ROS1 translocation. Crizotinib may block a protein called ROS1, which may be needed for cancer cell growth. Researchers hope to learn if crizotinib will shrink this type of cancer or stop its growth.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 4
+  },
+  {
+   "nct": "NCT04439266",
+   "title": "Testing Crizotinib as a Potential Targeted Treatment in Cancers With ALK Genetic Changes (MATCH-Subprotocol F)",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Advanced Lymphoma",
+    "Advanced Malignant Solid Neoplasm",
+    "Hematopoietic and Lymphoid Cell Neoplasm",
+    "Refractory Lymphoma",
+    "Refractory Malignant Solid Neoplasm",
+    "Refractory Multiple Myeloma"
+   ],
+   "interventions": [
+    "Crizotinib"
+   ],
+   "summary": "This phase II MATCH treatment trial identifies the effects of crizotinib in patients whose cancer has a genetic change called ALK rearrangement. Crizotinib may stop the growth of cancer cells by blocking the ALK protein which may be needed for cell growth. Researchers hope to learn if crizotinib will shrink this type of cancer or stop its growth.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 5
+  },
+  {
+   "nct": "NCT04486118",
+   "title": "Centrally Acting ACE Inhibition in SLE",
+   "acronym": null,
+   "status": "COMPLETED",
+   "phase": "PHASE2",
+   "sponsor": "Northwell Health",
+   "conditions": [
+    "Systemic Lupus Erythematosus"
+   ],
+   "interventions": [
+    "Lisinopril Pills",
+    "Benazepril Pill"
+   ],
+   "summary": "SLE is a chronic autoimmune disease that often involves multiple systems and organs of the body. An autoimmune disease is one which your immune system attacks the cells and tissues in different parts of the body. SLE is characterized by inflammation that leads to tissue damage in many different organ systems. Lupus can cause fever, joint pains, rashes, and other symptoms. It can also affect organs such as the skin, the muscles, the kidneys, the heart, the lungs, the blood and the brain. The exact cause of SLE is not known.\n\nProblems with memory and concentration are common in lupus; these prob",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 36
   },
   {
    "nct": "NCT04516057",
@@ -1128,67 +1584,81 @@
    "enrollment": 112
   },
   {
-   "nct": "NCT04523727",
-   "title": "Study to Evaluate the Safety and Tolerability of Ferric Citrate in Children With Hyperphosphatemia Related to Chronic Kidney Disease",
+   "nct": "NCT04739800",
+   "title": "Comparison of Standard of Care Treatment With a Triplet Combination of Targeted Immunotherapeutic Agents",
    "acronym": null,
-   "status": "SUSPENDED",
-   "phase": "PHASE3",
-   "sponsor": "Keryx Biopharmaceuticals",
-   "conditions": [
-    "Hyperphosphatemia Related to Chronic Kidney Disease"
-   ],
-   "interventions": [
-    "ferric citrate"
-   ],
-   "summary": "This study will be conducted to assess the safety and tolerability of ferric citrate in pediatric participants with hyperphosphatemia related to chronic kidney disease (CKD).",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 45
-  },
-  {
-   "nct": "NCT04619420",
-   "title": "A Study of JNJ-63733657 in Participants With Early Alzheimer's Disease",
-   "acronym": "Autonomy",
-   "status": "TERMINATED",
-   "phase": "PHASE2",
-   "sponsor": "Janssen Research & Development, LLC",
-   "conditions": [
-    "Alzheimer Disease",
-    "Cognitive Dysfunction",
-    "Dementia"
-   ],
-   "interventions": [
-    "JNJ-63733657",
-    "Placebo"
-   ],
-   "summary": "The primary purpose of this study is to evaluate the effect of JNJ-63733657 versus placebo on clinical decline as measured by the Integrated Alzheimer's Disease Rating Scale (iADRS), a composite of cognition and function.",
-   "lastUpdate": "2026-11-05",
-   "enrollment": 523
-  },
-  {
-   "nct": "NCT04840602",
-   "title": "Testing the Combination of Venetoclax and Rituximab, in Comparison to the Usual Treatment (Ibrutinib Plus Rituximab or Zanubrutinib Alone) for Waldenstrom's Macroglobulinemia/Lymphoplasmacytic Lymphoma",
-   "acronym": null,
-   "status": "RECRUITING",
+   "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE2",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Lymphoplasmacytic Lymphoma",
-    "Waldenstrom Macroglobulinemia"
+    "Fallopian Tube Mucinous Adenocarcinoma",
+    "Ovarian Seromucinous Carcinoma",
+    "Platinum-Refractory Fallopian Tube Carcinoma",
+    "Platinum-Refractory Ovarian Carcinoma",
+    "Platinum-Refractory Primary Peritoneal Carcinoma",
+    "Recurrent Fallopian Tube Clear Cell Adenocarcinoma",
+    "Recurrent Fallopian Tube Endometrioid Adenocarcinoma",
+    "Recurrent Fallopian Tube High Grade Serous Adenocarcinoma",
+    "Recurrent Fallopian Tube Mucinous Adenocarcinoma",
+    "Recurrent Fallopian Tube Transitional Cell Carcinoma",
+    "Recurrent Fallopian Tube Undifferentiated Carcinoma",
+    "Recurrent Low Grade Fallopian Tube Serous Adenocarcinoma",
+    "Recurrent Ovarian Clear Cell Adenocarcinoma",
+    "Recurrent Ovarian Endometrioid Adenocarcinoma",
+    "Recurrent Ovarian High Grade Serous Adenocarcinoma",
+    "Recurrent Ovarian Low Grade Serous Adenocarcinoma",
+    "Recurrent Ovarian Mucinous Adenocarcinoma",
+    "Recurrent Ovarian Seromucinous Carcinoma",
+    "Recurrent Ovarian Transitional Cell Carcinoma",
+    "Recurrent Ovarian Undifferentiated Carcinoma",
+    "Recurrent Platinum-Resistant Fallopian Tube Carcinoma",
+    "Recurrent Platinum-Resistant Ovarian Carcinoma",
+    "Recurrent Platinum-Resistant Primary Peritoneal Carcinoma",
+    "Recurrent Primary Peritoneal Clear Cell Adenocarcinoma",
+    "Recurrent Primary Peritoneal Endometrioid Adenocarcinoma",
+    "Recurrent Primary Peritoneal High Grade Serous Adenocarcinoma",
+    "Recurrent Primary Peritoneal Low Grade Serous Adenocarcinoma",
+    "Recurrent Primary Peritoneal Transitional Cell Carcinoma",
+    "Recurrent Primary Peritoneal Undifferentiated Carcinoma",
+    "Refractory Fallopian Tube Clear Cell Adenocarcinoma",
+    "Refractory Fallopian Tube Endometrioid Adenocarcinoma",
+    "Refractory Fallopian Tube High Grade Serous Adenocarcinoma",
+    "Refractory Fallopian Tube Mucinous Adenocarcinoma",
+    "Refractory Fallopian Tube Transitional Cell Carcinoma",
+    "Refractory Fallopian Tube Undifferentiated Carcinoma",
+    "Refractory Low Grade Fallopian Tube Serous Adenocarcinoma",
+    "Refractory Ovarian Clear Cell Adenocarcinoma",
+    "Refractory Ovarian Endometrioid Adenocarcinoma",
+    "Refractory Ovarian High Grade Serous Adenocarcinoma",
+    "Refractory Ovarian Low Grade Serous Adenocarcinoma",
+    "Refractory Ovarian Mucinous Adenocarcinoma",
+    "Refractory Ovarian Seromucinous Carcinoma",
+    "Refractory Ovarian Transitional Cell Carcinoma",
+    "Refractory Ovarian Undifferentiated Carcinoma",
+    "Refractory Primary Peritoneal Clear Cell Adenocarcinoma",
+    "Refractory Primary Peritoneal Endometrioid Adenocarcinoma",
+    "Refractory Primary Peritoneal High Grade Serous Adenocarcinoma",
+    "Refractory Primary Peritoneal Low Grade Serous Adenocarcinoma",
+    "Refractory Primary Peritoneal Transitional Cell Carcinoma",
+    "Refractory Primary Peritoneal Undifferentiated Carcinoma"
    ],
    "interventions": [
     "Biospecimen Collection",
-    "Bone Marrow Aspiration",
-    "Bone Marrow Biopsy",
+    "Cediranib Maleate",
     "Computed Tomography",
-    "Ibrutinib",
-    "Positron Emission Tomography",
-    "Rituximab",
-    "Venetoclax",
-    "Zanubrutinib"
+    "Computed Tomography with Contrast",
+    "Durvalumab",
+    "Echocardiography Test",
+    "Magnetic Resonance Imaging",
+    "Multigated Acquisition Scan",
+    "Olaparib",
+    "Paclitaxel",
+    "Pegylated Liposomal Doxorubicin Hydrochloride",
+    "Topotecan Hydrochloride"
    ],
-   "summary": "This phase II trial studies the effects of venetoclax and rituximab in comparison to ibrutinib and rituximab or zanubrutinib in treating patients with previously untreated Waldenstrom's macroglobulinemia/lymphoplasmacytic lymphoma. Ibrutinib may stop the growth of cancer cells by blocking some of the enzymes needed for cell growth. Rituximab is a monoclonal antibody. It binds to a protein called CD20, which is found on B cells (a type of white blood cell) and some types of cancer cells. This may help the immune system kill cancer cells. Venetoclax is in a class of medications called B-cell lym",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 92
+   "summary": "This phase II trial studies the possible benefits of treatment with different combinations of the drugs durvalumab, olaparib and cediranib vs. the usual treatment in patients with ovarian, primary peritoneal, or fallopian tube cancer that has come back after a period of improvement with platinum therapy (recurrent platinum resistant). Usual treatment is the type of treatment most patients with this condition receive if they are not part of a clinical study. Combination therapies studied in this trial include MEDI4736 (durvalumab) plus olaparib and cediranib, durvalumab and cediranib, or olapar",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 120
   },
   {
    "nct": "NCT04881760",
@@ -1208,6 +1678,27 @@
    "lastUpdate": "2023-09-13",
    "sponsor": "Eli Lilly and Company",
    "enrollment": 338
+  },
+  {
+   "nct": "NCT04931017",
+   "title": "Metformin for Chemoprevention of Lung Cancer in Overweight or Obese Individuals at High Risk for Lung Cancer",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Northwestern University",
+   "conditions": [
+    "Lung Carcinoma"
+   ],
+   "interventions": [
+    "Biopsy",
+    "Biospecimen Collection",
+    "Bronchoscopy",
+    "Extended Release Metformin Hydrochloride",
+    "Questionnaire Administration"
+   ],
+   "summary": "This phase II trial determines the effect of metformin extended release on the risk for developing lung cancer in overweight/obese patients that are at high-risk for developing lung cancer. Metformin is widely used to treat type II diabetes and has a long history of safety and minimal side effects. At similar dosage, the drug may have potential anti-cancer activity. Metformin use has been associated with improved survival in patients with non-small cell lung carcinoma, a specific type of lung cancer, and it has also been shown to enhance immune mobilization against tumors. This trial aims to s",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 50
   },
   {
    "nct": "NCT04963296",
@@ -1231,113 +1722,6 @@
    "enrollment": 303
   },
   {
-   "nct": "NCT05162066",
-   "title": "Study to Evaluate the Safety, Tolerability of BCX9930 in Participants With Either Complement 3 Glomerulopathy (C3G), Immunoglobulin A Nephropathy (IgAN), or Primary Membranous Nephropathy (PMN)",
-   "acronym": "RENEW",
-   "status": "TERMINATED",
-   "phase": "PHASE2",
-   "sponsor": "BioCryst Pharmaceuticals",
-   "conditions": [
-    "Complement 3 Glomerulopathy",
-    "Immunoglobulin A Nephropathy",
-    "Membranous Nephropathy"
-   ],
-   "interventions": [
-    "BCX9930"
-   ],
-   "summary": "The objective of this study was to determine the safety and therapeutic potential of BCX9930 in participants with C3G, IgAN, or PMN.",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 2
-  },
-  {
-   "nct": "NCT05198830",
-   "title": "Testing the Addition of an Anti-Cancer Drug, TRC102, to the Usual Chemotherapy Treatment (Pemetrexed, Cisplatin or Carboplatin) During Radiation Therapy for Stage III Non-Squamous Non-Small Cell Lung Cancer",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Lung Adenocarcinoma",
-    "Lung Large Cell Carcinoma",
-    "Lung Non-Squamous Non-Small Cell Carcinoma",
-    "Stage III Lung Cancer AJCC v8"
-   ],
-   "interventions": [
-    "Carboplatin",
-    "Cisplatin",
-    "Computed Tomography",
-    "Durvalumab",
-    "FDG-Positron Emission Tomography",
-    "Magnetic Resonance Imaging",
-    "Methoxyamine",
-    "Pemetrexed",
-    "Radiation Therapy"
-   ],
-   "summary": "This phase II trial tests whether TRC102 (methoxyamine hydrochloride) in combination usual care treatment comprised of pemetrexed, cisplatin or carboplatin, and radiation therapy followed by durvalumab works better than the usual care treatment alone to shrink tumors in patients with stage III non-squamous non-small cell lung cancer (NSCLC). TRC102 is in a class of drugs called antineoplastic agents. It blocks the ability of a cell to repair damage to its deoxyribonucleic acid (DNA) and may kill tumor cells. It may also help some anticancer drugs work better. Pemetrexed is in a class of medica",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 42
-  },
-  {
-   "nct": "NCT05327010",
-   "title": "Testing the Combination of the Anti-cancer Drugs ZEN003694 (ZEN-3694) and Talazoparib in Patients With Advanced Solid Tumors, The ComBET Trial",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Advanced Malignant Solid Neoplasm",
-    "Metastatic Malignant Solid Neoplasm",
-    "Unresectable Malignant Solid Neoplasm"
-   ],
-   "interventions": [
-    "BET Bromodomain Inhibitor ZEN-3694",
-    "Biopsy Procedure",
-    "Biospecimen Collection",
-    "Diagnostic Imaging Testing",
-    "Talazoparib"
-   ],
-   "summary": "This phase II trial tests whether ZEN003694 (ZEN-3694) in combination with talazoparib works to shrink tumors in patients with solid tumors that are unlikely to be cured or controlled with treatment and that may have spread from where it first started to nearby tissue, lymph nodes, or distant parts of the body (advanced). Another aim of this study is to find out if, and how, patients' genes influence their response to this specific drug combination. For this part of the study, investigators will run tests using samples of patients' tumor tissue and blood that will be collected during the study",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 88
-  },
-  {
-   "nct": "NCT05468489",
-   "title": "To Evaluate Efficacy and Safety of Serplulimab + Chemotherapy (Carboplatin- Etoposide) in US Patients With ES-SCLC",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Shanghai Henlius Biotech",
-   "conditions": [
-    "Extensive Stage Small Cell Lung Cancer"
-   ],
-   "interventions": [
-    "Serplulimab + chemotherapy (carboplatin-etoposide)",
-    "Atezolizumab + chemotherapy (carboplatin-etoposide)"
-   ],
-   "summary": "This is a randomized, open-label study of Serplulimab plus chemotherapy (Carboplatin-Etoposide) in comparison with Atezolizumab plus chemotherapy in previously untreated US patients with ES-SCLC.\n\nSubjects in this study will be randomized to arm A or B at 1:1 ratio as follows:\n\n* Arm A (Serplulimab): Serplulimab + chemotherapy (carboplatin-etoposide)\n* Arm B (control): Atezolizumab + chemotherapy (carboplatin-etoposide)",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 200
-  },
-  {
-   "nct": "NCT05522660",
-   "title": "Immunotherapy or Targeted Therapy With or Without Stereotactic Radiosurgery for Patients With Brain Metastases From Melanoma or Non-small Cell Lung Cancer",
-   "acronym": "USZ-STRIKE",
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "ETOP IBCSG Partners Foundation",
-   "conditions": [
-    "Non-Small Cell Lung Cancer",
-    "Melanoma"
-   ],
-   "interventions": [
-    "Stereotactic radiosurgery",
-    "Immune checkpoint inhibitor"
-   ],
-   "summary": "The primary objective of the study is to assess the efficacy in terms of CNS-specific PFS of the combination of standard systemic treatment plus SRS vs. standard systemic treatment alone in patients with newly diagnosed and untreated (except for surgery) asymptomatic or oligosymptomatic brain metastases from melanoma or NSCLC. This proposed randomised phase III clinical study addresses one of the most controversial issues in the current approach to patients with brain mets: the timing of SRS in patients eligible for systemic immune checkpoint inhibition or targeted therapy in order to guide th",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 180
-  },
-  {
    "nct": "NCT05556512",
    "title": "A Study of Tirzepatide (LY3298176) on the Reduction on Morbidity and Mortality in Adults With Obesity",
    "acronym": "SURMOUNT-MMO",
@@ -1357,60 +1741,21 @@
    "enrollment": 15374
   },
   {
-   "nct": "NCT05564377",
-   "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Locally Advanced or Advanced Solid Tumors, The ComboMATCH Screening Trial",
-   "acronym": null,
+   "nct": "NCT05562869",
+   "title": "Belatacept as a Replacement for CNIs 3 to 12 Months Post-transplantation in Patients With Early Graft Dysfunction",
+   "acronym": "BELASBRIDGE",
    "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
+   "phase": "PHASE3",
+   "sponsor": "Nantes University Hospital",
    "conditions": [
-    "Advanced Malignant Solid Neoplasm",
-    "Anatomic Stage III Breast Cancer AJCC v8",
-    "Anatomic Stage IV Breast Cancer AJCC v8",
-    "Locally Advanced Malignant Solid Neoplasm",
-    "Malignant Female Reproductive System Neoplasm",
-    "Metastatic HER2-Negative Breast Carcinoma",
-    "Metastatic Malignant Solid Neoplasm",
-    "Recurrent Endometrial Carcinoma",
-    "Recurrent Fallopian Tube Carcinoma",
-    "Recurrent Malignant Female Reproductive System Neoplasm",
-    "Recurrent Malignant Solid Neoplasm",
-    "Recurrent Ovarian Carcinoma",
-    "Recurrent Primary Peritoneal Carcinoma",
-    "Unresectable HER2-Negative Breast Carcinoma",
-    "Unresectable Malignant Solid Neoplasm"
+    "Chronic Kidney Failure"
    ],
    "interventions": [
-    "Alpelisib",
-    "Binimetinib",
-    "Biopsy Procedure",
-    "Biospecimen Collection",
-    "Bone Marrow Aspiration",
-    "Bone Marrow Biopsy",
-    "Bone Scan",
-    "Computed Tomography",
-    "Echocardiography Test",
-    "Fluorouracil",
-    "Fulvestrant",
-    "Ipatasertib",
-    "Leucovorin",
-    "Magnetic Resonance Imaging",
-    "Multigated Acquisition Scan",
-    "Mutation Carrier Screening",
-    "Neratinib Maleate",
-    "Nilotinib Hydrochloride Monohydrate",
-    "Olaparib",
-    "Oxaliplatin",
-    "Paclitaxel",
-    "Palbociclib",
-    "Panitumumab",
-    "Positron Emission Tomography",
-    "Selumetinib Sulfate",
-    "Sotorasib"
+    "Belatacept 250 Milligram Intravenous Powder for Solution"
    ],
-   "summary": "This ComboMATCH patient screening trial is the gateway to a coordinated set of clinical trials to study cancer treatment directed by genetic testing. Patients with solid tumors that have spread to nearby tissue or lymph nodes (locally advanced) or have spread to other places in the body (advanced) and have progressed on at least one line of standard systemic therapy or have no standard treatment that has been shown to prolong overall survival may be candidates for these trials. Genetic tests look at the unique genetic material (genes) of patients' tumor cells. Patients with some genetic change",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 2900
+   "summary": "Calcineurin inhibitors (CNI) remain the standard treatment in renal transplantation to prevent rejection. Currently the main limitation of kidney transplantation is the occurrence of chronic graft dysfunction due to the CNI nephrotoxicity. Thus, strategies to minimize or stop CNI have been developed as belatacept, a fusion protein (CTLA4-Ig) blocking the ligand of the main CD28 costimulatory molecule. In the original phase III trial, used de novo in combination with MMF (without CNI) belatacept allowed to obtain a better renal function as soon as 1 year and a better graft and patient survival ",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 30
   },
   {
    "nct": "NCT05574400",
@@ -1450,25 +1795,29 @@
     "Placebo"
    ],
    "summary": "Background:\n\nObesity and related illnesses cause at least 2.8 million deaths each year worldwide. Few treatments exist for obesity that are safe and widely available. A study drug (mirabegron \\[MG\\]) combined with a supplement (alpha-lipoic acid \\[ALA\\]) may help.\n\nObjective:\n\nTo learn how MG and ALA can help the body process food.\n\nEligibility:\n\nPeople aged 18 to 65 years with a body mass index between 30 and 45 kg/m2.\n\nDesign:\n\nParticipants will be screened. They will have a physical exam. They will have blood and urine tests and a test of their heart function. They will speak with a dietici",
-   "lastUpdate": "2026-11-12",
+   "lastUpdate": "2026-11-13",
    "enrollment": 60
   },
   {
-   "nct": "NCT05753930",
-   "title": "Imlifidase Prior to Kidney Transplant in Highly Sensitised Children",
-   "acronym": "DINKY",
+   "nct": "NCT05714085",
+   "title": "Efficacy, Safety, and Pharmacokinetics of Vericiguat in Pediatric Participants With Heart Failure Due to Left Ventricular Systolic Dysfunction (MK-1242-036)",
+   "acronym": null,
    "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Hansa Biopharma AB",
+   "phase": "PHASE2, PHASE3",
+   "sponsor": "Merck Sharp & Dohme LLC",
    "conditions": [
-    "Kidney Transplantation in Highly Sensitized Patients"
+    "Heart Failure",
+    "Left Ventricular Systolic Dysfunction"
    ],
    "interventions": [
-    "Imlifidase"
+    "Vericiguat tablet",
+    "Vericiguat suspension",
+    "Placebo tablet",
+    "Placebo suspension"
    ],
-   "summary": "The goal of this clinical trial is to learn about the efficacy and safety of imlifidase in highly sensitized paediatric patients, 1-17 years old, with end stage renal disease (ESRD).\n\nThe main questions it aims to answer are:\n\n* Does imlifidase treatment result in crossmatch conversion that enables transplantation?\n* How is the function of the transplanted kidney?\n\nThe participants will be hospitalised in accordance with the normal routines for transplanted patients. The patients will receive medication to prevent rejection of the donor kidney, and because such treatment make the body more vul",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 10
+   "summary": "This study aims to compare the efficacy of vericiguat versus placebo on change in n-terminal pro-brain natriuretic peptide (NTproBNP) from baseline to Week 16 of the Base Period. The primary hypothesis is that vericiguat is superior to placebo in reducing NT-proBNP at Week 16 of the Base Period.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 342
   },
   {
    "nct": "NCT05795140",
@@ -1486,6 +1835,46 @@
    "summary": "This is a multicenter, single arm, open-label, extension study to evaluate the long-term safety, tolerability, and efficacy of iptacopan in participants with aHUS.",
    "lastUpdate": "2026-11-12",
    "enrollment": 65
+  },
+  {
+   "nct": "NCT05827081",
+   "title": "Phase IIIb Study of Ribociclib + ET in Early Breast Cancer",
+   "acronym": "Adjuvant WIDER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Novartis Pharmaceuticals",
+   "conditions": [
+    "Early Breast Cancer"
+   ],
+   "interventions": [
+    "Ribociclib",
+    "Letrozole",
+    "Ansastrozole",
+    "Goserelin",
+    "Leuprolide",
+    "Exemestane"
+   ],
+   "summary": "The purpose of this open-label, multicenter, phase IIIb, single-arm study is to characterize the efficacy and safety of the combination of ribociclib and standard adjuvant endocrine therapy (ET) on invasive breast cancer-free survival (iBCFS), in a close to clinical practice patient population with HR-positive (HR+), HER2-negative (HER2-), Anatomic Stage Group III, IIB, and a subset of Stage IIA Early Breast Cancer (EBC).",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 1466
+  },
+  {
+   "nct": "NCT05920356",
+   "title": "A Study Evaluating Sotorasib Platinum Doublet Combination Versus Pembrolizumab Platinum Doublet Combination as a Front-Line Therapy in Participants With Stage IV or Advanced Stage IIIB/C Nonsquamous Non-Small Cell Lung Cancers (CodeBreaK 202)",
+   "acronym": null,
+   "status": "RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Amgen",
+   "conditions": [
+    "Non-Small Cell Lung Cancer (NSCLC)"
+   ],
+   "interventions": [
+    "Sotorasib",
+    "Pembrolizumab"
+   ],
+   "summary": "The primary objectives are to compare progression-free survival (PFS) and overall survival (OS) in participants who receive sotorasib with platinum doublet chemotherapy versus participants who receive pembrolizumab with platinum doublet chemotherapy.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 750
   },
   {
    "nct": "NCT05929066",
@@ -1526,24 +1915,6 @@
    "enrollment": 1000
   },
   {
-   "nct": "NCT06056297",
-   "title": "A Study of Mavorixafor in Participants With Congenital and Acquired Primary Autoimmune and Idiopathic Chronic Neutropenic Disorders Who Are Experiencing Recurrent and/or Serious Infections",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "X4 Pharmaceuticals",
-   "conditions": [
-    "Neutropenia"
-   ],
-   "interventions": [
-    "Mavorixafor",
-    "Placebo"
-   ],
-   "summary": "The purpose of this study is to demonstrate the efficacy and evaluate the safety and tolerability of mavorixafor in participants with congenital or acquired primary autoimmune and idiopathic chronic neutropenic disorders who are experiencing recurrent and/or serious infections as assessed by demonstrating its clinical benefit and increasing levels of circulating neutrophils.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 176
-  },
-  {
    "nct": "NCT06077864",
    "title": "A Study to Test the Effect of Survodutide (BI 456906) on Cardiovascular Safety in People With Overweight or Obesity (SYNCHRONIZE™ - CVOT)",
    "acronym": null,
@@ -1562,45 +1933,62 @@
    "enrollment": 5530
   },
   {
-   "nct": "NCT06229795",
-   "title": "Effect of Green Tea on Obese Pediatrics With Prediabetes",
+   "nct": "NCT06081686",
+   "title": "Study of [177Lu] Lu-XT033 Injection in Patients With Metastatic Prostate Cancer",
    "acronym": null,
-   "status": "COMPLETED",
-   "phase": "PHASE3",
-   "sponsor": "Ain Shams University",
+   "status": "RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "sponsor": "Sinotau Pharmaceutical Group",
    "conditions": [
-    "PreDiabetes"
+    "Prostate Cancer"
    ],
    "interventions": [
-    "Green Tea Leaf Extract",
-    "Metformin Hydrochloride 500 MG"
+    "Phase I:[177Lu]Lu-XT033 Injection",
+    "Phase II:[177Lu]Lu-XT033 Injection"
    ],
-   "summary": "The aim of this research is to evaluate the safety and efficacy of green tea in obese pediatrics with prediabetes versus the metformin therapy alone that is given to these patients. The primary outcome is to tackle the insulin resistance in these patients to prevent the deterioration of prediabetes to type 2 diabetes. The assessment of the effect on insulin resistance by using homeostatic model assessment for insulin resistance (HOMA-IR levels) as well as the effect on blood glucose levels and glycated hemoglobin. The other primary outcome is to observe the effect of the intervention on the li",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 90
+   "summary": "This was a multicenter, open-label, phase I/II study to evaluate the safety and tolerability, radiation dosimetry and pharmacokinetic characteristics, and efficacy of \\[177Lu\\] Lu-XT033 injection in patients with metastatic prostate cancer, including a phase I study and a phase II extension study.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 32
   },
   {
-   "nct": "NCT06299098",
-   "title": "A Study to Test if Trevogrumab or Trevogrumab With Garetosmab When Taken With Semaglutide is Safe and How Well They Work in Adult Patients With Obesity for Weight Loss, Fat Loss, and Lean Mass Preservation",
-   "acronym": "COURAGE",
-   "status": "COMPLETED",
-   "phase": "PHASE2",
-   "sponsor": "Regeneron Pharmaceuticals",
+   "nct": "NCT06158698",
+   "title": "CMP-MYTHiC Trial and Registry - CardioMyoPathy With MYocarditis THerapy With Colchicine",
+   "acronym": "CMP-MYTHiC",
+   "status": "RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Niguarda Hospital",
    "conditions": [
-    "Obesity"
+    "Cardiomyopathies",
+    "Myocarditis",
+    "Inflammatory Cardiomyopathy",
+    "Heart Failure",
+    "Ventricular Arrythmia"
    ],
    "interventions": [
-    "Trevogrumab-Part A",
-    "Trevogrumab-Part B and Part C",
-    "Garetosmab",
-    "Semaglutide",
-    "Matching Placebo-Part A",
-    "Matching Placebo-Trevogrumab",
-    "Matching Placebo-Garetosmab"
+    "Colchicine",
+    "Placebo"
    ],
-   "summary": "This study is researching experimental drugs called trevogrumab and garetosmab (called \"study drugs\") in combination with another drug, semaglutide (Wegovy®). This study will be done in 3 parts, Part A, Part B, and Part C where different study drugs will be tested.\n\nPart A of the study is focused on healthy participants. Part B and C of the study is focused on participants with obesity.\n\nThe aim of Part A of the study is to see how safe and tolerable the study drug is in healthy participants. The aim of Part B and Part C of the study is to see how safe and effective the study drug is when comb",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 1005
+   "summary": "Two-parallel groups randomized, single-blinded, multi-center phase III controlled trial in patients with chronic inflammatory cardiomyopathy to assess the efficacy of colchicine and associated prospective registry to assess the prognostic value of positive genetic testing in this population.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 80
+  },
+  {
+   "nct": "NCT06297603",
+   "title": "Effect of Retatrutide Compared With Placebo in Participants With Type 2 Diabetes and Moderate or Severe Renal Impairment, With Inadequate Glycemic Control on Basal Insulin, With or Without Metformin and/or SGLT2 Inhibitor (TRANSCEND-T2D-3)",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Eli Lilly and Company",
+   "conditions": [
+    "Type 2 Diabetes"
+   ],
+   "interventions": [
+    "Retatrutide",
+    "Placebo"
+   ],
+   "summary": "The purpose of this study is to investigate the efficacy and safety of retatrutide compared with placebo in participants with Type 2 Diabetes and renal impairment, with inadequate glycemic control on basal insulin alone or a combination of basal insulin with or without metformin and/or sodium-glucose cotransporter-2 (SGLT2) inhibitor. The study will last about 14 months and may include up to 22 visits.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 320
   },
   {
    "nct": "NCT06303193",
@@ -1616,7 +2004,7 @@
     "pacritinib"
    ],
    "summary": "Background:\n\nMyelodysplastic syndrome (MDS) and myelodysplastic/myeloproliferative neoplasm (MDS/MPN) are blood disorders that can cause serious complications in children and adults. MDS and MDS/MPN can also progress to acute myeloid leukemia. Treatments for these disorders are risky and not always effective. Better treatments are needed.\n\nObjective:\n\nTo test a study drug (pacritinib) in adults and children with MDS or MDS/MPN.\n\nEligibility:\n\nChildren (aged 12 to 17 years) and adults (aged 18 years and older) with MDS or MDS/MPN.\n\nDesign:\n\nParticipants will be screened. They will have a physic",
-   "lastUpdate": "2026-11-12",
+   "lastUpdate": "2026-11-13",
    "enrollment": 160
   },
   {
@@ -1675,25 +2063,6 @@
    "enrollment": 6712
   },
   {
-   "nct": "NCT06472245",
-   "title": "Trial of Therapeutic Cancer Vaccine OSE2101 in Patients With Non-Small Cell Lung Cancer and Secondary Resistance to Immune Checkpoint Inhibitor",
-   "acronym": "ARTEMIA",
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "OSE Immunotherapeutics",
-   "conditions": [
-    "Patients With Non-Small Cell Lung Cancer"
-   ],
-   "interventions": [
-    "OSE2101",
-    "Docetaxel",
-    "NGS HLAA2 assay"
-   ],
-   "summary": "Multicenter, randomized (2:1), open-label phase 3 study in HLA-A2 positive patients with squamous and non-squamous metastatic NSCLC with ICI secondary resistance.\n\nPatients will be randomized into 2 arms (randomization 2:1): experimental Arm A with OSE2101 monotherapy or control Arm B SoC with docetaxel monotherapy. Stratification factors will be histology (squamous versus non squamous) and ECOG Performance Status (0 versus 1).",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 363
-  },
-  {
    "nct": "NCT06520826",
    "title": "Vafseo Outcomes In-Center Experience",
    "acronym": "VOICE",
@@ -1731,31 +2100,60 @@
    "enrollment": 8371
   },
   {
-   "nct": "NCT06694454",
-   "title": "Neoadjuvant Inhaled Azacytidine With Platinum-Based Chemotherapy and Durvalumab (MEDI4736) - a Combined Epigenetic-Immunotherapy (AZA-AEGEAN) Regimen for Operable Early-Stage Non-Small Cell Lung Cancer (NSCLC)",
+   "nct": "NCT06556810",
+   "title": "IC14 for Treatment of Acute Decompensated Heart Failure",
    "acronym": null,
-   "status": "SUSPENDED",
+   "status": "COMPLETED",
    "phase": "PHASE1, PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
+   "sponsor": "Implicit Bioscience",
    "conditions": [
-    "Non-small Cell Lung Cancer (NSCLC)",
-    "Carcinoma, Non-Small Cell Lung",
-    "Non-Small Cell Lung Carcinoma",
-    "Non Small Cell Lung Cancer",
-    "Non Small Cell Lung Carcinoma"
+    "Acute Decompensated Heart Failure"
    ],
    "interventions": [
-    "azacytidine",
-    "carboplatin",
-    "paclitaxel",
-    "durvalumab",
-    "cisplatin",
-    "gemcitabine",
-    "pemetrexed"
+    "Atibuclimab (IC14)"
    ],
-   "summary": "Background:\n\nLung cancer is the leading cause of cancer-related death worldwide. Non-small cell lung cancer (NSCLC) is the most common type of lung cancer. Surgery to remove the tumors is the standard treatment for people diagnosed with early stages of NSCLC. Despite complete removal of these tumors, many recur (happen again). An FDA-approved drug combination to treat early-stage NSCLC prior to the surgery is durvalumab plus standard chemotherapy. The FDA approved infusion drug azacytidine \\[AZA\\] is used to treat several diseases because it can rapidly kill dividing cells (including cancer ce",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 60
+   "summary": "The goal of this clinical trial is to learn if drug atibuclimab (IC14) works to treat adults hospitalized with acute decompensated heart failure (ADHF). It will also learn about the safety of IC14. The main questions it aims to answer are:\n\nIs the drug IC14 safe in patients with ADHF? What are the IC14 drug levels in the bloodstream after treatment with IC14? What is the impact of IC14 treatment on markers of disease in the bloodstream? What is the impact of IC14 treatment on measures of heart failure? There is no placebo arm in this study.\n\nParticipants will:\n\nTake drug IC14 once via an intra",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 10
+  },
+  {
+   "nct": "NCT06678074",
+   "title": "Pilot Study of IC14 (Atibuclimab), an Anti-CD14 Monoclonal Antibody, to Treat STEMI",
+   "acronym": null,
+   "status": "COMPLETED",
+   "phase": "PHASE1, PHASE2",
+   "sponsor": "Implicit Bioscience",
+   "conditions": [
+    "STEMI",
+    "STEMI (ST Elevation MI)",
+    "STEMI - ST Elevation Myocardial Infarction (MI)",
+    "Stent Implantation"
+   ],
+   "interventions": [
+    "Atibuclimab (IC14), 20 mg/kg intravenously, once",
+    "Placebo, 150 mL intravenously, once"
+   ],
+   "summary": "Adults who have had an ST-elevation myocardial infarction and were treated with stent placement will receive an intravenous infusion of a monoclonal antibody in order to prevent further heart muscle damage. The goal is to learn if this treatment improves some measures of heart function and inflammation. The study treatment patients will be compared to patients who receive placebo (inactive treatment).",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 7
+  },
+  {
+   "nct": "NCT06709014",
+   "title": "A Double-blind Dual Study Assessing Safety and Efficacy of Buntanetap in Participants With Early AD",
+   "acronym": "DUET-AD",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Annovis Bio Inc.",
+   "conditions": [
+    "Early Alzheimers Disease"
+   ],
+   "interventions": [
+    "buntanetap/posiphen",
+    "Placebo"
+   ],
+   "summary": "The goal of this clinical trial is to learn if buntanetap/Posiphen works to treat early Alzheimer's disease in adults aged 55-85. It will also learn about the safety of buntanetap/Posiphen. The main questions it aims to answer are:\n\n* Does buntanetap/Posiphen improve cognition as measured by ADAS-Cog13?\n* Does buntanetap/Posiphen improve function as measured by ADCS-iADL?\n* What medical issues do participants have, if any, when taking buntanetap/Posiphen?\n\nResearchers will compare buntanetap/Posiphen to a placebo (a look-alike substance that contains no drug) to see if buntanetap/Posiphen work",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 760
   },
   {
    "nct": "NCT06728124",
@@ -1776,30 +2174,23 @@
    "enrollment": 640
   },
   {
-   "nct": "NCT06797635",
-   "title": "Study of Patritumab Deruxtecan Plus Pembrolizumab With Other Anticancer Agents in Participants With High-Risk Early-Stage Triple-Negative or Hormone Receptor-Low Positive/HER-2 Negative Breast Cancer (MK-1022-010, HERTHENA-Breast-03)",
+   "nct": "NCT06772597",
+   "title": "A Study of Setmelanotide in Patients With Prader-Willi Syndrome",
    "acronym": null,
-   "status": "RECRUITING",
+   "status": "ACTIVE_NOT_RECRUITING",
    "phase": "PHASE2",
-   "sponsor": "Merck Sharp & Dohme LLC",
+   "sponsor": "Rhythm Pharmaceuticals, Inc.",
    "conditions": [
-    "Breast Neoplasms",
-    "Breast Cancer"
+    "Prader-Willi Syndrome",
+    "Obesity",
+    "Hyperphagia"
    ],
    "interventions": [
-    "Patritumab deruxtecan",
-    "Pembrolizumab",
-    "Paclitaxel",
-    "Carboplatin",
-    "Doxorubicin hydrochloride",
-    "Epirubicin hydrochloride",
-    "Cyclophosphamide",
-    "Capecitabine",
-    "Olaparib"
+    "Setmelanotide"
    ],
-   "summary": "Researchers are looking for new ways to treat triple-negative breast cancer (TNBC) and hormone receptor (HR) low positive/human epidermal growth factor receptor-2 (HER2) negative breast cancer. The main goals of this study are to learn:\n\n* About the safety of the study treatments and if people tolerate them\n* If people who receive patritumab deruxtecan, pembrolizumab, and chemotherapy before surgery have fewer cancer cells removed during surgery compared to those who receive only pembrolizumab (pembro) and chemotherapy.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 372
+   "summary": "This is a Phase 2, open-label study designed to assess the safety and efficacy of setmelanotide in patients with obesity due to Prader-Willi Syndrome (PWS) who are 6 to 65 years of age. Up to 20 patients are planned to be enrolled. Patients will take a daily subcutaneous dose of open-label setmelanotide for up to 52 weeks.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 18
   },
   {
    "nct": "NCT06861478",
@@ -1818,6 +2209,24 @@
    "summary": "With this study, the investigators pretend to describe intrahospital morbidity in patients living with cirrhosis (PLC) who present to the emergency department with variceal bleeding (VB).\n\nThis study is a longitudinal, prospective, experimental, analytical single-center clinical trial. The study will be performed in the Hospital Universitario \"Jose E. González\" de la Factultad de Medicina, Universidad Autónoma de Nuevo León, Monterrey, Nuevo León, México.\n\nThe studied population consists of adult-age patients with previous, recent, or new diagnoses of cirrhosis who present to the ED with VH wi",
    "lastUpdate": "2026-11-12",
    "enrollment": 80
+  },
+  {
+   "nct": "NCT06886464",
+   "title": "Prevention of Nephrotoxin-Induced Acute Kidney Injury Using Cilastatin",
+   "acronym": "PONTiAK",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Matthew James",
+   "conditions": [
+    "Acute Kidney Injury"
+   ],
+   "interventions": [
+    "Cilastatin Sodium",
+    "Placebo-Saline"
+   ],
+   "summary": "The goal of this clinical trial is to repurpose cilastatin for preventing acute kidney injury (AKI) in hospitalized patients receiving nephrotoxic medications. The trial will evaluate the efficacy of the re-purposed drug.\n\nThe main questions it aims to answer are:\n\n\\- whether cilastatin will prevent nephrotoxic AKI in hospitalized patients.\n\nResearchers will compare the drug cilastatin to a placebo (a look-alike substance that contains no drug) to see if drug cilastatin works to prevent AKI in hospitalized patients receiving nephrotoxic medications.\n\nParticipants will:\n\n* Receive drug Cilastat",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 698
   },
   {
    "nct": "NCT06887192",
@@ -1952,24 +2361,6 @@
    "enrollment": 352
   },
   {
-   "nct": "NCT07107945",
-   "title": "A Study to Find Out How EMPAgliflozin is Tolerated and if it Helps Children and Adolescents With Chronic KIDNEY Disease (EMPA-KIDNEY® Kids)",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "Boehringer Ingelheim",
-   "conditions": [
-    "Chronic Kidney Disease"
-   ],
-   "interventions": [
-    "Empagliflozin",
-    "Placebo"
-   ],
-   "summary": "This study is open to children aged 2 to 17 with chronic kidney disease (CKD). The purpose of this study is to find out if a medicine called empagliflozin helps children and adolescents with CKD. Other goals of the study are to find out how empagliflozin is tolerated and handled by the body in children and adolescents with CKD.\n\nParticipants are put into 2 groups randomly, which means by chance. One group takes empagliflozin and the other group takes placebo. Placebo looks like empagliflozin but does not contain any medicine. Participants are twice as likely to be in the empagliflozin group. P",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 135
-  },
-  {
    "nct": "NCT07112872",
    "title": "A Study to Compare Different Doses of Tifeglipron (RO7795081) With Placebo or Semaglutide in People With Type 2 Diabetes",
    "acronym": null,
@@ -1989,81 +2380,40 @@
    "enrollment": 330
   },
   {
-   "nct": "NCT07133425",
-   "title": "A Phase 2 Platform Study of Immunomodulatory Compounds in ICI-refractory Non-small Cell Lung Cancer",
+   "nct": "NCT07124078",
+   "title": "A Study to Evaluate Axatilimab Versus Best Available Therapy in Pediatric Participants With Chronic Graft-Versus-Host Disease After at Least 2 Prior Lines of Systemic Therapy (AGAVE-256)",
    "acronym": null,
    "status": "RECRUITING",
    "phase": "PHASE2",
-   "sponsor": "M.D. Anderson Cancer Center",
+   "sponsor": "Incyte Corporation",
    "conditions": [
-    "Non-Small Cell Lung Cancer",
-    "ICI-refractory"
+    "Chronic Graft-versus-host-disease"
    ],
    "interventions": [
-    "SAR445877"
+    "INCA034176",
+    "Best available Treatment (BAT)"
    ],
-   "summary": "To learn if SAR445877 can help to control locally advanced or metastatic NSCLC in patients who have previously received ICI therapy.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 29
+   "summary": "This study will be conducted to compare Axatilimab Versus Best Available Therapy in Pediatric Participants With Chronic Graft Versus Host Disease After at Least 2 Prior Lines of Systemic Therapy.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 60
   },
   {
-   "nct": "NCT07174908",
-   "title": "A Phase 3 Study of IN10018 in Combination With D-1553 Versus Standard Therapy for First Line Non-squamous Non-small Cell Lung Cancer With KRAS G12C Mutation",
+   "nct": "NCT07220083",
+   "title": "A Study to Find Out if BI 764198 Helps Adults and Adolescents With a Kidney Condition Called Focal Segmental Glomerulosclerosis (FSGS)",
    "acronym": null,
    "status": "RECRUITING",
    "phase": "PHASE3",
-   "sponsor": "InxMed (Shanghai) Co., Ltd.",
+   "sponsor": "Boehringer Ingelheim",
    "conditions": [
-    "Non-Small Cell Lung Cancer"
+    "Focal Segmental Glomerulosclerosis"
    ],
    "interventions": [
-    "IN10018 in combination with D-1553",
-    "anti-PD-1 monoclonal antibody in combination with platinum and pemetrexed"
-   ],
-   "summary": "This is a multicenter, randomized, open-label, phase III clinical study, to evaluate the efficacy and safety of IN10018 in combination with D-1553 as compared to anti-PD-1 monoclonal antibody (mAb) in combination with platinum and pemetrexed as the first-line treatment for the locally advanced or metastatic KRASG12C mutation-positive non-squamous non-small cell lung cancer (NSCLC).",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 400
-  },
-  {
-   "nct": "NCT07181109",
-   "title": "Zilebesiran in Patients With Hypertension Not Adequately Controlled and With Either Established Cardiovascular Disease or High Risk for Cardiovascular Disease",
-   "acronym": "ZENITH",
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "Alnylam Pharmaceuticals",
-   "conditions": [
-    "High Risk Cardiovascular Disease",
-    "Hypertension",
-    "High Cardiovascular Risk"
-   ],
-   "interventions": [
-    "Zilebesiran",
+    "BI 764198",
     "Placebo"
    ],
-   "summary": "The purpose of this study is to evaluate whether zilebesiran versus placebo reduces the risk of cardiovascular (CV) death, nonfatal myocardial infarction (MI), nonfatal stroke, or heart failure (HF) events. This is an event-driven study that will continue until the targeted number of positively adjudicated primary endpoint clinical outcome events (COEs) have been reached.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 11000
-  },
-  {
-   "nct": "NCT07190248",
-   "title": "A Clinical Study of Calderasib (MK-1084) and Other Treatments for Participants With Non-Small Cell Lung Cancer (MK-1084-007/KANDLELIT-007)",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "Non-small Cell Lung Cancer"
-   ],
-   "interventions": [
-    "Calderasib",
-    "Pembrolizumab (+) Berahyaluronidase alfa",
-    "Pemetrexed",
-    "Cisplatin",
-    "Carboplatin"
-   ],
-   "summary": "Researchers want to learn if the study medicines calderasib and subcutaneous (SC) pembrolizumab can be used to treat non-small cell lung cancer (NSCLC) when given together. Calderasib is a targeted therapy for the KRAS G12C mutation.\n\nThe goal of this study is to learn if people who receive calderasib with SC pembrolizumab live longer without the cancer growing or spreading than in people who receive SC pembrolizumab with chemotherapy.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 675
+   "summary": "PODOMOUNT-pFSGS\n\nThis study is open to adults and adolescents with a kidney condition called focal segmental glomerulosclerosis (FSGS). The purpose of this study is to find out whether a medicine called BI 764198 helps people with FSGS.\n\nParticipants are put into 2 groups randomly, which means by chance. Every participant has an equal chance of being in each group. One group takes BI 764198 tablets, and the other group takes placebo tablets. Placebo tablets look like BI 764198 tablets but do not contain any medicine.\n\nParticipants take a tablet once a day for up to 2 years. All participants al",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 286
   },
   {
    "nct": "NCT07220772",
@@ -2104,72 +2454,6 @@
    "enrollment": 160
   },
   {
-   "nct": "NCT07221474",
-   "title": "A Study of Intismeran Autogene (V940)/Placebo + Pembrolizumab and Chemotherapy in Metastatic Squamous Non-Small Cell Lung Cancer (V940-013)",
-   "acronym": "INTerpath-13",
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "Squamous Non-small Cell Lung Cancer"
-   ],
-   "interventions": [
-    "Intismeran Autogene",
-    "Pembrolizumab",
-    "Carboplatin",
-    "Paclitaxel",
-    "Nab-paclitaxel",
-    "Placebo"
-   ],
-   "summary": "Researchers want to know if intismeran autogene (the study treatment) given with pembrolizumab and chemotherapy can treat metastatic treatment-naive squamous non-small cell lung cancer (NSCLC). Intismeran autogene is designed to help a person's immune system attack their specific cancer.\n\nThe goal of this study is to learn if people who receive intismeran autogene with pembrolizumab and chemotherapy live longer overall and without the cancer growing or spreading compared to people who receive placebo with pembrolizumab and chemotherapy. A placebo looks like the study treatment but has no study",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 180
-  },
-  {
-   "nct": "NCT07415031",
-   "title": "A Solid Tumor Study for Long Term Treatment of Cancer Patients Who Participated in Adagrasib Studies",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Mirati Therapeutics Inc.",
-   "conditions": [
-    "Solid Tumors"
-   ],
-   "interventions": [
-    "Adagrasib",
-    "Pembrolizumab",
-    "Cetuximab",
-    "Pemetrexed",
-    "Docetaxel",
-    "Irinotecan",
-    "Leucovorin",
-    "Oxaliplatin",
-    "Fluorouracil"
-   ],
-   "summary": "This is an open-label, solid tumor, continuation, rollover trial which enrolls participants from ongoing BMS parent studies that evaluated adagrasib (MRTX849, BMS-986503) either as monotherapy or in combination with other cancer therapies in patients with non-small cell lung cancer (NSCLC), colorectal cancer (CRC) and other advanced solid tumors.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 170
-  },
-  {
-   "nct": "NCT07443696",
-   "title": "PET Myocardial Fatty-acid Metabolic Imaging With XTR003 Injection and 18F-FDG to Assess Myocardial Viability in Ischemic Cardiomyopathy",
-   "acronym": "STB-XTR-003",
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Sinotau Pharmaceutical Group",
-   "conditions": [
-    "Ischemic Cardiomyopathy",
-    "Heart Failure"
-   ],
-   "interventions": [
-    "Fasting XTR003/¹⁸F-FDG PET myocardial metabolic imaging",
-    "Glucose-loaded ¹⁸F-FDG PET Myocardial Metabolic Imaging"
-   ],
-   "summary": "This is a prospective, multicenter, randomized, open-label, parallel-controlled Phase IIb study to investigate the diagnostic-prognostic utility of XTR003 Injection integrated with 18F-FDG as an exploratory clinical trial. A total of 40-60 patients will be enrolled and randomized into two study groups as: fasting XTR003/18F-FDG group and glucose-loaded group at a 1:1 ratio. Each group will receive resting myocardial perfusion imaging (MPI) combined with metabolic PET imaging to evaluate myocardial metabolic activity and myocardial viability. Segmental perfusion abnormality, metabolic activity ",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 40
-  },
-  {
    "nct": "NCT07459660",
    "title": "An Open-Label Study of ML-007C-MA in Adults With Alzheimer's Disease Psychosis",
    "acronym": null,
@@ -2206,23 +2490,42 @@
    "enrollment": 156
   },
   {
-   "nct": "NCT07467447",
-   "title": "Effect of Retatrutide Versus Placebo in Participants Who Have Obesity or Are Overweight",
-   "acronym": "GZBF",
+   "nct": "NCT07481747",
+   "title": "Efficacy and Safety of Tirzepatide Once Weekly Versus Placebo in Participants Who Are Either Obese or Overweight With Weight-Related Comorbidities (SURMOUNT-1)",
+   "acronym": "SURMOUNT-1",
    "status": "RECRUITING",
-   "phase": "PHASE2",
+   "phase": "PHASE3",
    "sponsor": "Hudson Biotech",
    "conditions": [
-    "Obesity"
+    "Obesity",
+    "Overweight (Without Type 2 Diabetes) With Weight-related Comorbidities"
    ],
    "interventions": [
-    "Retatrutide (LY3437943)",
+    "Tirzepatide",
     "Placebo",
-    "Standardized diet and physical activity counseling throughout the study."
+    "Reduced-calorie diet"
    ],
-   "summary": "Phase 2, multicenter, randomized, double-blind, placebo-controlled study evaluating once-weekly subcutaneous retatrutide (LY3437943) at multiple maintenance dose levels versus placebo in adults with obesity or overweight with weight-related comorbidities (without type 2 diabetes), alongside standardized diet and physical activity counseling.",
+   "summary": "This Phase 3 study evaluates the efficacy and safety of once-weekly subcutaneous tirzepatide (a dual GIP and GLP-1 receptor agonist) at 5 mg, 10 mg, or 15 mg versus placebo, each used with a reduced-calorie diet and increased physical activity, in adults without type 2 diabetes who have obesity or are overweight with weight-related comorbidities. The primary efficacy assessment is at Week 72. Participants with prediabetes at randomization may continue in an additional long-term treatment period to assess progression to type 2 diabetes and longer-term weight outcomes.",
    "lastUpdate": "2026-11-12",
-   "enrollment": 300
+   "enrollment": 2539
+  },
+  {
+   "nct": "NCT07488676",
+   "title": "A Study of ASP546C in Adults With Gastroesophageal Cancer, Pancreatic Cancer or Other Solid Tumors",
+   "acronym": null,
+   "status": "RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "sponsor": "Astellas Pharma Global Development, Inc.",
+   "conditions": [
+    "Gastric or Gastro-esophageal Junction (GEJ) Adenocarcinoma",
+    "Pancreatic Adenocarcinoma"
+   ],
+   "interventions": [
+    "ASP546C"
+   ],
+   "summary": "This study will help find the most suitable dose of ASP546C in people with gastric cancer, gastroesophageal junction (GEJ) cancer, pancreatic cancer, and other specific solid tumors. GEJ is where the food pipe (esophagus) joins the stomach.\n\nThis study is in 2 parts. In both parts of the study, ASP546C will be given once in 3-week cycles. It will be given slowly through a tube into a vein. This is called an infusion.\n\nIn Part 1, people with gastric cancer or GEJ cancer can take part. They will receive an infusion of either a higher dose or a lower dose of ASP546C.\n\nIn Part 2, people with pancr",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 150
   },
   {
    "nct": "NCT07501832",
@@ -2241,104 +2544,6 @@
    "summary": "The study is a multicenter, randomized, double-blind, parallel-group, placebo-controlled Phase III clinical trial to evaluate the efficacy and safety of GZR18 injection in Chinese adult obese patients with moderate-to-severe obstructive sleep apnea (OSA) who are currently using positive airway pressure (PAP) therapy. This study will assess the impact of GZR18 on OSA-related symptoms, respiratory parameters, and quality of life compared to placebo.",
    "lastUpdate": "2026-11-12",
    "enrollment": 140
-  },
-  {
-   "nct": "NCT07508787",
-   "title": "A Study Comparing Siplizumab With Rabbit Anti-Thymocyte Globulin to Help the Body Accept a Kidney Transplant",
-   "acronym": "MODERNIZE1",
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "ITB-Med LLC",
-   "conditions": [
-    "Renal Transplant Failure and Rejection"
-   ],
-   "interventions": [
-    "Siplizumab",
-    "Rabbit anti-thymocyte globulin"
-   ],
-   "summary": "The goal of this clinical trial is to learn if siplizumab can prevent rejection of a kidney transplant in adult participants with end stage kidney disease. The main questions it aims to answer are:\n\nHow many adverse events do participants receiving two different doses of siplizumab have compared to rabbit anti-thymocyte globulin (rATG)?\n\nHow many participants successfully keep their kidney transplant after receiving siplizumab or rATG? This will be calculated as those participants that did not: die; have their kidney fail to work properly (graft loss); their body rejects their transplant (tiss",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 120
-  },
-  {
-   "nct": "NCT07524530",
-   "title": "Stem Cell Transplantation for Participants With Germline RUNX1 Associated Blood Cancers",
-   "acronym": null,
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Core Binding Factor Alpha Subunits",
-    "Hematologic Neoplasms",
-    "Leukemia",
-    "Lymphoma"
-   ],
-   "interventions": [
-    "Cyclophosphamide",
-    "Busulfan",
-    "Fludarabine",
-    "Total Body Irradiation",
-    "Hematopoietic stem cells",
-    "Tacrolimus",
-    "Mycophenolate Mofetil"
-   ],
-   "summary": "Background:\n\nSome blood cancers can be caused by germline variants (changes) in a person s RUNX1 gene. Germline variants are genetic inherited changes a person is born with. Stem cell transplants are used to treat many diseases including blood cancers. Stem cell transplantation for patients with germline RUNX1 mutation driven blood cancers is standard of care and available in most major medical centers. The difference with this transplantation protocol is that it is prospective, only available to participants with germline RUNX1 variants and designed to determine the extent to which tailoring ",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 102
-  },
-  {
-   "nct": "NCT07541079",
-   "title": "A Study Evaluating Adherence, Tolerability, and Patient Reported Outcomes of Giredestrant in Participants With ER+/HER2- Early Breast Cancer Who Are Intolerant to Adjuvant Aromatase Inhibitor Therapy (novERA Breast Cancer)",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "Genentech, Inc.",
-   "conditions": [
-    "Early Breast Cancer"
-   ],
-   "interventions": [
-    "Giredestrant"
-   ],
-   "summary": "The purpose of this study is to understand treatment adherence and patient-reported outcomes of switching to giredestrant due to prior aromatase inhibitor (AI) intolerance. Giredestrant will be administered as adjuvant endocrine therapy for participants with low-, medium-, and high-risk, Stage I-III, histologically confirmed, estrogen receptor positive (ER+), human epidermal growth factor receptor 2 negative (HER2-), early breast cancer (eBC), as defined by the investigator. Participants will enroll if considered to be intolerant to a prior adjuvant AI therapy.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 300
-  },
-  {
-   "nct": "NCT07554339",
-   "title": "A Clinical Trial of Calderasib (MK-1084) and Durvalumab in People With Non-Small Cell Lung Cancer (MK-1084-015/KANDLELIT-015)",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "Non-small Cell Lung Cancer"
-   ],
-   "interventions": [
-    "Calderasib",
-    "Durvalumab",
-    "Placebo to MK-1084"
-   ],
-   "summary": "Researchers are looking for new ways to treat locally advanced non-small cell lung cancer (NSCLC) that is unresected and has a gene mutation called KRAS G12C. Researchers want to learn if calderasib (MK-1084) can be given with durvalumab, an immunotherapy, to treat NSCLC after chemotherapy and radiation therapy.\n\nThe goal of this trial is to learn if participants who receive calderasib and durvalumab live longer without the cancer growing or spreading compared to participants who receive placebo and durvalumab.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 310
-  },
-  {
-   "nct": "NCT07584967",
-   "title": "A Study to Evaluate the Safety and Efficacy of AC01 Compared to Placebo in Participants With Chronic Heart Failure",
-   "acronym": "GOAL-HF2",
-   "status": "RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "AnaCardio AB",
-   "conditions": [
-    "Heart Failure With Reduced Ejection Fraction (HFrEF)"
-   ],
-   "interventions": [
-    "AC01",
-    "Placebo"
-   ],
-   "summary": "The primary purpose of the study is to evaluate the safety and efficacy of 2 doses of AC01 compared to placebo over 12 weeks in participants with chronic advanced HFrEF.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 400
   },
   {
    "nct": "NCT07642635",
@@ -2378,23 +2583,26 @@
    "enrollment": 30
   },
   {
-   "nct": "NCT07662122",
-   "title": "A Study to Test Whether BI 3034701 Helps People to Lose Weight Who Live With Obesity or Overweight",
+   "nct": "NCT07654296",
+   "title": "Assessing Suzetrigine for Pain Reduction Following Ureteroscopic Surgery",
    "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Boehringer Ingelheim",
+   "status": "RECRUITING",
+   "phase": "PHASE3",
+   "sponsor": "Brigham and Women's Hospital",
    "conditions": [
-    "Obesity",
-    "Overweight"
+    "Opioid Consumption, Postoperative",
+    "Multimodal Analgesia",
+    "Ureteroscopy",
+    "Ureteral Stents",
+    "Ureteral Stent-Related Symptoms"
    ],
    "interventions": [
-    "BI 3034701",
-    "Placebo matching BI 3034701"
+    "multimodal analgesia regimen without suzetrigine",
+    "Suzetrigine"
    ],
-   "summary": "This study is open to adults between 18 and 74 years of age and who have a body mass index (BMI) of 30 kg/m2 or more, or a BMI of 27 kg/m2 or more and at least 1 health problem related to their weight. People who have previously not managed to lose weight by changing their diet can participate. People with type 2 diabetes cannot take part in this study.\n\nThe purpose of this study is to find out whether a medicine called BI 3034701 helps people living with obesity or overweight to lose weight. This study has 7 groups of participants. Groups 1 to 6 get different doses of BI 3034701; Group 7 gets",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 345
+   "summary": "Urologic surgery has advanced with new technologies to allow less invasive management of common afflictions such as kidney stones, these procedures are notoriously painful as the ureter must be dilated to accommodate any instruments, and a ureteral stent is often left following surgery to allow for adequate healing. Unfortunately, stents are poorly tolerated by a significant number of patients, with up to 100% complaining of bothersome pain and 10% of patients with unplanned healthcare visits. Further complicating kidney stone management is the frequency of concurrent chronic kidney disease (C",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 100
   },
   {
    "nct": "NCT07688213",
@@ -2466,7 +2674,7 @@
     "Cognitive Training"
    ],
    "summary": "Background:\n\nNormal aging, as well as dementias such as Alzheimer s disease, can cause changes in the brain that affect memory, attention, and thinking. Researchers want to know if regular mental tasks (cognitive training) can improve brain function in older adults. They also want to know if psilocybin, a compound found in certain mushrooms, can further support improved brain function.\n\nObjective:\n\nTo learn how regular cognitive training, with or without psilocybin, can improve brain health in older adults.\n\nEligibility:\n\nPeople aged 65 years and older with mild cognitive impairment or early-s",
-   "lastUpdate": "2026-11-12",
+   "lastUpdate": "2026-11-13",
    "enrollment": 200
   },
   {
@@ -2488,26 +2696,22 @@
    "enrollment": 726
   },
   {
-   "nct": "NCT07739186",
-   "title": "A Study Evaluating BL-B01D1 in Combination With a PD-1/VEGF Bispecific Antibody Versus Tislelizumab Plus Platinum-doublet Chemotherapy as First-line Treatment for Locally Advanced or Metastatic Non-squamous Non-small Cell Lung Cancer(PANKU-Lung06)",
+   "nct": "NCT07754461",
+   "title": "A Study to Test Whether Survodutide Helps People With Type 2 Diabetes Control Their Blood Sugar",
    "acronym": null,
    "status": "RECRUITING",
-   "phase": "PHASE2, PHASE3",
-   "sponsor": "Sichuan Baili Pharmaceutical Co., Ltd.",
+   "phase": "PHASE3",
+   "sponsor": "Boehringer Ingelheim",
    "conditions": [
-    "Non-squamous Non-small Cell Lung Cancer"
+    "Type 2 Diabetes"
    ],
    "interventions": [
-    "BL-B01D1",
-    "PD-1/VEGF Bispecific Antibody",
-    "Tislelizumab",
-    "Pemetrexed",
-    "Carboplatin",
-    "Cisplatin"
+    "Placebo",
+    "Survodutide"
    ],
-   "summary": "This trial is a registrational randomized, open-label, multicenter Phase II/III study designed to evaluate the efficacy and safety of BL-B01D1 in combination with a PD-1/VEGF bispecific antibody in patients with locally advanced or metastatic non-squamous non-small cell lung cancer.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 166
+   "summary": "This study aims to find out whether a study medicine called survodutide helps people control their blood sugar. Adults who live with type 2 diabetes and with a body mass index (BMI) of 23 kg/m2 or higher can join.\n\nThe study has 3 parts. In each part the study compares survodutide with placebo. Survodutide is being developed to treat several health problems including type 2 diabetes. Placebo looks like survodutide but does not contain any medicine.\n\nDepending on a person's diabetes treatment, a person will be assigned either to\n\n* Part A: healthy eating and physical activity\n* Part B: diabetes",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 600
   },
   {
    "nct": "NCT07757204",
@@ -2543,62 +2747,6 @@
    "summary": "This study aims to compare the effects of RO7568282 versus a placebo in people in the early stages of Alzheimer's disease (AD).",
    "lastUpdate": "2026-11-06",
    "enrollment": 450
-  },
-  {
-   "nct": "NCT07796373",
-   "title": "Nemtabrutinib for Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Leukemia (SLL) Refractory to Covalent Bruton Tyrosine Kinase Inhibitor or Pirtobrutinib and Previously Treated With a BCL2 Inhibitor",
-   "acronym": null,
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Small Lymphocytic Leukemia"
-   ],
-   "interventions": [
-    "Nemtabrutinib"
-   ],
-   "summary": "Background:\n\nChronic lymphocytic leukemia (CLL)/small lymphocytic leukemia (SLL) are diseases in which the body makes too many white blood cells that do not work properly. Because white cells play a role in immune function, people with CLL/SLL may be at greater risk of infections. CLL/SLL can be controlled with drugs, but many people develop resistance, and the treatments stop working.\n\nObjective:\n\nTo test a new drug (nemtabrutinib) in people with CLL/SLL.\n\nEligibility:\n\nPeople aged 18 years or older with CLL/SLL that persists despite treatment.\n\nDesign:\n\nParticipants will be screened. They wi",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 32
-  },
-  {
-   "nct": "NCT07827573",
-   "title": "A Study to Learn How Well Participants With a Specific Type of Early Breast Cancer (ER-Positive, HER2-Negative) Tolerate and Stay on Treatment With Giredestrant and How They Feel During Treatment",
-   "acronym": "kalitERA",
-   "status": "RECRUITING",
-   "phase": "PHASE3",
-   "sponsor": "Hoffmann-La Roche",
-   "conditions": [
-    "Early Breast Cancer",
-    "Estrogen Receptor-Positive Breast Cancer",
-    "HER2-Negative Breast Cancer"
-   ],
-   "interventions": [
-    "Giredestrant"
-   ],
-   "summary": "The purpose of this study is to evaluate treatment adherence, tolerability, and patient-reported outcomes of participants with estrogen receptor (ER)-positive, human epidermal growth factor receptor 2 (HER2)-negative early breast cancer (eBC) who are treated with giredestrant.\n\nThe study will have two cohorts. Cohort A will comprise a broad upfront patient population with low-, medium-, or high-risk eBC. Cohort B will comprise patients with medium- or high-risk eBC who have completed adjuvant treatment with cyclin-dependent kinase 4 and 6 inhibitors (CDK4/6i) (abemaciclib or ribociclib) and en",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 1500
-  },
-  {
-   "nct": "NCT07828002",
-   "title": "The GranStone Trial",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE2, PHASE3",
-   "sponsor": "Martin Blomberg Jensen",
-   "conditions": [
-    "Paraffinoma",
-    "Granuloma, Foreign-Body"
-   ],
-   "interventions": [
-    "empagliflozin (Jardiance) 25 mg",
-    "Losartan 100 mg"
-   ],
-   "summary": "This study will investigate whether treatment with empagliflozin or losartan can reduce the risk of kidney stone formation in patients with paraffin disease, a condition caused by the injection of paraffin oil into muscle tissue for cosmetic muscle enlargement.\n\nParaffin disease can lead to chronic inflammation, disturbances in calcium regulation, high blood calcium levels, kidney stones, and impaired kidney function. Previous studies from Herlev-Gentofte Hospital have shown that kidney stones occur in nearly half of affected patients, while approximately one-third develop reduced kidney funct",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 100
   },
   {
    "nct": "NCT07850063",
@@ -2640,44 +2788,31 @@
    "enrollment": 20
   },
   {
-   "nct": "NCT07912593",
-   "title": "A KRAS Inhibitor in Participants With Advanced Solid Tumors",
+   "nct": "NCT07902921",
+   "title": "STAR0602 With Nivolumab in Non Small Cell Lung Cancer and in Metastatic Castrate-Resistant Prostate Cancer, and STAR0602 Alone in Thymic Carcinoma",
    "acronym": null,
-   "status": "RECRUITING",
+   "status": "NOT_YET_RECRUITING",
    "phase": "PHASE1, PHASE2",
-   "sponsor": "Ensem Therapeutics",
+   "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Metastatic Colorectal Cancer (CRC)",
-    "Pancreatic Ductal Adenocarcinoma (PDAC)",
-    "Non-squamous, Non-Small Cell Lung Cancer",
-    "Endometrial Adenocarcinoma",
-    "Ovarian Adenocarcinoma",
-    "Primary Peritoneal Carcinoma"
+    "NSCLC",
+    "Non-Small Cell Lung Cancer",
+    "Lung Cancer",
+    "Prostate Cancer",
+    "Thymic Epithelial Tumors",
+    "TETs",
+    "Thymic Carcinomas",
+    "Thymomas",
+    "Metastatic Castrate-resistant Prostate Cancer",
+    "mCRPC"
    ],
    "interventions": [
-    "ETX-929 dose escalation",
-    "ETX-929 dose escalation in combination with cetuximab"
+    "STAR0602",
+    "Nivolumab"
    ],
-   "summary": "This is a Phase 1/2, open-label, multi-center study to evaluate the safety, tolerability, PK, PD, and preliminary efficacy of ETX-929 in participants with advanced solid tumors harboring a Kirsten rat sarcoma viral oncogene homolog (KRAS) mutation.",
-   "lastUpdate": "2026-11-12",
-   "enrollment": 320
-  },
-  {
-   "nct": "NCT07929974",
-   "title": "Clinical Study on CD20 Monoclonal Antibody for Preventing Early EB Virus Activation After Allogeneic Hematopoietic Stem Cell Transplantation",
-   "acronym": null,
-   "status": "RECRUITING",
-   "phase": "PHASE2, PHASE3",
-   "sponsor": "The First Affiliated Hospital of Soochow University",
-   "conditions": [
-    "EBV Activation and EBV-PTLD After Allogeneic Hematopoietic Stem Cell Transplantation"
-   ],
-   "interventions": [
-    "CD20 monoclonal antibody"
-   ],
-   "summary": "The main purpose of this study is to evaluate the preventive effect and safety of CD20 monoclonal antibody clearing B cells on EBV activation 180 days after allogeneic hematopoietic stem cell transplantation. The study will also observe the effects of this strategy on EBV-PTLD, CMV reactivation, hematopoietic reconstruction, acute and chronic graft-versus-host disease (GVHD), non recurrent death, recurrence, survival, and post transplant immune reconstruction.\n\nIn this study, CD20 monoclonal antibody was used for the prevention of EBV activation after transplantation, which is an investigation",
-   "lastUpdate": "2026-11-10",
-   "enrollment": 214
+   "summary": "Background:\n\nImmunotherapy is a type of treatment that works by making the body s own immune system stronger. These treatments are used for cancers such as non small cell lung cancer (NSCLC); thymic carcinoma (TC); or metastatic castrate-resistant prostate cancer (mCRPC). But these cancers may still come back after treatment.\n\nObjective:\n\nTo test a new immunotherapy drug (STAR0602), alone or combined with an approved drug (nivolumab), in people with NSCLC, mCRPC, or TC.\n\nEligibility:\n\nPeople aged 18 years or older with NSCLC, mCRPC, or TC that did not respond to treatment or returned after tre",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 67
   },
   {
    "nct": "NCT07931547",
@@ -2716,6 +2851,66 @@
    "summary": "The purpose of this study is to learn about the safety and effectiveness of berobenatide in adult women who have both stress urinary incontinence (SUI) and obesity or overweight.\n\nParticipants will be in the study for about 63 weeks",
    "lastUpdate": "2026-11-12",
    "enrollment": 900
+  },
+  {
+   "nct": "NCT07935226",
+   "title": "Induction Trastuzumab Rezetecan Followed by Maintenance Dalpiciclib and Endocrine Therapy as First-line Treatment of HR+/HER2 Low mBC",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Harbin Medical University",
+   "conditions": [
+    "Breast Cancer (Locally Advanced or Metastatic)",
+    "HR Positive/HER2 Low Breast Cancer"
+   ],
+   "interventions": [
+    "SHR-A1811→ Dalpiciclib + ET",
+    "Dalpiciclib + ET"
+   ],
+   "summary": "This study is a prospective, open-label, randomized phase II clinical trial designed to evaluate the efficacy and safety of two treatment modalities in the first-line treatment of HR+/HER2-low advanced breast cancer: induction therapy with trastuzumab rezetecan for 6 cycles followed by maintenance dalpiciclib, versus the standard care of dalpiciclib combined with endocrine therapy.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 100
+  },
+  {
+   "nct": "NCT07935317",
+   "title": "A Study of Tersolisib (LY4064809) and Abemaciclib With Hormone Therapies in Participants With PIK3CA-Mutated Early Breast Cancer",
+   "acronym": "PIKALO-3",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Eli Lilly and Company",
+   "conditions": [
+    "Breast Neoplasms"
+   ],
+   "interventions": [
+    "Abemaciclib",
+    "Tersolisib",
+    "Letrozole",
+    "Anastrozole",
+    "Exemestane"
+   ],
+   "summary": "The main purpose of this study is to compare two ways of giving the anti-cancer medicines abemaciclib and hormone therapy with tersolisib in participants with early breast cancer that has a genetic mutation (PIK3CA mutation).\n\nFor each participant, the study will last up to 56 weeks and include 12 visits.",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 120
+  },
+  {
+   "nct": "NCT07936422",
+   "title": "A Trial Evaluating the Anti-tumor Activity of Antibody-based Therapies in Metastatic Cancer Patients",
+   "acronym": "MOST-Express",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Centre Leon Berard",
+   "conditions": [
+    "NSCLC (Advanced Non-small Cell Lung Cancer)",
+    "Urothelial Cancer",
+    "Pan-rare Tumor With no T-DXd Approvals",
+    "Pan-frequent Tumors With no T-DXd Approvals"
+   ],
+   "interventions": [
+    "Trastuzumab Deruxtecan for Injection (T-DXd)"
+   ],
+   "summary": "MOST Express is a multicenter, open-label, personalized medicine, tumor agnostic platform phase II evaluating the anti-tumor activity of antibody-based therapies in advanced/metastatic cancer patients. Patients will be assigned to a treatment cohort based on molecular alterations/characteristics detected on tumor sample (from primary tumor or metastatic lesion). Our proposal is to develop a large adaptive personalized medicine platform program with multiple cohorts defined by molecular alterations / characteristics to be treated with matching antibody-based therapies (single or multiple therap",
+   "lastUpdate": "2026-11-13",
+   "enrollment": 200
   }
  ]
 }
