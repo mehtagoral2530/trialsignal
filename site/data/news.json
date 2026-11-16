@@ -1,14 +1,120 @@
 {
  "version": 1,
- "generatedAt": "2026-11-16T02:52:24.096Z",
- "dataTimestamp": "2026-11-13T10:00:06",
+ "generatedAt": "2026-11-16T22:20:31.255Z",
+ "dataTimestamp": "2026-11-16T10:00:05",
  "fdaUpdated": "2026-11-13",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "b923c590aed0623acf814dabe1e4c25c",
+ "contentHash": "3c71a40bfbf0484a82cdbc57d3c60a68",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03070886",
+   "kind": "results",
+   "date": "2026-11-16",
+   "level": 6,
+   "nct": "NCT03070886",
+   "drug": "Bicalutamide",
+   "title": "Results posted for a study of Bicalutamide for Stage I Prostate Adenocarcinoma AJCC v7",
+   "summary": "NRG Oncology ran this combined mid-stage and final-stage test (phase 2/3) with 175 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03070886) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03070886"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT03534453",
+   "kind": "results",
+   "date": "2026-11-16",
+   "level": 6,
+   "nct": "NCT03534453",
+   "drug": "Olaparib 300mg tablets",
+   "title": "Results posted for a study of Olaparib 300mg tablets for Relapsed Ovarian Cancer",
+   "summary": "AstraZeneca ran this final-stage test (phase 3) with 225 people. The registry lists its end date as 27 Jan 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03534453) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03534453"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04775082",
+   "kind": "results",
+   "date": "2026-11-16",
+   "level": 7,
+   "nct": "NCT04775082",
+   "drug": "Liraglutide",
+   "title": "Results posted for a study of Liraglutide for Obesity",
+   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 82 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04775082"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/39258838/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/39258838"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04834414",
+   "kind": "results",
+   "date": "2026-11-16",
+   "level": 7,
+   "nct": "NCT04834414",
+   "drug": "Cold Stored Platelets",
+   "title": "Results posted for a study of Cold Stored Platelets for Acute Blood Loss",
+   "summary": "Philip Spinella ran this final-stage test (phase 3) with 1,000 people. The registry lists its end date as 21 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04834414"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42606886/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42606886"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06588504",
+   "kind": "results",
+   "date": "2026-11-16",
+   "level": 6,
+   "nct": "NCT06588504",
+   "drug": "Dasiglucagon",
+   "title": "Results posted for a study of Dasiglucagon for Diabetes Mellitus, Type 1",
+   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 38 people. The registry lists its end date as 20 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06588504) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06588504"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03850782",
@@ -79,104 +185,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT07638566"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04963296",
-   "kind": "results",
-   "date": "2026-11-12",
-   "level": 7,
-   "nct": "NCT04963296",
-   "drug": "Obinutuzumab",
-   "title": "Results posted for a study of Obinutuzumab for Systemic Lupus Erythematosus",
-   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 303 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04963296"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/41789864/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/41789864"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05093634",
-   "kind": "results",
-   "date": "2026-11-12",
-   "level": 6,
-   "nct": "NCT05093634",
-   "drug": "Setmelanotide",
-   "title": "Results posted for a study of Setmelanotide for Obesity",
-   "summary": "Rhythm Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 296 people. The registry lists its end date as 30 Jun 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05093634) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05093634"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05689164",
-   "kind": "results",
-   "date": "2026-11-12",
-   "level": 6,
-   "nct": "NCT05689164",
-   "drug": "fordadistrogene movaparvovec",
-   "title": "Results posted for a study of fordadistrogene movaparvovec for Duchenne Muscular Dystrophy",
-   "summary": "Pfizer ran this final-stage test (phase 3) with 7 people. It was stopped early. The study team’s reason: “All participants who have received fordadistrogene movaparvovec in any Pfizer study will now be assessed for long-term safety in 1 combined study: C3391003”. The registry lists its end date as 24 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05689164) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05689164"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06444529",
-   "kind": "results",
-   "date": "2026-11-10",
-   "level": 6,
-   "nct": "NCT06444529",
-   "drug": "Apraclonidine Hydrochloride Ophthalmic Solution",
-   "title": "Results posted for a study of Apraclonidine Hydrochloride Ophthalmic Solution for Ocular Redness",
-   "summary": "Alcon Research ran this final-stage test (phase 3) with 159 people. The registry lists its end date as 8 Jan 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06444529) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06444529"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06538662",
-   "kind": "results",
-   "date": "2026-11-10",
-   "level": 6,
-   "nct": "NCT06538662",
-   "drug": "Apraclonidine Hydrochloride Ophthalmic Solution",
-   "title": "Results posted for a study of Apraclonidine Hydrochloride Ophthalmic Solution for Ocular Redness",
-   "summary": "Alcon Research ran this final-stage test (phase 3) with 284 people. The registry lists its end date as 3 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06538662) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06538662"
     ]
    ]
   },
