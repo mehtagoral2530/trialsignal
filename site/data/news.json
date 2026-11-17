@@ -1,14 +1,58 @@
 {
  "version": 1,
- "generatedAt": "2026-11-17T04:38:52.114Z",
- "dataTimestamp": "2026-11-16T10:00:05",
+ "generatedAt": "2026-11-17T14:41:14.255Z",
+ "dataTimestamp": "2026-11-17T10:00:05",
  "fdaUpdated": "2026-11-16",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "1c146148fa91c9cf480e24beb8fa5165",
+ "contentHash": "755d11a290105a9f503d7101d6f76271",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04641143",
+   "kind": "results",
+   "date": "2026-11-17",
+   "level": 6,
+   "nct": "NCT04641143",
+   "drug": "Troriluzole",
+   "title": "Results posted for a study of Troriluzole for Obsessive-Compulsive Disorder",
+   "summary": "Biohaven Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 456 people. The registry lists its end date as 27 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04641143) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04641143"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05394116",
+   "kind": "results",
+   "date": "2026-11-17",
+   "level": 7,
+   "nct": "NCT05394116",
+   "drug": "Garetosmab",
+   "title": "Results posted for a study of Garetosmab for Fibrodysplasia Ossificans Progressiva",
+   "summary": "Regeneron Pharmaceuticals ran this final-stage test (phase 3) with 63 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05394116"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42805227/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42805227"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03070886",
@@ -117,24 +161,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT03850782",
-   "kind": "results",
-   "date": "2026-11-13",
-   "level": 6,
-   "nct": "NCT03850782",
-   "drug": "Bimatoprost",
-   "title": "Results posted for a study of Bimatoprost for Open-Angle Glaucoma",
-   "summary": "AbbVie ran this final-stage test (phase 3) with 515 people. The registry lists its end date as 8 Aug 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03850782) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03850782"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "results:NCT04513912",
    "kind": "results",
    "date": "2026-11-13",
@@ -148,24 +174,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT04513912"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05458128",
-   "kind": "results",
-   "date": "2026-11-13",
-   "level": 6,
-   "nct": "NCT05458128",
-   "drug": "Pitolisant",
-   "title": "Results posted for a study of Pitolisant for Idiopathic Hypersomnia",
-   "summary": "Harmony Biosciences Management, Inc. ran this final-stage test (phase 3) with 119 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05458128) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05458128"
     ]
    ]
   },

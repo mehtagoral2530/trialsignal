@@ -1,5 +1,5 @@
 {
- "seq": 107,
+ "seq": 116,
  "entries": [
   {
    "seq": 1,
@@ -2033,6 +2033,178 @@
    "state": {
     "status": "NOT_YET_RECRUITING",
     "start": "2026-11-19",
+    "pcd": "2029-12-31",
+    "cd": "2030-06-30",
+    "enroll": 67,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 108,
+   "nct": "NCT05713799",
+   "hash": "80ce992dfce86477b3afa292e77e7791",
+   "prev": "4c9c94f95f5dc4c1fbc3f3edfbb3afe7",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-22",
+    "pcd": "2030-03-01",
+    "cd": "2030-03-01",
+    "enroll": 60,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 109,
+   "nct": "NCT06297603",
+   "hash": "b5cbc2ac8b6684de4b97076f7ea2f137",
+   "prev": "a2bdf3228d6a8389e6af9887c52dc06e",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "enroll",
+    "enrollType"
+   ],
+   "state": {
+    "status": "ACTIVE_NOT_RECRUITING",
+    "start": "2024-03-15",
+    "pcd": "2026-10-26",
+    "cd": "2026-11",
+    "enroll": 341,
+    "enrollType": "ACTUAL"
+   }
+  },
+  {
+   "seq": 110,
+   "nct": "NCT06303193",
+   "hash": "edef58451e17cedaf156308eca012c67",
+   "prev": "eed0e696c84d0477ab06aa5033bef01f",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "RECRUITING",
+    "start": "2026-11-22",
+    "pcd": "2030-01-01",
+    "cd": "2035-01-01",
+    "enroll": 160,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 111,
+   "nct": "NCT06694454",
+   "hash": "287771f0c3975352e4c8ccd34bc4a81e",
+   "prev": "2fbd67ecbbf7eafc086656ce2e0f7a4c",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "SUSPENDED",
+    "start": "2026-11-22",
+    "pcd": "2031-12-31",
+    "cd": "2034-12-31",
+    "enroll": 60,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 112,
+   "nct": "NCT07524530",
+   "hash": "3f7749aa0072b0b403785fbca4a06d48",
+   "prev": "ce68bd49411a3115716b94869271a73c",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-22",
+    "pcd": "2033-06-01",
+    "cd": "2036-06-01",
+    "enroll": 102,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 113,
+   "nct": "NCT07721467",
+   "hash": "84535665403c92ff5ae76c86b8297d21",
+   "prev": "8047ed2080e9bbc9b5b5b34df3f660a8",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "RECRUITING",
+    "start": "2026-11-22",
+    "pcd": "2030-12-31",
+    "cd": "2030-12-31",
+    "enroll": 200,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 114,
+   "nct": "NCT07796373",
+   "hash": "fd92aafedb27ab9ca921e9bd7b9c8d80",
+   "prev": "52411c03f5175f68ea7d988844320146",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-22",
+    "pcd": "2030-12-01",
+    "cd": "2031-12-01",
+    "enroll": 32,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 115,
+   "nct": "NCT07882173",
+   "hash": "ac15862bdff42e34ded81c1db60c8255",
+   "prev": "40f7a63ecfd4bf019faecab039ef8e0a",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-22",
+    "pcd": "2030-11-01",
+    "cd": "2033-11-01",
+    "enroll": 24,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 116,
+   "nct": "NCT07902921",
+   "hash": "4c2cc86891a7973b09569080ce36255e",
+   "prev": "217d1c3844eb2a8e0b4e69cf13bcff20",
+   "lup": "2026-11-17",
+   "at": "2026-11-17T14:41:06.359Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-22",
     "pcd": "2029-12-31",
     "cd": "2030-06-30",
     "enroll": 67,
