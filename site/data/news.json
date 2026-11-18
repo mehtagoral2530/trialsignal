@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-17T14:41:14.255Z",
+ "generatedAt": "2026-11-18T04:34:01.963Z",
  "dataTimestamp": "2026-11-17T10:00:05",
- "fdaUpdated": "2026-11-16",
+ "fdaUpdated": "2026-11-17",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "755d11a290105a9f503d7101d6f76271",
+ "contentHash": "387ade259260cc3612cd625a03f0d0bf",
  "items": [
   {
    "live": true,
@@ -306,9 +306,9 @@
    "app": "NDA221276",
    "brand": "Hibsago",
    "generics": [
-    "bepirovirsen"
+    "bepirovirsen sodium"
    ],
-   "title": "FDA approved Hibsago (bepirovirsen)",
+   "title": "FDA approved Hibsago (bepirovirsen sodium)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
    "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
@@ -458,10 +458,6 @@
   "NDA220910": {
    "setid": "13a65923-d072-4dac-8620-8eabbf8c3641",
    "title": "RASONQUE (DARAXONRASIB) TABLET, FILM COATED [REVOLUTION MEDICINES, INC.]"
-  },
-  "BLA761508": {
-   "setid": "0d5cec96-b02b-4f1d-bc66-51e62ce04e3c",
-   "title": "PASATRU (GARETOSMAB-GRTS) INJECTION, SOLUTION, CONCENTRATE [REGENERON PHARMACEUTICALS, INC.]"
   }
  }
 }
