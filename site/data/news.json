@@ -1,14 +1,52 @@
 {
  "version": 1,
- "generatedAt": "2026-11-18T04:34:01.963Z",
- "dataTimestamp": "2026-11-17T10:00:05",
+ "generatedAt": "2026-11-18T14:18:24.791Z",
+ "dataTimestamp": "2026-11-18T10:00:05",
  "fdaUpdated": "2026-11-17",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "387ade259260cc3612cd625a03f0d0bf",
+ "contentHash": "20c78e2535bf23dc63e8637b64e7a259",
  "items": [
+  {
+   "live": true,
+   "id": "stopped:NCT06544733",
+   "kind": "stopped",
+   "date": "2026-11-18",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06544733",
+   "drug": "Lepetegravir",
+   "title": "A study of Lepetegravir for HIV-1-Infection was stopped early",
+   "summary": "Gilead Sciences ran this combined mid-stage and final-stage test (phase 2/3) with 80 people. The study team’s reason: “Study was terminated due to benefit and risk assessment”. The registry lists its end date as 3 Nov 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06544733"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06775379",
+   "kind": "stopped",
+   "date": "2026-11-18",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06775379",
+   "drug": "Azetukalner",
+   "title": "A study of Azetukalner for Major Depressive Disorder was stopped early",
+   "summary": "Xenon Pharmaceuticals Inc. ran this final-stage test (phase 3) with 357 people. The study team’s reason: “See Xenon's September 17, 2026 press release providing an update on its psychiatry clinical program and November 9, 2026 press release announcing the expected timing of topline data readout”. The registry lists its end date as 28 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06775379"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04641143",
@@ -62,7 +100,7 @@
    "nct": "NCT03070886",
    "drug": "Bicalutamide",
    "title": "Results posted for a study of Bicalutamide for Stage I Prostate Adenocarcinoma AJCC v7",
-   "summary": "NRG Oncology ran this combined mid-stage and final-stage test (phase 2/3) with 175 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03070886) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "NRG Oncology ran this combined mid-stage and final-stage test (phase 2/3) with 175 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03070886) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -80,7 +118,7 @@
    "nct": "NCT03534453",
    "drug": "Olaparib 300mg tablets",
    "title": "Results posted for a study of Olaparib 300mg tablets for Relapsed Ovarian Cancer",
-   "summary": "AstraZeneca ran this final-stage test (phase 3) with 225 people. The registry lists its end date as 27 Jan 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03534453) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "AstraZeneca ran this final-stage test (phase 3) with 225 people. The registry lists its end date as 27 Jan 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03534453) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -98,8 +136,8 @@
    "nct": "NCT04775082",
    "drug": "Liraglutide",
    "title": "Results posted for a study of Liraglutide for Obesity",
-   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 82 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 82 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -108,10 +146,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/39258838/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/39258838"
     ]
    ]
   },
@@ -150,7 +184,7 @@
    "nct": "NCT06588504",
    "drug": "Dasiglucagon",
    "title": "Results posted for a study of Dasiglucagon for Diabetes Mellitus, Type 1",
-   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 38 people. The registry lists its end date as 20 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06588504) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 38 people. The registry lists its end date as 20 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06588504) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -168,7 +202,7 @@
    "nct": "NCT04513912",
    "drug": "Seltorexant",
    "title": "Results posted for a study of Seltorexant for Depressive Disorder, Major",
-   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 757 people. The registry lists its end date as 3 Oct 2023. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04513912) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 757 people. The registry lists its end date as 3 Oct 2023. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04513912) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -256,44 +290,6 @@
     [
      "DailyMed label",
      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f48aee87-69a8-45a6-afa5-0917807efb70"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT05132075",
-   "kind": "stopped",
-   "date": "2026-11-06",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT05132075",
-   "drug": "JDQ443",
-   "title": "A study of JDQ443 for Non-Small Cell Lung Cancer was stopped early",
-   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 95 people. The study team’s reason: “Business reasons and not based on any safety concerns”. The registry lists its end date as 5 Oct 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05132075"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT06963216",
-   "kind": "stopped",
-   "date": "2026-11-05",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT06963216",
-   "drug": "Coagadex",
-   "title": "A study of Coagadex for Acquired Factor X Deficiency was cancelled before it began",
-   "summary": "Kedrion S.p.A. planned this final-stage test (phase 3). The study team’s reason: “Study was discontinued for non-safety reasons and the rapidly evolving treatment landscape for AL amyloidosis”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06963216"
     ]
    ]
   },
