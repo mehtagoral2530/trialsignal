@@ -1,14 +1,128 @@
 {
  "version": 1,
- "generatedAt": "2026-11-18T14:18:24.791Z",
- "dataTimestamp": "2026-11-18T10:00:05",
- "fdaUpdated": "2026-11-17",
+ "generatedAt": "2026-11-19T13:32:31.322Z",
+ "dataTimestamp": "2026-11-19T10:00:07",
+ "fdaUpdated": "2026-11-18",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "20c78e2535bf23dc63e8637b64e7a259",
+ "contentHash": "257c99b787a90a65ee3cf99e32a455db",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04447313",
+   "kind": "results",
+   "date": "2026-11-19",
+   "level": 6,
+   "nct": "NCT04447313",
+   "title": "Results posted for a study about Obesity-Related Malignant Neoplasm",
+   "summary": "Fred Hutchinson Cancer Center ran this final-stage test (phase 3) with 418 people. The registry lists its end date as 7 Sep 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04447313) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04447313"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04684719",
+   "kind": "results",
+   "date": "2026-11-19",
+   "level": 7,
+   "nct": "NCT04684719",
+   "drug": "low titer whole blood",
+   "title": "Results posted for a study of low titer whole blood for Hemorrhagic Shock",
+   "summary": "Jason Sperry ran this final-stage test (phase 3) with 1,020 people. The registry lists its end date as 12 Aug 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04684719"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42150044/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42150044"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05071716",
+   "kind": "results",
+   "date": "2026-11-19",
+   "level": 6,
+   "nct": "NCT05071716",
+   "drug": "Rifaximin SSD",
+   "title": "Results posted for a study of Rifaximin SSD for Hepatic Encephalopathy",
+   "summary": "Bausch Health Americas, Inc. ran this final-stage test (phase 3) with 524 people. The registry lists its end date as 23 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05071716) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05071716"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05348915",
+   "kind": "results",
+   "date": "2026-11-19",
+   "level": 6,
+   "nct": "NCT05348915",
+   "drug": "Inclacumab",
+   "title": "Results posted for a study of Inclacumab for Sickle Cell Disease",
+   "summary": "Pfizer ran this final-stage test (phase 3) with 241 people. It was stopped early. The study team’s reason: “Sponsor decision to terminate study based on results of parent study GBT2104-131”. The registry lists its end date as 7 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05348915) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05348915"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05394662",
+   "kind": "results",
+   "date": "2026-11-19",
+   "level": 6,
+   "nct": "NCT05394662",
+   "title": "Results posted for a study about Intrauterine Adhesion",
+   "summary": "Rejoni Inc. ran this final-stage test (phase 3) with 150 people. The registry lists its end date as 23 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05394662) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05394662"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06866613",
+   "kind": "results",
+   "date": "2026-11-19",
+   "level": 6,
+   "nct": "NCT06866613",
+   "drug": "Esflurbiprofen Topical System",
+   "title": "Results posted for a study of Esflurbiprofen Topical System for Ankle Sprains",
+   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 70 people. The registry lists its end date as 30 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06866613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06866613"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "stopped:NCT06544733",
@@ -56,7 +170,7 @@
    "nct": "NCT04641143",
    "drug": "Troriluzole",
    "title": "Results posted for a study of Troriluzole for Obsessive-Compulsive Disorder",
-   "summary": "Biohaven Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 456 people. The registry lists its end date as 27 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04641143) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Biohaven Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 456 people. The registry lists its end date as 27 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04641143) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -74,8 +188,8 @@
    "nct": "NCT05394116",
    "drug": "Garetosmab",
    "title": "Results posted for a study of Garetosmab for Fibrodysplasia Ossificans Progressiva",
-   "summary": "Regeneron Pharmaceuticals ran this final-stage test (phase 3) with 63 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "Regeneron Pharmaceuticals ran this final-stage test (phase 3) with 63 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -84,130 +198,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42805227/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42805227"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03070886",
-   "kind": "results",
-   "date": "2026-11-16",
-   "level": 6,
-   "nct": "NCT03070886",
-   "drug": "Bicalutamide",
-   "title": "Results posted for a study of Bicalutamide for Stage I Prostate Adenocarcinoma AJCC v7",
-   "summary": "NRG Oncology ran this combined mid-stage and final-stage test (phase 2/3) with 175 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03070886) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03070886"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT03534453",
-   "kind": "results",
-   "date": "2026-11-16",
-   "level": 6,
-   "nct": "NCT03534453",
-   "drug": "Olaparib 300mg tablets",
-   "title": "Results posted for a study of Olaparib 300mg tablets for Relapsed Ovarian Cancer",
-   "summary": "AstraZeneca ran this final-stage test (phase 3) with 225 people. The registry lists its end date as 27 Jan 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03534453) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT03534453"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04775082",
-   "kind": "results",
-   "date": "2026-11-16",
-   "level": 7,
-   "nct": "NCT04775082",
-   "drug": "Liraglutide",
-   "title": "Results posted for a study of Liraglutide for Obesity",
-   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 82 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04775082"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/39258838/"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04834414",
-   "kind": "results",
-   "date": "2026-11-16",
-   "level": 7,
-   "nct": "NCT04834414",
-   "drug": "Cold Stored Platelets",
-   "title": "Results posted for a study of Cold Stored Platelets for Acute Blood Loss",
-   "summary": "Philip Spinella ran this final-stage test (phase 3) with 1,000 people. The registry lists its end date as 21 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04834414"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42606886/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42606886"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06588504",
-   "kind": "results",
-   "date": "2026-11-16",
-   "level": 6,
-   "nct": "NCT06588504",
-   "drug": "Dasiglucagon",
-   "title": "Results posted for a study of Dasiglucagon for Diabetes Mellitus, Type 1",
-   "summary": "Novo Nordisk A/S ran this final-stage test (phase 3) with 38 people. The registry lists its end date as 20 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06588504) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06588504"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04513912",
-   "kind": "results",
-   "date": "2026-11-13",
-   "level": 6,
-   "nct": "NCT04513912",
-   "drug": "Seltorexant",
-   "title": "Results posted for a study of Seltorexant for Depressive Disorder, Major",
-   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 757 people. The registry lists its end date as 3 Oct 2023. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04513912) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04513912"
     ]
    ]
   },
@@ -227,6 +217,31 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT07638566"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:NDA220414",
+   "kind": "approval",
+   "date": "2026-11-10",
+   "level": 4,
+   "app": "NDA220414",
+   "brand": "Pimjetmi",
+   "generics": [
+    "pimicotinib"
+   ],
+   "title": "FDA approved Pimjetmi (pimicotinib)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220414"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=17b6ec50-69c8-4849-802d-cf0a6e425373"
     ]
    ]
   },
@@ -371,38 +386,13 @@
      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1ae6df6e-6ca0-420f-bec9-effa7acdd085"
     ]
    ]
-  },
-  {
-   "live": true,
-   "id": "approval:NDA221198",
-   "kind": "approval",
-   "date": "2026-09-25",
-   "level": 4,
-   "app": "NDA221198",
-   "brand": "Atebrioz",
-   "generics": [
-    "zilurgisertib fumarate"
-   ],
-   "title": "FDA approved Atebrioz (zilurgisertib fumarate)",
-   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
-   "links": [
-    [
-     "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221198"
-    ],
-    [
-     "RxNorm entry",
-     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2754658"
-    ],
-    [
-     "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f542e4b0-072a-42c6-80c9-5977054971e0"
-    ]
-   ]
   }
  ],
  "dailymed": {
+  "NDA220414": {
+   "setid": "17b6ec50-69c8-4849-802d-cf0a6e425373",
+   "title": "PIMJETMI (PIMICOTINIB) CAPSULE [EMD SERONO INC.]"
+  },
   "NDA221291": {
    "setid": "f48aee87-69a8-45a6-afa5-0917807efb70",
    "title": "SUNHARBO (ASUNDEXIAN) TABLET, FILM COATED [BAYER HEALTHCARE PHARMACEUTICALS INC.]"
