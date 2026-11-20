@@ -1,14 +1,185 @@
 {
  "version": 1,
- "generatedAt": "2026-11-20T13:13:31.927Z",
- "dataTimestamp": "2026-11-19T10:00:07",
+ "generatedAt": "2026-11-20T21:18:44.805Z",
+ "dataTimestamp": "2026-11-20T10:00:05",
  "fdaUpdated": "2026-11-19",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "bde067c6344e0913f93fb8eff4f8f388",
+ "contentHash": "bb6c4580d7ee499af18bd8be400b7f85",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04053634",
+   "kind": "results",
+   "date": "2026-11-20",
+   "level": 6,
+   "nct": "NCT04053634",
+   "drug": "Benralizumab",
+   "title": "Results posted for a study of Benralizumab for Chronic Obstructive Pulmonary Disease",
+   "summary": "AstraZeneca ran this final-stage test (phase 3) with 689 people. The registry lists its end date as 28 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04053634) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04053634"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04175613",
+   "kind": "results",
+   "date": "2026-11-20",
+   "level": 6,
+   "nct": "NCT04175613",
+   "drug": "Apremilast",
+   "title": "Results posted for a study of Apremilast for Psoriasis",
+   "summary": "Amgen ran this final-stage test (phase 3) with 160 people. It was stopped early. The registry lists its end date as 12 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04175613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04175613"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT04708782",
+   "kind": "results",
+   "date": "2026-11-20",
+   "level": 7,
+   "nct": "NCT04708782",
+   "drug": "Inhaled Treprostinil",
+   "title": "Results posted for a study of Inhaled Treprostinil for Idiopathic Pulmonary Fibrosis",
+   "summary": "United Therapeutics ran this final-stage test (phase 3) with 598 people. The registry lists its end date as 2 Feb 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04708782"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42972641/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42776606"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05630820",
+   "kind": "results",
+   "date": "2026-11-20",
+   "level": 7,
+   "nct": "NCT05630820",
+   "drug": "Bepirovirsen",
+   "title": "Results posted for a study of Bepirovirsen for Chronic Hepatitis B",
+   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05630820"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42206582/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42206582"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05686070",
+   "kind": "results",
+   "date": "2026-11-20",
+   "level": 7,
+   "nct": "NCT05686070",
+   "drug": "Asundexian",
+   "title": "Results posted for a study of Asundexian for Prevention of Ischemic Stroke",
+   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05686070"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42866879/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42866879"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT05600777",
+   "kind": "stopped",
+   "date": "2026-11-20",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT05600777",
+   "drug": "BLU-5937",
+   "title": "A study of BLU-5937 for Cough was stopped early",
+   "summary": "Bellus Health Inc. - a GSK company ran this final-stage test (phase 3) with 1,019 people. The study team’s reason: “The study has been terminated due to the decision to cease further development of camlipixant in refractory chronic cough (RCC), based on the results of the Phase 3 program”. The registry lists its end date as 2 Sep 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05600777"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06744920",
+   "kind": "stopped",
+   "date": "2026-11-20",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06744920",
+   "drug": "Remibrutinib",
+   "title": "A study of Remibrutinib for Generalized Myasthenia Gravis was stopped early",
+   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 196 people. The study team’s reason: “Sponsor decision based on pre-specified futility efficacy criteria being met”. The registry lists its end date as 30 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06744920"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT07650084",
+   "kind": "stopped",
+   "date": "2026-11-20",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT07650084",
+   "drug": "BLU-5937",
+   "title": "A study of BLU-5937 for Refractory Chronic Cough was stopped early",
+   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 75 people. The study team’s reason: “The study has been withdrawn terminated due to the decision to cease further development of camlipixant in refractory chronic cough (RCC), based on the results of the Phase 3 program”. The registry lists its end date as 17 Jul 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT07650084"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04447313",
@@ -72,63 +243,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT05348915",
-   "kind": "results",
-   "date": "2026-11-19",
-   "level": 6,
-   "nct": "NCT05348915",
-   "drug": "Inclacumab",
-   "title": "Results posted for a study of Inclacumab for Sickle Cell Disease",
-   "summary": "Pfizer ran this final-stage test (phase 3) with 241 people. It was stopped early. The study team’s reason: “Sponsor decision to terminate study based on results of parent study GBT2104-131”. The registry lists its end date as 7 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05348915) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05348915"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05394662",
-   "kind": "results",
-   "date": "2026-11-19",
-   "level": 7,
-   "nct": "NCT05394662",
-   "title": "Results posted for a study about Intrauterine Adhesion",
-   "summary": "Rejoni Inc. ran this final-stage test (phase 3) with 150 people. The registry lists its end date as 23 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05394662"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42492609"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT06866613",
-   "kind": "results",
-   "date": "2026-11-19",
-   "level": 6,
-   "nct": "NCT06866613",
-   "drug": "Esflurbiprofen Topical System",
-   "title": "Results posted for a study of Esflurbiprofen Topical System for Ankle Sprains",
-   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 70 people. The registry lists its end date as 30 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06866613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06866613"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "stopped:NCT06544733",
    "kind": "stopped",
    "date": "2026-11-18",
@@ -167,69 +281,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT04641143",
-   "kind": "results",
-   "date": "2026-11-17",
-   "level": 6,
-   "nct": "NCT04641143",
-   "drug": "Troriluzole",
-   "title": "Results posted for a study of Troriluzole for Obsessive-Compulsive Disorder",
-   "summary": "Biohaven Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 456 people. The registry lists its end date as 27 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04641143) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04641143"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05394116",
-   "kind": "results",
-   "date": "2026-11-17",
-   "level": 7,
-   "nct": "NCT05394116",
-   "drug": "Garetosmab",
-   "title": "Results posted for a study of Garetosmab for Fibrodysplasia Ossificans Progressiva",
-   "summary": "Regeneron Pharmaceuticals ran this final-stage test (phase 3) with 63 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05394116"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42805227/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42805227"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT07638566",
-   "kind": "stopped",
-   "date": "2026-11-13",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT07638566",
-   "drug": "Empasiprubart IV",
-   "title": "A study of Empasiprubart IV for Chronic Inflammatory Demyelinating Polyradiculoneuropathy was cancelled before it began",
-   "summary": "argenx planned this combined mid-stage and final-stage test (phase 2/3). The study team’s reason: “An alternative study design is under consideration”. The registry doesn’t say when it was cancelled. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07638566"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "approval:NDA220414",
    "kind": "approval",
    "date": "2026-11-10",
@@ -250,44 +301,6 @@
     [
      "DailyMed label",
      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=17b6ec50-69c8-4849-802d-cf0a6e425373"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT04523727",
-   "kind": "stopped",
-   "date": "2026-11-10",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT04523727",
-   "drug": "ferric citrate",
-   "title": "A study of ferric citrate for Hyperphosphatemia Related to Chronic Kidney Disease is paused",
-   "summary": "Keryx Biopharmaceuticals leads this final-stage test (phase 3). The study team’s reason: “Sponsor decision”. It may start again. The registry doesn’t say when it was paused. The date above is when its record was last updated.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04523727"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT05900141",
-   "kind": "stopped",
-   "date": "2026-11-10",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT05900141",
-   "drug": "Pelacarsen",
-   "title": "A study of Pelacarsen for Hyperlipoproteinemia (a) was stopped early",
-   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 41 people. The study team’s reason: “Study terminated by sponsor following the outcome of the Lp(a)HORIZON study (NCT04023552), which did not meet its primary endpoint”. The registry lists its end date as 15 Oct 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05900141"
     ]
    ]
   },
