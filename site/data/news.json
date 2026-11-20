@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-19T13:32:31.322Z",
+ "generatedAt": "2026-11-20T13:13:31.927Z",
  "dataTimestamp": "2026-11-19T10:00:07",
- "fdaUpdated": "2026-11-18",
+ "fdaUpdated": "2026-11-19",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "257c99b787a90a65ee3cf99e32a455db",
+ "contentHash": "bde067c6344e0913f93fb8eff4f8f388",
  "items": [
   {
    "live": true,
@@ -17,7 +17,7 @@
    "level": 6,
    "nct": "NCT04447313",
    "title": "Results posted for a study about Obesity-Related Malignant Neoplasm",
-   "summary": "Fred Hutchinson Cancer Center ran this final-stage test (phase 3) with 418 people. The registry lists its end date as 7 Sep 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04447313) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Fred Hutchinson Cancer Center ran this final-stage test (phase 3) with 418 people. The registry lists its end date as 7 Sep 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04447313) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -61,7 +61,7 @@
    "nct": "NCT05071716",
    "drug": "Rifaximin SSD",
    "title": "Results posted for a study of Rifaximin SSD for Hepatic Encephalopathy",
-   "summary": "Bausch Health Americas, Inc. ran this final-stage test (phase 3) with 524 people. The registry lists its end date as 23 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05071716) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Bausch Health Americas, Inc. ran this final-stage test (phase 3) with 524 people. The registry lists its end date as 23 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05071716) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -79,7 +79,7 @@
    "nct": "NCT05348915",
    "drug": "Inclacumab",
    "title": "Results posted for a study of Inclacumab for Sickle Cell Disease",
-   "summary": "Pfizer ran this final-stage test (phase 3) with 241 people. It was stopped early. The study team’s reason: “Sponsor decision to terminate study based on results of parent study GBT2104-131”. The registry lists its end date as 7 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05348915) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Pfizer ran this final-stage test (phase 3) with 241 people. It was stopped early. The study team’s reason: “Sponsor decision to terminate study based on results of parent study GBT2104-131”. The registry lists its end date as 7 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05348915) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -93,15 +93,19 @@
    "id": "results:NCT05394662",
    "kind": "results",
    "date": "2026-11-19",
-   "level": 6,
+   "level": 7,
    "nct": "NCT05394662",
    "title": "Results posted for a study about Intrauterine Adhesion",
-   "summary": "Rejoni Inc. ran this final-stage test (phase 3) with 150 people. The registry lists its end date as 23 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05394662) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "summary": "Rejoni Inc. ran this final-stage test (phase 3) with 150 people. The registry lists its end date as 23 Apr 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + Europe PMC",
    "links": [
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT05394662"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42492609"
     ]
    ]
   },
@@ -114,7 +118,7 @@
    "nct": "NCT06866613",
    "drug": "Esflurbiprofen Topical System",
    "title": "Results posted for a study of Esflurbiprofen Topical System for Ankle Sprains",
-   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 70 people. The registry lists its end date as 30 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06866613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 70 people. The registry lists its end date as 30 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06866613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -170,7 +174,7 @@
    "nct": "NCT04641143",
    "drug": "Troriluzole",
    "title": "Results posted for a study of Troriluzole for Obsessive-Compulsive Disorder",
-   "summary": "Biohaven Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 456 people. The registry lists its end date as 27 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04641143) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Biohaven Pharmaceuticals, Inc. ran this final-stage test (phase 3) with 456 people. The registry lists its end date as 27 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04641143) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -188,8 +192,8 @@
    "nct": "NCT05394116",
    "drug": "Garetosmab",
    "title": "Results posted for a study of Garetosmab for Fibrodysplasia Ossificans Progressiva",
-   "summary": "Regeneron Pharmaceuticals ran this final-stage test (phase 3) with 63 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "summary": "Regeneron Pharmaceuticals ran this final-stage test (phase 3) with 63 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
    "links": [
     [
      "Official study record",
@@ -198,6 +202,10 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42805227/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42805227"
     ]
    ]
   },
