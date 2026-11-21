@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-20T21:18:44.805Z",
+ "generatedAt": "2026-11-21T02:33:13.319Z",
  "dataTimestamp": "2026-11-20T10:00:05",
- "fdaUpdated": "2026-11-19",
+ "fdaUpdated": "2026-11-20",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "bb6c4580d7ee499af18bd8be400b7f85",
+ "contentHash": "fe514d8c816666add992da730f576663",
  "items": [
   {
    "live": true,
@@ -392,15 +392,11 @@
    ],
    "title": "FDA approved Juvmo (tavapadon)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + RxNorm + DailyMed",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
     [
      "FDA drug record",
      "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220415"
-    ],
-    [
-     "RxNorm entry",
-     "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2754389"
     ],
     [
      "DailyMed label",
