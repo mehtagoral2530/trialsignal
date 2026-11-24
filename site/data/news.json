@@ -1,14 +1,87 @@
 {
  "version": 1,
- "generatedAt": "2026-11-23T14:57:55.826Z",
- "dataTimestamp": "2026-11-23T10:00:05",
+ "generatedAt": "2026-11-24T23:07:22.059Z",
+ "dataTimestamp": "2026-11-24T10:00:04",
  "fdaUpdated": "2026-11-20",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "fe514d8c816666add992da730f576663",
+ "contentHash": "5fcb19035ad7aca29b245058808f7a88",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03927027",
+   "kind": "results",
+   "date": "2026-11-24",
+   "level": 6,
+   "nct": "NCT03927027",
+   "drug": "Isosulfan Blue",
+   "title": "Results posted for a study of Isosulfan Blue for Breast Cancer Stage I",
+   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03927027"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05905055",
+   "kind": "results",
+   "date": "2026-11-24",
+   "level": 6,
+   "nct": "NCT05905055",
+   "drug": "co-administration of cefepime and nacubactam",
+   "title": "Results posted for a study of co-administration of cefepime and nacubactam for Complicated Urinary Tract Infection",
+   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05905055"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06871046",
+   "kind": "results",
+   "date": "2026-11-24",
+   "level": 6,
+   "nct": "NCT06871046",
+   "drug": "Esflurbiprofen Topical System",
+   "title": "Results posted for a study of Esflurbiprofen Topical System for Contusions",
+   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06871046"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT05595642",
+   "kind": "stopped",
+   "date": "2026-11-24",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT05595642",
+   "drug": "Astegolimab",
+   "title": "A study of Astegolimab for Chronic Obstructive Pulmonary Disease (COPD) was stopped early",
+   "summary": "Hoffmann-La Roche ran this final-stage test (phase 3) with 1,380 people. The study team’s reason: “The global population finished the study and was analyzed as planned. The Japan extension was terminated early due to reassessment of the program”. The registry lists its end date as 19 Aug 2026. The study team has also posted results on ClinicalTrials.gov.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05595642"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT04053634",
@@ -18,7 +91,7 @@
    "nct": "NCT04053634",
    "drug": "Benralizumab",
    "title": "Results posted for a study of Benralizumab for Chronic Obstructive Pulmonary Disease",
-   "summary": "AstraZeneca ran this final-stage test (phase 3) with 689 people. The registry lists its end date as 28 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04053634) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "AstraZeneca ran this final-stage test (phase 3) with 689 people. The registry lists its end date as 28 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04053634) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -36,7 +109,7 @@
    "nct": "NCT04175613",
    "drug": "Apremilast",
    "title": "Results posted for a study of Apremilast for Psoriasis",
-   "summary": "Amgen ran this final-stage test (phase 3) with 160 people. It was stopped early. The registry lists its end date as 12 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04175613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Amgen ran this final-stage test (phase 3) with 160 people. It was stopped early. The registry lists its end date as 12 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04175613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -54,8 +127,8 @@
    "nct": "NCT04708782",
    "drug": "Inhaled Treprostinil",
    "title": "Results posted for a study of Inhaled Treprostinil for Idiopathic Pulmonary Fibrosis",
-   "summary": "United Therapeutics ran this final-stage test (phase 3) with 598 people. The registry lists its end date as 2 Feb 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "United Therapeutics ran this final-stage test (phase 3) with 598 people. The registry lists its end date as 2 Feb 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -64,10 +137,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42972641/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42776606"
     ]
    ]
   },
@@ -80,8 +149,8 @@
    "nct": "NCT05630820",
    "drug": "Bepirovirsen",
    "title": "Results posted for a study of Bepirovirsen for Chronic Hepatitis B",
-   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -90,10 +159,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42206582/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42206582"
     ]
    ]
   },
@@ -106,8 +171,8 @@
    "nct": "NCT05686070",
    "drug": "Asundexian",
    "title": "Results posted for a study of Asundexian for Prevention of Ischemic Stroke",
-   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -116,10 +181,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42866879/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42866879"
     ]
    ]
   },
@@ -182,81 +243,51 @@
   },
   {
    "live": true,
-   "id": "results:NCT04447313",
-   "kind": "results",
-   "date": "2026-11-19",
-   "level": 6,
-   "nct": "NCT04447313",
-   "title": "Results posted for a study about Obesity-Related Malignant Neoplasm",
-   "summary": "Fred Hutchinson Cancer Center ran this final-stage test (phase 3) with 418 people. The registry lists its end date as 7 Sep 2026. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04447313) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04447313"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04684719",
-   "kind": "results",
-   "date": "2026-11-19",
-   "level": 7,
-   "nct": "NCT04684719",
-   "drug": "low titer whole blood",
-   "title": "Results posted for a study of low titer whole blood for Hemorrhagic Shock",
-   "summary": "Jason Sperry ran this final-stage test (phase 3) with 1,020 people. The registry lists its end date as 12 Aug 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04684719"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42150044/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42150044"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05071716",
-   "kind": "results",
-   "date": "2026-11-19",
-   "level": 6,
-   "nct": "NCT05071716",
-   "drug": "Rifaximin SSD",
-   "title": "Results posted for a study of Rifaximin SSD for Hepatic Encephalopathy",
-   "summary": "Bausch Health Americas, Inc. ran this final-stage test (phase 3) with 524 people. The registry lists its end date as 23 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05071716) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05071716"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT06544733",
-   "kind": "stopped",
+   "id": "approval:NDA221144",
+   "kind": "approval",
    "date": "2026-11-18",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT06544733",
-   "drug": "Lepetegravir",
-   "title": "A study of Lepetegravir for HIV-1-Infection was stopped early",
-   "summary": "Gilead Sciences ran this combined mid-stage and final-stage test (phase 2/3) with 80 people. The study team’s reason: “Study was terminated due to benefit and risk assessment”. The registry lists its end date as 3 Nov 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "level": 4,
+   "app": "NDA221144",
+   "brand": "Infilbray",
+   "generics": [
+    "venglustat"
+   ],
+   "title": "FDA approved Infilbray (venglustat)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
     [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06544733"
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221144"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46d0c64b-2eb5-4f3c-b7c2-aaff221b5e8e"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "approval:NDA221251",
+   "kind": "approval",
+   "date": "2026-11-18",
+   "level": 4,
+   "app": "NDA221251",
+   "brand": "Livsayis",
+   "generics": [
+    "cemdisiran"
+   ],
+   "title": "FDA approved Livsayis (cemdisiran)",
+   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
+   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
+   "links": [
+    [
+     "FDA drug record",
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221251"
+    ],
+    [
+     "DailyMed label",
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=122beaf9-5add-45ae-9a2e-457af1a7dddf"
     ]
    ]
   },
@@ -281,131 +312,105 @@
   },
   {
    "live": true,
-   "id": "approval:NDA220414",
+   "id": "approval:NDA220936",
    "kind": "approval",
-   "date": "2026-11-10",
+   "date": "2026-11-17",
    "level": 4,
-   "app": "NDA220414",
-   "brand": "Pimjetmi",
+   "app": "NDA220936",
+   "brand": "Nelkarmi",
    "generics": [
-    "pimicotinib"
+    "neladalkib"
    ],
-   "title": "FDA approved Pimjetmi (pimicotinib)",
+   "title": "FDA approved Nelkarmi (neladalkib)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
    "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
     [
      "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220414"
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220936"
     ],
     [
      "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=17b6ec50-69c8-4849-802d-cf0a6e425373"
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=cbfdd79a-13c5-42f4-b8a2-4586f5b32c7b"
     ]
    ]
   },
   {
    "live": true,
-   "id": "approval:NDA221291",
+   "id": "approval:NDA220996",
    "kind": "approval",
-   "date": "2026-11-09",
+   "date": "2026-11-17",
    "level": 4,
-   "app": "NDA221291",
-   "brand": "Sunharbo",
+   "app": "NDA220996",
+   "brand": "Lembaz",
    "generics": [
-    "asundexian"
+    "adrabetadex"
    ],
-   "title": "FDA approved Sunharbo (asundexian)",
+   "title": "FDA approved Lembaz (adrabetadex)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
    "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
     [
      "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221291"
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220996"
     ],
     [
      "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f48aee87-69a8-45a6-afa5-0917807efb70"
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ff86030c-1e66-41b7-8b1f-d1397e94d81c"
     ]
    ]
   },
   {
    "live": true,
-   "id": "approval:NDA221276",
+   "id": "approval:NDA220791",
    "kind": "approval",
-   "date": "2026-10-20",
+   "date": "2026-11-16",
    "level": 4,
-   "app": "NDA221276",
-   "brand": "Hibsago",
+   "app": "NDA220791",
+   "brand": "Wilserdly",
    "generics": [
-    "bepirovirsen sodium"
+    "giredestran"
    ],
-   "title": "FDA approved Hibsago (bepirovirsen sodium)",
+   "title": "FDA approved Wilserdly (giredestran)",
    "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
    "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
    "links": [
     [
      "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221276"
+     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220791"
     ],
     [
      "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=2cca7226-d8f9-4917-8d10-83e216acf393"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "approval:NDA220963",
-   "kind": "approval",
-   "date": "2026-09-28",
-   "level": 4,
-   "app": "NDA220963",
-   "brand": "Emcitate",
-   "generics": [
-    "tiratricol"
-   ],
-   "title": "FDA approved Emcitate (tiratricol)",
-   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
-   "links": [
-    [
-     "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220963"
-    ],
-    [
-     "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=48d9faab-9c60-4abd-b4b9-97ffa778c944"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "approval:NDA220415",
-   "kind": "approval",
-   "date": "2026-09-25",
-   "level": 4,
-   "app": "NDA220415",
-   "brand": "Juvmo",
-   "generics": [
-    "tavapadon"
-   ],
-   "title": "FDA approved Juvmo (tavapadon)",
-   "summary": "The FDA’s drug database lists it as approved. The FDA classes it as a new drug, with an active ingredient not approved in the US before. This database doesn’t say what it’s used for. The FDA drug record links to its label, which does.",
-   "sourcesLabel": "Confirmed by Drugs@FDA + DailyMed",
-   "links": [
-    [
-     "FDA drug record",
-     "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220415"
-    ],
-    [
-     "DailyMed label",
-     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1ae6df6e-6ca0-420f-bec9-effa7acdd085"
+     "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=2ff7bdd3-dd8b-43e5-b249-15b5483e4658"
     ]
    ]
   }
  ],
  "dailymed": {
+  "NDA221144": {
+   "setid": "46d0c64b-2eb5-4f3c-b7c2-aaff221b5e8e",
+   "title": "INFILBRAY (VENGLUSTAT) TABLET [GENZYME CORPORATION]"
+  },
+  "NDA221251": {
+   "setid": "122beaf9-5add-45ae-9a2e-457af1a7dddf",
+   "title": "LIVSAYIS (CEMDISIRAN) INJECTION, SOLUTION [REGENERON PHARMACEUTICALS, INC]"
+  },
+  "NDA220936": {
+   "setid": "cbfdd79a-13c5-42f4-b8a2-4586f5b32c7b",
+   "title": "NELKARMI (NELADALKIB) TABLET, FILM COATED [NUVALENT, INC.]"
+  },
+  "NDA220996": {
+   "setid": "ff86030c-1e66-41b7-8b1f-d1397e94d81c",
+   "title": "LEMBAZ (ADRABETADEX) SOLUTION [MANDOS LLC]"
+  },
+  "NDA220791": {
+   "setid": "2ff7bdd3-dd8b-43e5-b249-15b5483e4658",
+   "title": "WILSERDLY (GIREDESTRANT) CAPSULE [GENENTECH, INC.]"
+  },
+  "BLA761488": {
+   "setid": "97c5f200-b851-4d03-ad33-1ecd15089f0f",
+   "title": "KLYGEFA (GEFURULIMAB) INJECTION, SOLUTION [ALEXION PHARMACEUTICALS INC.]"
+  },
   "NDA220414": {
    "setid": "17b6ec50-69c8-4849-802d-cf0a6e425373",
    "title": "PIMJETMI (PIMICOTINIB) CAPSULE [EMD SERONO INC.]"

@@ -1,5 +1,5 @@
 {
- "seq": 134,
+ "seq": 139,
  "entries": [
   {
    "seq": 1,
@@ -2551,6 +2551,101 @@
     "pcd": "2029-07-01",
     "cd": "2030-07-01",
     "enroll": 50,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 135,
+   "nct": "NCT05713799",
+   "hash": "e126c6649c35a05df5ade2910569a437",
+   "prev": "0fe1b2a95d9ef76481495a25044de43f",
+   "lup": "2026-11-24",
+   "at": "2026-11-24T23:07:14.465Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-29",
+    "pcd": "2030-03-01",
+    "cd": "2030-03-01",
+    "enroll": 60,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 136,
+   "nct": "NCT06303193",
+   "hash": "db1213fb15fe13d54d424b9de9881258",
+   "prev": "fef00e7604e5733ac150124a4d799bde",
+   "lup": "2026-11-24",
+   "at": "2026-11-24T23:07:14.465Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "RECRUITING",
+    "start": "2026-11-29",
+    "pcd": "2030-01-01",
+    "cd": "2035-01-01",
+    "enroll": 160,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 137,
+   "nct": "NCT07721467",
+   "hash": "b8d16f0097a252dc8cfb147fc3d73edc",
+   "prev": "4eb6cb8e8a530395c3369e9278fb8506",
+   "lup": "2026-11-24",
+   "at": "2026-11-24T23:07:14.465Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "RECRUITING",
+    "start": "2026-11-29",
+    "pcd": "2030-12-31",
+    "cd": "2030-12-31",
+    "enroll": 200,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 138,
+   "nct": "NCT07756840",
+   "hash": "5cbd075a922007ca0e5ff397446e74b1",
+   "prev": "258aaa4eaf7c1fcce6cf79bd97e64b28",
+   "lup": "2026-11-24",
+   "at": "2026-11-24T23:07:14.465Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-29",
+    "pcd": "2029-07-01",
+    "cd": "2030-07-01",
+    "enroll": 50,
+    "enrollType": "ESTIMATED"
+   }
+  },
+  {
+   "seq": 139,
+   "nct": "NCT07902921",
+   "hash": "cbc3f751f808bbf92ede819fddb7d1fa",
+   "prev": "9e7ff5e6e00b1e983a8f82f26a913f04",
+   "lup": "2026-11-24",
+   "at": "2026-11-24T23:07:14.465Z",
+   "fields": [
+    "start"
+   ],
+   "state": {
+    "status": "NOT_YET_RECRUITING",
+    "start": "2026-11-29",
+    "pcd": "2029-12-31",
+    "cd": "2030-06-30",
+    "enroll": 67,
     "enrollType": "ESTIMATED"
    }
   }
