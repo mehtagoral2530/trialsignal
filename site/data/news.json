@@ -1,14 +1,76 @@
 {
  "version": 1,
- "generatedAt": "2026-11-25T05:30:41.443Z",
- "dataTimestamp": "2026-11-24T10:00:04",
+ "generatedAt": "2026-11-25T17:26:12.071Z",
+ "dataTimestamp": "2026-11-25T10:00:05",
  "fdaUpdated": "2026-11-24",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "defdeaec768338d5a104ca7a6b709640",
+ "contentHash": "94f37f7b0599a82165fe63cd707fb53a",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT03553875",
+   "kind": "results",
+   "date": "2026-11-25",
+   "level": 6,
+   "nct": "NCT03553875",
+   "drug": "Memantine Hydrochloride",
+   "title": "Results posted for a study of Memantine Hydrochloride for Autism",
+   "summary": "Massachusetts General Hospital ran this final-stage test (phase 3) with 25 people. It was stopped early. The study team’s reason: “requested by the IRB”. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03553875) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT03553875"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05766501",
+   "kind": "results",
+   "date": "2026-11-25",
+   "level": 7,
+   "nct": "NCT05766501",
+   "drug": "DOR/ISL",
+   "title": "Results posted for a study of DOR/ISL for HIV Infection",
+   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 641 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05766501"
+    ],
+    [
+     "Journal article on PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42213454/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42861969"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT06514742",
+   "kind": "results",
+   "date": "2026-11-25",
+   "level": 6,
+   "nct": "NCT06514742",
+   "drug": "Aticaprant",
+   "title": "Results posted for a study of Aticaprant for Depressive Disorder, Major",
+   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 101 people. It was stopped early. The study team’s reason: “Early study termination due to insufficient efficacy”. The registry lists its end date as 24 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06514742) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06514742"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03927027",
@@ -84,64 +146,6 @@
   },
   {
    "live": true,
-   "id": "results:NCT04053634",
-   "kind": "results",
-   "date": "2026-11-20",
-   "level": 6,
-   "nct": "NCT04053634",
-   "drug": "Benralizumab",
-   "title": "Results posted for a study of Benralizumab for Chronic Obstructive Pulmonary Disease",
-   "summary": "AstraZeneca ran this final-stage test (phase 3) with 689 people. The registry lists its end date as 28 Jul 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04053634) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04053634"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04175613",
-   "kind": "results",
-   "date": "2026-11-20",
-   "level": 6,
-   "nct": "NCT04175613",
-   "drug": "Apremilast",
-   "title": "Results posted for a study of Apremilast for Psoriasis",
-   "summary": "Amgen ran this final-stage test (phase 3) with 160 people. It was stopped early. The registry lists its end date as 12 Dec 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT04175613) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04175613"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT04708782",
-   "kind": "results",
-   "date": "2026-11-20",
-   "level": 7,
-   "nct": "NCT04708782",
-   "drug": "Inhaled Treprostinil",
-   "title": "Results posted for a study of Inhaled Treprostinil for Idiopathic Pulmonary Fibrosis",
-   "summary": "United Therapeutics ran this final-stage test (phase 3) with 598 people. The registry lists its end date as 2 Feb 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT04708782"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42972641/"
-    ]
-   ]
-  },
-  {
-   "live": true,
    "id": "results:NCT05630820",
    "kind": "results",
    "date": "2026-11-20",
@@ -149,8 +153,8 @@
    "nct": "NCT05630820",
    "drug": "Bepirovirsen",
    "title": "Results posted for a study of Bepirovirsen for Chronic Hepatitis B",
-   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
    "links": [
     [
      "Official study record",
@@ -159,6 +163,10 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42206582/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42206582"
     ]
    ]
   },
