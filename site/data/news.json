@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-24T23:07:22.059Z",
+ "generatedAt": "2026-11-25T05:30:41.443Z",
  "dataTimestamp": "2026-11-24T10:00:04",
- "fdaUpdated": "2026-11-20",
+ "fdaUpdated": "2026-11-24",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "5fcb19035ad7aca29b245058808f7a88",
+ "contentHash": "defdeaec768338d5a104ca7a6b709640",
  "items": [
   {
    "live": true,
@@ -18,7 +18,7 @@
    "nct": "NCT03927027",
    "drug": "Isosulfan Blue",
    "title": "Results posted for a study of Isosulfan Blue for Breast Cancer Stage I",
-   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -36,7 +36,7 @@
    "nct": "NCT05905055",
    "drug": "co-administration of cefepime and nacubactam",
    "title": "Results posted for a study of co-administration of cefepime and nacubactam for Complicated Urinary Tract Infection",
-   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -54,7 +54,7 @@
    "nct": "NCT06871046",
    "drug": "Esflurbiprofen Topical System",
    "title": "Results posted for a study of Esflurbiprofen Topical System for Contusions",
-   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -171,8 +171,8 @@
    "nct": "NCT05686070",
    "drug": "Asundexian",
    "title": "Results posted for a study of Asundexian for Prevention of Ischemic Stroke",
-   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
    "links": [
     [
      "Official study record",
@@ -181,6 +181,10 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42866879/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42866879"
     ]
    ]
   },
@@ -462,10 +466,6 @@
   "NDA220106": {
    "setid": "5023a17b-e96a-67d4-e063-6394a90a14a7",
    "title": "LISRAYA (BREPOCITINIB) TABLET, FILM COATED [PRIOVANT THERAPEUTICS, INC.]"
-  },
-  "NDA220910": {
-   "setid": "13a65923-d072-4dac-8620-8eabbf8c3641",
-   "title": "RASONQUE (DARAXONRASIB) TABLET, FILM COATED [REVOLUTION MEDICINES, INC.]"
   }
  }
 }
