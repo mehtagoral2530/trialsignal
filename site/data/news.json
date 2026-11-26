@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generatedAt": "2026-11-25T17:26:12.071Z",
+ "generatedAt": "2026-11-26T01:51:31.074Z",
  "dataTimestamp": "2026-11-25T10:00:05",
- "fdaUpdated": "2026-11-24",
+ "fdaUpdated": "2026-11-25",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "94f37f7b0599a82165fe63cd707fb53a",
+ "contentHash": "bd5b75744abde8deb20874c487832b42",
  "items": [
   {
    "live": true,
@@ -18,7 +18,7 @@
    "nct": "NCT03553875",
    "drug": "Memantine Hydrochloride",
    "title": "Results posted for a study of Memantine Hydrochloride for Autism",
-   "summary": "Massachusetts General Hospital ran this final-stage test (phase 3) with 25 people. It was stopped early. The study team’s reason: “requested by the IRB”. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03553875) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Massachusetts General Hospital ran this final-stage test (phase 3) with 25 people. It was stopped early. The study team’s reason: “requested by the IRB”. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03553875) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -36,8 +36,8 @@
    "nct": "NCT05766501",
    "drug": "DOR/ISL",
    "title": "Results posted for a study of DOR/ISL for HIV Infection",
-   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 641 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 641 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -46,10 +46,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42213454/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42861969"
     ]
    ]
   },
@@ -62,7 +58,7 @@
    "nct": "NCT06514742",
    "drug": "Aticaprant",
    "title": "Results posted for a study of Aticaprant for Depressive Disorder, Major",
-   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 101 people. It was stopped early. The study team’s reason: “Early study termination due to insufficient efficacy”. The registry lists its end date as 24 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06514742) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 101 people. It was stopped early. The study team’s reason: “Early study termination due to insufficient efficacy”. The registry lists its end date as 24 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06514742) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -80,7 +76,7 @@
    "nct": "NCT03927027",
    "drug": "Isosulfan Blue",
    "title": "Results posted for a study of Isosulfan Blue for Breast Cancer Stage I",
-   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -98,7 +94,7 @@
    "nct": "NCT05905055",
    "drug": "co-administration of cefepime and nacubactam",
    "title": "Results posted for a study of co-administration of cefepime and nacubactam for Complicated Urinary Tract Infection",
-   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -116,7 +112,7 @@
    "nct": "NCT06871046",
    "drug": "Esflurbiprofen Topical System",
    "title": "Results posted for a study of Esflurbiprofen Topical System for Contusions",
-   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -153,8 +149,8 @@
    "nct": "NCT05630820",
    "drug": "Bepirovirsen",
    "title": "Results posted for a study of Bepirovirsen for Chronic Hepatitis B",
-   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -163,10 +159,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42206582/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42206582"
     ]
    ]
   },
@@ -179,8 +171,8 @@
    "nct": "NCT05686070",
    "drug": "Asundexian",
    "title": "Results posted for a study of Asundexian for Prevention of Ischemic Stroke",
-   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
+   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
    "links": [
     [
      "Official study record",
@@ -189,10 +181,6 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42866879/"
-    ],
-    [
-     "Journal article on Europe PMC",
-     "https://europepmc.org/article/MED/42866879"
     ]
    ]
   },
@@ -470,10 +458,6 @@
   "NDA220605": {
    "setid": "101aff01-31ed-4841-a8b6-0a5a8503189b",
    "title": "MIMRYLO (RUSFERTIDE) KIT [TAKEDA PHARMACEUTICALS AMERICA, INC.]"
-  },
-  "NDA220106": {
-   "setid": "5023a17b-e96a-67d4-e063-6394a90a14a7",
-   "title": "LISRAYA (BREPOCITINIB) TABLET, FILM COATED [PRIOVANT THERAPEUTICS, INC.]"
   }
  }
 }
