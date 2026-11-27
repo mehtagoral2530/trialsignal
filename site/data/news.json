@@ -1,14 +1,88 @@
 {
  "version": 1,
- "generatedAt": "2026-11-27T02:57:37.951Z",
- "dataTimestamp": "2026-11-25T10:00:05",
- "fdaUpdated": "2026-11-25",
+ "generatedAt": "2026-11-27T22:08:25.897Z",
+ "dataTimestamp": "2026-11-27T10:00:05",
+ "fdaUpdated": "2026-11-27",
  "windows": {
   "registryDays": 30,
   "fdaDays": 90
  },
- "contentHash": "ceae83444fdc9f8780108dd908dcf81c",
+ "contentHash": "c9257e010d493b6c5391b46227b44450",
  "items": [
+  {
+   "live": true,
+   "id": "results:NCT04137107",
+   "kind": "results",
+   "date": "2026-11-27",
+   "level": 6,
+   "nct": "NCT04137107",
+   "drug": "Oxaliplatin",
+   "title": "Results posted for a study of Oxaliplatin for Stage II Colorectal Cancer AJCC v8",
+   "summary": "Alliance for Clinical Trials in Oncology ran this combined mid-stage and final-stage test (phase 2/3) with 220 people. It was stopped early. The study team’s reason: “The study was closed prematurely by the DSMB based on findings in phase II”. The registry lists its end date as 19 May 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT04137107) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT04137107"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "results:NCT05654870",
+   "kind": "results",
+   "date": "2026-11-27",
+   "level": 6,
+   "nct": "NCT05654870",
+   "drug": "Valbenazine",
+   "title": "Results posted for a study of Valbenazine for Schizophrenia",
+   "summary": "Neurocrine Biosciences ran this final-stage test (phase 3) with 8 people. It was stopped early. The study team’s reason: “Study ATS3020 was closed due to business reasons. Neurocrine Biosciences continued to conduct study ATS3019 (NCT05110157)”. The registry lists its end date as 8 Nov 2023. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05654870) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT05654870"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06813911",
+   "kind": "stopped",
+   "date": "2026-11-27",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06813911",
+   "drug": "Pelacarsen",
+   "title": "A study of Pelacarsen for Atherosclerotic Cardiovascular Disease (ASCVD) was stopped early",
+   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 246 people. The study team’s reason: “Study terminated by sponsor following the outcome of the Lp(a)HORIZON study (NCT04023552), which did not meet its primary endpoint”. The registry lists its end date as 25 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06813911"
+    ]
+   ]
+  },
+  {
+   "live": true,
+   "id": "stopped:NCT06875973",
+   "kind": "stopped",
+   "date": "2026-11-27",
+   "datePrefix": "Registry record updated ",
+   "level": 0,
+   "nct": "NCT06875973",
+   "drug": "Pelacarsen",
+   "title": "A study of Pelacarsen for Atherosclerotic Cardiovascular Disease was stopped early",
+   "summary": "Novartis Pharmaceuticals ran this final-stage test (phase 3) with 322 people. The study team’s reason: “Study terminated by sponsor following the outcome of the Lp(a)HORIZON study (NCT04023552), which did not meet its primary endpoint”. The registry lists its end date as 23 Oct 2026.",
+   "sourcesLabel": "Source: ClinicalTrials.gov",
+   "links": [
+    [
+     "Official study record",
+     "https://clinicaltrials.gov/study/NCT06875973"
+    ]
+   ]
+  },
   {
    "live": true,
    "id": "results:NCT03553875",
@@ -18,7 +92,7 @@
    "nct": "NCT03553875",
    "drug": "Memantine Hydrochloride",
    "title": "Results posted for a study of Memantine Hydrochloride for Autism",
-   "summary": "Massachusetts General Hospital ran this final-stage test (phase 3) with 25 people. It was stopped early. The study team’s reason: “requested by the IRB”. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03553875) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Massachusetts General Hospital ran this final-stage test (phase 3) with 25 people. It was stopped early. The study team’s reason: “requested by the IRB”. The registry lists its end date as 25 Nov 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03553875) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -36,8 +110,8 @@
    "nct": "NCT05766501",
    "drug": "DOR/ISL",
    "title": "Results posted for a study of DOR/ISL for HIV Infection",
-   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 641 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
+   "summary": "Merck Sharp & Dohme LLC ran this final-stage test (phase 3) with 641 people. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed and Europe PMC. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed + Europe PMC",
    "links": [
     [
      "Official study record",
@@ -46,6 +120,10 @@
     [
      "Journal article on PubMed",
      "https://pubmed.ncbi.nlm.nih.gov/42213454/"
+    ],
+    [
+     "Journal article on Europe PMC",
+     "https://europepmc.org/article/MED/42861969"
     ]
    ]
   },
@@ -58,7 +136,7 @@
    "nct": "NCT06514742",
    "drug": "Aticaprant",
    "title": "Results posted for a study of Aticaprant for Depressive Disorder, Major",
-   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 101 people. It was stopped early. The study team’s reason: “Early study termination due to insufficient efficacy”. The registry lists its end date as 24 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06514742) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Janssen Research & Development, LLC ran this final-stage test (phase 3) with 101 people. It was stopped early. The study team’s reason: “Early study termination due to insufficient efficacy”. The registry lists its end date as 24 Apr 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06514742) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -76,7 +154,7 @@
    "nct": "NCT03927027",
    "drug": "Isosulfan Blue",
    "title": "Results posted for a study of Isosulfan Blue for Breast Cancer Stage I",
-   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Alliance for Clinical Trials in Oncology ran this final-stage test (phase 3) with 534 people. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT03927027) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -94,7 +172,7 @@
    "nct": "NCT05905055",
    "drug": "co-administration of cefepime and nacubactam",
    "title": "Results posted for a study of co-administration of cefepime and nacubactam for Complicated Urinary Tract Infection",
-   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Meiji Seika Pharma Co., Ltd. ran this final-stage test (phase 3) with 126 people. The registry lists its end date as 1 Sep 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT05905055) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -112,7 +190,7 @@
    "nct": "NCT06871046",
    "drug": "Esflurbiprofen Topical System",
    "title": "Results posted for a study of Esflurbiprofen Topical System for Contusions",
-   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
+   "summary": "Teikoku Seiyaku Co., Ltd. ran this final-stage test (phase 3) with 221 people. The registry lists its end date as 1 Oct 2025. The study team posted its results on ClinicalTrials.gov. Our search of PubMed and Europe PMC for this study’s number (NCT06871046) found no journal article. Searches can miss articles, so one may already exist. We don’t say here whether the treatment worked. The official study record has the full results.",
    "sourcesLabel": "Source: ClinicalTrials.gov",
    "links": [
     [
@@ -137,50 +215,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT05595642"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05630820",
-   "kind": "results",
-   "date": "2026-11-20",
-   "level": 7,
-   "nct": "NCT05630820",
-   "drug": "Bepirovirsen",
-   "title": "Results posted for a study of Bepirovirsen for Chronic Hepatitis B",
-   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 857 people. The registry lists its end date as 13 Apr 2026. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05630820"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42206582/"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "results:NCT05686070",
-   "kind": "results",
-   "date": "2026-11-20",
-   "level": 7,
-   "nct": "NCT05686070",
-   "drug": "Asundexian",
-   "title": "Results posted for a study of Asundexian for Prevention of Ischemic Stroke",
-   "summary": "Bayer ran this final-stage test (phase 3) with 12,327 people. The registry lists its end date as 23 Oct 2025. The study team posted its results on ClinicalTrials.gov. A journal article that mentions this study is listed on PubMed. It may not report these results. We don’t say here whether the treatment worked. The official study record has the full results.",
-   "sourcesLabel": "Sources: ClinicalTrials.gov + PubMed",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT05686070"
-    ],
-    [
-     "Journal article on PubMed",
-     "https://pubmed.ncbi.nlm.nih.gov/42866879/"
     ]
    ]
   },
@@ -219,25 +253,6 @@
     [
      "Official study record",
      "https://clinicaltrials.gov/study/NCT06744920"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT07650084",
-   "kind": "stopped",
-   "date": "2026-11-20",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT07650084",
-   "drug": "BLU-5937",
-   "title": "A study of BLU-5937 for Refractory Chronic Cough was stopped early",
-   "summary": "GlaxoSmithKline ran this final-stage test (phase 3) with 75 people. The study team’s reason: “The study has been withdrawn terminated due to the decision to cease further development of camlipixant in refractory chronic cough (RCC), based on the results of the Phase 3 program”. The registry lists its end date as 17 Jul 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT07650084"
     ]
    ]
   },
@@ -288,25 +303,6 @@
     [
      "DailyMed label",
      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=122beaf9-5add-45ae-9a2e-457af1a7dddf"
-    ]
-   ]
-  },
-  {
-   "live": true,
-   "id": "stopped:NCT06775379",
-   "kind": "stopped",
-   "date": "2026-11-18",
-   "datePrefix": "Registry record updated ",
-   "level": 0,
-   "nct": "NCT06775379",
-   "drug": "Azetukalner",
-   "title": "A study of Azetukalner for Major Depressive Disorder was stopped early",
-   "summary": "Xenon Pharmaceuticals Inc. ran this final-stage test (phase 3) with 357 people. The study team’s reason: “See Xenon's September 17, 2026 press release providing an update on its psychiatry clinical program and November 9, 2026 press release announcing the expected timing of topline data readout”. The registry lists its end date as 28 Oct 2026.",
-   "sourcesLabel": "Source: ClinicalTrials.gov",
-   "links": [
-    [
-     "Official study record",
-     "https://clinicaltrials.gov/study/NCT06775379"
     ]
    ]
   },
